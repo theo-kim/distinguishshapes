@@ -1,0 +1,127 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<h1>Grant bonus</h1>
+<button onclick="init()">Click to bonus</button>
+
+
+<div id="json">
+    {{result1}}
+</div>
+
+<ul class="people_list">
+    {{#each result}}
+        <li class="user">{{this.user}}</li>        <li>{{this.data}}</li>
+    {{/each}}
+</ul>
+
+<script>
+//    var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+//    function loadJSON(callback) {
+//
+//        var xobj = new XMLHttpRequest();
+//        //xobj.overrideMimeType("application/json");
+//        xobj.open('GET', 'https://sortingfunds.herokuapp.com/resultjson', true); // Replace 'my_data' with the path to your file
+//        xobj.onreadystatechange = function () {
+//            if (xobj.readyState == 4 && xobj.status == "200") {
+//                // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+//                callback(xobj.responseText);
+//            }
+//        };
+//        xobj.send(null);
+//    }
+
+     function init() {
+            let userlist = document.querySelectorAll('.user');
+            console.log('userlist',userlist)
+
+         //loadJSON(function (response) {
+         //let json = document.querySelector('#json').innerHTML;
+         //console.log('json',json)
+
+         $.getJSON( 'https://sortingfunds.herokuapp.com/resultjson', function(response) {
+
+
+                 // Parse JSON string into object
+             var actual_JSON = JSON.parse(response);
+             console.log('json',actual_JSON)
+
+
+             var config = {
+                 access: 'AKIAIV26QZMS5FZ6C5CQ',
+                 secret: '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',
+                 sandbox: true
+             }
+
+             var mturk = require('mturk-api');
+//var uuid = require('node-uuid');
+             var hitId = "3UUIU9GZC55B67KBPGEGEOTPTKOT5F";
+
+
+             var counter = 0;
+             mturk.createClient(config).then(function (api) {
+
+                 // api.req('SearchHITs', { PageSize: 100 }).then(function(res){
+                 //   console.log(res.SearchHITsResult[0].HIT)
+                 //
+                 // }).catch(console.error)
+
+
+                 let pagesize = 100;
+                 api.req('GetAssignmentsForHIT', {HITId: hitId}).then(function (res) {
+                     let totalresult = res.GetAssignmentsForHITResult[0].TotalNumResults;
+
+                     //should be an iteration
+
+                     for (let i = 0; i < totalresult; i++) {
+                         let assignment = res.GetAssignmentsForHITResult[i].Assignment;
+                         let workerid = assignment[i].WorkerId
+                         let answer = (assignment[i].Answer)
+                         let A_id = assignment[i].AssignmentId
+                         let usercode = answer.slice(answer.indexOf('<FreeText>') + 10, answer.indexOf('</FreeText>'))
+
+                         console.log(totalresult, workerid, usercode, assignment)
+                         grantbonus(workerid, A_id, getbonus(usercode), "Thanks for finishing the test", usercode);
+                     }
+                 }).catch(console.error)
+
+                 function getbonus(usercode) {
+                     let bonus = "0";
+                     let user = actual_JSON.filter(x => {
+                         return x.user == usercode
+                     })
+                     //console.log(user[0].data)
+                     bonus = JSON.parse(user[0].data).totalReturn * (100 - JSON.parse(user[0].data).totolSortTimes) / 10000
+
+                     return {"Amount": bonus.toFixed(2), "CurrencyCode": "USD"};
+                 }
+
+                 function grantbonus(workerid, A_id, bonus, reason, usercode) {
+                     "use strict";
+                     api.req('GrantBonus', {
+                         WorkerId: workerid,
+                         AssignmentId: A_id,
+                         BonusAmount: bonus,
+                         Reason: reason
+                     }).then(function (res) {
+                         //Do something
+                         console.log("grantbonus", res.GrantBonusResult)
+                     }).catch(console.error);
+                     let req = new XMLHttpRequest();
+                     req.open('POST', '/result/bonus', true);
+                     req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+                     req.send("user=" + usercode + "&data=" + bonus);
+                 }
+
+
+                 api.req('GetAccountBalance').then(function (res) {
+                     //Do something
+                     console.log(res.GetAccountBalanceResult)
+                 }).catch(console.error);
+
+
+             }).catch(console.error);
+
+         });
+     }
+
+</script>

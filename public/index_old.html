@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="table2cvs.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/bootbox.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <!--<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' >
+        //let list_percent = [8,9,1,2];
+        //let percent = list_percent[Math.floor(Math.random() * 4)];
+        let percent = Math.floor(Math.random() * 9)+1;
+        //let percent = 0;
+        let click_list = [];
+        let specify_str = 'Please read carefully: This round, you can pay '+percent+'% of your bonus to use the sort function, and/or '+percent+'% of your bonus to use the filter function. If you use BOTH filtering and sorting, you will pay '+2*percent+'% of your bonus this round.';
+    </script>
+    <script src="sort.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="main">
+
+
+<h1 id="resulth1"></h1>
+
+<form class="pure-form">
+    <fieldset>
+        <div id="year">Round 1</div>
+        <div id="rvn"></div>
+        <!--<div id="specify">Specify how your investment for this year should be used to buy the funds below. Your choices-->
+            <!--will only affect this year.-->
+        <!--</div>-->
+        <div id="specify">Specify how to allocate your investment this round using the funds below. Your choices will only affect this round.</div>
+        <!--<div id="legend1">Pay 1% of your bonus to activate the sort function of a column for one round</div>-->
+        <!--<div id="legend1">Click to use the sort function</div>-->
+        <!--<input id="fee" type="checkbox"> Annul fee-->
+        <!--<input id="price" type="checkbox"> Price-->
+        <!--<input id="1year" type="checkbox"> Average annual return: 1 year-->
+        <!--<input id="5year" type="checkbox"> Average annual return: 5 year-->
+        <!--<input id="10year" type="checkbox"> Average annual return: 10 year-->
+        <!--<input id="none" type="checkbox"> None-->
+        <div style="display:block;">
+        <button type="submit" id="btn" class="pure-button pure-button-primary hvr-fade">Continue to next round</button>
+        <div id="warning" style="padding-top: 3%">Percentages must add up to 100%</div>
+        </div>
+    </fieldset>
+</form>
+
+<!--<div id="dialog-confirm" title="Empty the recycle bin?">-->
+<!--<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>-->
+<!--</div>-->
+
+<table class="sortable">
+    <thead class="tbl-header">
+    <tr class="clickable ">
+        <th class="sorttable_nosort">Funds</th>
+        <th id="category" class="hvr-icon-hang tooltip">Category <span class="tooltiptext">Click to enable sorting with 1% of your bonus</span>
+        </th>
+        <th id="af" class="tooltip hvr-icon-hang">Annual fee (%) <span class="tooltiptext">Click to enable sorting with 1% of your bonus</span>
+        </th>
+        <th id="Prc" class="sorttable_numeric tooltip hvr-icon-hang">Price <span class="tooltiptext">Click to enable sorting with 1% of your bonus</span>
+        </th>
+        <th id="1y" class="tooltip sorttable_numeric hvr-icon-hang">Average annual return: 1 year <span
+                class="tooltiptext">Click to enable sorting with 1% of your bonus</span></th>
+        <th id="5y" class="tooltip sorttable_numeric hvr-icon-hang">Average annual return: 5 years <span
+                class="tooltiptext">Click to enable sorting with 1% of your bonus</span></th>
+        <th class="tooltip sorttable_nosort" id="allo">Allocation</th>
+    </tr>
+    </thead>
+
+    <tbody id="tbody_yes" class="">
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>
+<div id="feedback" style="display: none">
+    <p>
+<textarea id="textarea" rows="10" cols="100" placeholder="    Are there any additional thoughts you would like to share with us about the process of selecting funds?
+"></textarea>
+    </p>
+    <p>
+        <button id="submitform">Submit</button>
+    </p>
+</div>
+
+<h3 id="total"></h3>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top &nbsp;&#x25B4</button>
+
+
+
+
+<!--sidebar-->
+<div id="mySidenav" class="sidenav">
+    <!--close nav-->
+    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+    <form id="filter" action="/action_page.php">Asset type:<br><input class="filterinput" type="checkbox" name="filter_stock" id="filter_stock" value="0" > Stock<br> <input class="filterinput" type="checkbox" name="filter_bond" value="0"> Bond<br> <input class="filterinput" type="checkbox" name="filter_moneymarket" value="0"> Money Market  <br><input class="filterinput" type="checkbox" name="filter_balanced" value="0"> Balanced<br><input class="filterinput" type="checkbox" name="filter_international" value="0"> International  <br> <br>Index or actively managed:<br>  <input class="filterinput" type="checkbox" name="filter_index" value="0" > Index <br> <input class="filterinput" type="checkbox" name="filter_active" value="0"> Actively managed<br><br>Annual fee:<br> <input class="filterinput" type="checkbox" name="above_03" value="0" > Above 0.3%<br><input class="filterinput" type="checkbox" name="01_03" value="0" > 0.1% - 0.3%<br> <input class="filterinput" type="checkbox" name="under_01" value="0" > Under 0.1%<br> </form>
+</div>
+    <!--filter button-->
+    <!--<span style="font-size:25px;background-color: rgba(100,100,100,0.8);color:white;padding: 1vmax;cursor:pointer;top: 10px;position: fixed;" onclick="openNav()">Filter&#9776;</span>-->
+</div>
+
+<script>
+    openNav();
+    document.querySelector('#specify').innerHTML=specify_str;
+
+    let filter_list = [];
+    let filterinputs = document.querySelectorAll('.filterinput');
+    let list_Cate = ['filter_stock','filter_balanced','filter_bond','filter_moneymarket','filter_international'];
+    let list_index = ['filter_index','filter_active'];
+    let list_01 = ['under_01','01_03','above_03'];
+    filterinputs.forEach(x=>{
+        //Stock Bond International Balanced index active under01 01_03 above03
+
+        $(x).on('click',function(){
+            if(filter_used=='no'){
+            bootbox.confirm(('The filter function will be available only for this round. Are you sure you want to pay '+percent+' of your bonus this round to activate the filter function?'), function (result) {
+                if(result){
+                    filter_used='yes';
+                    $(x).prop('checked', true);
+                    x.value ++;
+                    if(x.value%2!=0) {
+                        filter_list.push(x.name);
+                    }
+                    if(x.value%2==0){
+                        $(x).prop('checked', false);
+                        let indx = filter_list.indexOf(x.name);
+                        filter_list.splice(indx,1);
+                        //alert(filter_list);
+                    }
+                    let filter_list_cate = filter_list.filter(x=>{if(list_Cate.indexOf(x)!=-1){return x;}});
+                    let filter_list_index = filter_list.filter(x=>{if(list_index.indexOf(x)!=-1){return x;}});
+                    let filter_list_01 = filter_list.filter(x=>{if(list_01.indexOf(x)!=-1){return x;}});
+                    //alert(filter_list_index)
+                    let trs = document.querySelectorAll('tr');
+                    //console.log(filter_list_cate,filter_list_index,filter_list_01);
+
+                    trs.forEach(tr=>{
+                        let counter = true;
+                        let ct = 0;
+                        let trclasses = tr.classList;
+                        if(!trclasses.contains('clickable')){
+                            trclasses.forEach(c=>{
+                                //console.log(trclasses,filter_list_cate.indexOf(c),filter_list_index.indexOf(c),filter_list_01.indexOf(c));
+
+//                    if(((filter_list_cate.length==0)||(filter_list_cate.indexOf(c)!=-1))&&((filter_list_index.length==0)||(filter_list_index.indexOf(c)!=-1))&&((filter_list_01.length==0)||(filter_list_01.indexOf(c)!=-1))){
+//                        counter=false;
+//                    }else {
+//                    }
+                                if(list_Cate.indexOf(c)!=-1){
+                                    if((filter_list_cate.length==0)||(filter_list_cate.indexOf(c)!=-1)){ct++};
+                                }
+                                if(list_index.indexOf(c)!=-1){
+                                    if((filter_list_index.length==0)||(filter_list_index.indexOf(c)!=-1)){ct++};
+                                }
+                                if(list_01.indexOf(c)!=-1){
+                                    if((filter_list_01.length==0)||(filter_list_01.indexOf(c)!=-1)){ct++};
+                                }
+
+                            })
+                            if(ct!=3){
+
+                                tr.classList.add('hidden');
+                            }else {
+                                tr.classList.remove('hidden');
+                            }
+                        }});
+
+                }else {
+                }
+            });
+            }
+
+
+            if(filter_used == 'yes'){
+            x.value ++;
+            if(x.value%2!=0) {
+                filter_list.push(x.name);
+            }
+            if(x.value%2==0){
+                $(x).prop('checked', false);
+                let indx = filter_list.indexOf(x.name);
+                filter_list.splice(indx,1);
+                //alert(filter_list);
+            }
+            let filter_list_cate = filter_list.filter(x=>{if(list_Cate.indexOf(x)!=-1){return x;}});
+            let filter_list_index = filter_list.filter(x=>{if(list_index.indexOf(x)!=-1){return x;}});
+            let filter_list_01 = filter_list.filter(x=>{if(list_01.indexOf(x)!=-1){return x;}});
+            //alert(filter_list_index)
+            let trs = document.querySelectorAll('tr');
+            //console.log(filter_list_cate,filter_list_index,filter_list_01);
+
+            trs.forEach(tr=>{
+                let counter = true;
+                let ct = 0;
+                let trclasses = tr.classList;
+                if(!trclasses.contains('clickable')){
+                trclasses.forEach(c=>{
+                    //console.log(trclasses,filter_list_cate.indexOf(c),filter_list_index.indexOf(c),filter_list_01.indexOf(c));
+
+//                    if(((filter_list_cate.length==0)||(filter_list_cate.indexOf(c)!=-1))&&((filter_list_index.length==0)||(filter_list_index.indexOf(c)!=-1))&&((filter_list_01.length==0)||(filter_list_01.indexOf(c)!=-1))){
+//                        counter=false;
+//                    }else {
+//                    }
+                    if(list_Cate.indexOf(c)!=-1){
+                        if((filter_list_cate.length==0)||(filter_list_cate.indexOf(c)!=-1)){ct++};
+                    }
+                    if(list_index.indexOf(c)!=-1){
+                        if((filter_list_index.length==0)||(filter_list_index.indexOf(c)!=-1)){ct++};
+                    }
+                    if(list_01.indexOf(c)!=-1){
+                        if((filter_list_01.length==0)||(filter_list_01.indexOf(c)!=-1)){ct++};
+                    }
+
+                })
+                if(ct!=3){
+
+                    tr.classList.add('hidden');
+                }else {
+                    tr.classList.remove('hidden');
+                }
+                }});
+
+            }else {
+                $(x).prop('checked', false);
+
+            }
+
+        });
+    });
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+
+
+
+
+<script>
+    let btnclick = true;
+    let totalSorts = 0;
+    let initil = true;
+    let user_id = guid();
+    let selection = {};
+    let YearCounter = 1;
+    let clicked = false;
+    let user_data = {};
+    //    let List_all = ["#af","#Prc","#1y","#5y","#10y"];
+    //    let not_sortable = ["#af","#Prc","#1y","#5y","#10y"];
+    let ip = "unknown", city = "unknown";
+
+    survey(user_data);
+
+
+    var end, start;
+
+    start = new Date();
+    user_data['0'] = start;
+    user_data['Wan'] = "not sure";
+    user_data['percent'] = percent;
+    //user_data['zz_bonused'] = "No";
+
+
+    //document.querySelector('#legend1').innerHTML = "Pay " + percent + "% of your bonus this round to activate the sort function of one column THIS round. You can sort up to five columns each round, and each will cost you "+percent+"% PER ROUND."
+    let tootips = document.querySelectorAll(".tooltiptext");
+    tootips.forEach(x => {
+        x.innerHTML = 'Click to enable sorting with ' + percent + '% of your bonus';
+        //x.innerHTML = 'Click to do sorting';
+
+    })
+    $.getJSON('//freegeoip.net/json/?callback=?', function (data) {
+        ip = data.ip;
+        city = data.country_name+ "\n" + data.region_name + "\n" + data.city;
+    });
+    //showins()
+    function guid() {
+        function s4() {
+            return Math.floor((1 + Math.random()) * 0x10000)
+                .toString(16)
+                .substring(1);
+        }
+
+        return s4() + s4() + s4();
+
+    }
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    $(window).on("load resize ", function () {
+        var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+        $('.tbl-header').css({'padding-right': scrollWidth});
+    }).resize();
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    function showinfo(obj) {
+        $.getJSON("abstract.json", function (abstract) {
+
+            var info = abstract[obj.innerHTML.slice(3)];
+            var dialog = bootbox.dialog({
+                message: '<p class="text-center">' + info + '</p>',
+                closeButton: false
+            });
+
+
+            $("body").click(function (e) {
+                dialog.modal('hide')
+            })
+            setTimeout(function () {
+                dialog.modal('hide');
+            }, 10000)
+// do something in the background
+
+
+        })
+    }
+    function survey(user_data) {
+        //            message: '<form action="/action_page.php">First name:<br> <input type="text" name="firstname" value="Mickey"> <br>Last name:<br> <input type="text" name="lastname" value="Mouse"> <br><br> <input type="submit" value="Submit"> </form> ',
+
+        var dialog = bootbox.dialog({
+            closeButton: false,
+            title: 'Please tell us about yourself:',
+            message: '<form id="survey" action="/action_page.php">Your age:<br> <input type="text" id="age" name="age" value=""> <br><br>Your gender:<br>  <input type="radio" name="gender" id="gender" value="male" > Male<br> <input type="radio" name="gender" value="female"> Female<br> <input type="radio" name="gender" value="other"> Other  <br> <br>What is your level of investing experience:<br>  <input type="radio" name="experience" value="None" > None <br> <input type="radio" name="experience" value="Novice"> Novice<br> <input type="radio" name="experience" value="Intermediate"> Intermediate<br><input type="radio" name="experience" value="Expert"> Expert<br><input type="radio" name="experience" value="NotSure"> Not sure<br><br>Do you have a retirement savings plan such as a 401k? :<br>  <input type="radio" name="goal" value="yes" > Yes<br><input type="radio" name="goal" value="no" > No<br><br> <input id="submitsurvey" class="btn btn-default" type="submit" value="Submit"> </form> ',
+        });
+        dialog.init(function(){
+            let a = document.querySelector("#submitsurvey")
+            a.addEventListener('click',function(evt){
+                evt.preventDefault();
+                let form_obj = ($('#survey').serializeArray())
+                form_obj.forEach(x=>{
+                    user_data[x.name] = x.value;
+                })
+                dialog.modal('hide');
+            });
+        });
+    }
+    //    function showins() {
+    //
+    //        $.getJSON("ins.json", function(ins) {
+    //
+    //            var info = ins.ins;
+    //            var dialog = bootbox.alert({
+    //                message: info,
+    //                closeButton: false,
+    //                size: 'large'
+    //
+    //            });
+    //
+    //
+    //            $("body").click(function(e) {
+    //                dialog.modal('hide')
+    //            })
+    //            setTimeout(function(){dialog.modal('hide');},20000)
+    //// do something in the background
+    //
+    //
+    //        })
+    //
+    //        }
+
+
+    //In info_large, there're ten years' data and num represents year
+
+    function new_list(num) {
+
+        $.getJSON("info_large.json", function (json) {
+            data = json;
+            document.querySelector('#tbody_yes').innerHTML = '';
+
+
+            for (var i in data[num]) {
+
+                let obj = data[num][i];
+                let filter_cate = 'justatest';
+                if((obj.category.indexOf('Bond')!=-1)){
+                    filter_cate='filter_bond'
+                }else if(obj.category.indexOf('Stock')!=-1){
+                    filter_cate='filter_stock'
+                }else if(obj.category.indexOf('International')!=-1){
+                    filter_cate='filter_international'
+                }else if(obj.category.indexOf('Balanced')!=-1){
+                    filter_cate='filter_balanced'
+                }else if(obj.category.indexOf('Money')!=-1){
+                    filter_cate='filter_moneymarket'
+                }
+                let filter_index = (obj.category.indexOf('Index')==-1)?"filter_active":"filter_index";
+                let filter_fee = "justatest"
+                if (parseFloat(obj.fee)<0.1){
+                    filter_fee = "under_01";
+                }else if(parseFloat(obj.fee)<0.3){
+                    filter_fee = "01_03";
+                }else {
+                    filter_fee = "above_03";
+                }
+                let tr = document.createElement("tr");
+                let tr1 = document.createElement("tr");
+                let tdinput = $('<td>').attr({id: "td" + i, class: "inputs"});
+                let allocation = $('<input/>').attr({
+                    type: 'text',
+                    class: "allo-input",
+                    placeholder: "0%",
+                    id: '' + i,
+                    name: 'ainput' + i
+                }).appendTo(tdinput);
+                tr.classList.add(filter_fee,filter_cate,filter_index);
+                // tr1.innerHTML = '<td>'+ obj.name+'</td><td>'+ obj.fee+'</td><td>'+ obj.price+'</td><td>'+ obj.oneYear+'</td><td>'+ obj.fiveYear+'</td><td>'+obj.tenYear+'</td>';
+                tr.innerHTML = '<td class="blue" onclick="showinfo(this)">' + obj.name.slice(0, 3) + obj.id.slice(1, -1) + '<td>' + obj.category + '</td><td>' + obj.fee + '</td><td>' + "$" + obj.price + '</td><td>' + parseFloat(obj.oneYear) + "%" + '</td><td>' + parseFloat(obj.fiveYear.slice(0, 6)) + "%" + '</td>';
+                tdinput.appendTo(tr);
+                // document.querySelector('#tbody').appendChild(tr1);
+                document.querySelector('#tbody_yes').appendChild(tr);
+            }
+        });
+    }
+
+
+    //    function new_table() {
+    //        $.getJSON("info_large.json", function(json) {
+    //            data = json;
+    //            console.log(data);
+    //            document.querySelector('#tbody_no').innerHTML='';
+    //            for (var i in data){
+    //                let obj = data[i];
+    //                let tr = document.createElement("tr")
+    //                let tr1 = document.createElement("tr")
+    //                tr1.innerHTML = '<td>'+ obj.name+'</td><td>'+ obj.fee+'</td><td>'+ obj.price+'</td><td>'+ obj.oneYear+'</td><td>'+ obj.fiveYear+'</td><td>'+obj.tenYear+'</td>';
+    //                tr.innerHTML = '<td>'+ obj.name+'</td><td>'+ obj.fee+'</td><td>'+ obj.price+'</td><td>'+ obj.oneYear+'</td><td>'+ obj.fiveYear+'</td><td>'+obj.tenYear+'</td>';
+    //                // document.querySelector('#tbody').appendChild(tr1);
+    //                document.querySelector('#tbody_no').appendChild(tr);
+    //            }
+    //        });
+    //    }
+    //    new_table();
+    let td_clickable = document.querySelectorAll('.tooltip');
+    td_clickable.forEach(x => {
+        x.addEventListener('click', function () {
+            click_list.push(x.id);
+//            x.classList.add("beenclicked");
+        })
+    })
+    function initialize() {
+        if (initil == true) {
+            timeCounter();
+            console.log('init')
+            //5round
+            new_list(1);
+            //new_list(6);
+
+            getSelection()
+        }
+    }
+
+    //    for (let i=0;i<10;i++){
+    //
+    //    }
+
+    function shuffle() {
+        console.log('shuffle');
+        new_list();
+    }
+
+
+    //    function test(){
+    //        not_sortable.forEach(x=>{
+    //            console.log('nullify',x)
+    //            $(x).addClass('sorttable_nosort');
+    //            $(x).unbind('click');
+    //            $(x).off('click');
+    //            $(x).click(function (e) {
+    //                alert("Pay 1% of your bonus for activating the sort function of this column:")
+    //                //window.location.reload()
+    //                shuffle();
+    //                e.stopPropagation();
+    //            })
+    //        })
+    //    }
+    let rst = 0, inputlist = {}, inputarray = {};
+    function getTotal() {
+        inputarray[YearCounter] = {};
+
+        //setInterval(function () {
+        let inputs = document.querySelectorAll('.allo-input');
+        let valid_inputs = [];
+        inputs.forEach((x) => {
+            if (x.value != "") {
+                valid_inputs.push(x)
+            }
+            ;
+        });
+
+        if (valid_inputs.length != 0) {
+            rst = valid_inputs.reduce(function (a, b) {
+                return parseInt(a) + parseInt(b.value)
+            }, 0)
+            //console.log('total:',rst)
+//            document.querySelector('#total').innerHTML = "Total:" + rst + "%"
+            valid_inputs.forEach(x => {
+                inputlist[x.id] = x.value;
+                inputarray[YearCounter][x.id] = x.value;
+            })
+
+            console.log("inputarray", inputarray)
+        }
+        if (rst == 100) {
+            $('#warning').hide();
+        } else {
+            $('#warning').show();
+            document.querySelector("#warning").innerHTML="You have allocated "+rst+"%, percentages must add up to 100%."
+        }
+        // },500)
+
+
+//        let ttl =
+//        document.querySelector('#total').innerHTML=ttl
+    }
+    function getSelection() {
+        setInterval(function () {
+            getTotal();
+
+        }, 500)
+    }
+    function uniq(a) {
+        return a.sort().filter(function (item, pos, ary) {
+            return !pos || item != ary[pos - 1];
+        })
+    }
+    function get_revenue(year, inputlist) {
+        console.log(inputlist)
+        let revenue = 0;
+        for (var id in inputlist) {
+            let rate = data[year][id]['oneYear'];
+            revenue += parseFloat(rate) * parseFloat(inputlist[id]);
+        }
+        return revenue;
+    }
+    function cleanClass() {
+        let listtoClean = document.querySelectorAll('.tooltip');
+        listtoClean.forEach(x => {
+            if ($(x).hasClass("beenclicked")) {
+                x.classList.remove('beenclicked');
+            }
+            if ($(x).hasClass("sorttable_sorted_reverse")) {
+                x.classList.remove('sorttable_sorted_reverse');
+            }
+            if ($(x).hasClass("sorttable_sorted")) {
+                x.classList.remove('sorttable_sorted');
+            }
+        })
+    }
+    var time = 0;
+    var filter_used = 'no';
+    function timeCounter() {
+        time = 0;
+        setInterval(setTime, 1000);
+        function setTime() {
+            ++time;
+            console.log(time)
+
+        }
+    }
+    //document.querySelector('.sortable').style.display='none';
+    initialize()
+    let total = 0,list_len=0;
+    document.querySelector('#btn').addEventListener('click', function (evt) {
+        evt.preventDefault();
+        initil == false;
+        if (rst == 100&&btnclick==true) {
+            btnclick=false;
+
+            //5round
+            let year = YearCounter + 2017;
+
+            //let year = YearCounter + 2022;
+            cleanClass();
+            console.log(uniq(click_list));
+            //data is the users data, it will be saved to database;
+            user_data[year - 1] = {};
+
+            //                user_data[year-1]["clicklist"] = uniq(click_list);
+
+            user_data[year - 1]["clicklist"] = (click_list);
+            user_data[year - 1]["filter_used"] = filter_used;
+            user_data[year - 1]["roundtime"] = time;
+            time = 0;
+            filter_used = 'no';
+
+            user_data[year - 1]["Times"] = uniq(click_list).length;
+            list_len = uniq(click_list).length;
+            totalSorts += uniq(click_list).length;
+//                user_data[year-1]["allocation"] = inputlist;
+            user_data[year - 1]["allocation"] = inputarray;
+            console.log(JSON.stringify(user_data));
+//                console.log(YearCounter,inputlist)
+            let revenue_thisyear = (get_revenue(YearCounter, inputlist) / 100);
+            inputlist = {};
+            user_data[year - 1]['revenue'] = revenue_thisyear;
+            total += revenue_thisyear;
+            console.log("revenue_thisyear", revenue_thisyear);
+            rst = 0;
+            click_list = [];
+            if (year == 2027) {
+                end = new Date();
+
+                $('#year').text("Total:" + total);
+                document.querySelector('.sortable').style.display = 'none';
+                document.querySelector('.pure-form').style.display = 'none';
+                document.querySelector('#myBtn').style.display = 'none';
+                document.querySelector('#total').style.display = 'none';
+
+                document.querySelector('#feedback').style.display = 'block';
+                document.querySelector('#submitform').addEventListener('click', function () {
+                    let req = new XMLHttpRequest();
+                    req.open('POST', '/result/feedback', true);
+                    req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+                    req.send("user=" + user_id + "&data=" + document.querySelector('#textarea').value);
+                    document.querySelector('#feedback').innerHTML = 'Thanks for the feedback';
+
+
+                })
+
+
+                user_data["totolSortTimes"] = totalSorts;
+                user_data["totalReturn_beforePayment"] = total;
+                user_data["end"] = end;
+                user_data["usercode"] = user_id;
+                user_data["user_city"] = city;
+                user_data["user_ip"] = ip;
+                user_data["workid"] = "not available";
+                //let bonus = total * (100 - totalSorts * percent) / 10000
+                let bonus = Math.max(0,(total - totalSorts * percent) / 100);
+
+                user_data["totalReturn_afterPayment"] = bonus*100;
+
+                let req = new XMLHttpRequest();
+                req.open('POST', '/result/post', true);
+                req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+                req.send("user=" + user_id + "&data=" + JSON.stringify(user_data));
+                //window.location.href = '/result';
+
+                document.querySelector('#resulth1').innerHTML = 'Thanks! Your survey code is: ' + user_id + " Your Bonus is: " + bonus.toFixed(2) + "$";
+
+
+            } else {
+                let filter_deduction = 0;
+                if(filter_used){
+                    filter_deduction = 1;
+                }
+                btnclick=true;
+                $('#year').text("Round " + (YearCounter + 1));
+                let deduction = parseFloat((list_len+filter_deduction) * percent).toFixed(2);
+                let rtn_last = parseFloat(revenue_thisyear.toString().slice(0, 4)).toFixed(2);
+                console.log('dudciton',deduction);
+                console.log('rtn',rtn_last);
+                //$('#rvn').text("Last round return: " + parseFloat(revenue_thisyear.toString().slice(0, 4)) + "%");
+
+                $('#rvn').text("Last round return on your investment is "+rtn_last.toString()+"%, minus "+deduction.toString()+"% that are deducted because you activated the sort/filter function. Your new total return is "+(rtn_last-deduction).toString()+"%.");
+
+                //Last round return on your investment is X%, minus Y% that are deducted because you activated the sort function. Your new total return is [X%-Y%]
+                YearCounter++;
+                new_list(YearCounter);
+
+                $('table').addClass('sortable');
+                document.querySelector('.sortable').style.display = '';
+                evt.preventDefault();
+                getSelection();
+
+                let req = new XMLHttpRequest();
+                req.open('POST', '/result/post', true);
+                req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+                req.send("user=" + user_id + "&data=" + JSON.stringify(user_data));
+            }
+
+        } else {
+            alert("Percentages must add up to 100%");
+        }
+    });
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

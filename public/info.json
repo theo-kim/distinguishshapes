@@ -1,0 +1,191 @@
+{
+  " 0584 ":{
+    "id":" 0584 ",
+    "name":" Total Bond Market Index  Admiral Shares ",
+    "price":" $10.79 ",
+    "fee":" 0.05% ",
+    "oneYear":" 1.47% ",
+    "fiveYear":" 2.14% ",
+    "inception":" 4.29% "
+  },
+  " 0511 ":{
+    "id":" 0511 ",
+    "name":" Total International Bond Index  Admiral Shares ",
+    "price":" $21.80 ",
+    "fee":" 0.12% ",
+    "oneYear":" 1.67% ",
+    "fiveYear":" 1.67% ",
+    "inception":" 3.82% "
+  },
+  " 0569 ":{
+    "id":" 0569 ",
+    "name":" Total International Stock Index  Admiral Shares ",
+    "price":" $28.03 ",
+    "fee":" 0.11% ",
+    "oneYear":" 8.29% ",
+    "fiveYear":" 8.83% ",
+    "inception":" 4.91% "
+  },
+  " 0585 ":{
+    "id":" 0585 ",
+    "name":" Total Stock Market Index  Admiral Shares ",
+    "price":" $60.29 ",
+    "fee":" 0.04% ",
+    "oneYear":" 7.67% ",
+    "fiveYear":" 5.22% ",
+    "inception":" 6.20% "
+  },
+  " 0045 ":{
+    "id":" 0045 ",
+    "name":" Municipal Money Market ",
+    "price":" $1.00 ",
+    "fee":" 0.15% ",
+    "oneYear":" 0.54% ",
+    "fiveYear":" 0.13% ",
+    "inception":" 3.00% "
+  },
+  " 0030 ":{
+    "id":" 0030 ",
+    "name":" Prime Money Market ",
+    "price":" $1.00 ",
+    "fee":" 0.16% ",
+    "oneYear":" 0.68% ",
+    "fiveYear":" 0.19% ",
+    "inception":" 5.08% "
+  },
+  " 0071 ":{
+    "id":" 0071 ",
+    "name":" Intermediate-Term Investment-Grade ",
+    "price":" $9.82 ",
+    "fee":" 0.20% ",
+    "oneYear":" 2.73% ",
+    "fiveYear":" 3.50% ",
+    "inception":" 5.82% "
+  },
+  " 0567 ":{
+    "id":" 0567 ",
+    "name":" Short-Term Inflation-Protected Securities Index  Admiral Shares ",
+    "price":" $24.79 ",
+    "fee":" 0.07% ",
+    "oneYear":" 1.66% ",
+    "fiveYear":" 1.66% ",
+    "inception":" 0.19% "
+  },
+  " 0039 ":{
+    "id":" 0039 ",
+    "name":" Short-Term Investment-Grade ",
+    "price":" $10.69 ",
+    "fee":" 0.20% ",
+    "oneYear":" 1.97% ",
+    "fiveYear":" 2.09% ",
+    "inception":" 6.13% "
+  },
+  " 0041 ":{
+    "id":" 0041 ",
+    "name":" Short-Term Tax-Exempt ",
+    "price":" $15.81 ",
+    "fee":" 0.19% ",
+    "oneYear":" 0.96% ",
+    "fiveYear":" 0.68% ",
+    "inception":" 3.93% "
+  },
+  " 0502 ":{
+    "id":" 0502 ",
+    "name":" Balanced Index  Admiral Shares ",
+    "price":" $32.74 ",
+    "fee":" 0.07% ",
+    "oneYear":" 1.00% ",
+    "fiveYear":" 9.96% ",
+    "inception":" 6.03% "
+  },
+  " 0027 ":{
+    "id":" 0027 ",
+    "name":" Wellesley Income ",
+    "price":" $26.34 ",
+    "fee":" 0.22% ",
+    "oneYear":" 6.82% ",
+    "fiveYear":" 7.49% ",
+    "inception":" 9.85% "
+  },
+  " 0540 ":{
+    "id":" 0540 ",
+    "name":" 500 Index  Admiral Shares ",
+    "price":" $223.3 ",
+    "fee":" 0.04% ",
+    "oneYear":" 7.43% ",
+    "fiveYear":" 5.38% ",
+    "inception":" 5.61% "
+  },
+  " 0024 ":{
+    "id":" 0024 ",
+    "name":" Explorer ",
+    "price":" $93.61 ",
+    "fee":" 0.46% ",
+    "oneYear":" 9.59% ",
+    "fiveYear":" 3.90% ",
+    "inception":" 9.17% "
+  },
+  " 5859 ":{
+    "id":" 5859 ",
+    "name":" Mid-Cap Index  Admiral Shares ",
+    "price":" $176.0 ",
+    "fee":" 0.06% ",
+    "oneYear":" 6.40% ",
+    "fiveYear":" 5.19% ",
+    "inception":" 9.98% "
+  },
+  " 0026 ":{
+    "id":" 0026 ",
+    "name":" Morgan Growth ",
+    "price":" $28.03 ",
+    "fee":" 0.38% ",
+    "oneYear":" 9.61% ",
+    "fiveYear":" 5.15% ",
+    "inception":" 0.33% "
+  },
+  " 0548 ":{
+    "id":" 0548 ",
+    "name":" Small-Cap Index  Admiral Shares ",
+    "price":" $63.69 ",
+    "fee":" 0.06% ",
+    "oneYear":" 6.84% ",
+    "fiveYear":" 4.63% ",
+    "inception":" 8.99% "
+  },
+  " 0073 ":{
+    "id":" 0073 ",
+    "name":" Windsor II ",
+    "price":" $37.09 ",
+    "fee":" 0.33% ",
+    "oneYear":" 5.10% ",
+    "fiveYear":" 3.48% ",
+    "inception":" 0.70% "
+  },
+  " 5533 ":{
+    "id":" 5533 ",
+    "name":" Emerging Markets Stock Index  Admiral Shares ",
+    "price":" $33.84 ",
+    "fee":" 0.14% ",
+    "oneYear":" 3.98% ",
+    "fiveYear":" 4.18% ",
+    "inception":" 5.41% "
+  },
+  " 0081 ":{
+    "id":" 0081 ",
+    "name":" International Growth ",
+    "price":" $26.16 ",
+    "fee":" 0.46% ",
+    "oneYear":" 5.80% ",
+    "fiveYear":" 1.66% ",
+    "inception":" 0.53% "
+  },
+  " 0046 ":{
+    "id":" 0046 ",
+    "name":" International Value ",
+    "price":" $36.40 ",
+    "fee":" 0.43% ",
+    "oneYear":" 9.45% ",
+    "fiveYear":" 9.54% ",
+    "inception":" 8.89% "
+  }
+}

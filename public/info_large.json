@@ -1,0 +1,6952 @@
+{
+  "3":{
+    " 0328 Capital Value ":{
+      "price":" 12.5 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0328 ",
+      "oneYear":" -48.84 ",
+      "fee":" 0.25% ",
+      "name":" CV0328 ",
+      "fiveYear":"-3.01"
+    },
+    " 5102 Tax-Managed Capital Appreciation  Admiral Shares ":{
+      "price":" 125.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 5102 ",
+      "oneYear":" -37.58 ",
+      "fee":" 0.09% ",
+      "name":" TCAAS5102 ",
+      "fiveYear":"-2.55"
+    },
+    " 5859 Mid-Cap Index  Admiral Shares ":{
+      "price":" 178.0 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 5859 ",
+      "oneYear":" -41.78 ",
+      "fee":" 0.06% ",
+      "name":" MIAS5859 ",
+      "fiveYear":"-2.28"
+    },
+    " 0039 Short-Term Investment-Grade ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 0039 ",
+      "oneYear":" -4.74 ",
+      "fee":" 0.20% ",
+      "name":" SI0039 ",
+      "fiveYear":"0.60"
+    },
+    " 0042 Intermediate-Term Tax-Exempt ":{
+      "price":" 14.2 ",
+      "category":" Bond - Inter-term National Muni Index ",
+      "id":" 0042 ",
+      "oneYear":" -0.14 ",
+      "fee":" 0.19% ",
+      "name":" IT0042 ",
+      "fiveYear":"0.69"
+    },
+    " 0934 Selected Value ":{
+      "price":" 30.8 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0934 ",
+      "oneYear":" -35.49 ",
+      "fee":" 0.35% ",
+      "name":" SV0934 ",
+      "fiveYear":"0.16"
+    },
+    " 0540 500 Index  Admiral Shares ":{
+      "price":" 225.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0540 ",
+      "oneYear":" -36.97 ",
+      "fee":" 0.04% ",
+      "name":" 5IAS0540 ",
+      "fiveYear":"-2.60"
+    },
+    " 0559 PRIMECAP  Admiral Shares ":{
+      "price":" 124.0 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0559 ",
+      "oneYear":" -32.33 ",
+      "fee":" 0.33% ",
+      "name":" PAS0559 ",
+      "fiveYear":"0.56"
+    },
+    " 0051 Energy ":{
+      "price":" 48.8 ",
+      "category":" Stock - Sector  Energy ",
+      "id":" 0051 ",
+      "oneYear":" -42.87 ",
+      "fee":" 0.41% ",
+      "name":" E0051 ",
+      "fiveYear":"1.43"
+    },
+    " 0522 Long-Term Bond Index ":{
+      "price":" 14.1 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0522 ",
+      "oneYear":" 8.64 ",
+      "fee":" 0.15% ",
+      "name":" LBI0522 ",
+      "fiveYear":"1.04"
+    },
+    " 0213 FTSE Social Index ":{
+      "price":" 15.8 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0213 ",
+      "oneYear":" -42.39 ",
+      "fee":" 0.22% ",
+      "name":" FSI0213 ",
+      "fiveYear":"-2.95"
+    },
+    " 5123 REIT Index  Admiral Shares ":{
+      "price":" 118.0 ",
+      "category":" Stock - Sector  REIT Index  Admiral Shares ",
+      "id":" 5123 ",
+      "oneYear":" -36.98 ",
+      "fee":" 0.12% ",
+      "name":" RIAS5123 ",
+      "fiveYear":"0.34"
+    },
+    " 0548 Small-Cap Index  Admiral Shares ":{
+      "price":" 64.9 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0548 ",
+      "oneYear":" -36.0 ",
+      "fee":" 0.06% ",
+      "name":" SIAS0548 ",
+      "fiveYear":"-2.26"
+    },
+    " 0045 Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0045 ",
+      "oneYear":" 2.27 ",
+      "fee":" 0.15% ",
+      "name":" MMM0045 ",
+      "fiveYear":"0.68"
+    },
+    " 0062 California Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0062 ",
+      "oneYear":" 2.0 ",
+      "fee":" 0.16% ",
+      "name":" CMMM0062 ",
+      "fiveYear":"0.67"
+    },
+    " 0063 Pennsylvania Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0063 ",
+      "oneYear":" 2.24 ",
+      "fee":" 0.16% ",
+      "name":" PMMM0063 ",
+      "fiveYear":"0.68"
+    },
+    " 0077 Pennsylvania Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0077 ",
+      "oneYear":" -3.68 ",
+      "fee":" 0.19% ",
+      "name":" PLT0077 ",
+      "fiveYear":"0.61"
+    },
+    " 0035 Intermediate-Term Treasury ":{
+      "price":" 11.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0035 ",
+      "oneYear":" 13.32 ",
+      "fee":" 0.20% ",
+      "name":" IT0035 ",
+      "fiveYear":"1.05"
+    },
+    " 0023 U.S. Growth ":{
+      "price":" 34.2 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0023 ",
+      "oneYear":" -37.82 ",
+      "fee":" 0.46% ",
+      "name":" UG0023 ",
+      "fiveYear":"-2.76"
+    },
+    " 0585 Total Stock Market Index  Admiral Shares ":{
+      "price":" 61.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0585 ",
+      "oneYear":" -36.99 ",
+      "fee":" 0.04% ",
+      "name":" TSMIAS0585 ",
+      "fiveYear":"-2.52"
+    },
+    " 0914 LifeStrategy Moderate Growth ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0914 ",
+      "oneYear":" -26.5 ",
+      "fee":" 0.14% ",
+      "name":" LMG0914 ",
+      "fiveYear":"0.35"
+    },
+    " 0071 Intermediate-Term Investment-Grade ":{
+      "price":" 9.84 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0071 ",
+      "oneYear":" -6.16 ",
+      "fee":" 0.20% ",
+      "name":" II0071 ",
+      "fiveYear":"0.62"
+    },
+    " 0052 Health Care ":{
+      "price":" 209.0 ",
+      "category":" Stock - Sector  Health Care ",
+      "id":" 0052 ",
+      "oneYear":" -18.45 ",
+      "fee":" 0.37% ",
+      "name":" HC0052 ",
+      "fiveYear":"0.81"
+    },
+    " 0041 Short-Term Tax-Exempt ":{
+      "price":" 15.8 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0041 ",
+      "oneYear":" 3.74 ",
+      "fee":" 0.19% ",
+      "name":" ST0041 ",
+      "fiveYear":"0.71"
+    },
+    " 0021 Wellington ":{
+      "price":" 41.3 ",
+      "category":" Balanced ",
+      "id":" 0021 ",
+      "oneYear":" -22.3 ",
+      "fee":" 0.25% ",
+      "name":" W0021 ",
+      "fiveYear":"0.72"
+    },
+    " 0036 GNMA ":{
+      "price":" 10.6 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0036 ",
+      "oneYear":" 7.22 ",
+      "fee":" 0.21% ",
+      "name":" G0036 ",
+      "fiveYear":"0.96"
+    },
+    " 5132 Short-Term Bond Index  Admiral Shares ":{
+      "price":" 10.4 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 5132 ",
+      "oneYear":" 5.51 ",
+      "fee":" 0.07% ",
+      "name":" SBIAS5132 ",
+      "fiveYear":"0.85"
+    },
+    " 0124 U.S. Value ":{
+      "price":" 18.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0124 ",
+      "oneYear":" -34.79 ",
+      "fee":" 0.23% ",
+      "name":" UV0124 ",
+      "fiveYear":"-2.61"
+    },
+    " 0127 Developed Markets Index  Admiral Shares ":{
+      "price":" 13.5 ",
+      "category":" International ",
+      "id":" 0127 ",
+      "oneYear":" -41.27 ",
+      "fee":" 0.07% ",
+      "name":" DMIAS0127 ",
+      "fiveYear":"0.66"
+    },
+    " 0502 Balanced Index  Admiral Shares ":{
+      "price":" 33.0 ",
+      "category":" Balanced ",
+      "id":" 0502 ",
+      "oneYear":" -22.12 ",
+      "fee":" 0.07% ",
+      "name":" BIAS0502 ",
+      "fiveYear":"0.40"
+    },
+    " 0031 Limited-Term Tax-Exempt ":{
+      "price":" 11.0 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0031 ",
+      "oneYear":" 2.91 ",
+      "fee":" 0.19% ",
+      "name":" LT0031 ",
+      "fiveYear":"0.69"
+    },
+    " 0073 Windsor II ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0073 ",
+      "oneYear":" -36.7 ",
+      "fee":" 0.33% ",
+      "name":" WI0073 ",
+      "fiveYear":"-2.26"
+    },
+    " 0168 Massachusetts Tax-Exempt ":{
+      "price":" 10.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0168 ",
+      "oneYear":" -1.27 ",
+      "fee":" 0.15% ",
+      "name":" MT0168 ",
+      "fiveYear":"0.71"
+    },
+    " 0509 Growth Index  Admiral Shares ":{
+      "price":" 66.7 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0509 ",
+      "oneYear":" -38.22 ",
+      "fee":" 0.06% ",
+      "name":" GIAS0509 ",
+      "fiveYear":"-2.70"
+    },
+    " 0579 European Stock Index  Admiral Shares ":{
+      "price":" 71.1 ",
+      "category":" International ",
+      "id":" 0579 ",
+      "oneYear":" -44.67 ",
+      "fee":" 0.10% ",
+      "name":" ESIAS0579 ",
+      "fiveYear":"0.63"
+    },
+    " 0103 Tax-Managed Balanced  Admiral Shares ":{
+      "price":" 29.5 ",
+      "category":" Balanced ",
+      "id":" 0103 ",
+      "oneYear":" -18.32 ",
+      "fee":" 0.09% ",
+      "name":" TBAS0103 ",
+      "fiveYear":"0.39"
+    },
+    " 0584 Total Bond Market Index  Admiral Shares ":{
+      "price":" 10.8 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0584 ",
+      "oneYear":" 5.15 ",
+      "fee":" 0.05% ",
+      "name":" TBMIAS0584 ",
+      "fiveYear":"0.91"
+    },
+    " 0057 Dividend Growth ":{
+      "price":" 25.6 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0057 ",
+      "oneYear":" -25.57 ",
+      "fee":" 0.30% ",
+      "name":" DG0057 ",
+      "fiveYear":"0.59"
+    },
+    " 0116 Tax-Managed Small-Cap  Admiral Shares ":{
+      "price":" 56.1 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0116 ",
+      "oneYear":" -30.82 ",
+      "fee":" 0.09% ",
+      "name":" TSAS0116 ",
+      "fiveYear":"0.38"
+    },
+    " 0100 California Intermediate-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Inter-term State Muni ",
+      "id":" 0100 ",
+      "oneYear":" -2.14 ",
+      "fee":" 0.19% ",
+      "name":" CIT0100 ",
+      "fiveYear":"0.59"
+    },
+    " 0044 High-Yield Tax-Exempt ":{
+      "price":" 11.3 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0044 ",
+      "oneYear":" -10.45 ",
+      "fee":" 0.19% ",
+      "name":" HT0044 ",
+      "fiveYear":"0.39"
+    },
+    " 0126 International Explorer ":{
+      "price":" 20.1 ",
+      "category":" International ",
+      "id":" 0126 ",
+      "oneYear":" -46.62 ",
+      "fee":" 0.41% ",
+      "name":" IE0126 ",
+      "fiveYear":"0.74"
+    },
+    " 0082 Convertible Securities ":{
+      "price":" 13.3 ",
+      "category":" Balanced ",
+      "id":" 0082 ",
+      "oneYear":" -29.79 ",
+      "fee":" 0.34% ",
+      "name":" CS0082 ",
+      "fiveYear":"-0.26"
+    },
+    " 0572 Pacific Stock Index  Admiral Shares ":{
+      "price":" 82.2 ",
+      "category":" International ",
+      "id":" 0572 ",
+      "oneYear":" -34.25 ",
+      "fee":" 0.10% ",
+      "name":" PSIAS0572 ",
+      "fiveYear":"0.67"
+    },
+    " 5314 Intermediate-Term Bond Index  Admiral Shares ":{
+      "price":" 11.5 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 5314 ",
+      "oneYear":" 5.01 ",
+      "fee":" 0.07% ",
+      "name":" IBIAS5314 ",
+      "fiveYear":"0.92"
+    },
+    " 0724 LifeStrategy Conservative Growth ":{
+      "price":" 19.4 ",
+      "category":" Balanced ",
+      "id":" 0724 ",
+      "oneYear":" -19.52 ",
+      "fee":" 0.13% ",
+      "name":" LCG0724 ",
+      "fiveYear":"0.49"
+    },
+    " 0114 Strategic Equity ":{
+      "price":" 33.7 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0114 ",
+      "oneYear":" -41.51 ",
+      "fee":" 0.18% ",
+      "name":" SE0114 ",
+      "fiveYear":"-2.69"
+    },
+    " 0506 Value Index  Admiral Shares ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0506 ",
+      "oneYear":" -35.9 ",
+      "fee":" 0.06% ",
+      "name":" VIAS0506 ",
+      "fiveYear":"-2.23"
+    },
+    " 0046 International Value ":{
+      "price":" 36.8 ",
+      "category":" International ",
+      "id":" 0046 ",
+      "oneYear":" -41.74 ",
+      "fee":" 0.43% ",
+      "name":" IV0046 ",
+      "fiveYear":"0.78"
+    },
+    " 0022 Windsor ":{
+      "price":" 22.2 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0022 ",
+      "oneYear":" -41.1 ",
+      "fee":" 0.30% ",
+      "name":" W0022 ",
+      "fiveYear":"-2.80"
+    },
+    " 0163 New York Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0163 ",
+      "oneYear":" 2.12 ",
+      "fee":" 0.16% ",
+      "name":" NYMMM0163 ",
+      "fiveYear":"0.67"
+    },
+    " 0033 Federal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0033 ",
+      "oneYear":" 2.53 ",
+      "fee":" 0.11% ",
+      "name":" FMM0033 ",
+      "fiveYear":"0.77"
+    },
+    " 0029 High-Yield Corporate ":{
+      "price":" 5.97 ",
+      "category":" Bond - Inter-term Low Quality ",
+      "id":" 0029 ",
+      "oneYear":" -21.29 ",
+      "fee":" 0.23% ",
+      "name":" HC0029 ",
+      "fiveYear":"-2.25"
+    },
+    " 0301 Mid-Cap Growth ":{
+      "price":" 25.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 0301 ",
+      "oneYear":" -39.59 ",
+      "fee":" 0.36% ",
+      "name":" MG0301 ",
+      "fiveYear":"-2.38"
+    },
+    " 0083 Long-Term Treasury ":{
+      "price":" 12.3 ",
+      "category":" Bond - Long-term Government ",
+      "id":" 0083 ",
+      "oneYear":" 22.52 ",
+      "fee":" 0.20% ",
+      "name":" LT0083 ",
+      "fiveYear":"1.23"
+    },
+    " 0053 Precious Metals and Mining ":{
+      "price":" 10.2 ",
+      "category":" Stock - Sector  Precious Metals and Mining ",
+      "id":" 0053 ",
+      "oneYear":" -56.02 ",
+      "fee":" 0.43% ",
+      "name":" PMaM0053 ",
+      "fiveYear":"0.90"
+    },
+    " 0026 Morgan Growth ":{
+      "price":" 28.4 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0026 ",
+      "oneYear":" -41.43 ",
+      "fee":" 0.38% ",
+      "name":" MG0026 ",
+      "fiveYear":"-2.66"
+    },
+    " 0028 Long-Term Investment-Grade ":{
+      "price":" 10.4 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0028 ",
+      "oneYear":" 2.29 ",
+      "fee":" 0.22% ",
+      "name":" LI0028 ",
+      "fiveYear":"0.90"
+    },
+    " 0093 Growth and Income ":{
+      "price":" 44.9 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0093 ",
+      "oneYear":" -37.72 ",
+      "fee":" 0.34% ",
+      "name":" GaI0093 ",
+      "fiveYear":"-2.70"
+    },
+    " 0024 Explorer ":{
+      "price":" 95.7 ",
+      "category":" Stock - Small-Cap Growth ",
+      "id":" 0024 ",
+      "oneYear":" -40.4 ",
+      "fee":" 0.46% ",
+      "name":" E0024 ",
+      "fiveYear":"-2.71"
+    },
+    " 0097 Ohio Long-Term Tax-Exempt ":{
+      "price":" 12.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0097 ",
+      "oneYear":" -2.72 ",
+      "fee":" 0.15% ",
+      "name":" OLT0097 ",
+      "fiveYear":"0.66"
+    },
+    " 0081 International Growth ":{
+      "price":" 26.5 ",
+      "category":" International ",
+      "id":" 0081 ",
+      "oneYear":" -44.94 ",
+      "fee":" 0.46% ",
+      "name":" IG0081 ",
+      "fiveYear":"0.58"
+    },
+    " 0014 New Jersey Long-Term Tax-Exempt ":{
+      "price":" 12.0 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0014 ",
+      "oneYear":" -3.05 ",
+      "fee":" 0.19% ",
+      "name":" NJLT0014 ",
+      "fiveYear":"0.65"
+    },
+    " 0030 Prime Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0030 ",
+      "oneYear":" 2.77 ",
+      "fee":" 0.16% ",
+      "name":" PMM0030 ",
+      "fiveYear":"0.78"
+    },
+    " 0723 LifeStrategy Income ":{
+      "price":" 15.4 ",
+      "category":" Balanced ",
+      "id":" 0723 ",
+      "oneYear":" -10.53 ",
+      "fee":" 0.12% ",
+      "name":" LI0723 ",
+      "fiveYear":"0.66"
+    },
+    " 0598 Extended Market Index  Admiral Shares ":{
+      "price":" 77.6 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0598 ",
+      "oneYear":" -38.63 ",
+      "fee":" 0.08% ",
+      "name":" EMIAS0598 ",
+      "fiveYear":"-2.30"
+    },
+    " 0095 New Jersey Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0095 ",
+      "oneYear":" 2.08 ",
+      "fee":" 0.16% ",
+      "name":" NJMMM0095 ",
+      "fiveYear":"0.67"
+    },
+    " 0056 STAR ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0056 ",
+      "oneYear":" -25.1 ",
+      "fee":" 0.32% ",
+      "name":" S0056 ",
+      "fiveYear":"0.47"
+    },
+    " 0119 Inflation-Protected Securities ":{
+      "price":" 13.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0119 ",
+      "oneYear":" -2.85 ",
+      "fee":" 0.20% ",
+      "name":" IS0119 ",
+      "fiveYear":"0.84"
+    },
+    " 5111 Capital Opportunity  Admiral Shares ":{
+      "price":" 143.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 5111 ",
+      "oneYear":" -39.0 ",
+      "fee":" 0.38% ",
+      "name":" COAS5111 ",
+      "fiveYear":"0.33"
+    },
+    " 0076 New York Long-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0076 ",
+      "oneYear":" -3.69 ",
+      "fee":" 0.19% ",
+      "name":" NYLT0076 ",
+      "fiveYear":"0.60"
+    },
+    " 0043 Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0043 ",
+      "oneYear":" -4.87 ",
+      "fee":" 0.19% ",
+      "name":" LT0043 ",
+      "fiveYear":"0.59"
+    },
+    " 0075 California Long-Term Tax-Exempt ":{
+      "price":" 12.1 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0075 ",
+      "oneYear":" -6.87 ",
+      "fee":" 0.19% ",
+      "name":" CLT0075 ",
+      "fiveYear":"0.50"
+    },
+    " 0129 Global Equity ":{
+      "price":" 28.6 ",
+      "category":" International ",
+      "id":" 0129 ",
+      "oneYear":" -46.66 ",
+      "fee":" 0.51% ",
+      "name":" GE0129 ",
+      "fiveYear":"-2.04"
+    },
+    " 0049 Short-Term Federal ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Government ",
+      "id":" 0049 ",
+      "oneYear":" 7.04 ",
+      "fee":" 0.20% ",
+      "name":" SF0049 ",
+      "fiveYear":"0.88"
+    },
+    " 0065 Equity Income ":{
+      "price":" 34.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0065 ",
+      "oneYear":" -30.95 ",
+      "fee":" 0.26% ",
+      "name":" EI0065 ",
+      "fiveYear":"0.29"
+    },
+    " 0027 Wellesley Income ":{
+      "price":" 26.4 ",
+      "category":" Balanced ",
+      "id":" 0027 ",
+      "oneYear":" -9.84 ",
+      "fee":" 0.22% ",
+      "name":" WI0027 ",
+      "fiveYear":"0.78"
+    }
+  },
+  "4":{
+    " 0328 Capital Value ":{
+      "price":" 12.5 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0328 ",
+      "oneYear":" 81.46 ",
+      "fee":" 0.25% ",
+      "name":" CV0328 ",
+      "fiveYear":"0.44"
+    },
+    " 5102 Tax-Managed Capital Appreciation  Admiral Shares ":{
+      "price":" 125.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 5102 ",
+      "oneYear":" 29.11 ",
+      "fee":" 0.09% ",
+      "name":" TCAAS5102 ",
+      "fiveYear":"0.39"
+    },
+    " 5859 Mid-Cap Index  Admiral Shares ":{
+      "price":" 178.0 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 5859 ",
+      "oneYear":" 40.48 ",
+      "fee":" 0.06% ",
+      "name":" MIAS5859 ",
+      "fiveYear":"0.66"
+    },
+    " 0039 Short-Term Investment-Grade ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 0039 ",
+      "oneYear":" 14.03 ",
+      "fee":" 0.20% ",
+      "name":" SI0039 ",
+      "fiveYear":"0.88"
+    },
+    " 0042 Intermediate-Term Tax-Exempt ":{
+      "price":" 14.2 ",
+      "category":" Bond - Inter-term National Muni ",
+      "id":" 0042 ",
+      "oneYear":" 10.22 ",
+      "fee":" 0.19% ",
+      "name":" IT0042 ",
+      "fiveYear":"0.85"
+    },
+    " 0934 Selected Value ":{
+      "price":" 30.8 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0934 ",
+      "oneYear":" 36.26 ",
+      "fee":" 0.35% ",
+      "name":" SV0934 ",
+      "fiveYear":"0.73"
+    },
+    " 0540 500 Index  Admiral Shares ":{
+      "price":" 225.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0540 ",
+      "oneYear":" 26.62 ",
+      "fee":" 0.04% ",
+      "name":" 5IAS0540 ",
+      "fiveYear":"0.17"
+    },
+    " 0559 PRIMECAP  Admiral Shares ":{
+      "price":" 124.0 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0559 ",
+      "oneYear":" 34.6 ",
+      "fee":" 0.33% ",
+      "name":" PAS0559 ",
+      "fiveYear":"0.89"
+    },
+    " 0051 Energy ":{
+      "price":" 48.8 ",
+      "category":" Stock - Sector  Energy ",
+      "id":" 0051 ",
+      "oneYear":" 38.36 ",
+      "fee":" 0.41% ",
+      "name":" E0051 ",
+      "fiveYear":"1.44"
+    },
+    " 0522 Long-Term Bond Index ":{
+      "price":" 14.1 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0522 ",
+      "oneYear":" 1.76 ",
+      "fee":" 0.15% ",
+      "name":" LBI0522 ",
+      "fiveYear":"0.94"
+    },
+    " 0213 FTSE Social Index ":{
+      "price":" 15.8 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0213 ",
+      "oneYear":" 35.12 ",
+      "fee":" 0.22% ",
+      "name":" FSI0213 ",
+      "fiveYear":"-2.60"
+    },
+    " 5123 REIT Index  Admiral Shares ":{
+      "price":" 118.0 ",
+      "category":" Stock - Sector  REIT Index  Admiral Shares ",
+      "id":" 5123 ",
+      "oneYear":" 29.76 ",
+      "fee":" 0.12% ",
+      "name":" RIAS5123 ",
+      "fiveYear":"0.29"
+    },
+    " 0548 Small-Cap Index  Admiral Shares ":{
+      "price":" 64.9 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0548 ",
+      "oneYear":" 36.33 ",
+      "fee":" 0.06% ",
+      "name":" SIAS0548 ",
+      "fiveYear":"0.58"
+    },
+    " 0045 Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0045 ",
+      "oneYear":" 0.41 ",
+      "fee":" 0.15% ",
+      "name":" MMM0045 ",
+      "fiveYear":"0.66"
+    },
+    " 0062 California Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0062 ",
+      "oneYear":" 0.31 ",
+      "fee":" 0.16% ",
+      "name":" CMMM0062 ",
+      "fiveYear":"0.64"
+    },
+    " 0063 Pennsylvania Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0063 ",
+      "oneYear":" 0.41 ",
+      "fee":" 0.16% ",
+      "name":" PMMM0063 ",
+      "fiveYear":"0.66"
+    },
+    " 0077 Pennsylvania Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0077 ",
+      "oneYear":" 11.84 ",
+      "fee":" 0.19% ",
+      "name":" PLT0077 ",
+      "fiveYear":"0.81"
+    },
+    " 0035 Intermediate-Term Treasury ":{
+      "price":" 11.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0035 ",
+      "oneYear":" -1.69 ",
+      "fee":" 0.20% ",
+      "name":" IT0035 ",
+      "fiveYear":"0.97"
+    },
+    " 0023 U.S. Growth ":{
+      "price":" 34.2 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0023 ",
+      "oneYear":" 34.95 ",
+      "fee":" 0.46% ",
+      "name":" UG0023 ",
+      "fiveYear":"0.35"
+    },
+    " 0585 Total Stock Market Index  Admiral Shares ":{
+      "price":" 61.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0585 ",
+      "oneYear":" 28.83 ",
+      "fee":" 0.04% ",
+      "name":" TSMIAS0585 ",
+      "fiveYear":"0.39"
+    },
+    " 0914 LifeStrategy Moderate Growth ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0914 ",
+      "oneYear":" 20.33 ",
+      "fee":" 0.14% ",
+      "name":" LMG0914 ",
+      "fiveYear":"0.69"
+    },
+    " 0071 Intermediate-Term Investment-Grade ":{
+      "price":" 9.84 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0071 ",
+      "oneYear":" 17.73 ",
+      "fee":" 0.20% ",
+      "name":" II0071 ",
+      "fiveYear":"0.90"
+    },
+    " 0052 Health Care ":{
+      "price":" 209.0 ",
+      "category":" Stock - Sector  Health Care ",
+      "id":" 0052 ",
+      "oneYear":" 20.96 ",
+      "fee":" 0.37% ",
+      "name":" HC0052 ",
+      "fiveYear":"1.00"
+    },
+    " 0041 Short-Term Tax-Exempt ":{
+      "price":" 15.8 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0041 ",
+      "oneYear":" 3.07 ",
+      "fee":" 0.19% ",
+      "name":" ST0041 ",
+      "fiveYear":"0.76"
+    },
+    " 0021 Wellington ":{
+      "price":" 41.3 ",
+      "category":" Balanced ",
+      "id":" 0021 ",
+      "oneYear":" 22.2 ",
+      "fee":" 0.25% ",
+      "name":" W0021 ",
+      "fiveYear":"0.92"
+    },
+    " 0036 GNMA ":{
+      "price":" 10.6 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0036 ",
+      "oneYear":" 5.29 ",
+      "fee":" 0.21% ",
+      "name":" G0036 ",
+      "fiveYear":"0.98"
+    },
+    " 5132 Short-Term Bond Index  Admiral Shares ":{
+      "price":" 10.4 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 5132 ",
+      "oneYear":" 4.38 ",
+      "fee":" 0.07% ",
+      "name":" SBIAS5132 ",
+      "fiveYear":"0.90"
+    },
+    " 0124 U.S. Value ":{
+      "price":" 18.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0124 ",
+      "oneYear":" 15.29 ",
+      "fee":" 0.23% ",
+      "name":" UV0124 ",
+      "fiveYear":"-2.57"
+    },
+    " 0127 Developed Markets Index  Admiral Shares ":{
+      "price":" 13.5 ",
+      "category":" International ",
+      "id":" 0127 ",
+      "oneYear":" 28.27 ",
+      "fee":" 0.07% ",
+      "name":" DMIAS0127 ",
+      "fiveYear":"0.82"
+    },
+    " 0502 Balanced Index  Admiral Shares ":{
+      "price":" 33.0 ",
+      "category":" Balanced ",
+      "id":" 0502 ",
+      "oneYear":" 20.11 ",
+      "fee":" 0.07% ",
+      "name":" BIAS0502 ",
+      "fiveYear":"0.74"
+    },
+    " 0031 Limited-Term Tax-Exempt ":{
+      "price":" 11.0 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0031 ",
+      "oneYear":" 5.57 ",
+      "fee":" 0.19% ",
+      "name":" LT0031 ",
+      "fiveYear":"0.79"
+    },
+    " 0073 Windsor II ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0073 ",
+      "oneYear":" 27.05 ",
+      "fee":" 0.33% ",
+      "name":" WI0073 ",
+      "fiveYear":"0.32"
+    },
+    " 0168 Massachusetts Tax-Exempt ":{
+      "price":" 10.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0168 ",
+      "oneYear":" 10.9 ",
+      "fee":" 0.15% ",
+      "name":" MT0168 ",
+      "fiveYear":"0.85"
+    },
+    " 0509 Growth Index  Admiral Shares ":{
+      "price":" 66.7 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0509 ",
+      "oneYear":" 36.42 ",
+      "fee":" 0.06% ",
+      "name":" GIAS0509 ",
+      "fiveYear":"0.55"
+    },
+    " 0579 European Stock Index  Admiral Shares ":{
+      "price":" 71.1 ",
+      "category":" International ",
+      "id":" 0579 ",
+      "oneYear":" 32.04 ",
+      "fee":" 0.10% ",
+      "name":" ESIAS0579 ",
+      "fiveYear":"0.85"
+    },
+    " 0103 Tax-Managed Balanced  Admiral Shares ":{
+      "price":" 29.5 ",
+      "category":" Balanced ",
+      "id":" 0103 ",
+      "oneYear":" 19.14 ",
+      "fee":" 0.09% ",
+      "name":" TBAS0103 ",
+      "fiveYear":"0.76"
+    },
+    " 0584 Total Bond Market Index  Admiral Shares ":{
+      "price":" 10.8 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0584 ",
+      "oneYear":" 6.04 ",
+      "fee":" 0.05% ",
+      "name":" TBMIAS0584 ",
+      "fiveYear":"0.94"
+    },
+    " 0057 Dividend Growth ":{
+      "price":" 25.6 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0057 ",
+      "oneYear":" 21.74 ",
+      "fee":" 0.30% ",
+      "name":" DG0057 ",
+      "fiveYear":"0.84"
+    },
+    " 0116 Tax-Managed Small-Cap  Admiral Shares ":{
+      "price":" 56.1 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0116 ",
+      "oneYear":" 25.59 ",
+      "fee":" 0.09% ",
+      "name":" TSAS0116 ",
+      "fiveYear":"0.49"
+    },
+    " 0100 California Intermediate-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Inter-term State Muni ",
+      "id":" 0100 ",
+      "oneYear":" 9.7 ",
+      "fee":" 0.19% ",
+      "name":" CIT0100 ",
+      "fiveYear":"0.77"
+    },
+    " 0044 High-Yield Tax-Exempt ":{
+      "price":" 11.3 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0044 ",
+      "oneYear":" 20.13 ",
+      "fee":" 0.19% ",
+      "name":" HT0044 ",
+      "fiveYear":"0.83"
+    },
+    " 0126 International Explorer ":{
+      "price":" 20.1 ",
+      "category":" International ",
+      "id":" 0126 ",
+      "oneYear":" 47.12 ",
+      "fee":" 0.41% ",
+      "name":" IE0126 ",
+      "fiveYear":"0.97"
+    },
+    " 0082 Convertible Securities ":{
+      "price":" 13.3 ",
+      "category":" Balanced ",
+      "id":" 0082 ",
+      "oneYear":" 40.81 ",
+      "fee":" 0.34% ",
+      "name":" CS0082 ",
+      "fiveYear":"1.00"
+    },
+    " 0572 Pacific Stock Index  Admiral Shares ":{
+      "price":" 82.2 ",
+      "category":" International ",
+      "id":" 0572 ",
+      "oneYear":" 21.23 ",
+      "fee":" 0.10% ",
+      "name":" PSIAS0572 ",
+      "fiveYear":"0.72"
+    },
+    " 5314 Intermediate-Term Bond Index  Admiral Shares ":{
+      "price":" 11.5 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 5314 ",
+      "oneYear":" 6.9 ",
+      "fee":" 0.07% ",
+      "name":" IBIAS5314 ",
+      "fiveYear":"0.95"
+    },
+    " 0724 LifeStrategy Conservative Growth ":{
+      "price":" 19.4 ",
+      "category":" Balanced ",
+      "id":" 0724 ",
+      "oneYear":" 17.06 ",
+      "fee":" 0.13% ",
+      "name":" LCG0724 ",
+      "fiveYear":"0.75"
+    },
+    " 0114 Strategic Equity ":{
+      "price":" 33.7 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0114 ",
+      "oneYear":" 32.06 ",
+      "fee":" 0.18% ",
+      "name":" SE0114 ",
+      "fiveYear":"-2.40"
+    },
+    " 0506 Value Index  Admiral Shares ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0506 ",
+      "oneYear":" 19.72 ",
+      "fee":" 0.06% ",
+      "name":" VIAS0506 ",
+      "fiveYear":"-0.05"
+    },
+    " 0046 International Value ":{
+      "price":" 36.8 ",
+      "category":" International ",
+      "id":" 0046 ",
+      "oneYear":" 33.77 ",
+      "fee":" 0.43% ",
+      "name":" IV0046 ",
+      "fiveYear":"1.00"
+    },
+    " 0022 Windsor ":{
+      "price":" 22.2 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0022 ",
+      "oneYear":" 34.69 ",
+      "fee":" 0.30% ",
+      "name":" W0022 ",
+      "fiveYear":"-2.31"
+    },
+    " 0163 New York Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0163 ",
+      "oneYear":" 0.29 ",
+      "fee":" 0.16% ",
+      "name":" NYMMM0163 ",
+      "fiveYear":"0.65"
+    },
+    " 0033 Federal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0033 ",
+      "oneYear":" 0.4 ",
+      "fee":" 0.11% ",
+      "name":" FMM0033 ",
+      "fiveYear":"0.76"
+    },
+    " 0029 High-Yield Corporate ":{
+      "price":" 5.97 ",
+      "category":" Bond - Inter-term Low Quality ",
+      "id":" 0029 ",
+      "oneYear":" 39.09 ",
+      "fee":" 0.23% ",
+      "name":" HC0029 ",
+      "fiveYear":"0.89"
+    },
+    " 0301 Mid-Cap Growth ":{
+      "price":" 25.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 0301 ",
+      "oneYear":" 38.42 ",
+      "fee":" 0.36% ",
+      "name":" MG0301 ",
+      "fiveYear":"0.78"
+    },
+    " 0083 Long-Term Treasury ":{
+      "price":" 12.3 ",
+      "category":" Bond - Long-term Government ",
+      "id":" 0083 ",
+      "oneYear":" -12.05 ",
+      "fee":" 0.20% ",
+      "name":" LT0083 ",
+      "fiveYear":"0.94"
+    },
+    " 0053 Precious Metals and Mining ":{
+      "price":" 10.2 ",
+      "category":" Stock - Sector  Precious Metals and Mining ",
+      "id":" 0053 ",
+      "oneYear":" 76.46 ",
+      "fee":" 0.43% ",
+      "name":" PMaM0053 ",
+      "fiveYear":"1.53"
+    },
+    " 0026 Morgan Growth ":{
+      "price":" 28.4 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0026 ",
+      "oneYear":" 36.1 ",
+      "fee":" 0.38% ",
+      "name":" MG0026 ",
+      "fiveYear":"0.49"
+    },
+    " 0028 Long-Term Investment-Grade ":{
+      "price":" 10.4 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0028 ",
+      "oneYear":" 8.75 ",
+      "fee":" 0.22% ",
+      "name":" LI0028 ",
+      "fiveYear":"0.90"
+    },
+    " 0093 Growth and Income ":{
+      "price":" 44.9 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0093 ",
+      "oneYear":" 22.42 ",
+      "fee":" 0.34% ",
+      "name":" GaI0093 ",
+      "fiveYear":"-2.41"
+    },
+    " 0024 Explorer ":{
+      "price":" 95.7 ",
+      "category":" Stock - Small-Cap Growth ",
+      "id":" 0024 ",
+      "oneYear":" 36.21 ",
+      "fee":" 0.46% ",
+      "name":" E0024 ",
+      "fiveYear":"0.18"
+    },
+    " 0097 Ohio Long-Term Tax-Exempt ":{
+      "price":" 12.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0097 ",
+      "oneYear":" 13.12 ",
+      "fee":" 0.15% ",
+      "name":" OLT0097 ",
+      "fiveYear":"0.86"
+    },
+    " 0081 International Growth ":{
+      "price":" 26.5 ",
+      "category":" International ",
+      "id":" 0081 ",
+      "oneYear":" 41.63 ",
+      "fee":" 0.46% ",
+      "name":" IG0081 ",
+      "fiveYear":"0.99"
+    },
+    " 0014 New Jersey Long-Term Tax-Exempt ":{
+      "price":" 12.0 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0014 ",
+      "oneYear":" 11.76 ",
+      "fee":" 0.19% ",
+      "name":" NJLT0014 ",
+      "fiveYear":"0.83"
+    },
+    " 0030 Prime Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0030 ",
+      "oneYear":" 0.53 ",
+      "fee":" 0.16% ",
+      "name":" PMM0030 ",
+      "fiveYear":"0.77"
+    },
+    " 0723 LifeStrategy Income ":{
+      "price":" 15.4 ",
+      "category":" Balanced ",
+      "id":" 0723 ",
+      "oneYear":" 12.08 ",
+      "fee":" 0.12% ",
+      "name":" LI0723 ",
+      "fiveYear":"0.81"
+    },
+    " 0598 Extended Market Index  Admiral Shares ":{
+      "price":" 77.6 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0598 ",
+      "oneYear":" 37.65 ",
+      "fee":" 0.08% ",
+      "name":" EMIAS0598 ",
+      "fiveYear":"0.63"
+    },
+    " 0095 New Jersey Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0095 ",
+      "oneYear":" 0.37 ",
+      "fee":" 0.16% ",
+      "name":" NJMMM0095 ",
+      "fiveYear":"0.65"
+    },
+    " 0056 STAR ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0056 ",
+      "oneYear":" 24.85 ",
+      "fee":" 0.32% ",
+      "name":" S0056 ",
+      "fiveYear":"0.81"
+    },
+    " 0119 Inflation-Protected Securities ":{
+      "price":" 13.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0119 ",
+      "oneYear":" 10.8 ",
+      "fee":" 0.20% ",
+      "name":" IS0119 ",
+      "fiveYear":"0.88"
+    },
+    " 5111 Capital Opportunity  Admiral Shares ":{
+      "price":" 143.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 5111 ",
+      "oneYear":" 49.03 ",
+      "fee":" 0.38% ",
+      "name":" COAS5111 ",
+      "fiveYear":"0.94"
+    },
+    " 0076 New York Long-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0076 ",
+      "oneYear":" 12.53 ",
+      "fee":" 0.19% ",
+      "name":" NYLT0076 ",
+      "fiveYear":"0.81"
+    },
+    " 0043 Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0043 ",
+      "oneYear":" 14.08 ",
+      "fee":" 0.19% ",
+      "name":" LT0043 ",
+      "fiveYear":"0.83"
+    },
+    " 0075 California Long-Term Tax-Exempt ":{
+      "price":" 12.1 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0075 ",
+      "oneYear":" 13.21 ",
+      "fee":" 0.19% ",
+      "name":" CLT0075 ",
+      "fiveYear":"0.76"
+    },
+    " 0129 Global Equity ":{
+      "price":" 28.6 ",
+      "category":" International ",
+      "id":" 0129 ",
+      "oneYear":" 32.98 ",
+      "fee":" 0.51% ",
+      "name":" GE0129 ",
+      "fiveYear":"0.57"
+    },
+    " 0049 Short-Term Federal ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Government ",
+      "id":" 0049 ",
+      "oneYear":" 2.79 ",
+      "fee":" 0.20% ",
+      "name":" SF0049 ",
+      "fiveYear":"0.91"
+    },
+    " 0065 Equity Income ":{
+      "price":" 34.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0065 ",
+      "oneYear":" 17.1 ",
+      "fee":" 0.26% ",
+      "name":" EI0065 ",
+      "fiveYear":"0.46"
+    },
+    " 0027 Wellesley Income ":{
+      "price":" 26.4 ",
+      "category":" Balanced ",
+      "id":" 0027 ",
+      "oneYear":" 16.02 ",
+      "fee":" 0.22% ",
+      "name":" WI0027 ",
+      "fiveYear":"0.94"
+    }
+  },
+  "5":{
+    " 0328 Capital Value ":{
+      "price":" 12.5 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0328 ",
+      "oneYear":" 20.2 ",
+      "fee":" 0.25% ",
+      "name":" CV0328 ",
+      "fiveYear":"0.86"
+    },
+    " 5102 Tax-Managed Capital Appreciation  Admiral Shares ":{
+      "price":" 125.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 5102 ",
+      "oneYear":" 16.02 ",
+      "fee":" 0.09% ",
+      "name":" TCAAS5102 ",
+      "fiveYear":"0.68"
+    },
+    " 5859 Mid-Cap Index  Admiral Shares ":{
+      "price":" 178.0 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 5859 ",
+      "oneYear":" 25.59 ",
+      "fee":" 0.06% ",
+      "name":" MIAS5859 ",
+      "fiveYear":"0.89"
+    },
+    " 0039 Short-Term Investment-Grade ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 0039 ",
+      "oneYear":" 5.21 ",
+      "fee":" 0.20% ",
+      "name":" SI0039 ",
+      "fiveYear":"0.93"
+    },
+    " 0042 Intermediate-Term Tax-Exempt ":{
+      "price":" 14.2 ",
+      "category":" Bond - Inter-term National Muni ",
+      "id":" 0042 ",
+      "oneYear":" 2.13 ",
+      "fee":" 0.19% ",
+      "name":" IT0042 ",
+      "fiveYear":"0.85"
+    },
+    " 0934 Selected Value ":{
+      "price":" 30.8 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0934 ",
+      "oneYear":" 19.44 ",
+      "fee":" 0.35% ",
+      "name":" SV0934 ",
+      "fiveYear":"0.90"
+    },
+    " 0540 500 Index  Admiral Shares ":{
+      "price":" 225.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0540 ",
+      "oneYear":" 15.05 ",
+      "fee":" 0.04% ",
+      "name":" 5IAS0540 ",
+      "fiveYear":"0.65"
+    },
+    " 0559 PRIMECAP  Admiral Shares ":{
+      "price":" 124.0 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0559 ",
+      "oneYear":" 12.99 ",
+      "fee":" 0.33% ",
+      "name":" PAS0559 ",
+      "fiveYear":"0.96"
+    },
+    " 0051 Energy ":{
+      "price":" 48.8 ",
+      "category":" Stock - Sector  Energy ",
+      "id":" 0051 ",
+      "oneYear":" 13.43 ",
+      "fee":" 0.41% ",
+      "name":" E0051 ",
+      "fiveYear":"1.16"
+    },
+    " 0522 Long-Term Bond Index ":{
+      "price":" 14.1 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0522 ",
+      "oneYear":" 10.27 ",
+      "fee":" 0.15% ",
+      "name":" LBI0522 ",
+      "fiveYear":"1.02"
+    },
+    " 0213 FTSE Social Index ":{
+      "price":" 15.8 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0213 ",
+      "oneYear":" 14.43 ",
+      "fee":" 0.22% ",
+      "name":" FSI0213 ",
+      "fiveYear":"-2.10"
+    },
+    " 5123 REIT Index  Admiral Shares ":{
+      "price":" 118.0 ",
+      "category":" Stock - Sector  REIT Index  Admiral Shares ",
+      "id":" 5123 ",
+      "oneYear":" 28.49 ",
+      "fee":" 0.12% ",
+      "name":" RIAS5123 ",
+      "fiveYear":"0.80"
+    },
+    " 0548 Small-Cap Index  Admiral Shares ":{
+      "price":" 64.9 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0548 ",
+      "oneYear":" 27.89 ",
+      "fee":" 0.06% ",
+      "name":" SIAS0548 ",
+      "fiveYear":"0.98"
+    },
+    " 0045 Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0045 ",
+      "oneYear":" 0.14 ",
+      "fee":" 0.15% ",
+      "name":" MMM0045 ",
+      "fiveYear":"0.59"
+    },
+    " 0062 California Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0062 ",
+      "oneYear":" 0.11 ",
+      "fee":" 0.16% ",
+      "name":" CMMM0062 ",
+      "fiveYear":"0.57"
+    },
+    " 0063 Pennsylvania Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0063 ",
+      "oneYear":" 0.12 ",
+      "fee":" 0.16% ",
+      "name":" PMMM0063 ",
+      "fiveYear":"0.59"
+    },
+    " 0077 Pennsylvania Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0077 ",
+      "oneYear":" 1.9 ",
+      "fee":" 0.19% ",
+      "name":" PLT0077 ",
+      "fiveYear":"0.79"
+    },
+    " 0035 Intermediate-Term Treasury ":{
+      "price":" 11.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0035 ",
+      "oneYear":" 7.35 ",
+      "fee":" 0.20% ",
+      "name":" IT0035 ",
+      "fiveYear":"1.04"
+    },
+    " 0023 U.S. Growth ":{
+      "price":" 34.2 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0023 ",
+      "oneYear":" 11.53 ",
+      "fee":" 0.46% ",
+      "name":" UG0023 ",
+      "fiveYear":"0.37"
+    },
+    " 0585 Total Stock Market Index  Admiral Shares ":{
+      "price":" 61.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0585 ",
+      "oneYear":" 17.26 ",
+      "fee":" 0.04% ",
+      "name":" TSMIAS0585 ",
+      "fiveYear":"0.75"
+    },
+    " 0914 LifeStrategy Moderate Growth ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0914 ",
+      "oneYear":" 13.31 ",
+      "fee":" 0.14% ",
+      "name":" LMG0914 ",
+      "fiveYear":"0.85"
+    },
+    " 0071 Intermediate-Term Investment-Grade ":{
+      "price":" 9.84 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0071 ",
+      "oneYear":" 10.47 ",
+      "fee":" 0.20% ",
+      "name":" II0071 ",
+      "fiveYear":"1.04"
+    },
+    " 0052 Health Care ":{
+      "price":" 209.0 ",
+      "category":" Stock - Sector  Health Care ",
+      "id":" 0052 ",
+      "oneYear":" 6.16 ",
+      "fee":" 0.37% ",
+      "name":" HC0052 ",
+      "fiveYear":"0.84"
+    },
+    " 0041 Short-Term Tax-Exempt ":{
+      "price":" 15.8 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0041 ",
+      "oneYear":" 0.95 ",
+      "fee":" 0.19% ",
+      "name":" ST0041 ",
+      "fiveYear":"0.74"
+    },
+    " 0021 Wellington ":{
+      "price":" 41.3 ",
+      "category":" Balanced ",
+      "id":" 0021 ",
+      "oneYear":" 10.94 ",
+      "fee":" 0.25% ",
+      "name":" W0021 ",
+      "fiveYear":"0.99"
+    },
+    " 0036 GNMA ":{
+      "price":" 10.6 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0036 ",
+      "oneYear":" 6.95 ",
+      "fee":" 0.21% ",
+      "name":" G0036 ",
+      "fiveYear":"1.03"
+    },
+    " 5132 Short-Term Bond Index  Admiral Shares ":{
+      "price":" 10.4 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 5132 ",
+      "oneYear":" 4.03 ",
+      "fee":" 0.07% ",
+      "name":" SBIAS5132 ",
+      "fiveYear":"0.95"
+    },
+    " 0124 U.S. Value ":{
+      "price":" 18.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0124 ",
+      "oneYear":" 13.82 ",
+      "fee":" 0.23% ",
+      "name":" UV0124 ",
+      "fiveYear":"-2.25"
+    },
+    " 0127 Developed Markets Index  Admiral Shares ":{
+      "price":" 13.5 ",
+      "category":" International ",
+      "id":" 0127 ",
+      "oneYear":" 8.36 ",
+      "fee":" 0.07% ",
+      "name":" DMIAS0127 ",
+      "fiveYear":"0.71"
+    },
+    " 0502 Balanced Index  Admiral Shares ":{
+      "price":" 33.0 ",
+      "category":" Balanced ",
+      "id":" 0502 ",
+      "oneYear":" 13.29 ",
+      "fee":" 0.07% ",
+      "name":" BIAS0502 ",
+      "fiveYear":"0.91"
+    },
+    " 0031 Limited-Term Tax-Exempt ":{
+      "price":" 11.0 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0031 ",
+      "oneYear":" 1.97 ",
+      "fee":" 0.19% ",
+      "name":" LT0031 ",
+      "fiveYear":"0.81"
+    },
+    " 0073 Windsor II ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0073 ",
+      "oneYear":" 10.62 ",
+      "fee":" 0.33% ",
+      "name":" WI0073 ",
+      "fiveYear":"0.50"
+    },
+    " 0168 Massachusetts Tax-Exempt ":{
+      "price":" 10.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0168 ",
+      "oneYear":" 1.16 ",
+      "fee":" 0.15% ",
+      "name":" MT0168 ",
+      "fiveYear":"0.81"
+    },
+    " 0509 Growth Index  Admiral Shares ":{
+      "price":" 66.7 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0509 ",
+      "oneYear":" 17.12 ",
+      "fee":" 0.06% ",
+      "name":" GIAS0509 ",
+      "fiveYear":"0.85"
+    },
+    " 0579 European Stock Index  Admiral Shares ":{
+      "price":" 71.1 ",
+      "category":" International ",
+      "id":" 0579 ",
+      "oneYear":" 5.01 ",
+      "fee":" 0.10% ",
+      "name":" ESIAS0579 ",
+      "fiveYear":"0.76"
+    },
+    " 0103 Tax-Managed Balanced  Admiral Shares ":{
+      "price":" 29.5 ",
+      "category":" Balanced ",
+      "id":" 0103 ",
+      "oneYear":" 9.22 ",
+      "fee":" 0.09% ",
+      "name":" TBAS0103 ",
+      "fiveYear":"0.85"
+    },
+    " 0584 Total Bond Market Index  Admiral Shares ":{
+      "price":" 10.8 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0584 ",
+      "oneYear":" 6.54 ",
+      "fee":" 0.05% ",
+      "name":" TBMIAS0584 ",
+      "fiveYear":"1.01"
+    },
+    " 0057 Dividend Growth ":{
+      "price":" 25.6 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0057 ",
+      "oneYear":" 11.42 ",
+      "fee":" 0.30% ",
+      "name":" DG0057 ",
+      "fiveYear":"0.96"
+    },
+    " 0116 Tax-Managed Small-Cap  Admiral Shares ":{
+      "price":" 56.1 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0116 ",
+      "oneYear":" 25.99 ",
+      "fee":" 0.09% ",
+      "name":" TSAS0116 ",
+      "fiveYear":"0.91"
+    },
+    " 0100 California Intermediate-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Inter-term State Muni ",
+      "id":" 0100 ",
+      "oneYear":" 2.62 ",
+      "fee":" 0.19% ",
+      "name":" CIT0100 ",
+      "fiveYear":"0.79"
+    },
+    " 0044 High-Yield Tax-Exempt ":{
+      "price":" 11.3 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0044 ",
+      "oneYear":" 2.55 ",
+      "fee":" 0.19% ",
+      "name":" HT0044 ",
+      "fiveYear":"0.79"
+    },
+    " 0126 International Explorer ":{
+      "price":" 20.1 ",
+      "category":" International ",
+      "id":" 0126 ",
+      "oneYear":" 22.55 ",
+      "fee":" 0.41% ",
+      "name":" IE0126 ",
+      "fiveYear":"1.00"
+    },
+    " 0082 Convertible Securities ":{
+      "price":" 13.3 ",
+      "category":" Balanced ",
+      "id":" 0082 ",
+      "oneYear":" 19.24 ",
+      "fee":" 0.34% ",
+      "name":" CS0082 ",
+      "fiveYear":"1.16"
+    },
+    " 0572 Pacific Stock Index  Admiral Shares ":{
+      "price":" 82.2 ",
+      "category":" International ",
+      "id":" 0572 ",
+      "oneYear":" 15.93 ",
+      "fee":" 0.10% ",
+      "name":" PSIAS0572 ",
+      "fiveYear":"0.54"
+    },
+    " 5314 Intermediate-Term Bond Index  Admiral Shares ":{
+      "price":" 11.5 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 5314 ",
+      "oneYear":" 9.49 ",
+      "fee":" 0.07% ",
+      "name":" IBIAS5314 ",
+      "fiveYear":"1.07"
+    },
+    " 0724 LifeStrategy Conservative Growth ":{
+      "price":" 19.4 ",
+      "category":" Balanced ",
+      "id":" 0724 ",
+      "oneYear":" 11.14 ",
+      "fee":" 0.13% ",
+      "name":" LCG0724 ",
+      "fiveYear":"0.89"
+    },
+    " 0114 Strategic Equity ":{
+      "price":" 33.7 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0114 ",
+      "oneYear":" 21.38 ",
+      "fee":" 0.18% ",
+      "name":" SE0114 ",
+      "fiveYear":"0.34"
+    },
+    " 0506 Value Index  Admiral Shares ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0506 ",
+      "oneYear":" 14.45 ",
+      "fee":" 0.06% ",
+      "name":" VIAS0506 ",
+      "fiveYear":"0.50"
+    },
+    " 0046 International Value ":{
+      "price":" 36.8 ",
+      "category":" International ",
+      "id":" 0046 ",
+      "oneYear":" 7.31 ",
+      "fee":" 0.43% ",
+      "name":" IV0046 ",
+      "fiveYear":"0.82"
+    },
+    " 0022 Windsor ":{
+      "price":" 22.2 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0022 ",
+      "oneYear":" 14.82 ",
+      "fee":" 0.30% ",
+      "name":" W0022 ",
+      "fiveYear":"0.39"
+    },
+    " 0163 New York Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0163 ",
+      "oneYear":" 0.1 ",
+      "fee":" 0.16% ",
+      "name":" NYMMM0163 ",
+      "fiveYear":"0.58"
+    },
+    " 0033 Federal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0033 ",
+      "oneYear":" 0.02 ",
+      "fee":" 0.11% ",
+      "name":" FMM0033 ",
+      "fiveYear":"0.68"
+    },
+    " 0029 High-Yield Corporate ":{
+      "price":" 5.97 ",
+      "category":" Bond - Inter-term Low Quality ",
+      "id":" 0029 ",
+      "oneYear":" 12.4 ",
+      "fee":" 0.23% ",
+      "name":" HC0029 ",
+      "fiveYear":"1.05"
+    },
+    " 0301 Mid-Cap Growth ":{
+      "price":" 25.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 0301 ",
+      "oneYear":" 23.83 ",
+      "fee":" 0.36% ",
+      "name":" MG0301 ",
+      "fiveYear":"1.02"
+    },
+    " 0083 Long-Term Treasury ":{
+      "price":" 12.3 ",
+      "category":" Bond - Long-term Government ",
+      "id":" 0083 ",
+      "oneYear":" 8.93 ",
+      "fee":" 0.20% ",
+      "name":" LT0083 ",
+      "fiveYear":"0.98"
+    },
+    " 0053 Precious Metals and Mining ":{
+      "price":" 10.2 ",
+      "category":" Stock - Sector  Precious Metals and Mining ",
+      "id":" 0053 ",
+      "oneYear":" 37.45 ",
+      "fee":" 0.43% ",
+      "name":" PMaM0053 ",
+      "fiveYear":"1.49"
+    },
+    " 0026 Morgan Growth ":{
+      "price":" 28.4 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0026 ",
+      "oneYear":" 18.7 ",
+      "fee":" 0.38% ",
+      "name":" MG0026 ",
+      "fiveYear":"0.76"
+    },
+    " 0028 Long-Term Investment-Grade ":{
+      "price":" 10.4 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0028 ",
+      "oneYear":" 10.71 ",
+      "fee":" 0.22% ",
+      "name":" LI0028 ",
+      "fiveYear":"0.99"
+    },
+    " 0093 Growth and Income ":{
+      "price":" 44.9 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0093 ",
+      "oneYear":" 14.62 ",
+      "fee":" 0.34% ",
+      "name":" GaI0093 ",
+      "fiveYear":"0.18"
+    },
+    " 0024 Explorer ":{
+      "price":" 95.7 ",
+      "category":" Stock - Small-Cap Growth ",
+      "id":" 0024 ",
+      "oneYear":" 27.43 ",
+      "fee":" 0.46% ",
+      "name":" E0024 ",
+      "fiveYear":"0.81"
+    },
+    " 0097 Ohio Long-Term Tax-Exempt ":{
+      "price":" 12.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0097 ",
+      "oneYear":" 1.21 ",
+      "fee":" 0.15% ",
+      "name":" OLT0097 ",
+      "fiveYear":"0.83"
+    },
+    " 0081 International Growth ":{
+      "price":" 26.5 ",
+      "category":" International ",
+      "id":" 0081 ",
+      "oneYear":" 15.66 ",
+      "fee":" 0.46% ",
+      "name":" IG0081 ",
+      "fiveYear":"1.00"
+    },
+    " 0014 New Jersey Long-Term Tax-Exempt ":{
+      "price":" 12.0 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0014 ",
+      "oneYear":" 1.27 ",
+      "fee":" 0.19% ",
+      "name":" NJLT0014 ",
+      "fiveYear":"0.80"
+    },
+    " 0030 Prime Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0030 ",
+      "oneYear":" 0.06 ",
+      "fee":" 0.16% ",
+      "name":" PMM0030 ",
+      "fiveYear":"0.70"
+    },
+    " 0723 LifeStrategy Income ":{
+      "price":" 15.4 ",
+      "category":" Balanced ",
+      "id":" 0723 ",
+      "oneYear":" 9.22 ",
+      "fee":" 0.12% ",
+      "name":" LI0723 ",
+      "fiveYear":"0.92"
+    },
+    " 0598 Extended Market Index  Admiral Shares ":{
+      "price":" 77.6 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0598 ",
+      "oneYear":" 27.57 ",
+      "fee":" 0.08% ",
+      "name":" EMIAS0598 ",
+      "fiveYear":"0.96"
+    },
+    " 0095 New Jersey Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0095 ",
+      "oneYear":" 0.11 ",
+      "fee":" 0.16% ",
+      "name":" NJMMM0095 ",
+      "fiveYear":"0.58"
+    },
+    " 0056 STAR ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0056 ",
+      "oneYear":" 11.7 ",
+      "fee":" 0.32% ",
+      "name":" S0056 ",
+      "fiveYear":"0.89"
+    },
+    " 0119 Inflation-Protected Securities ":{
+      "price":" 13.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0119 ",
+      "oneYear":" 6.17 ",
+      "fee":" 0.20% ",
+      "name":" IS0119 ",
+      "fiveYear":"0.95"
+    },
+    " 5111 Capital Opportunity  Admiral Shares ":{
+      "price":" 143.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 5111 ",
+      "oneYear":" 11.12 ",
+      "fee":" 0.38% ",
+      "name":" COAS5111 ",
+      "fiveYear":"0.98"
+    },
+    " 0076 New York Long-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0076 ",
+      "oneYear":" 1.83 ",
+      "fee":" 0.19% ",
+      "name":" NYLT0076 ",
+      "fiveYear":"0.79"
+    },
+    " 0043 Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0043 ",
+      "oneYear":" 1.5 ",
+      "fee":" 0.19% ",
+      "name":" LT0043 ",
+      "fiveYear":"0.80"
+    },
+    " 0075 California Long-Term Tax-Exempt ":{
+      "price":" 12.1 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0075 ",
+      "oneYear":" 1.7 ",
+      "fee":" 0.19% ",
+      "name":" CLT0075 ",
+      "fiveYear":"0.71"
+    },
+    " 0129 Global Equity ":{
+      "price":" 28.6 ",
+      "category":" International ",
+      "id":" 0129 ",
+      "oneYear":" 16.04 ",
+      "fee":" 0.51% ",
+      "name":" GE0129 ",
+      "fiveYear":"0.69"
+    },
+    " 0049 Short-Term Federal ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Government ",
+      "id":" 0049 ",
+      "oneYear":" 3.24 ",
+      "fee":" 0.20% ",
+      "name":" SF0049 ",
+      "fiveYear":"0.94"
+    },
+    " 0065 Equity Income ":{
+      "price":" 34.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0065 ",
+      "oneYear":" 14.88 ",
+      "fee":" 0.26% ",
+      "name":" EI0065 ",
+      "fiveYear":"0.77"
+    },
+    " 0027 Wellesley Income ":{
+      "price":" 26.4 ",
+      "category":" Balanced ",
+      "id":" 0027 ",
+      "oneYear":" 10.65 ",
+      "fee":" 0.22% ",
+      "name":" WI0027 ",
+      "fiveYear":"1.05"
+    }
+  },
+  "10":{
+    " 0328 Capital Value ":{
+      "price":" 12.5 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0328 ",
+      "oneYear":" -9.78 ",
+      "fee":" 0.25% ",
+      "name":" CV0328 ",
+      "fiveYear":"1.13"
+    },
+    " 5102 Tax-Managed Capital Appreciation  Admiral Shares ":{
+      "price":" 125.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 5102 ",
+      "oneYear":" 1.68 ",
+      "fee":" 0.09% ",
+      "name":" TCAAS5102 ",
+      "fiveYear":"1.40"
+    },
+    " 5859 Mid-Cap Index  Admiral Shares ":{
+      "price":" 178.0 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 5859 ",
+      "oneYear":" -1.34 ",
+      "fee":" 0.06% ",
+      "name":" MIAS5859 ",
+      "fiveYear":"1.36"
+    },
+    " 0039 Short-Term Investment-Grade ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 0039 ",
+      "oneYear":" 1.03 ",
+      "fee":" 0.20% ",
+      "name":" SI0039 ",
+      "fiveYear":"0.60"
+    },
+    " 0042 Intermediate-Term Tax-Exempt ":{
+      "price":" 14.2 ",
+      "category":" Bond - Inter-term National Muni ",
+      "id":" 0042 ",
+      "oneYear":" 2.86 ",
+      "fee":" 0.19% ",
+      "name":" IT0042 ",
+      "fiveYear":"0.92"
+    },
+    " 0934 Selected Value ":{
+      "price":" 30.8 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0934 ",
+      "oneYear":" -3.8 ",
+      "fee":" 0.35% ",
+      "name":" SV0934 ",
+      "fiveYear":"1.33"
+    },
+    " 0540 500 Index  Admiral Shares ":{
+      "price":" 225.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0540 ",
+      "oneYear":" 1.36 ",
+      "fee":" 0.04% ",
+      "name":" 5IAS0540 ",
+      "fiveYear":"1.40"
+    },
+    " 0559 PRIMECAP  Admiral Shares ":{
+      "price":" 124.0 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0559 ",
+      "oneYear":" 2.64 ",
+      "fee":" 0.33% ",
+      "name":" PAS0559 ",
+      "fiveYear":"1.48"
+    },
+    " 0051 Energy ":{
+      "price":" 48.8 ",
+      "category":" Stock - Sector  Energy ",
+      "id":" 0051 ",
+      "oneYear":" -21.5 ",
+      "fee":" 0.41% ",
+      "name":" E0051 ",
+      "fiveYear":"-2.82"
+    },
+    " 0522 Long-Term Bond Index ":{
+      "price":" 14.1 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0522 ",
+      "oneYear":" -3.47 ",
+      "fee":" 0.15% ",
+      "name":" LBI0522 ",
+      "fiveYear":"1.08"
+    },
+    " 0213 FTSE Social Index ":{
+      "price":" 15.8 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0213 ",
+      "oneYear":" 1.17 ",
+      "fee":" 0.22% ",
+      "name":" FSI0213 ",
+      "fiveYear":"1.44"
+    },
+    " 5123 REIT Index  Admiral Shares ":{
+      "price":" 118.0 ",
+      "category":" Stock - Sector  REIT Index  Admiral Shares ",
+      "id":" 5123 ",
+      "oneYear":" 2.39 ",
+      "fee":" 0.12% ",
+      "name":" RIAS5123 ",
+      "fiveYear":"1.37"
+    },
+    " 0548 Small-Cap Index  Admiral Shares ":{
+      "price":" 64.9 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0548 ",
+      "oneYear":" -3.64 ",
+      "fee":" 0.06% ",
+      "name":" SIAS0548 ",
+      "fiveYear":"1.30"
+    },
+    " 0045 Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0045 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.15% ",
+      "name":" MMM0045 ",
+      "fiveYear":"-0.33"
+    },
+    " 0062 California Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0062 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" CMMM0062 ",
+      "fiveYear":"-0.36"
+    },
+    " 0063 Pennsylvania Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0063 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" PMMM0063 ",
+      "fiveYear":"-0.36"
+    },
+    " 0077 Pennsylvania Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0077 ",
+      "oneYear":" 4.01 ",
+      "fee":" 0.19% ",
+      "name":" PLT0077 ",
+      "fiveYear":"1.00"
+    },
+    " 0035 Intermediate-Term Treasury ":{
+      "price":" 11.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0035 ",
+      "oneYear":" 1.5 ",
+      "fee":" 0.20% ",
+      "name":" IT0035 ",
+      "fiveYear":"0.73"
+    },
+    " 0023 U.S. Growth ":{
+      "price":" 34.2 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0023 ",
+      "oneYear":" 8.47 ",
+      "fee":" 0.46% ",
+      "name":" UG0023 ",
+      "fiveYear":"1.49"
+    },
+    " 0585 Total Stock Market Index  Admiral Shares ":{
+      "price":" 61.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0585 ",
+      "oneYear":" 0.39 ",
+      "fee":" 0.04% ",
+      "name":" TSMIAS0585 ",
+      "fiveYear":"1.39"
+    },
+    " 0914 LifeStrategy Moderate Growth ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0914 ",
+      "oneYear":" -0.57 ",
+      "fee":" 0.14% ",
+      "name":" LMG0914 ",
+      "fiveYear":"1.06"
+    },
+    " 0071 Intermediate-Term Investment-Grade ":{
+      "price":" 9.84 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0071 ",
+      "oneYear":" 1.53 ",
+      "fee":" 0.20% ",
+      "name":" II0071 ",
+      "fiveYear":"0.89"
+    },
+    " 0052 Health Care ":{
+      "price":" 209.0 ",
+      "category":" Stock - Sector  Health Care ",
+      "id":" 0052 ",
+      "oneYear":" 12.65 ",
+      "fee":" 0.37% ",
+      "name":" HC0052 ",
+      "fiveYear":"1.78"
+    },
+    " 0041 Short-Term Tax-Exempt ":{
+      "price":" 15.8 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0041 ",
+      "oneYear":" 0.45 ",
+      "fee":" 0.19% ",
+      "name":" ST0041 ",
+      "fiveYear":"0.33"
+    },
+    " 0021 Wellington ":{
+      "price":" 41.3 ",
+      "category":" Balanced ",
+      "id":" 0021 ",
+      "oneYear":" 0.06 ",
+      "fee":" 0.25% ",
+      "name":" W0021 ",
+      "fiveYear":"1.22"
+    },
+    " 0036 GNMA ":{
+      "price":" 10.6 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0036 ",
+      "oneYear":" 1.33 ",
+      "fee":" 0.21% ",
+      "name":" G0036 ",
+      "fiveYear":"0.75"
+    },
+    " 5132 Short-Term Bond Index  Admiral Shares ":{
+      "price":" 10.4 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 5132 ",
+      "oneYear":" 0.92 ",
+      "fee":" 0.07% ",
+      "name":" SBIAS5132 ",
+      "fiveYear":"0.50"
+    },
+    " 0124 U.S. Value ":{
+      "price":" 18.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0124 ",
+      "oneYear":" -1.65 ",
+      "fee":" 0.23% ",
+      "name":" UV0124 ",
+      "fiveYear":"1.44"
+    },
+    " 0127 Developed Markets Index  Admiral Shares ":{
+      "price":" 13.5 ",
+      "category":" International ",
+      "id":" 0127 ",
+      "oneYear":" -0.18 ",
+      "fee":" 0.07% ",
+      "name":" DMIAS0127 ",
+      "fiveYear":"0.81"
+    },
+    " 0502 Balanced Index  Admiral Shares ":{
+      "price":" 33.0 ",
+      "category":" Balanced ",
+      "id":" 0502 ",
+      "oneYear":" 0.51 ",
+      "fee":" 0.07% ",
+      "name":" BIAS0502 ",
+      "fiveYear":"1.20"
+    },
+    " 0031 Limited-Term Tax-Exempt ":{
+      "price":" 11.0 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0031 ",
+      "oneYear":" 1.32 ",
+      "fee":" 0.19% ",
+      "name":" LT0031 ",
+      "fiveYear":"0.56"
+    },
+    " 0073 Windsor II ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0073 ",
+      "oneYear":" -3.22 ",
+      "fee":" 0.33% ",
+      "name":" WI0073 ",
+      "fiveYear":"1.33"
+    },
+    " 0168 Massachusetts Tax-Exempt ":{
+      "price":" 10.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0168 ",
+      "oneYear":" 3.95 ",
+      "fee":" 0.15% ",
+      "name":" MT0168 ",
+      "fiveYear":"0.98"
+    },
+    " 0509 Growth Index  Admiral Shares ":{
+      "price":" 66.7 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0509 ",
+      "oneYear":" 3.3 ",
+      "fee":" 0.06% ",
+      "name":" GIAS0509 ",
+      "fiveYear":"1.43"
+    },
+    " 0579 European Stock Index  Admiral Shares ":{
+      "price":" 71.1 ",
+      "category":" International ",
+      "id":" 0579 ",
+      "oneYear":" -1.88 ",
+      "fee":" 0.10% ",
+      "name":" ESIAS0579 ",
+      "fiveYear":"0.87"
+    },
+    " 0103 Tax-Managed Balanced  Admiral Shares ":{
+      "price":" 29.5 ",
+      "category":" Balanced ",
+      "id":" 0103 ",
+      "oneYear":" 2.35 ",
+      "fee":" 0.09% ",
+      "name":" TBAS0103 ",
+      "fiveYear":"1.19"
+    },
+    " 0584 Total Bond Market Index  Admiral Shares ":{
+      "price":" 10.8 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0584 ",
+      "oneYear":" 0.4 ",
+      "fee":" 0.05% ",
+      "name":" TBMIAS0584 ",
+      "fiveYear":"0.76"
+    },
+    " 0057 Dividend Growth ":{
+      "price":" 25.6 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0057 ",
+      "oneYear":" 2.62 ",
+      "fee":" 0.30% ",
+      "name":" DG0057 ",
+      "fiveYear":"1.42"
+    },
+    " 0116 Tax-Managed Small-Cap  Admiral Shares ":{
+      "price":" 56.1 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0116 ",
+      "oneYear":" -1.85 ",
+      "fee":" 0.09% ",
+      "name":" TSAS0116 ",
+      "fiveYear":"1.36"
+    },
+    " 0100 California Intermediate-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Inter-term State Muni ",
+      "id":" 0100 ",
+      "oneYear":" 3.18 ",
+      "fee":" 0.19% ",
+      "name":" CIT0100 ",
+      "fiveYear":"0.97"
+    },
+    " 0044 High-Yield Tax-Exempt ":{
+      "price":" 11.3 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0044 ",
+      "oneYear":" 4.13 ",
+      "fee":" 0.19% ",
+      "name":" HT0044 ",
+      "fiveYear":"1.05"
+    },
+    " 0126 International Explorer ":{
+      "price":" 20.1 ",
+      "category":" International ",
+      "id":" 0126 ",
+      "oneYear":" 8.6 ",
+      "fee":" 0.41% ",
+      "name":" IE0126 ",
+      "fiveYear":"0.97"
+    },
+    " 0082 Convertible Securities ":{
+      "price":" 13.3 ",
+      "category":" Balanced ",
+      "id":" 0082 ",
+      "oneYear":" -1.42 ",
+      "fee":" 0.34% ",
+      "name":" CS0082 ",
+      "fiveYear":"0.95"
+    },
+    " 0572 Pacific Stock Index  Admiral Shares ":{
+      "price":" 82.2 ",
+      "category":" International ",
+      "id":" 0572 ",
+      "oneYear":" 2.43 ",
+      "fee":" 0.10% ",
+      "name":" PSIAS0572 ",
+      "fiveYear":"0.71"
+    },
+    " 5314 Intermediate-Term Bond Index  Admiral Shares ":{
+      "price":" 11.5 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 5314 ",
+      "oneYear":" 1.27 ",
+      "fee":" 0.07% ",
+      "name":" IBIAS5314 ",
+      "fiveYear":"0.89"
+    },
+    " 0724 LifeStrategy Conservative Growth ":{
+      "price":" 19.4 ",
+      "category":" Balanced ",
+      "id":" 0724 ",
+      "oneYear":" -0.17 ",
+      "fee":" 0.13% ",
+      "name":" LCG0724 ",
+      "fiveYear":"0.97"
+    },
+    " 0114 Strategic Equity ":{
+      "price":" 33.7 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0114 ",
+      "oneYear":" -1.41 ",
+      "fee":" 0.18% ",
+      "name":" SE0114 ",
+      "fiveYear":"1.46"
+    },
+    " 0506 Value Index  Admiral Shares ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0506 ",
+      "oneYear":" -0.86 ",
+      "fee":" 0.06% ",
+      "name":" VIAS0506 ",
+      "fiveYear":"1.36"
+    },
+    " 0046 International Value ":{
+      "price":" 36.8 ",
+      "category":" International ",
+      "id":" 0046 ",
+      "oneYear":" -6.44 ",
+      "fee":" 0.43% ",
+      "name":" IV0046 ",
+      "fiveYear":"0.57"
+    },
+    " 0022 Windsor ":{
+      "price":" 22.2 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0022 ",
+      "oneYear":" -3.32 ",
+      "fee":" 0.30% ",
+      "name":" W0022 ",
+      "fiveYear":"1.34"
+    },
+    " 0163 New York Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0163 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" NYMMM0163 ",
+      "fiveYear":"-0.36"
+    },
+    " 0033 Federal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0033 ",
+      "oneYear":" 0.04 ",
+      "fee":" 0.11% ",
+      "name":" FMM0033 ",
+      "fiveYear":"-0.38"
+    },
+    " 0029 High-Yield Corporate ":{
+      "price":" 5.97 ",
+      "category":" Bond - Inter-term Low Quality ",
+      "id":" 0029 ",
+      "oneYear":" -1.39 ",
+      "fee":" 0.23% ",
+      "name":" HC0029 ",
+      "fiveYear":"1.00"
+    },
+    " 0301 Mid-Cap Growth ":{
+      "price":" 25.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 0301 ",
+      "oneYear":" 0.21 ",
+      "fee":" 0.36% ",
+      "name":" MG0301 ",
+      "fiveYear":"1.36"
+    },
+    " 0083 Long-Term Treasury ":{
+      "price":" 12.3 ",
+      "category":" Bond - Long-term Government ",
+      "id":" 0083 ",
+      "oneYear":" -1.54 ",
+      "fee":" 0.20% ",
+      "name":" LT0083 ",
+      "fiveYear":"1.13"
+    },
+    " 0053 Precious Metals and Mining ":{
+      "price":" 10.2 ",
+      "category":" Stock - Sector  Precious Metals and Mining ",
+      "id":" 0053 ",
+      "oneYear":" -29.42 ",
+      "fee":" 0.43% ",
+      "name":" PMaM0053 ",
+      "fiveYear":"-3.35"
+    },
+    " 0026 Morgan Growth ":{
+      "price":" 28.4 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0026 ",
+      "oneYear":" 6.75 ",
+      "fee":" 0.38% ",
+      "name":" MG0026 ",
+      "fiveYear":"1.40"
+    },
+    " 0028 Long-Term Investment-Grade ":{
+      "price":" 10.4 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0028 ",
+      "oneYear":" -2.21 ",
+      "fee":" 0.22% ",
+      "name":" LI0028 ",
+      "fiveYear":"1.12"
+    },
+    " 0093 Growth and Income ":{
+      "price":" 44.9 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0093 ",
+      "oneYear":" 1.92 ",
+      "fee":" 0.34% ",
+      "name":" GaI0093 ",
+      "fiveYear":"1.43"
+    },
+    " 0024 Explorer ":{
+      "price":" 95.7 ",
+      "category":" Stock - Small-Cap Growth ",
+      "id":" 0024 ",
+      "oneYear":" -4.34 ",
+      "fee":" 0.46% ",
+      "name":" E0024 ",
+      "fiveYear":"1.28"
+    },
+    " 0097 Ohio Long-Term Tax-Exempt ":{
+      "price":" 12.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0097 ",
+      "oneYear":" 4.25 ",
+      "fee":" 0.15% ",
+      "name":" OLT0097 ",
+      "fiveYear":"1.01"
+    },
+    " 0081 International Growth ":{
+      "price":" 26.5 ",
+      "category":" International ",
+      "id":" 0081 ",
+      "oneYear":" -0.67 ",
+      "fee":" 0.46% ",
+      "name":" IG0081 ",
+      "fiveYear":"0.81"
+    },
+    " 0014 New Jersey Long-Term Tax-Exempt ":{
+      "price":" 12.0 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0014 ",
+      "oneYear":" 2.68 ",
+      "fee":" 0.19% ",
+      "name":" NJLT0014 ",
+      "fiveYear":"0.97"
+    },
+    " 0030 Prime Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0030 ",
+      "oneYear":" 0.05 ",
+      "fee":" 0.16% ",
+      "name":" PMM0030 ",
+      "fiveYear":"-0.30"
+    },
+    " 0723 LifeStrategy Income ":{
+      "price":" 15.4 ",
+      "category":" Balanced ",
+      "id":" 0723 ",
+      "oneYear":" 0.22 ",
+      "fee":" 0.12% ",
+      "name":" LI0723 ",
+      "fiveYear":"0.86"
+    },
+    " 0598 Extended Market Index  Admiral Shares ":{
+      "price":" 77.6 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0598 ",
+      "oneYear":" -3.27 ",
+      "fee":" 0.08% ",
+      "name":" EMIAS0598 ",
+      "fiveYear":"1.30"
+    },
+    " 0095 New Jersey Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0095 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" NJMMM0095 ",
+      "fiveYear":"-0.35"
+    },
+    " 0056 STAR ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0056 ",
+      "oneYear":" -0.15 ",
+      "fee":" 0.32% ",
+      "name":" S0056 ",
+      "fiveYear":"1.14"
+    },
+    " 0119 Inflation-Protected Securities ":{
+      "price":" 13.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0119 ",
+      "oneYear":" -1.83 ",
+      "fee":" 0.20% ",
+      "name":" IS0119 ",
+      "fiveYear":"0.65"
+    },
+    " 5111 Capital Opportunity  Admiral Shares ":{
+      "price":" 143.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 5111 ",
+      "oneYear":" 2.67 ",
+      "fee":" 0.38% ",
+      "name":" COAS5111 ",
+      "fiveYear":"1.48"
+    },
+    " 0076 New York Long-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0076 ",
+      "oneYear":" 4.14 ",
+      "fee":" 0.19% ",
+      "name":" NYLT0076 ",
+      "fiveYear":"0.99"
+    },
+    " 0043 Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0043 ",
+      "oneYear":" 3.97 ",
+      "fee":" 0.19% ",
+      "name":" LT0043 ",
+      "fiveYear":"1.03"
+    },
+    " 0075 California Long-Term Tax-Exempt ":{
+      "price":" 12.1 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0075 ",
+      "oneYear":" 4.36 ",
+      "fee":" 0.19% ",
+      "name":" CLT0075 ",
+      "fiveYear":"1.07"
+    },
+    " 0129 Global Equity ":{
+      "price":" 28.6 ",
+      "category":" International ",
+      "id":" 0129 ",
+      "oneYear":" -0.24 ",
+      "fee":" 0.51% ",
+      "name":" GE0129 ",
+      "fiveYear":"1.14"
+    },
+    " 0049 Short-Term Federal ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Government ",
+      "id":" 0049 ",
+      "oneYear":" 0.73 ",
+      "fee":" 0.20% ",
+      "name":" SF0049 ",
+      "fiveYear":"0.42"
+    },
+    " 0065 Equity Income ":{
+      "price":" 34.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0065 ",
+      "oneYear":" 0.77 ",
+      "fee":" 0.26% ",
+      "name":" EI0065 ",
+      "fiveYear":"1.42"
+    },
+    " 0027 Wellesley Income ":{
+      "price":" 26.4 ",
+      "category":" Balanced ",
+      "id":" 0027 ",
+      "oneYear":" 1.28 ",
+      "fee":" 0.22% ",
+      "name":" WI0027 ",
+      "fiveYear":"1.13"
+    }
+  },
+  "1":{
+    " 0328 Capital Value ":{
+      "price":" 12.5 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0328 ",
+      "oneYear":" 18.9 ",
+      "fee":" 0.25% ",
+      "name":" CV0328 ",
+      "fiveYear":"1.15"
+    },
+    " 5102 Tax-Managed Capital Appreciation  Admiral Shares ":{
+      "price":" 125.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 5102 ",
+      "oneYear":" 14.44 ",
+      "fee":" 0.09% ",
+      "name":" TCAAS5102 ",
+      "fiveYear":"1.09"
+    },
+    " 5859 Mid-Cap Index  Admiral Shares ":{
+      "price":" 178.0 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 5859 ",
+      "oneYear":" 13.69 ",
+      "fee":" 0.06% ",
+      "name":" MIAS5859 ",
+      "fiveYear":"1.40"
+    },
+    " 0039 Short-Term Investment-Grade ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 0039 ",
+      "oneYear":" 4.99 ",
+      "fee":" 0.20% ",
+      "name":" SI0039 ",
+      "fiveYear":"0.82"
+    },
+    " 0042 Intermediate-Term Tax-Exempt ":{
+      "price":" 14.2 ",
+      "category":" Bond - Inter-term National Muni ",
+      "id":" 0042 ",
+      "oneYear":" 4.43 ",
+      "fee":" 0.19% ",
+      "name":" IT0042 ",
+      "fiveYear":"0.89"
+    },
+    " 0934 Selected Value ":{
+      "price":" 30.8 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0934 ",
+      "oneYear":" 19.11 ",
+      "fee":" 0.35% ",
+      "name":" SV0934 ",
+      "fiveYear":"1.48"
+    },
+    " 0540 500 Index  Admiral Shares ":{
+      "price":" 225.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0540 ",
+      "oneYear":" 15.75 ",
+      "fee":" 0.04% ",
+      "name":" 5IAS0540 ",
+      "fiveYear":"1.04"
+    },
+    " 0559 PRIMECAP  Admiral Shares ":{
+      "price":" 124.0 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0559 ",
+      "oneYear":" 12.49 ",
+      "fee":" 0.33% ",
+      "name":" PAS0559 ",
+      "fiveYear":"1.20"
+    },
+    " 0051 Energy ":{
+      "price":" 48.8 ",
+      "category":" Stock - Sector  Energy ",
+      "id":" 0051 ",
+      "oneYear":" 19.66 ",
+      "fee":" 0.41% ",
+      "name":" E0051 ",
+      "fiveYear":"1.93"
+    },
+    " 0522 Long-Term Bond Index ":{
+      "price":" 14.1 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0522 ",
+      "oneYear":" 2.67 ",
+      "fee":" 0.15% ",
+      "name":" LBI0522 ",
+      "fiveYear":"1.11"
+    },
+    " 0213 FTSE Social Index ":{
+      "price":" 15.8 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0213 ",
+      "oneYear":" 13.09 ",
+      "fee":" 0.22% ",
+      "name":" FSI0213 ",
+      "fiveYear":"0.92"
+    },
+    " 5123 REIT Index  Admiral Shares ":{
+      "price":" 118.0 ",
+      "category":" Stock - Sector  REIT Index  Admiral Shares ",
+      "id":" 5123 ",
+      "oneYear":" 35.16 ",
+      "fee":" 0.12% ",
+      "name":" RIAS5123 ",
+      "fiveYear":"1.82"
+    },
+    " 0548 Small-Cap Index  Admiral Shares ":{
+      "price":" 64.9 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0548 ",
+      "oneYear":" 15.77 ",
+      "fee":" 0.06% ",
+      "name":" SIAS0548 ",
+      "fiveYear":"1.38"
+    },
+    " 0045 Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0045 ",
+      "oneYear":" 3.37 ",
+      "fee":" 0.15% ",
+      "name":" MMM0045 ",
+      "fiveYear":"0.57"
+    },
+    " 0062 California Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0062 ",
+      "oneYear":" 3.29 ",
+      "fee":" 0.16% ",
+      "name":" CMMM0062 ",
+      "fiveYear":"0.56"
+    },
+    " 0063 Pennsylvania Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0063 ",
+      "oneYear":" 3.37 ",
+      "fee":" 0.16% ",
+      "name":" PMMM0063 ",
+      "fiveYear":"0.56"
+    },
+    " 0077 Pennsylvania Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0077 ",
+      "oneYear":" 4.81 ",
+      "fee":" 0.19% ",
+      "name":" PLT0077 ",
+      "fiveYear":"0.97"
+    },
+    " 0035 Intermediate-Term Treasury ":{
+      "price":" 11.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0035 ",
+      "oneYear":" 3.14 ",
+      "fee":" 0.20% ",
+      "name":" IT0035 ",
+      "fiveYear":"0.94"
+    },
+    " 0023 U.S. Growth ":{
+      "price":" 34.2 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0023 ",
+      "oneYear":" 1.77 ",
+      "fee":" 0.46% ",
+      "name":" UG0023 ",
+      "fiveYear":"-1.95"
+    },
+    " 0585 Total Stock Market Index  Admiral Shares ":{
+      "price":" 61.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0585 ",
+      "oneYear":" 15.63 ",
+      "fee":" 0.04% ",
+      "name":" TSMIAS0585 ",
+      "fiveYear":"1.14"
+    },
+    " 0914 LifeStrategy Moderate Growth ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0914 ",
+      "oneYear":" 13.31 ",
+      "fee":" 0.14% ",
+      "name":" LMG0914 ",
+      "fiveYear":"1.15"
+    },
+    " 0071 Intermediate-Term Investment-Grade ":{
+      "price":" 9.84 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0071 ",
+      "oneYear":" 4.43 ",
+      "fee":" 0.20% ",
+      "name":" II0071 ",
+      "fiveYear":"0.98"
+    },
+    " 0052 Health Care ":{
+      "price":" 209.0 ",
+      "category":" Stock - Sector  Health Care ",
+      "id":" 0052 ",
+      "oneYear":" 10.87 ",
+      "fee":" 0.37% ",
+      "name":" HC0052 ",
+      "fiveYear":"1.25"
+    },
+    " 0041 Short-Term Tax-Exempt ":{
+      "price":" 15.8 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0041 ",
+      "oneYear":" 3.26 ",
+      "fee":" 0.19% ",
+      "name":" ST0041 ",
+      "fiveYear":"0.63"
+    },
+    " 0021 Wellington ":{
+      "price":" 41.3 ",
+      "category":" Balanced ",
+      "id":" 0021 ",
+      "oneYear":" 14.97 ",
+      "fee":" 0.25% ",
+      "name":" W0021 ",
+      "fiveYear":"1.22"
+    },
+    " 0036 GNMA ":{
+      "price":" 10.6 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0036 ",
+      "oneYear":" 4.33 ",
+      "fee":" 0.21% ",
+      "name":" G0036 ",
+      "fiveYear":"0.92"
+    },
+    " 5132 Short-Term Bond Index  Admiral Shares ":{
+      "price":" 10.4 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 5132 ",
+      "oneYear":" 4.16 ",
+      "fee":" 0.07% ",
+      "name":" SBIAS5132 ",
+      "fiveYear":"0.78"
+    },
+    " 0124 U.S. Value ":{
+      "price":" 18.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0124 ",
+      "oneYear":" 14.1 ",
+      "fee":" 0.23% ",
+      "name":" UV0124 ",
+      "fiveYear":"1.21"
+    },
+    " 0127 Developed Markets Index  Admiral Shares ":{
+      "price":" 13.5 ",
+      "category":" International ",
+      "id":" 0127 ",
+      "oneYear":" 26.27 ",
+      "fee":" 0.07% ",
+      "name":" DMIAS0127 ",
+      "fiveYear":"1.53"
+    },
+    " 0502 Balanced Index  Admiral Shares ":{
+      "price":" 33.0 ",
+      "category":" Balanced ",
+      "id":" 0502 ",
+      "oneYear":" 11.06 ",
+      "fee":" 0.07% ",
+      "name":" BIAS0502 ",
+      "fiveYear":"1.07"
+    },
+    " 0031 Limited-Term Tax-Exempt ":{
+      "price":" 11.0 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0031 ",
+      "oneYear":" 3.33 ",
+      "fee":" 0.19% ",
+      "name":" LT0031 ",
+      "fiveYear":"0.74"
+    },
+    " 0073 Windsor II ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0073 ",
+      "oneYear":" 18.25 ",
+      "fee":" 0.33% ",
+      "name":" WI0073 ",
+      "fiveYear":"1.29"
+    },
+    " 0168 Massachusetts Tax-Exempt ":{
+      "price":" 10.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0168 ",
+      "oneYear":" 4.91 ",
+      "fee":" 0.15% ",
+      "name":" MT0168 ",
+      "fiveYear":"0.96"
+    },
+    " 0509 Growth Index  Admiral Shares ":{
+      "price":" 66.7 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0509 ",
+      "oneYear":" 9.13 ",
+      "fee":" 0.06% ",
+      "name":" GIAS0509 ",
+      "fiveYear":"0.81"
+    },
+    " 0579 European Stock Index  Admiral Shares ":{
+      "price":" 71.1 ",
+      "category":" International ",
+      "id":" 0579 ",
+      "oneYear":" 33.57 ",
+      "fee":" 0.10% ",
+      "name":" ESIAS0579 ",
+      "fiveYear":"1.53"
+    },
+    " 0103 Tax-Managed Balanced  Admiral Shares ":{
+      "price":" 29.5 ",
+      "category":" Balanced ",
+      "id":" 0103 ",
+      "oneYear":" 9.09 ",
+      "fee":" 0.09% ",
+      "name":" TBAS0103 ",
+      "fiveYear":"1.02"
+    },
+    " 0584 Total Bond Market Index  Admiral Shares ":{
+      "price":" 10.8 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0584 ",
+      "oneYear":" 4.36 ",
+      "fee":" 0.05% ",
+      "name":" TBMIAS0584 ",
+      "fiveYear":"0.92"
+    },
+    " 0057 Dividend Growth ":{
+      "price":" 25.6 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0057 ",
+      "oneYear":" 19.58 ",
+      "fee":" 0.30% ",
+      "name":" DG0057 ",
+      "fiveYear":"1.07"
+    },
+    " 0116 Tax-Managed Small-Cap  Admiral Shares ":{
+      "price":" 56.1 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0116 ",
+      "oneYear":" 14.15 ",
+      "fee":" 0.09% ",
+      "name":" TSAS0116 ",
+      "fiveYear":"1.40"
+    },
+    " 0100 California Intermediate-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Inter-term State Muni ",
+      "id":" 0100 ",
+      "oneYear":" 4.26 ",
+      "fee":" 0.19% ",
+      "name":" CIT0100 ",
+      "fiveYear":"0.89"
+    },
+    " 0044 High-Yield Tax-Exempt ":{
+      "price":" 11.3 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0044 ",
+      "oneYear":" 5.53 ",
+      "fee":" 0.19% ",
+      "name":" HT0044 ",
+      "fiveYear":"1.00"
+    },
+    " 0126 International Explorer ":{
+      "price":" 20.1 ",
+      "category":" International ",
+      "id":" 0126 ",
+      "oneYear":" 30.34 ",
+      "fee":" 0.41% ",
+      "name":" IE0126 ",
+      "fiveYear":"1.84"
+    },
+    " 0082 Convertible Securities ":{
+      "price":" 13.3 ",
+      "category":" Balanced ",
+      "id":" 0082 ",
+      "oneYear":" 12.94 ",
+      "fee":" 0.34% ",
+      "name":" CS0082 ",
+      "fiveYear":"1.22"
+    },
+    " 0572 Pacific Stock Index  Admiral Shares ":{
+      "price":" 82.2 ",
+      "category":" International ",
+      "id":" 0572 ",
+      "oneYear":" 12.1 ",
+      "fee":" 0.10% ",
+      "name":" PSIAS0572 ",
+      "fiveYear":"1.54"
+    },
+    " 5314 Intermediate-Term Bond Index  Admiral Shares ":{
+      "price":" 11.5 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 5314 ",
+      "oneYear":" 3.98 ",
+      "fee":" 0.07% ",
+      "name":" IBIAS5314 ",
+      "fiveYear":"0.98"
+    },
+    " 0724 LifeStrategy Conservative Growth ":{
+      "price":" 19.4 ",
+      "category":" Balanced ",
+      "id":" 0724 ",
+      "oneYear":" 10.62 ",
+      "fee":" 0.13% ",
+      "name":" LCG0724 ",
+      "fiveYear":"1.07"
+    },
+    " 0114 Strategic Equity ":{
+      "price":" 33.7 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0114 ",
+      "oneYear":" 13.43 ",
+      "fee":" 0.18% ",
+      "name":" SE0114 ",
+      "fiveYear":"1.45"
+    },
+    " 0506 Value Index  Admiral Shares ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0506 ",
+      "oneYear":" 22.27 ",
+      "fee":" 0.06% ",
+      "name":" VIAS0506 ",
+      "fiveYear":"1.27"
+    },
+    " 0046 International Value ":{
+      "price":" 36.8 ",
+      "category":" International ",
+      "id":" 0046 ",
+      "oneYear":" 27.37 ",
+      "fee":" 0.43% ",
+      "name":" IV0046 ",
+      "fiveYear":"1.61"
+    },
+    " 0022 Windsor ":{
+      "price":" 22.2 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0022 ",
+      "oneYear":" 19.35 ",
+      "fee":" 0.30% ",
+      "name":" W0022 ",
+      "fiveYear":"1.20"
+    },
+    " 0163 New York Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0163 ",
+      "oneYear":" 3.33 ",
+      "fee":" 0.16% ",
+      "name":" NYMMM0163 ",
+      "fiveYear":"0.56"
+    },
+    " 0033 Federal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0033 ",
+      "oneYear":" 4.81 ",
+      "fee":" 0.11% ",
+      "name":" FMM0033 ",
+      "fiveYear":"0.64"
+    },
+    " 0029 High-Yield Corporate ":{
+      "price":" 5.97 ",
+      "category":" Bond - Inter-term Low Quality ",
+      "id":" 0029 ",
+      "oneYear":" 8.24 ",
+      "fee":" 0.23% ",
+      "name":" HC0029 ",
+      "fiveYear":"1.13"
+    },
+    " 0301 Mid-Cap Growth ":{
+      "price":" 25.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 0301 ",
+      "oneYear":" 12.72 ",
+      "fee":" 0.36% ",
+      "name":" MG0301 ",
+      "fiveYear":"1.10"
+    },
+    " 0083 Long-Term Treasury ":{
+      "price":" 12.3 ",
+      "category":" Bond - Long-term Government ",
+      "id":" 0083 ",
+      "oneYear":" 1.74 ",
+      "fee":" 0.20% ",
+      "name":" LT0083 ",
+      "fiveYear":"1.08"
+    },
+    " 0053 Precious Metals and Mining ":{
+      "price":" 10.2 ",
+      "category":" Stock - Sector  Precious Metals and Mining ",
+      "id":" 0053 ",
+      "oneYear":" 34.3 ",
+      "fee":" 0.43% ",
+      "name":" PMaM0053 ",
+      "fiveYear":"2.22"
+    },
+    " 0026 Morgan Growth ":{
+      "price":" 28.4 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0026 ",
+      "oneYear":" 11.09 ",
+      "fee":" 0.38% ",
+      "name":" MG0026 ",
+      "fiveYear":"1.07"
+    },
+    " 0028 Long-Term Investment-Grade ":{
+      "price":" 10.4 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0028 ",
+      "oneYear":" 2.86 ",
+      "fee":" 0.22% ",
+      "name":" LI0028 ",
+      "fiveYear":"1.11"
+    },
+    " 0093 Growth and Income ":{
+      "price":" 44.9 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0093 ",
+      "oneYear":" 14.01 ",
+      "fee":" 0.34% ",
+      "name":" GaI0093 ",
+      "fiveYear":"1.07"
+    },
+    " 0024 Explorer ":{
+      "price":" 95.7 ",
+      "category":" Stock - Small-Cap Growth ",
+      "id":" 0024 ",
+      "oneYear":" 9.7 ",
+      "fee":" 0.46% ",
+      "name":" E0024 ",
+      "fiveYear":"1.18"
+    },
+    " 0097 Ohio Long-Term Tax-Exempt ":{
+      "price":" 12.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0097 ",
+      "oneYear":" 4.85 ",
+      "fee":" 0.15% ",
+      "name":" OLT0097 ",
+      "fiveYear":"0.98"
+    },
+    " 0081 International Growth ":{
+      "price":" 26.5 ",
+      "category":" International ",
+      "id":" 0081 ",
+      "oneYear":" 25.92 ",
+      "fee":" 0.46% ",
+      "name":" IG0081 ",
+      "fiveYear":"1.47"
+    },
+    " 0014 New Jersey Long-Term Tax-Exempt ":{
+      "price":" 12.0 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0014 ",
+      "oneYear":" 5.24 ",
+      "fee":" 0.19% ",
+      "name":" NJLT0014 ",
+      "fiveYear":"0.98"
+    },
+    " 0030 Prime Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0030 ",
+      "oneYear":" 4.88 ",
+      "fee":" 0.16% ",
+      "name":" PMM0030 ",
+      "fiveYear":"0.64"
+    },
+    " 0723 LifeStrategy Income ":{
+      "price":" 15.4 ",
+      "category":" Balanced ",
+      "id":" 0723 ",
+      "oneYear":" 7.93 ",
+      "fee":" 0.12% ",
+      "name":" LI0723 ",
+      "fiveYear":"0.99"
+    },
+    " 0598 Extended Market Index  Admiral Shares ":{
+      "price":" 77.6 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0598 ",
+      "oneYear":" 14.43 ",
+      "fee":" 0.08% ",
+      "name":" EMIAS0598 ",
+      "fiveYear":"1.38"
+    },
+    " 0095 New Jersey Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0095 ",
+      "oneYear":" 3.31 ",
+      "fee":" 0.16% ",
+      "name":" NJMMM0095 ",
+      "fiveYear":"0.55"
+    },
+    " 0056 STAR ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0056 ",
+      "oneYear":" 11.64 ",
+      "fee":" 0.32% ",
+      "name":" S0056 ",
+      "fiveYear":"1.17"
+    },
+    " 0119 Inflation-Protected Securities ":{
+      "price":" 13.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0119 ",
+      "oneYear":" 0.43 ",
+      "fee":" 0.20% ",
+      "name":" IS0119 ",
+      "fiveYear":"1.10"
+    },
+    " 5111 Capital Opportunity  Admiral Shares ":{
+      "price":" 143.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 5111 ",
+      "oneYear":" 16.88 ",
+      "fee":" 0.38% ",
+      "name":" COAS5111 ",
+      "fiveYear":"1.33"
+    },
+    " 0076 New York Long-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0076 ",
+      "oneYear":" 4.84 ",
+      "fee":" 0.19% ",
+      "name":" NYLT0076 ",
+      "fiveYear":"0.98"
+    },
+    " 0043 Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0043 ",
+      "oneYear":" 5.16 ",
+      "fee":" 0.19% ",
+      "name":" LT0043 ",
+      "fiveYear":"0.98"
+    },
+    " 0075 California Long-Term Tax-Exempt ":{
+      "price":" 12.1 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0075 ",
+      "oneYear":" 5.24 ",
+      "fee":" 0.19% ",
+      "name":" CLT0075 ",
+      "fiveYear":"0.98"
+    },
+    " 0129 Global Equity ":{
+      "price":" 28.6 ",
+      "category":" International ",
+      "id":" 0129 ",
+      "oneYear":" 23.59 ",
+      "fee":" 0.51% ",
+      "name":" GE0129 ",
+      "fiveYear":"1.63"
+    },
+    " 0049 Short-Term Federal ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Government ",
+      "id":" 0049 ",
+      "oneYear":" 4.32 ",
+      "fee":" 0.20% ",
+      "name":" SF0049 ",
+      "fiveYear":"0.79"
+    },
+    " 0065 Equity Income ":{
+      "price":" 34.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0065 ",
+      "oneYear":" 20.62 ",
+      "fee":" 0.26% ",
+      "name":" EI0065 ",
+      "fiveYear":"1.20"
+    },
+    " 0027 Wellesley Income ":{
+      "price":" 26.4 ",
+      "category":" Balanced ",
+      "id":" 0027 ",
+      "oneYear":" 11.28 ",
+      "fee":" 0.22% ",
+      "name":" WI0027 ",
+      "fiveYear":"1.11"
+    }
+  },
+  "2":{
+    " 0328 Capital Value ":{
+      "price":" 12.5 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0328 ",
+      "oneYear":" -7.65 ",
+      "fee":" 0.25% ",
+      "name":" CV0328 ",
+      "fiveYear":"1.44"
+    },
+    " 5102 Tax-Managed Capital Appreciation  Admiral Shares ":{
+      "price":" 125.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 5102 ",
+      "oneYear":" 6.11 ",
+      "fee":" 0.09% ",
+      "name":" TCAAS5102 ",
+      "fiveYear":"1.47"
+    },
+    " 5859 Mid-Cap Index  Admiral Shares ":{
+      "price":" 178.0 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 5859 ",
+      "oneYear":" 6.17 ",
+      "fee":" 0.06% ",
+      "name":" MIAS5859 ",
+      "fiveYear":"1.62"
+    },
+    " 0039 Short-Term Investment-Grade ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 0039 ",
+      "oneYear":" 5.86 ",
+      "fee":" 0.20% ",
+      "name":" SI0039 ",
+      "fiveYear":"0.84"
+    },
+    " 0042 Intermediate-Term Tax-Exempt ":{
+      "price":" 14.2 ",
+      "category":" Bond - Inter-term National Muni ",
+      "id":" 0042 ",
+      "oneYear":" 3.43 ",
+      "fee":" 0.19% ",
+      "name":" IT0042 ",
+      "fiveYear":"0.80"
+    },
+    " 0934 Selected Value ":{
+      "price":" 30.8 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0934 ",
+      "oneYear":" -0.23 ",
+      "fee":" 0.35% ",
+      "name":" SV0934 ",
+      "fiveYear":"1.58"
+    },
+    " 0540 500 Index  Admiral Shares ":{
+      "price":" 225.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0540 ",
+      "oneYear":" 5.47 ",
+      "fee":" 0.04% ",
+      "name":" 5IAS0540 ",
+      "fiveYear":"1.42"
+    },
+    " 0559 PRIMECAP  Admiral Shares ":{
+      "price":" 124.0 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0559 ",
+      "oneYear":" 11.61 ",
+      "fee":" 0.33% ",
+      "name":" PAS0559 ",
+      "fiveYear":"1.62"
+    },
+    " 0051 Energy ":{
+      "price":" 48.8 ",
+      "category":" Stock - Sector  Energy ",
+      "id":" 0051 ",
+      "oneYear":" 37.0 ",
+      "fee":" 0.41% ",
+      "name":" E0051 ",
+      "fiveYear":"2.20"
+    },
+    " 0522 Long-Term Bond Index ":{
+      "price":" 14.1 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0522 ",
+      "oneYear":" 6.59 ",
+      "fee":" 0.15% ",
+      "name":" LBI0522 ",
+      "fiveYear":"1.00"
+    },
+    " 0213 FTSE Social Index ":{
+      "price":" 15.8 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0213 ",
+      "oneYear":" -2.31 ",
+      "fee":" 0.22% ",
+      "name":" FSI0213 ",
+      "fiveYear":"1.29"
+    },
+    " 5123 REIT Index  Admiral Shares ":{
+      "price":" 118.0 ",
+      "category":" Stock - Sector  REIT Index  Admiral Shares ",
+      "id":" 5123 ",
+      "oneYear":" -16.39 ",
+      "fee":" 0.12% ",
+      "name":" RIAS5123 ",
+      "fiveYear":"1.63"
+    },
+    " 0548 Small-Cap Index  Admiral Shares ":{
+      "price":" 64.9 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0548 ",
+      "oneYear":" 1.24 ",
+      "fee":" 0.06% ",
+      "name":" SIAS0548 ",
+      "fiveYear":"1.61"
+    },
+    " 0045 Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0045 ",
+      "oneYear":" 3.62 ",
+      "fee":" 0.15% ",
+      "name":" MMM0045 ",
+      "fiveYear":"0.64"
+    },
+    " 0062 California Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0062 ",
+      "oneYear":" 3.53 ",
+      "fee":" 0.16% ",
+      "name":" CMMM0062 ",
+      "fiveYear":"0.63"
+    },
+    " 0063 Pennsylvania Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0063 ",
+      "oneYear":" 3.61 ",
+      "fee":" 0.16% ",
+      "name":" PMMM0063 ",
+      "fiveYear":"0.64"
+    },
+    " 0077 Pennsylvania Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0077 ",
+      "oneYear":" 2.78 ",
+      "fee":" 0.19% ",
+      "name":" PLT0077 ",
+      "fiveYear":"0.85"
+    },
+    " 0035 Intermediate-Term Treasury ":{
+      "price":" 11.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0035 ",
+      "oneYear":" 9.98 ",
+      "fee":" 0.20% ",
+      "name":" IT0035 ",
+      "fiveYear":"0.87"
+    },
+    " 0023 U.S. Growth ":{
+      "price":" 34.2 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0023 ",
+      "oneYear":" 10.15 ",
+      "fee":" 0.46% ",
+      "name":" UG0023 ",
+      "fiveYear":"1.33"
+    },
+    " 0585 Total Stock Market Index  Admiral Shares ":{
+      "price":" 61.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0585 ",
+      "oneYear":" 5.57 ",
+      "fee":" 0.04% ",
+      "name":" TSMIAS0585 ",
+      "fiveYear":"1.47"
+    },
+    " 0914 LifeStrategy Moderate Growth ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0914 ",
+      "oneYear":" 7.36 ",
+      "fee":" 0.14% ",
+      "name":" LMG0914 ",
+      "fiveYear":"1.37"
+    },
+    " 0071 Intermediate-Term Investment-Grade ":{
+      "price":" 9.84 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0071 ",
+      "oneYear":" 6.14 ",
+      "fee":" 0.20% ",
+      "name":" II0071 ",
+      "fiveYear":"0.92"
+    },
+    " 0052 Health Care ":{
+      "price":" 209.0 ",
+      "category":" Stock - Sector  Health Care ",
+      "id":" 0052 ",
+      "oneYear":" 4.42 ",
+      "fee":" 0.37% ",
+      "name":" HC0052 ",
+      "fiveYear":"1.43"
+    },
+    " 0041 Short-Term Tax-Exempt ":{
+      "price":" 15.8 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0041 ",
+      "oneYear":" 4.19 ",
+      "fee":" 0.19% ",
+      "name":" ST0041 ",
+      "fiveYear":"0.65"
+    },
+    " 0021 Wellington ":{
+      "price":" 41.3 ",
+      "category":" Balanced ",
+      "id":" 0021 ",
+      "oneYear":" 8.34 ",
+      "fee":" 0.25% ",
+      "name":" W0021 ",
+      "fiveYear":"1.39"
+    },
+    " 0036 GNMA ":{
+      "price":" 10.6 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0036 ",
+      "oneYear":" 7.01 ",
+      "fee":" 0.21% ",
+      "name":" G0036 ",
+      "fiveYear":"0.87"
+    },
+    " 5132 Short-Term Bond Index  Admiral Shares ":{
+      "price":" 10.4 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 5132 ",
+      "oneYear":" 7.31 ",
+      "fee":" 0.07% ",
+      "name":" SBIAS5132 ",
+      "fiveYear":"0.81"
+    },
+    " 0124 U.S. Value ":{
+      "price":" 18.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0124 ",
+      "oneYear":" -0.74 ",
+      "fee":" 0.23% ",
+      "name":" UV0124 ",
+      "fiveYear":"1.39"
+    },
+    " 0127 Developed Markets Index  Admiral Shares ":{
+      "price":" 13.5 ",
+      "category":" International ",
+      "id":" 0127 ",
+      "oneYear":" 11.15 ",
+      "fee":" 0.07% ",
+      "name":" DMIAS0127 ",
+      "fiveYear":"1.78"
+    },
+    " 0502 Balanced Index  Admiral Shares ":{
+      "price":" 33.0 ",
+      "category":" Balanced ",
+      "id":" 0502 ",
+      "oneYear":" 6.31 ",
+      "fee":" 0.07% ",
+      "name":" BIAS0502 ",
+      "fiveYear":"1.29"
+    },
+    " 0031 Limited-Term Tax-Exempt ":{
+      "price":" 11.0 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0031 ",
+      "oneYear":" 4.32 ",
+      "fee":" 0.19% ",
+      "name":" LT0031 ",
+      "fiveYear":"0.69"
+    },
+    " 0073 Windsor II ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0073 ",
+      "oneYear":" 2.23 ",
+      "fee":" 0.33% ",
+      "name":" WI0073 ",
+      "fiveYear":"1.51"
+    },
+    " 0168 Massachusetts Tax-Exempt ":{
+      "price":" 10.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0168 ",
+      "oneYear":" 2.84 ",
+      "fee":" 0.15% ",
+      "name":" MT0168 ",
+      "fiveYear":"0.85"
+    },
+    " 0509 Growth Index  Admiral Shares ":{
+      "price":" 66.7 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0509 ",
+      "oneYear":" 12.7 ",
+      "fee":" 0.06% ",
+      "name":" GIAS0509 ",
+      "fiveYear":"1.37"
+    },
+    " 0579 European Stock Index  Admiral Shares ":{
+      "price":" 71.1 ",
+      "category":" International ",
+      "id":" 0579 ",
+      "oneYear":" 13.93 ",
+      "fee":" 0.10% ",
+      "name":" ESIAS0579 ",
+      "fiveYear":"1.82"
+    },
+    " 0103 Tax-Managed Balanced  Admiral Shares ":{
+      "price":" 29.5 ",
+      "category":" Balanced ",
+      "id":" 0103 ",
+      "oneYear":" 5.11 ",
+      "fee":" 0.09% ",
+      "name":" TBAS0103 ",
+      "fiveYear":"1.19"
+    },
+    " 0584 Total Bond Market Index  Admiral Shares ":{
+      "price":" 10.8 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0584 ",
+      "oneYear":" 7.02 ",
+      "fee":" 0.05% ",
+      "name":" TBMIAS0584 ",
+      "fiveYear":"0.89"
+    },
+    " 0057 Dividend Growth ":{
+      "price":" 25.6 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0057 ",
+      "oneYear":" 7.0 ",
+      "fee":" 0.30% ",
+      "name":" DG0057 ",
+      "fiveYear":"1.47"
+    },
+    " 0116 Tax-Managed Small-Cap  Admiral Shares ":{
+      "price":" 56.1 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0116 ",
+      "oneYear":" 0.51 ",
+      "fee":" 0.09% ",
+      "name":" TSAS0116 ",
+      "fiveYear":"1.56"
+    },
+    " 0100 California Intermediate-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Inter-term State Muni ",
+      "id":" 0100 ",
+      "oneYear":" 3.02 ",
+      "fee":" 0.19% ",
+      "name":" CIT0100 ",
+      "fiveYear":"0.77"
+    },
+    " 0044 High-Yield Tax-Exempt ":{
+      "price":" 11.3 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0044 ",
+      "oneYear":" 1.57 ",
+      "fee":" 0.19% ",
+      "name":" HT0044 ",
+      "fiveYear":"0.90"
+    },
+    " 0126 International Explorer ":{
+      "price":" 20.1 ",
+      "category":" International ",
+      "id":" 0126 ",
+      "oneYear":" 5.15 ",
+      "fee":" 0.41% ",
+      "name":" IE0126 ",
+      "fiveYear":"2.00"
+    },
+    " 0082 Convertible Securities ":{
+      "price":" 13.3 ",
+      "category":" Balanced ",
+      "id":" 0082 ",
+      "oneYear":" 10.61 ",
+      "fee":" 0.34% ",
+      "name":" CS0082 ",
+      "fiveYear":"1.45"
+    },
+    " 0572 Pacific Stock Index  Admiral Shares ":{
+      "price":" 82.2 ",
+      "category":" International ",
+      "id":" 0572 ",
+      "oneYear":" 4.85 ",
+      "fee":" 0.10% ",
+      "name":" PSIAS0572 ",
+      "fiveYear":"1.68"
+    },
+    " 5314 Intermediate-Term Bond Index  Admiral Shares ":{
+      "price":" 11.5 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 5314 ",
+      "oneYear":" 7.7 ",
+      "fee":" 0.07% ",
+      "name":" IBIAS5314 ",
+      "fiveYear":"0.93"
+    },
+    " 0724 LifeStrategy Conservative Growth ":{
+      "price":" 19.4 ",
+      "category":" Balanced ",
+      "id":" 0724 ",
+      "oneYear":" 6.99 ",
+      "fee":" 0.13% ",
+      "name":" LCG0724 ",
+      "fiveYear":"1.23"
+    },
+    " 0114 Strategic Equity ":{
+      "price":" 33.7 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0114 ",
+      "oneYear":" -1.84 ",
+      "fee":" 0.18% ",
+      "name":" SE0114 ",
+      "fiveYear":"1.57"
+    },
+    " 0506 Value Index  Admiral Shares ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0506 ",
+      "oneYear":" 0.18 ",
+      "fee":" 0.06% ",
+      "name":" VIAS0506 ",
+      "fiveYear":"1.51"
+    },
+    " 0046 International Value ":{
+      "price":" 36.8 ",
+      "category":" International ",
+      "id":" 0046 ",
+      "oneYear":" 12.66 ",
+      "fee":" 0.43% ",
+      "name":" IV0046 ",
+      "fiveYear":"1.85"
+    },
+    " 0022 Windsor ":{
+      "price":" 22.2 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0022 ",
+      "oneYear":" -3.3 ",
+      "fee":" 0.30% ",
+      "name":" W0022 ",
+      "fiveYear":"1.45"
+    },
+    " 0163 New York Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0163 ",
+      "oneYear":" 3.58 ",
+      "fee":" 0.16% ",
+      "name":" NYMMM0163 ",
+      "fiveYear":"0.63"
+    },
+    " 0033 Federal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0033 ",
+      "oneYear":" 5.07 ",
+      "fee":" 0.11% ",
+      "name":" FMM0033 ",
+      "fiveYear":"0.73"
+    },
+    " 0029 High-Yield Corporate ":{
+      "price":" 5.97 ",
+      "category":" Bond - Inter-term Low Quality ",
+      "id":" 0029 ",
+      "oneYear":" 2.04 ",
+      "fee":" 0.23% ",
+      "name":" HC0029 ",
+      "fiveYear":"1.14"
+    },
+    " 0301 Mid-Cap Growth ":{
+      "price":" 25.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 0301 ",
+      "oneYear":" 14.69 ",
+      "fee":" 0.36% ",
+      "name":" MG0301 ",
+      "fiveYear":"1.62"
+    },
+    " 0083 Long-Term Treasury ":{
+      "price":" 12.3 ",
+      "category":" Bond - Long-term Government ",
+      "id":" 0083 ",
+      "oneYear":" 9.24 ",
+      "fee":" 0.20% ",
+      "name":" LT0083 ",
+      "fiveYear":"0.98"
+    },
+    " 0053 Precious Metals and Mining ":{
+      "price":" 10.2 ",
+      "category":" Stock - Sector  Precious Metals and Mining ",
+      "id":" 0053 ",
+      "oneYear":" 36.13 ",
+      "fee":" 0.43% ",
+      "name":" PMaM0053 ",
+      "fiveYear":"2.23"
+    },
+    " 0026 Morgan Growth ":{
+      "price":" 28.4 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0026 ",
+      "oneYear":" 11.22 ",
+      "fee":" 0.38% ",
+      "name":" MG0026 ",
+      "fiveYear":"1.51"
+    },
+    " 0028 Long-Term Investment-Grade ":{
+      "price":" 10.4 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0028 ",
+      "oneYear":" 3.75 ",
+      "fee":" 0.22% ",
+      "name":" LI0028 ",
+      "fiveYear":"0.97"
+    },
+    " 0093 Growth and Income ":{
+      "price":" 44.9 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0093 ",
+      "oneYear":" 2.62 ",
+      "fee":" 0.34% ",
+      "name":" GaI0093 ",
+      "fiveYear":"1.40"
+    },
+    " 0024 Explorer ":{
+      "price":" 95.7 ",
+      "category":" Stock - Small-Cap Growth ",
+      "id":" 0024 ",
+      "oneYear":" 5.06 ",
+      "fee":" 0.46% ",
+      "name":" E0024 ",
+      "fiveYear":"1.54"
+    },
+    " 0097 Ohio Long-Term Tax-Exempt ":{
+      "price":" 12.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0097 ",
+      "oneYear":" 3.25 ",
+      "fee":" 0.15% ",
+      "name":" OLT0097 ",
+      "fiveYear":"0.85"
+    },
+    " 0081 International Growth ":{
+      "price":" 26.5 ",
+      "category":" International ",
+      "id":" 0081 ",
+      "oneYear":" 15.98 ",
+      "fee":" 0.46% ",
+      "name":" IG0081 ",
+      "fiveYear":"1.79"
+    },
+    " 0014 New Jersey Long-Term Tax-Exempt ":{
+      "price":" 12.0 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0014 ",
+      "oneYear":" 2.86 ",
+      "fee":" 0.19% ",
+      "name":" NJLT0014 ",
+      "fiveYear":"0.85"
+    },
+    " 0030 Prime Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0030 ",
+      "oneYear":" 5.14 ",
+      "fee":" 0.16% ",
+      "name":" PMM0030 ",
+      "fiveYear":"0.74"
+    },
+    " 0723 LifeStrategy Income ":{
+      "price":" 15.4 ",
+      "category":" Balanced ",
+      "id":" 0723 ",
+      "oneYear":" 6.7 ",
+      "fee":" 0.12% ",
+      "name":" LI0723 ",
+      "fiveYear":"1.09"
+    },
+    " 0598 Extended Market Index  Admiral Shares ":{
+      "price":" 77.6 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0598 ",
+      "oneYear":" 4.48 ",
+      "fee":" 0.08% ",
+      "name":" EMIAS0598 ",
+      "fiveYear":"1.63"
+    },
+    " 0095 New Jersey Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0095 ",
+      "oneYear":" 3.57 ",
+      "fee":" 0.16% ",
+      "name":" NJMMM0095 ",
+      "fiveYear":"0.63"
+    },
+    " 0056 STAR ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0056 ",
+      "oneYear":" 6.58 ",
+      "fee":" 0.32% ",
+      "name":" S0056 ",
+      "fiveYear":"1.37"
+    },
+    " 0119 Inflation-Protected Securities ":{
+      "price":" 13.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0119 ",
+      "oneYear":" 11.59 ",
+      "fee":" 0.20% ",
+      "name":" IS0119 ",
+      "fiveYear":"1.03"
+    },
+    " 5111 Capital Opportunity  Admiral Shares ":{
+      "price":" 143.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 5111 ",
+      "oneYear":" 10.65 ",
+      "fee":" 0.38% ",
+      "name":" COAS5111 ",
+      "fiveYear":"1.74"
+    },
+    " 0076 New York Long-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0076 ",
+      "oneYear":" 2.41 ",
+      "fee":" 0.19% ",
+      "name":" NYLT0076 ",
+      "fiveYear":"0.84"
+    },
+    " 0043 Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0043 ",
+      "oneYear":" 2.54 ",
+      "fee":" 0.19% ",
+      "name":" LT0043 ",
+      "fiveYear":"0.85"
+    },
+    " 0075 California Long-Term Tax-Exempt ":{
+      "price":" 12.1 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0075 ",
+      "oneYear":" 1.57 ",
+      "fee":" 0.19% ",
+      "name":" CLT0075 ",
+      "fiveYear":"0.84"
+    },
+    " 0129 Global Equity ":{
+      "price":" 28.6 ",
+      "category":" International ",
+      "id":" 0129 ",
+      "oneYear":" 11.67 ",
+      "fee":" 0.51% ",
+      "name":" GE0129 ",
+      "fiveYear":"1.79"
+    },
+    " 0049 Short-Term Federal ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Government ",
+      "id":" 0049 ",
+      "oneYear":" 7.43 ",
+      "fee":" 0.20% ",
+      "name":" SF0049 ",
+      "fiveYear":"0.78"
+    },
+    " 0065 Equity Income ":{
+      "price":" 34.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0065 ",
+      "oneYear":" 4.86 ",
+      "fee":" 0.26% ",
+      "name":" EI0065 ",
+      "fiveYear":"1.45"
+    },
+    " 0027 Wellesley Income ":{
+      "price":" 26.4 ",
+      "category":" Balanced ",
+      "id":" 0027 ",
+      "oneYear":" 5.61 ",
+      "fee":" 0.22% ",
+      "name":" WI0027 ",
+      "fiveYear":"1.13"
+    }
+  },
+  "8":{
+    " 0328 Capital Value ":{
+      "price":" 12.5 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0328 ",
+      "oneYear":" 43.86 ",
+      "fee":" 0.25% ",
+      "name":" CV0328 ",
+      "fiveYear":"1.97"
+    },
+    " 5102 Tax-Managed Capital Appreciation  Admiral Shares ":{
+      "price":" 125.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 5102 ",
+      "oneYear":" 33.67 ",
+      "fee":" 0.09% ",
+      "name":" TCAAS5102 ",
+      "fiveYear":"1.67"
+    },
+    " 5859 Mid-Cap Index  Admiral Shares ":{
+      "price":" 178.0 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 5859 ",
+      "oneYear":" 35.15 ",
+      "fee":" 0.06% ",
+      "name":" MIAS5859 ",
+      "fiveYear":"1.80"
+    },
+    " 0039 Short-Term Investment-Grade ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 0039 ",
+      "oneYear":" 0.97 ",
+      "fee":" 0.20% ",
+      "name":" SI0039 ",
+      "fiveYear":"0.96"
+    },
+    " 0042 Intermediate-Term Tax-Exempt ":{
+      "price":" 14.2 ",
+      "category":" Bond - Inter-term National Muni ",
+      "id":" 0042 ",
+      "oneYear":" -1.56 ",
+      "fee":" 0.19% ",
+      "name":" IT0042 ",
+      "fiveYear":"0.95"
+    },
+    " 0934 Selected Value ":{
+      "price":" 30.8 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0934 ",
+      "oneYear":" 42.04 ",
+      "fee":" 0.35% ",
+      "name":" SV0934 ",
+      "fiveYear":"1.79"
+    },
+    " 0540 500 Index  Admiral Shares ":{
+      "price":" 225.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0540 ",
+      "oneYear":" 32.33 ",
+      "fee":" 0.04% ",
+      "name":" 5IAS0540 ",
+      "fiveYear":"1.64"
+    },
+    " 0559 PRIMECAP  Admiral Shares ":{
+      "price":" 124.0 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0559 ",
+      "oneYear":" 39.86 ",
+      "fee":" 0.33% ",
+      "name":" PAS0559 ",
+      "fiveYear":"1.69"
+    },
+    " 0051 Energy ":{
+      "price":" 48.8 ",
+      "category":" Stock - Sector  Energy ",
+      "id":" 0051 ",
+      "oneYear":" 18.14 ",
+      "fee":" 0.41% ",
+      "name":" E0051 ",
+      "fiveYear":"1.44"
+    },
+    " 0522 Long-Term Bond Index ":{
+      "price":" 14.1 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0522 ",
+      "oneYear":" -9.13 ",
+      "fee":" 0.15% ",
+      "name":" LBI0522 ",
+      "fiveYear":"1.04"
+    },
+    " 0213 FTSE Social Index ":{
+      "price":" 15.8 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0213 ",
+      "oneYear":" 36.84 ",
+      "fee":" 0.22% ",
+      "name":" FSI0213 ",
+      "fiveYear":"1.71"
+    },
+    " 5123 REIT Index  Admiral Shares ":{
+      "price":" 118.0 ",
+      "category":" Stock - Sector  REIT Index  Admiral Shares ",
+      "id":" 5123 ",
+      "oneYear":" 2.42 ",
+      "fee":" 0.12% ",
+      "name":" RIAS5123 ",
+      "fiveYear":"1.60"
+    },
+    " 0548 Small-Cap Index  Admiral Shares ":{
+      "price":" 64.9 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0548 ",
+      "oneYear":" 37.81 ",
+      "fee":" 0.06% ",
+      "name":" SIAS0548 ",
+      "fiveYear":"1.81"
+    },
+    " 0045 Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0045 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.15% ",
+      "name":" MMM0045 ",
+      "fiveYear":"-0.08"
+    },
+    " 0062 California Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0062 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" CMMM0062 ",
+      "fiveYear":"-0.13"
+    },
+    " 0063 Pennsylvania Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0063 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" PMMM0063 ",
+      "fiveYear":"-0.09"
+    },
+    " 0077 Pennsylvania Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0077 ",
+      "oneYear":" -2.74 ",
+      "fee":" 0.19% ",
+      "name":" PLT0077 ",
+      "fiveYear":"0.98"
+    },
+    " 0035 Intermediate-Term Treasury ":{
+      "price":" 11.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0035 ",
+      "oneYear":" -3.09 ",
+      "fee":" 0.20% ",
+      "name":" IT0035 ",
+      "fiveYear":"0.73"
+    },
+    " 0023 U.S. Growth ":{
+      "price":" 34.2 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0023 ",
+      "oneYear":" 35.49 ",
+      "fee":" 0.46% ",
+      "name":" UG0023 ",
+      "fiveYear":"1.69"
+    },
+    " 0585 Total Stock Market Index  Admiral Shares ":{
+      "price":" 61.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0585 ",
+      "oneYear":" 33.52 ",
+      "fee":" 0.04% ",
+      "name":" TSMIAS0585 ",
+      "fiveYear":"1.68"
+    },
+    " 0914 LifeStrategy Moderate Growth ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0914 ",
+      "oneYear":" 15.04 ",
+      "fee":" 0.14% ",
+      "name":" LMG0914 ",
+      "fiveYear":"1.38"
+    },
+    " 0071 Intermediate-Term Investment-Grade ":{
+      "price":" 9.84 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0071 ",
+      "oneYear":" -1.37 ",
+      "fee":" 0.20% ",
+      "name":" II0071 ",
+      "fiveYear":"1.19"
+    },
+    " 0052 Health Care ":{
+      "price":" 209.0 ",
+      "category":" Stock - Sector  Health Care ",
+      "id":" 0052 ",
+      "oneYear":" 43.19 ",
+      "fee":" 0.37% ",
+      "name":" HC0052 ",
+      "fiveYear":"1.67"
+    },
+    " 0041 Short-Term Tax-Exempt ":{
+      "price":" 15.8 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0041 ",
+      "oneYear":" 0.48 ",
+      "fee":" 0.19% ",
+      "name":" ST0041 ",
+      "fiveYear":"0.49"
+    },
+    " 0021 Wellington ":{
+      "price":" 41.3 ",
+      "category":" Balanced ",
+      "id":" 0021 ",
+      "oneYear":" 19.66 ",
+      "fee":" 0.25% ",
+      "name":" W0021 ",
+      "fiveYear":"1.46"
+    },
+    " 0036 GNMA ":{
+      "price":" 10.6 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0036 ",
+      "oneYear":" -2.22 ",
+      "fee":" 0.21% ",
+      "name":" G0036 ",
+      "fiveYear":"0.84"
+    },
+    " 5132 Short-Term Bond Index  Admiral Shares ":{
+      "price":" 10.4 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 5132 ",
+      "oneYear":" 0.17 ",
+      "fee":" 0.07% ",
+      "name":" SBIAS5132 ",
+      "fiveYear":"0.71"
+    },
+    " 0124 U.S. Value ":{
+      "price":" 18.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0124 ",
+      "oneYear":" 33.98 ",
+      "fee":" 0.23% ",
+      "name":" UV0124 ",
+      "fiveYear":"1.59"
+    },
+    " 0127 Developed Markets Index  Admiral Shares ":{
+      "price":" 13.5 ",
+      "category":" International ",
+      "id":" 0127 ",
+      "oneYear":" 22.06 ",
+      "fee":" 0.07% ",
+      "name":" DMIAS0127 ",
+      "fiveYear":"1.38"
+    },
+    " 0502 Balanced Index  Admiral Shares ":{
+      "price":" 33.0 ",
+      "category":" Balanced ",
+      "id":" 0502 ",
+      "oneYear":" 18.1 ",
+      "fee":" 0.07% ",
+      "name":" BIAS0502 ",
+      "fiveYear":"1.44"
+    },
+    " 0031 Limited-Term Tax-Exempt ":{
+      "price":" 11.0 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0031 ",
+      "oneYear":" 0.49 ",
+      "fee":" 0.19% ",
+      "name":" LT0031 ",
+      "fiveYear":"0.70"
+    },
+    " 0073 Windsor II ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0073 ",
+      "oneYear":" 30.69 ",
+      "fee":" 0.33% ",
+      "name":" WI0073 ",
+      "fiveYear":"1.61"
+    },
+    " 0168 Massachusetts Tax-Exempt ":{
+      "price":" 10.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0168 ",
+      "oneYear":" -3.32 ",
+      "fee":" 0.15% ",
+      "name":" MT0168 ",
+      "fiveYear":"0.94"
+    },
+    " 0509 Growth Index  Admiral Shares ":{
+      "price":" 66.7 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0509 ",
+      "oneYear":" 32.4 ",
+      "fee":" 0.06% ",
+      "name":" GIAS0509 ",
+      "fiveYear":"1.73"
+    },
+    " 0579 European Stock Index  Admiral Shares ":{
+      "price":" 71.1 ",
+      "category":" International ",
+      "id":" 0579 ",
+      "oneYear":" 24.89 ",
+      "fee":" 0.10% ",
+      "name":" ESIAS0579 ",
+      "fiveYear":"1.43"
+    },
+    " 0103 Tax-Managed Balanced  Admiral Shares ":{
+      "price":" 29.5 ",
+      "category":" Balanced ",
+      "id":" 0103 ",
+      "oneYear":" 14.34 ",
+      "fee":" 0.09% ",
+      "name":" TBAS0103 ",
+      "fiveYear":"1.37"
+    },
+    " 0584 Total Bond Market Index  Admiral Shares ":{
+      "price":" 10.8 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0584 ",
+      "oneYear":" -2.15 ",
+      "fee":" 0.05% ",
+      "name":" TBMIAS0584 ",
+      "fiveYear":"0.89"
+    },
+    " 0057 Dividend Growth ":{
+      "price":" 25.6 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0057 ",
+      "oneYear":" 31.53 ",
+      "fee":" 0.30% ",
+      "name":" DG0057 ",
+      "fiveYear":"1.59"
+    },
+    " 0116 Tax-Managed Small-Cap  Admiral Shares ":{
+      "price":" 56.1 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0116 ",
+      "oneYear":" 41.0 ",
+      "fee":" 0.09% ",
+      "name":" TSAS0116 ",
+      "fiveYear":"1.77"
+    },
+    " 0100 California Intermediate-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Inter-term State Muni ",
+      "id":" 0100 ",
+      "oneYear":" -0.83 ",
+      "fee":" 0.19% ",
+      "name":" CIT0100 ",
+      "fiveYear":"0.99"
+    },
+    " 0044 High-Yield Tax-Exempt ":{
+      "price":" 11.3 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0044 ",
+      "oneYear":" -3.22 ",
+      "fee":" 0.19% ",
+      "name":" HT0044 ",
+      "fiveYear":"1.14"
+    },
+    " 0126 International Explorer ":{
+      "price":" 20.1 ",
+      "category":" International ",
+      "id":" 0126 ",
+      "oneYear":" 30.24 ",
+      "fee":" 0.41% ",
+      "name":" IE0126 ",
+      "fiveYear":"1.61"
+    },
+    " 0082 Convertible Securities ":{
+      "price":" 13.3 ",
+      "category":" Balanced ",
+      "id":" 0082 ",
+      "oneYear":" 19.17 ",
+      "fee":" 0.34% ",
+      "name":" CS0082 ",
+      "fiveYear":"1.58"
+    },
+    " 0572 Pacific Stock Index  Admiral Shares ":{
+      "price":" 82.2 ",
+      "category":" International ",
+      "id":" 0572 ",
+      "oneYear":" 17.55 ",
+      "fee":" 0.10% ",
+      "name":" PSIAS0572 ",
+      "fiveYear":"1.30"
+    },
+    " 5314 Intermediate-Term Bond Index  Admiral Shares ":{
+      "price":" 11.5 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 5314 ",
+      "oneYear":" -3.45 ",
+      "fee":" 0.07% ",
+      "name":" IBIAS5314 ",
+      "fiveYear":"1.02"
+    },
+    " 0724 LifeStrategy Conservative Growth ":{
+      "price":" 19.4 ",
+      "category":" Balanced ",
+      "id":" 0724 ",
+      "oneYear":" 9.08 ",
+      "fee":" 0.13% ",
+      "name":" LCG0724 ",
+      "fiveYear":"1.25"
+    },
+    " 0114 Strategic Equity ":{
+      "price":" 33.7 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0114 ",
+      "oneYear":" 41.54 ",
+      "fee":" 0.18% ",
+      "name":" SE0114 ",
+      "fiveYear":"1.80"
+    },
+    " 0506 Value Index  Admiral Shares ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0506 ",
+      "oneYear":" 33.05 ",
+      "fee":" 0.06% ",
+      "name":" VIAS0506 ",
+      "fiveYear":"1.57"
+    },
+    " 0046 International Value ":{
+      "price":" 36.8 ",
+      "category":" International ",
+      "id":" 0046 ",
+      "oneYear":" 22.15 ",
+      "fee":" 0.43% ",
+      "name":" IV0046 ",
+      "fiveYear":"1.40"
+    },
+    " 0022 Windsor ":{
+      "price":" 22.2 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0022 ",
+      "oneYear":" 36.08 ",
+      "fee":" 0.30% ",
+      "name":" W0022 ",
+      "fiveYear":"1.70"
+    },
+    " 0163 New York Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0163 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" NYMMM0163 ",
+      "fiveYear":"-0.14"
+    },
+    " 0033 Federal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0033 ",
+      "oneYear":" 0.02 ",
+      "fee":" 0.11% ",
+      "name":" FMM0033 ",
+      "fiveYear":"-0.14"
+    },
+    " 0029 High-Yield Corporate ":{
+      "price":" 5.97 ",
+      "category":" Bond - Inter-term Low Quality ",
+      "id":" 0029 ",
+      "oneYear":" 4.54 ",
+      "fee":" 0.23% ",
+      "name":" HC0029 ",
+      "fiveYear":"1.51"
+    },
+    " 0301 Mid-Cap Growth ":{
+      "price":" 25.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 0301 ",
+      "oneYear":" 34.15 ",
+      "fee":" 0.36% ",
+      "name":" MG0301 ",
+      "fiveYear":"1.78"
+    },
+    " 0083 Long-Term Treasury ":{
+      "price":" 12.3 ",
+      "category":" Bond - Long-term Government ",
+      "id":" 0083 ",
+      "oneYear":" -13.03 ",
+      "fee":" 0.20% ",
+      "name":" LT0083 ",
+      "fiveYear":"0.63"
+    },
+    " 0053 Precious Metals and Mining ":{
+      "price":" 10.2 ",
+      "category":" Stock - Sector  Precious Metals and Mining ",
+      "id":" 0053 ",
+      "oneYear":" -35.13 ",
+      "fee":" 0.43% ",
+      "name":" PMaM0053 ",
+      "fiveYear":"0.48"
+    },
+    " 0026 Morgan Growth ":{
+      "price":" 28.4 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0026 ",
+      "oneYear":" 34.76 ",
+      "fee":" 0.38% ",
+      "name":" MG0026 ",
+      "fiveYear":"1.70"
+    },
+    " 0028 Long-Term Investment-Grade ":{
+      "price":" 10.4 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0028 ",
+      "oneYear":" -5.87 ",
+      "fee":" 0.22% ",
+      "name":" LI0028 ",
+      "fiveYear":"1.17"
+    },
+    " 0093 Growth and Income ":{
+      "price":" 44.9 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0093 ",
+      "oneYear":" 32.59 ",
+      "fee":" 0.34% ",
+      "name":" GaI0093 ",
+      "fiveYear":"1.62"
+    },
+    " 0024 Explorer ":{
+      "price":" 95.7 ",
+      "category":" Stock - Small-Cap Growth ",
+      "id":" 0024 ",
+      "oneYear":" 44.36 ",
+      "fee":" 0.46% ",
+      "name":" E0024 ",
+      "fiveYear":"1.83"
+    },
+    " 0097 Ohio Long-Term Tax-Exempt ":{
+      "price":" 12.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0097 ",
+      "oneYear":" -3.16 ",
+      "fee":" 0.15% ",
+      "name":" OLT0097 ",
+      "fiveYear":"0.99"
+    },
+    " 0081 International Growth ":{
+      "price":" 26.5 ",
+      "category":" International ",
+      "id":" 0081 ",
+      "oneYear":" 22.95 ",
+      "fee":" 0.46% ",
+      "name":" IG0081 ",
+      "fiveYear":"1.55"
+    },
+    " 0014 New Jersey Long-Term Tax-Exempt ":{
+      "price":" 12.0 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0014 ",
+      "oneYear":" -2.5 ",
+      "fee":" 0.19% ",
+      "name":" NJLT0014 ",
+      "fiveYear":"0.97"
+    },
+    " 0030 Prime Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0030 ",
+      "oneYear":" 0.02 ",
+      "fee":" 0.16% ",
+      "name":" PMM0030 ",
+      "fiveYear":"-0.07"
+    },
+    " 0723 LifeStrategy Income ":{
+      "price":" 15.4 ",
+      "category":" Balanced ",
+      "id":" 0723 ",
+      "oneYear":" 3.4 ",
+      "fee":" 0.12% ",
+      "name":" LI0723 ",
+      "fiveYear":"1.09"
+    },
+    " 0598 Extended Market Index  Admiral Shares ":{
+      "price":" 77.6 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0598 ",
+      "oneYear":" 38.37 ",
+      "fee":" 0.08% ",
+      "name":" EMIAS0598 ",
+      "fiveYear":"1.82"
+    },
+    " 0095 New Jersey Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0095 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" NJMMM0095 ",
+      "fiveYear":"-0.10"
+    },
+    " 0056 STAR ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0056 ",
+      "oneYear":" 17.8 ",
+      "fee":" 0.32% ",
+      "name":" S0056 ",
+      "fiveYear":"1.45"
+    },
+    " 0119 Inflation-Protected Securities ":{
+      "price":" 13.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0119 ",
+      "oneYear":" -8.92 ",
+      "fee":" 0.20% ",
+      "name":" IS0119 ",
+      "fiveYear":"0.97"
+    },
+    " 5111 Capital Opportunity  Admiral Shares ":{
+      "price":" 143.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 5111 ",
+      "oneYear":" 42.8 ",
+      "fee":" 0.38% ",
+      "name":" COAS5111 ",
+      "fiveYear":"1.77"
+    },
+    " 0076 New York Long-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0076 ",
+      "oneYear":" -2.93 ",
+      "fee":" 0.19% ",
+      "name":" NYLT0076 ",
+      "fiveYear":"0.98"
+    },
+    " 0043 Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0043 ",
+      "oneYear":" -2.95 ",
+      "fee":" 0.19% ",
+      "name":" LT0043 ",
+      "fiveYear":"1.03"
+    },
+    " 0075 California Long-Term Tax-Exempt ":{
+      "price":" 12.1 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0075 ",
+      "oneYear":" -2.54 ",
+      "fee":" 0.19% ",
+      "name":" CLT0075 ",
+      "fiveYear":"1.05"
+    },
+    " 0129 Global Equity ":{
+      "price":" 28.6 ",
+      "category":" International ",
+      "id":" 0129 ",
+      "oneYear":" 27.65 ",
+      "fee":" 0.51% ",
+      "name":" GE0129 ",
+      "fiveYear":"1.58"
+    },
+    " 0049 Short-Term Federal ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Government ",
+      "id":" 0049 ",
+      "oneYear":" -0.35 ",
+      "fee":" 0.20% ",
+      "name":" SF0049 ",
+      "fiveYear":"0.59"
+    },
+    " 0065 Equity Income ":{
+      "price":" 34.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0065 ",
+      "oneYear":" 30.07 ",
+      "fee":" 0.26% ",
+      "name":" EI0065 ",
+      "fiveYear":"1.60"
+    },
+    " 0027 Wellesley Income ":{
+      "price":" 26.4 ",
+      "category":" Balanced ",
+      "id":" 0027 ",
+      "oneYear":" 9.19 ",
+      "fee":" 0.22% ",
+      "name":" WI0027 ",
+      "fiveYear":"1.33"
+    }
+  },
+  "6":{
+    " 0328 Capital Value ":{
+      "price":" 12.5 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0328 ",
+      "oneYear":" -13.98 ",
+      "fee":" 0.25% ",
+      "name":" CV0328 ",
+      "fiveYear":"-2.63"
+    },
+    " 5102 Tax-Managed Capital Appreciation  Admiral Shares ":{
+      "price":" 125.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 5102 ",
+      "oneYear":" 1.38 ",
+      "fee":" 0.09% ",
+      "name":" TCAAS5102 ",
+      "fiveYear":"-0.10"
+    },
+    " 5859 Mid-Cap Index  Admiral Shares ":{
+      "price":" 178.0 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 5859 ",
+      "oneYear":" -1.97 ",
+      "fee":" 0.06% ",
+      "name":" MIAS5859 ",
+      "fiveYear":"0.47"
+    },
+    " 0039 Short-Term Investment-Grade ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 0039 ",
+      "oneYear":" 1.93 ",
+      "fee":" 0.20% ",
+      "name":" SI0039 ",
+      "fiveYear":"0.88"
+    },
+    " 0042 Intermediate-Term Tax-Exempt ":{
+      "price":" 14.2 ",
+      "category":" Bond - Inter-term National Muni ",
+      "id":" 0042 ",
+      "oneYear":" 9.62 ",
+      "fee":" 0.19% ",
+      "name":" IT0042 ",
+      "fiveYear":"0.94"
+    },
+    " 0934 Selected Value ":{
+      "price":" 30.8 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0934 ",
+      "oneYear":" 0.82 ",
+      "fee":" 0.35% ",
+      "name":" SV0934 ",
+      "fiveYear":"0.41"
+    },
+    " 0540 500 Index  Admiral Shares ":{
+      "price":" 225.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0540 ",
+      "oneYear":" 2.08 ",
+      "fee":" 0.04% ",
+      "name":" 5IAS0540 ",
+      "fiveYear":"-2.03"
+    },
+    " 0559 PRIMECAP  Admiral Shares ":{
+      "price":" 124.0 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0559 ",
+      "oneYear":" -1.77 ",
+      "fee":" 0.33% ",
+      "name":" PAS0559 ",
+      "fiveYear":"0.67"
+    },
+    " 0051 Energy ":{
+      "price":" 48.8 ",
+      "category":" Stock - Sector  Energy ",
+      "id":" 0051 ",
+      "oneYear":" -1.74 ",
+      "fee":" 0.41% ",
+      "name":" E0051 ",
+      "fiveYear":"0.83"
+    },
+    " 0522 Long-Term Bond Index ":{
+      "price":" 14.1 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0522 ",
+      "oneYear":" 22.06 ",
+      "fee":" 0.15% ",
+      "name":" LBI0522 ",
+      "fiveYear":"1.26"
+    },
+    " 0213 FTSE Social Index ":{
+      "price":" 15.8 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0213 ",
+      "oneYear":" -0.78 ",
+      "fee":" 0.22% ",
+      "name":" FSI0213 ",
+      "fiveYear":"-2.69"
+    },
+    " 5123 REIT Index  Admiral Shares ":{
+      "price":" 118.0 ",
+      "category":" Stock - REIT Sector Index ",
+      "id":" 5123 ",
+      "oneYear":" 8.62 ",
+      "fee":" 0.12% ",
+      "name":" RIAS5123 ",
+      "fiveYear":"-2.36"
+    },
+    " 0548 Small-Cap Index  Admiral Shares ":{
+      "price":" 64.9 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0548 ",
+      "oneYear":" -2.69 ",
+      "fee":" 0.06% ",
+      "name":" SIAS0548 ",
+      "fiveYear":"0.58"
+    },
+    " 0045 Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0045 ",
+      "oneYear":" 0.06 ",
+      "fee":" 0.15% ",
+      "name":" MMM0045 ",
+      "fiveYear":"0.46"
+    },
+    " 0062 California Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0062 ",
+      "oneYear":" 0.05 ",
+      "fee":" 0.16% ",
+      "name":" CMMM0062 ",
+      "fiveYear":"0.44"
+    },
+    " 0063 Pennsylvania Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0063 ",
+      "oneYear":" 0.05 ",
+      "fee":" 0.16% ",
+      "name":" PMMM0063 ",
+      "fiveYear":"0.46"
+    },
+    " 0077 Pennsylvania Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0077 ",
+      "oneYear":" 10.05 ",
+      "fee":" 0.19% ",
+      "name":" PLT0077 ",
+      "fiveYear":"0.89"
+    },
+    " 0035 Intermediate-Term Treasury ":{
+      "price":" 11.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0035 ",
+      "oneYear":" 9.8 ",
+      "fee":" 0.20% ",
+      "name":" IT0035 ",
+      "fiveYear":"1.14"
+    },
+    " 0023 U.S. Growth ":{
+      "price":" 34.2 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0023 ",
+      "oneYear":" -0.68 ",
+      "fee":" 0.46% ",
+      "name":" UG0023 ",
+      "fiveYear":"0.19"
+    },
+    " 0585 Total Stock Market Index  Admiral Shares ":{
+      "price":" 61.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0585 ",
+      "oneYear":" 1.08 ",
+      "fee":" 0.04% ",
+      "name":" TSMIAS0585 ",
+      "fiveYear":"0.09"
+    },
+    " 0914 LifeStrategy Moderate Growth ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0914 ",
+      "oneYear":" 0.26 ",
+      "fee":" 0.14% ",
+      "name":" LMG0914 ",
+      "fiveYear":"0.51"
+    },
+    " 0071 Intermediate-Term Investment-Grade ":{
+      "price":" 9.84 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0071 ",
+      "oneYear":" 7.52 ",
+      "fee":" 0.20% ",
+      "name":" II0071 ",
+      "fiveYear":"1.08"
+    },
+    " 0052 Health Care ":{
+      "price":" 209.0 ",
+      "category":" Stock - Health Care Sector Index ",
+      "id":" 0052 ",
+      "oneYear":" 11.45 ",
+      "fee":" 0.37% ",
+      "name":" HC0052 ",
+      "fiveYear":"0.85"
+    },
+    " 0041 Short-Term Tax-Exempt ":{
+      "price":" 15.8 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0041 ",
+      "oneYear":" 1.6 ",
+      "fee":" 0.19% ",
+      "name":" ST0041 ",
+      "fiveYear":"0.70"
+    },
+    " 0021 Wellington ":{
+      "price":" 41.3 ",
+      "category":" Balanced ",
+      "id":" 0021 ",
+      "oneYear":" 3.85 ",
+      "fee":" 0.25% ",
+      "name":" W0021 ",
+      "fiveYear":"0.79"
+    },
+    " 0036 GNMA ":{
+      "price":" 10.6 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0036 ",
+      "oneYear":" 7.69 ",
+      "fee":" 0.21% ",
+      "name":" G0036 ",
+      "fiveYear":"1.08"
+    },
+    " 5132 Short-Term Bond Index  Admiral Shares ":{
+      "price":" 10.4 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 5132 ",
+      "oneYear":" 3.08 ",
+      "fee":" 0.07% ",
+      "name":" SBIAS5132 ",
+      "fiveYear":"0.93"
+    },
+    " 0124 U.S. Value ":{
+      "price":" 18.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0124 ",
+      "oneYear":" 3.23 ",
+      "fee":" 0.23% ",
+      "name":" UV0124 ",
+      "fiveYear":"-2.65"
+    },
+    " 0127 Developed Markets Index  Admiral Shares ":{
+      "price":" 13.5 ",
+      "category":" International ",
+      "id":" 0127 ",
+      "oneYear":" -12.51 ",
+      "fee":" 0.07% ",
+      "name":" DMIAS0127 ",
+      "fiveYear":"-2.83"
+    },
+    " 0502 Balanced Index  Admiral Shares ":{
+      "price":" 33.0 ",
+      "category":" Balanced ",
+      "id":" 0502 ",
+      "oneYear":" 4.29 ",
+      "fee":" 0.07% ",
+      "name":" BIAS0502 ",
+      "fiveYear":"0.77"
+    },
+    " 0031 Limited-Term Tax-Exempt ":{
+      "price":" 11.0 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0031 ",
+      "oneYear":" 3.71 ",
+      "fee":" 0.19% ",
+      "name":" LT0031 ",
+      "fiveYear":"0.82"
+    },
+    " 0073 Windsor II ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0073 ",
+      "oneYear":" 2.7 ",
+      "fee":" 0.33% ",
+      "name":" WI0073 ",
+      "fiveYear":"-2.46"
+    },
+    " 0168 Massachusetts Tax-Exempt ":{
+      "price":" 10.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0168 ",
+      "oneYear":" 10.41 ",
+      "fee":" 0.15% ",
+      "name":" MT0168 ",
+      "fiveYear":"0.92"
+    },
+    " 0509 Growth Index  Admiral Shares ":{
+      "price":" 66.7 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0509 ",
+      "oneYear":" 1.87 ",
+      "fee":" 0.06% ",
+      "name":" GIAS0509 ",
+      "fiveYear":"0.68"
+    },
+    " 0579 European Stock Index  Admiral Shares ":{
+      "price":" 71.1 ",
+      "category":" International ",
+      "id":" 0579 ",
+      "oneYear":" -11.49 ",
+      "fee":" 0.10% ",
+      "name":" ESIAS0579 ",
+      "fiveYear":"-2.87"
+    },
+    " 0103 Tax-Managed Balanced  Admiral Shares ":{
+      "price":" 29.5 ",
+      "category":" Balanced ",
+      "id":" 0103 ",
+      "oneYear":" 5.58 ",
+      "fee":" 0.09% ",
+      "name":" TBAS0103 ",
+      "fiveYear":"0.78"
+    },
+    " 0584 Total Bond Market Index  Admiral Shares ":{
+      "price":" 10.8 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0584 ",
+      "oneYear":" 7.69 ",
+      "fee":" 0.05% ",
+      "name":" TBMIAS0584 ",
+      "fiveYear":"1.06"
+    },
+    " 0057 Dividend Growth ":{
+      "price":" 25.6 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0057 ",
+      "oneYear":" 9.43 ",
+      "fee":" 0.30% ",
+      "name":" DG0057 ",
+      "fiveYear":"0.79"
+    },
+    " 0116 Tax-Managed Small-Cap  Admiral Shares ":{
+      "price":" 56.1 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0116 ",
+      "oneYear":" 1.22 ",
+      "fee":" 0.09% ",
+      "name":" TSAS0116 ",
+      "fiveYear":"0.63"
+    },
+    " 0100 California Intermediate-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Inter-term State Muni ",
+      "id":" 0100 ",
+      "oneYear":" 10.16 ",
+      "fee":" 0.19% ",
+      "name":" CIT0100 ",
+      "fiveYear":"0.90"
+    },
+    " 0044 High-Yield Tax-Exempt ":{
+      "price":" 11.3 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0044 ",
+      "oneYear":" 10.98 ",
+      "fee":" 0.19% ",
+      "name":" HT0044 ",
+      "fiveYear":"0.89"
+    },
+    " 0126 International Explorer ":{
+      "price":" 20.1 ",
+      "category":" International ",
+      "id":" 0126 ",
+      "oneYear":" -19.74 ",
+      "fee":" 0.41% ",
+      "name":" IE0126 ",
+      "fiveYear":"-2.80"
+    },
+    " 0082 Convertible Securities ":{
+      "price":" 13.3 ",
+      "category":" Balanced ",
+      "id":" 0082 ",
+      "oneYear":" -6.75 ",
+      "fee":" 0.34% ",
+      "name":" CS0082 ",
+      "fiveYear":"0.85"
+    },
+    " 0572 Pacific Stock Index  Admiral Shares ":{
+      "price":" 82.2 ",
+      "category":" International ",
+      "id":" 0572 ",
+      "oneYear":" -13.89 ",
+      "fee":" 0.10% ",
+      "name":" PSIAS0572 ",
+      "fiveYear":"-2.75"
+    },
+    " 5314 Intermediate-Term Bond Index  Admiral Shares ":{
+      "price":" 11.5 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 5314 ",
+      "oneYear":" 10.74 ",
+      "fee":" 0.07% ",
+      "name":" IBIAS5314 ",
+      "fiveYear":"1.16"
+    },
+    " 0724 LifeStrategy Conservative Growth ":{
+      "price":" 19.4 ",
+      "category":" Balanced ",
+      "id":" 0724 ",
+      "oneYear":" 1.76 ",
+      "fee":" 0.13% ",
+      "name":" LCG0724 ",
+      "fiveYear":"0.70"
+    },
+    " 0114 Strategic Equity ":{
+      "price":" 33.7 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0114 ",
+      "oneYear":" 1.17 ",
+      "fee":" 0.18% ",
+      "name":" SE0114 ",
+      "fiveYear":"-2.47"
+    },
+    " 0506 Value Index  Admiral Shares ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0506 ",
+      "oneYear":" 1.14 ",
+      "fee":" 0.06% ",
+      "name":" VIAS0506 ",
+      "fiveYear":"-2.62"
+    },
+    " 0046 International Value ":{
+      "price":" 36.8 ",
+      "category":" International ",
+      "id":" 0046 ",
+      "oneYear":" -14.58 ",
+      "fee":" 0.43% ",
+      "name":" IV0046 ",
+      "fiveYear":"-2.81"
+    },
+    " 0022 Windsor ":{
+      "price":" 22.2 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0022 ",
+      "oneYear":" -4.0 ",
+      "fee":" 0.30% ",
+      "name":" W0022 ",
+      "fiveYear":"-2.73"
+    },
+    " 0163 New York Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0163 ",
+      "oneYear":" 0.05 ",
+      "fee":" 0.16% ",
+      "name":" NYMMM0163 ",
+      "fiveYear":"0.44"
+    },
+    " 0033 Federal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0033 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.11% ",
+      "name":" FMM0033 ",
+      "fiveYear":"0.52"
+    },
+    " 0029 High-Yield Corporate ":{
+      "price":" 5.97 ",
+      "category":" Bond - Inter-term Low Quality ",
+      "id":" 0029 ",
+      "oneYear":" 7.13 ",
+      "fee":" 0.23% ",
+      "name":" HC0029 ",
+      "fiveYear":"1.03"
+    },
+    " 0301 Mid-Cap Growth ":{
+      "price":" 25.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 0301 ",
+      "oneYear":" 1.17 ",
+      "fee":" 0.36% ",
+      "name":" MG0301 ",
+      "fiveYear":"0.82"
+    },
+    " 0083 Long-Term Treasury ":{
+      "price":" 12.3 ",
+      "category":" Bond - Long-term Government ",
+      "id":" 0083 ",
+      "oneYear":" 29.28 ",
+      "fee":" 0.20% ",
+      "name":" LT0083 ",
+      "fiveYear":"1.31"
+    },
+    " 0053 Precious Metals and Mining ":{
+      "price":" 10.2 ",
+      "category":" Stock - Sector  Precious Metals and Mining ",
+      "id":" 0053 ",
+      "oneYear":" -21.7 ",
+      "fee":" 0.43% ",
+      "name":" PMaM0053 ",
+      "fiveYear":"0.69"
+    },
+    " 0026 Morgan Growth ":{
+      "price":" 28.4 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0026 ",
+      "oneYear":" -2.56 ",
+      "fee":" 0.38% ",
+      "name":" MG0026 ",
+      "fiveYear":"0.21"
+    },
+    " 0028 Long-Term Investment-Grade ":{
+      "price":" 10.4 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0028 ",
+      "oneYear":" 17.18 ",
+      "fee":" 0.22% ",
+      "name":" LI0028 ",
+      "fiveYear":"1.18"
+    },
+    " 0093 Growth and Income ":{
+      "price":" 44.9 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0093 ",
+      "oneYear":" 2.42 ",
+      "fee":" 0.34% ",
+      "name":" GaI0093 ",
+      "fiveYear":"-2.52"
+    },
+    " 0024 Explorer ":{
+      "price":" 95.7 ",
+      "category":" Stock - Small-Cap Growth ",
+      "id":" 0024 ",
+      "oneYear":" -1.89 ",
+      "fee":" 0.46% ",
+      "name":" E0024 ",
+      "fiveYear":"0.46"
+    },
+    " 0097 Ohio Long-Term Tax-Exempt ":{
+      "price":" 12.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0097 ",
+      "oneYear":" 10.08 ",
+      "fee":" 0.15% ",
+      "name":" OLT0097 ",
+      "fiveYear":"0.93"
+    },
+    " 0081 International Growth ":{
+      "price":" 26.5 ",
+      "category":" International ",
+      "id":" 0081 ",
+      "oneYear":" -13.68 ",
+      "fee":" 0.46% ",
+      "name":" IG0081 ",
+      "fiveYear":"-2.58"
+    },
+    " 0014 New Jersey Long-Term Tax-Exempt ":{
+      "price":" 12.0 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0014 ",
+      "oneYear":" 9.96 ",
+      "fee":" 0.19% ",
+      "name":" NJLT0014 ",
+      "fiveYear":"0.89"
+    },
+    " 0030 Prime Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0030 ",
+      "oneYear":" 0.05 ",
+      "fee":" 0.16% ",
+      "name":" PMM0030 ",
+      "fiveYear":"0.54"
+    },
+    " 0723 LifeStrategy Income ":{
+      "price":" 15.4 ",
+      "category":" Balanced ",
+      "id":" 0723 ",
+      "oneYear":" 3.77 ",
+      "fee":" 0.12% ",
+      "name":" LI0723 ",
+      "fiveYear":"0.84"
+    },
+    " 0598 Extended Market Index  Admiral Shares ":{
+      "price":" 77.6 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0598 ",
+      "oneYear":" -3.59 ",
+      "fee":" 0.08% ",
+      "name":" EMIAS0598 ",
+      "fiveYear":"0.54"
+    },
+    " 0095 New Jersey Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0095 ",
+      "oneYear":" 0.05 ",
+      "fee":" 0.16% ",
+      "name":" NJMMM0095 ",
+      "fiveYear":"0.44"
+    },
+    " 0056 STAR ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0056 ",
+      "oneYear":" 0.77 ",
+      "fee":" 0.32% ",
+      "name":" S0056 ",
+      "fiveYear":"0.65"
+    },
+    " 0119 Inflation-Protected Securities ":{
+      "price":" 13.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0119 ",
+      "oneYear":" 13.24 ",
+      "fee":" 0.20% ",
+      "name":" IS0119 ",
+      "fiveYear":"1.14"
+    },
+    " 5111 Capital Opportunity  Admiral Shares ":{
+      "price":" 143.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 5111 ",
+      "oneYear":" -6.11 ",
+      "fee":" 0.38% ",
+      "name":" COAS5111 ",
+      "fiveYear":"0.38"
+    },
+    " 0076 New York Long-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0076 ",
+      "oneYear":" 9.62 ",
+      "fee":" 0.19% ",
+      "name":" NYLT0076 ",
+      "fiveYear":"0.89"
+    },
+    " 0043 Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0043 ",
+      "oneYear":" 10.69 ",
+      "fee":" 0.19% ",
+      "name":" LT0043 ",
+      "fiveYear":"0.90"
+    },
+    " 0075 California Long-Term Tax-Exempt ":{
+      "price":" 12.1 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0075 ",
+      "oneYear":" 11.49 ",
+      "fee":" 0.19% ",
+      "name":" CLT0075 ",
+      "fiveYear":"0.85"
+    },
+    " 0129 Global Equity ":{
+      "price":" 28.6 ",
+      "category":" International ",
+      "id":" 0129 ",
+      "oneYear":" -8.9 ",
+      "fee":" 0.51% ",
+      "name":" GE0129 ",
+      "fiveYear":"-2.75"
+    },
+    " 0049 Short-Term Federal ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Government ",
+      "id":" 0049 ",
+      "oneYear":" 2.76 ",
+      "fee":" 0.20% ",
+      "name":" SF0049 ",
+      "fiveYear":"0.91"
+    },
+    " 0065 Equity Income ":{
+      "price":" 34.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0065 ",
+      "oneYear":" 10.6 ",
+      "fee":" 0.26% ",
+      "name":" EI0065 ",
+      "fiveYear":"0.51"
+    },
+    " 0027 Wellesley Income ":{
+      "price":" 26.4 ",
+      "category":" Balanced ",
+      "id":" 0027 ",
+      "oneYear":" 9.63 ",
+      "fee":" 0.22% ",
+      "name":" WI0027 ",
+      "fiveYear":"1.02"
+    }
+  },
+  "7":{
+    " 0328 Capital Value ":{
+      "price":" 12.5 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0328 ",
+      "oneYear":" 22.33 ",
+      "fee":" 0.25% ",
+      "name":" CV0328 ",
+      "fiveYear":"0.77"
+    },
+    " 5102 Tax-Managed Capital Appreciation  Admiral Shares ":{
+      "price":" 125.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 5102 ",
+      "oneYear":" 16.35 ",
+      "fee":" 0.09% ",
+      "name":" TCAAS5102 ",
+      "fiveYear":"0.59"
+    },
+    " 5859 Mid-Cap Index  Admiral Shares ":{
+      "price":" 178.0 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 5859 ",
+      "oneYear":" 15.99 ",
+      "fee":" 0.06% ",
+      "name":" MIAS5859 ",
+      "fiveYear":"0.76"
+    },
+    " 0039 Short-Term Investment-Grade ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 0039 ",
+      "oneYear":" 4.52 ",
+      "fee":" 0.20% ",
+      "name":" SI0039 ",
+      "fiveYear":"0.85"
+    },
+    " 0042 Intermediate-Term Tax-Exempt ":{
+      "price":" 14.2 ",
+      "category":" Bond - Inter-term National Muni ",
+      "id":" 0042 ",
+      "oneYear":" 5.7 ",
+      "fee":" 0.19% ",
+      "name":" IT0042 ",
+      "fiveYear":"0.98"
+    },
+    " 0934 Selected Value ":{
+      "price":" 30.8 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0934 ",
+      "oneYear":" 15.25 ",
+      "fee":" 0.35% ",
+      "name":" SV0934 ",
+      "fiveYear":"0.86"
+    },
+    " 0540 500 Index  Admiral Shares ":{
+      "price":" 225.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0540 ",
+      "oneYear":" 15.96 ",
+      "fee":" 0.04% ",
+      "name":" 5IAS0540 ",
+      "fiveYear":"0.54"
+    },
+    " 0559 PRIMECAP  Admiral Shares ":{
+      "price":" 124.0 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0559 ",
+      "oneYear":" 15.38 ",
+      "fee":" 0.33% ",
+      "name":" PAS0559 ",
+      "fiveYear":"0.75"
+    },
+    " 0051 Energy ":{
+      "price":" 48.8 ",
+      "category":" Stock - Sector  Energy ",
+      "id":" 0051 ",
+      "oneYear":" 2.67 ",
+      "fee":" 0.41% ",
+      "name":" E0051 ",
+      "fiveYear":"-2.57"
+    },
+    " 0522 Long-Term Bond Index ":{
+      "price":" 14.1 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0522 ",
+      "oneYear":" 8.49 ",
+      "fee":" 0.15% ",
+      "name":" LBI0522 ",
+      "fiveYear":"1.28"
+    },
+    " 0213 FTSE Social Index ":{
+      "price":" 15.8 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0213 ",
+      "oneYear":" 17.84 ",
+      "fee":" 0.22% ",
+      "name":" FSI0213 ",
+      "fiveYear":"0.33"
+    },
+    " 5123 REIT Index  Admiral Shares ":{
+      "price":" 118.0 ",
+      "category":" Stock - Sector  REIT Index  Admiral Shares ",
+      "id":" 5123 ",
+      "oneYear":" 17.69 ",
+      "fee":" 0.12% ",
+      "name":" RIAS5123 ",
+      "fiveYear":"1.03"
+    },
+    " 0548 Small-Cap Index  Admiral Shares ":{
+      "price":" 64.9 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0548 ",
+      "oneYear":" 18.24 ",
+      "fee":" 0.06% ",
+      "name":" SIAS0548 ",
+      "fiveYear":"0.95"
+    },
+    " 0045 Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0045 ",
+      "oneYear":" 0.04 ",
+      "fee":" 0.15% ",
+      "name":" MMM0045 ",
+      "fiveYear":"0.24"
+    },
+    " 0062 California Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0062 ",
+      "oneYear":" 0.03 ",
+      "fee":" 0.16% ",
+      "name":" CMMM0062 ",
+      "fiveYear":"0.20"
+    },
+    " 0063 Pennsylvania Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0063 ",
+      "oneYear":" 0.03 ",
+      "fee":" 0.16% ",
+      "name":" PMMM0063 ",
+      "fiveYear":"0.23"
+    },
+    " 0077 Pennsylvania Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0077 ",
+      "oneYear":" 6.94 ",
+      "fee":" 0.19% ",
+      "name":" PLT0077 ",
+      "fiveYear":"0.96"
+    },
+    " 0035 Intermediate-Term Treasury ":{
+      "price":" 11.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0035 ",
+      "oneYear":" 2.67 ",
+      "fee":" 0.20% ",
+      "name":" IT0035 ",
+      "fiveYear":"1.03"
+    },
+    " 0023 U.S. Growth ":{
+      "price":" 34.2 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0023 ",
+      "oneYear":" 18.43 ",
+      "fee":" 0.46% ",
+      "name":" UG0023 ",
+      "fiveYear":"0.59"
+    },
+    " 0585 Total Stock Market Index  Admiral Shares ":{
+      "price":" 61.0 ",
+      "category":" Stock - Large-Cap Blend Index ",
+      "id":" 0585 ",
+      "oneYear":" 16.38 ",
+      "fee":" 0.04% ",
+      "name":" TSMIAS0585 ",
+      "fiveYear":"0.64"
+    },
+    " 0914 LifeStrategy Moderate Growth ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0914 ",
+      "oneYear":" 11.76 ",
+      "fee":" 0.14% ",
+      "name":" LMG0914 ",
+      "fiveYear":"0.65"
+    },
+    " 0071 Intermediate-Term Investment-Grade ":{
+      "price":" 9.84 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0071 ",
+      "oneYear":" 9.14 ",
+      "fee":" 0.20% ",
+      "name":" II0071 ",
+      "fiveYear":"1.12"
+    },
+    " 0052 Health Care ":{
+      "price":" 209.0 ",
+      "category":" Stock - Sector  Health Care ",
+      "id":" 0052 ",
+      "oneYear":" 15.11 ",
+      "fee":" 0.37% ",
+      "name":" HC0052 ",
+      "fiveYear":"1.03"
+    },
+    " 0041 Short-Term Tax-Exempt ":{
+      "price":" 15.8 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0041 ",
+      "oneYear":" 0.99 ",
+      "fee":" 0.19% ",
+      "name":" ST0041 ",
+      "fiveYear":"0.61"
+    },
+    " 0021 Wellington ":{
+      "price":" 41.3 ",
+      "category":" Balanced ",
+      "id":" 0021 ",
+      "oneYear":" 12.57 ",
+      "fee":" 0.25% ",
+      "name":" W0021 ",
+      "fiveYear":"0.87"
+    },
+    " 0036 GNMA ":{
+      "price":" 10.6 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0036 ",
+      "oneYear":" 2.35 ",
+      "fee":" 0.21% ",
+      "name":" G0036 ",
+      "fiveYear":"1.01"
+    },
+    " 5132 Short-Term Bond Index  Admiral Shares ":{
+      "price":" 10.4 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 5132 ",
+      "oneYear":" 2.05 ",
+      "fee":" 0.07% ",
+      "name":" SBIAS5132 ",
+      "fiveYear":"0.83"
+    },
+    " 0124 U.S. Value ":{
+      "price":" 18.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0124 ",
+      "oneYear":" 19.12 ",
+      "fee":" 0.23% ",
+      "name":" UV0124 ",
+      "fiveYear":"0.39"
+    },
+    " 0127 Developed Markets Index  Admiral Shares ":{
+      "price":" 13.5 ",
+      "category":" International ",
+      "id":" 0127 ",
+      "oneYear":" 18.56 ",
+      "fee":" 0.07% ",
+      "name":" DMIAS0127 ",
+      "fiveYear":"-2.73"
+    },
+    " 0502 Balanced Index  Admiral Shares ":{
+      "price":" 33.0 ",
+      "category":" Balanced ",
+      "id":" 0502 ",
+      "oneYear":" 11.49 ",
+      "fee":" 0.07% ",
+      "name":" BIAS0502 ",
+      "fiveYear":"0.88"
+    },
+    " 0031 Limited-Term Tax-Exempt ":{
+      "price":" 11.0 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0031 ",
+      "oneYear":" 1.77 ",
+      "fee":" 0.19% ",
+      "name":" LT0031 ",
+      "fiveYear":"0.76"
+    },
+    " 0073 Windsor II ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0073 ",
+      "oneYear":" 16.72 ",
+      "fee":" 0.33% ",
+      "name":" WI0073 ",
+      "fiveYear":"0.46"
+    },
+    " 0168 Massachusetts Tax-Exempt ":{
+      "price":" 10.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0168 ",
+      "oneYear":" 6.46 ",
+      "fee":" 0.15% ",
+      "name":" MT0168 ",
+      "fiveYear":"0.98"
+    },
+    " 0509 Growth Index  Admiral Shares ":{
+      "price":" 66.7 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0509 ",
+      "oneYear":" 17.01 ",
+      "fee":" 0.06% ",
+      "name":" GIAS0509 ",
+      "fiveYear":"0.78"
+    },
+    " 0579 European Stock Index  Admiral Shares ":{
+      "price":" 71.1 ",
+      "category":" International ",
+      "id":" 0579 ",
+      "oneYear":" 20.99 ",
+      "fee":" 0.10% ",
+      "name":" ESIAS0579 ",
+      "fiveYear":"-2.78"
+    },
+    " 0103 Tax-Managed Balanced  Admiral Shares ":{
+      "price":" 29.5 ",
+      "category":" Balanced ",
+      "id":" 0103 ",
+      "oneYear":" 10.87 ",
+      "fee":" 0.09% ",
+      "name":" TBAS0103 ",
+      "fiveYear":"0.89"
+    },
+    " 0584 Total Bond Market Index  Admiral Shares ":{
+      "price":" 10.8 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0584 ",
+      "oneYear":" 4.15 ",
+      "fee":" 0.05% ",
+      "name":" TBMIAS0584 ",
+      "fiveYear":"1.02"
+    },
+    " 0057 Dividend Growth ":{
+      "price":" 25.6 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0057 ",
+      "oneYear":" 10.39 ",
+      "fee":" 0.30% ",
+      "name":" DG0057 ",
+      "fiveYear":"0.85"
+    },
+    " 0116 Tax-Managed Small-Cap  Admiral Shares ":{
+      "price":" 56.1 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0116 ",
+      "oneYear":" 16.03 ",
+      "fee":" 0.09% ",
+      "name":" TSAS0116 ",
+      "fiveYear":"0.96"
+    },
+    " 0100 California Intermediate-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Inter-term State Muni ",
+      "id":" 0100 ",
+      "oneYear":" 6.63 ",
+      "fee":" 0.19% ",
+      "name":" CIT0100 ",
+      "fiveYear":"0.97"
+    },
+    " 0044 High-Yield Tax-Exempt ":{
+      "price":" 11.3 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0044 ",
+      "oneYear":" 9.36 ",
+      "fee":" 0.19% ",
+      "name":" HT0044 ",
+      "fiveYear":"1.02"
+    },
+    " 0126 International Explorer ":{
+      "price":" 20.1 ",
+      "category":" International ",
+      "id":" 0126 ",
+      "oneYear":" 17.93 ",
+      "fee":" 0.41% ",
+      "name":" IE0126 ",
+      "fiveYear":"-2.55"
+    },
+    " 0082 Convertible Securities ":{
+      "price":" 13.3 ",
+      "category":" Balanced ",
+      "id":" 0082 ",
+      "oneYear":" 14.47 ",
+      "fee":" 0.34% ",
+      "name":" CS0082 ",
+      "fiveYear":"0.92"
+    },
+    " 0572 Pacific Stock Index  Admiral Shares ":{
+      "price":" 82.2 ",
+      "category":" International ",
+      "id":" 0572 ",
+      "oneYear":" 15.61 ",
+      "fee":" 0.10% ",
+      "name":" PSIAS0572 ",
+      "fiveYear":"-2.52"
+    },
+    " 5314 Intermediate-Term Bond Index  Admiral Shares ":{
+      "price":" 11.5 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 5314 ",
+      "oneYear":" 7.02 ",
+      "fee":" 0.07% ",
+      "name":" IBIAS5314 ",
+      "fiveYear":"1.15"
+    },
+    " 0724 LifeStrategy Conservative Growth ":{
+      "price":" 19.4 ",
+      "category":" Balanced ",
+      "id":" 0724 ",
+      "oneYear":" 9.19 ",
+      "fee":" 0.13% ",
+      "name":" LCG0724 ",
+      "fiveYear":"0.75"
+    },
+    " 0114 Strategic Equity ":{
+      "price":" 33.7 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0114 ",
+      "oneYear":" 18.9 ",
+      "fee":" 0.18% ",
+      "name":" SE0114 ",
+      "fiveYear":"0.66"
+    },
+    " 0506 Value Index  Admiral Shares ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0506 ",
+      "oneYear":" 15.18 ",
+      "fee":" 0.06% ",
+      "name":" VIAS0506 ",
+      "fiveYear":"0.18"
+    },
+    " 0046 International Value ":{
+      "price":" 36.8 ",
+      "category":" International ",
+      "id":" 0046 ",
+      "oneYear":" 20.18 ",
+      "fee":" 0.43% ",
+      "name":" IV0046 ",
+      "fiveYear":"-2.70"
+    },
+    " 0022 Windsor ":{
+      "price":" 22.2 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0022 ",
+      "oneYear":" 20.78 ",
+      "fee":" 0.30% ",
+      "name":" W0022 ",
+      "fiveYear":"0.41"
+    },
+    " 0163 New York Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0163 ",
+      "oneYear":" 0.03 ",
+      "fee":" 0.16% ",
+      "name":" NYMMM0163 ",
+      "fiveYear":"0.21"
+    },
+    " 0033 Federal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0033 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.11% ",
+      "name":" FMM0033 ",
+      "fiveYear":"0.24"
+    },
+    " 0029 High-Yield Corporate ":{
+      "price":" 5.97 ",
+      "category":" Bond - Inter-term Low Quality ",
+      "id":" 0029 ",
+      "oneYear":" 14.36 ",
+      "fee":" 0.23% ",
+      "name":" HC0029 ",
+      "fiveYear":"1.19"
+    },
+    " 0301 Mid-Cap Growth ":{
+      "price":" 25.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 0301 ",
+      "oneYear":" 14.84 ",
+      "fee":" 0.36% ",
+      "name":" MG0301 ",
+      "fiveYear":"0.83"
+    },
+    " 0083 Long-Term Treasury ":{
+      "price":" 12.3 ",
+      "category":" Bond - Long-term Government ",
+      "id":" 0083 ",
+      "oneYear":" 3.47 ",
+      "fee":" 0.20% ",
+      "name":" LT0083 ",
+      "fiveYear":"1.24"
+    },
+    " 0053 Precious Metals and Mining ":{
+      "price":" 10.2 ",
+      "category":" Stock - Sector  Precious Metals and Mining ",
+      "id":" 0053 ",
+      "oneYear":" -12.98 ",
+      "fee":" 0.43% ",
+      "name":" PMaM0053 ",
+      "fiveYear":"-2.94"
+    },
+    " 0026 Morgan Growth ":{
+      "price":" 28.4 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0026 ",
+      "oneYear":" 15.09 ",
+      "fee":" 0.38% ",
+      "name":" MG0026 ",
+      "fiveYear":"0.44"
+    },
+    " 0028 Long-Term Investment-Grade ":{
+      "price":" 10.4 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0028 ",
+      "oneYear":" 11.66 ",
+      "fee":" 0.22% ",
+      "name":" LI0028 ",
+      "fiveYear":"1.28"
+    },
+    " 0093 Growth and Income ":{
+      "price":" 44.9 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0093 ",
+      "oneYear":" 16.92 ",
+      "fee":" 0.34% ",
+      "name":" GaI0093 ",
+      "fiveYear":"0.36"
+    },
+    " 0024 Explorer ":{
+      "price":" 95.7 ",
+      "category":" Stock - Small-Cap Growth ",
+      "id":" 0024 ",
+      "oneYear":" 14.89 ",
+      "fee":" 0.46% ",
+      "name":" E0024 ",
+      "fiveYear":"0.75"
+    },
+    " 0097 Ohio Long-Term Tax-Exempt ":{
+      "price":" 12.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0097 ",
+      "oneYear":" 7.47 ",
+      "fee":" 0.15% ",
+      "name":" OLT0097 ",
+      "fiveYear":"1.00"
+    },
+    " 0081 International Growth ":{
+      "price":" 26.5 ",
+      "category":" International ",
+      "id":" 0081 ",
+      "oneYear":" 20.01 ",
+      "fee":" 0.46% ",
+      "name":" IG0081 ",
+      "fiveYear":"-2.46"
+    },
+    " 0014 New Jersey Long-Term Tax-Exempt ":{
+      "price":" 12.0 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0014 ",
+      "oneYear":" 7.09 ",
+      "fee":" 0.19% ",
+      "name":" NJLT0014 ",
+      "fiveYear":"0.96"
+    },
+    " 0030 Prime Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0030 ",
+      "oneYear":" 0.04 ",
+      "fee":" 0.16% ",
+      "name":" PMM0030 ",
+      "fiveYear":"0.28"
+    },
+    " 0723 LifeStrategy Income ":{
+      "price":" 15.4 ",
+      "category":" Balanced ",
+      "id":" 0723 ",
+      "oneYear":" 6.54 ",
+      "fee":" 0.12% ",
+      "name":" LI0723 ",
+      "fiveYear":"0.84"
+    },
+    " 0598 Extended Market Index  Admiral Shares ":{
+      "price":" 77.6 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0598 ",
+      "oneYear":" 18.48 ",
+      "fee":" 0.08% ",
+      "name":" EMIAS0598 ",
+      "fiveYear":"0.87"
+    },
+    " 0095 New Jersey Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0095 ",
+      "oneYear":" 0.04 ",
+      "fee":" 0.16% ",
+      "name":" NJMMM0095 ",
+      "fiveYear":"0.22"
+    },
+    " 0056 STAR ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0056 ",
+      "oneYear":" 13.79 ",
+      "fee":" 0.32% ",
+      "name":" S0056 ",
+      "fiveYear":"0.82"
+    },
+    " 0119 Inflation-Protected Securities ":{
+      "price":" 13.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0119 ",
+      "oneYear":" 6.78 ",
+      "fee":" 0.20% ",
+      "name":" IS0119 ",
+      "fiveYear":"1.07"
+    },
+    " 5111 Capital Opportunity  Admiral Shares ":{
+      "price":" 143.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 5111 ",
+      "oneYear":" 18.43 ",
+      "fee":" 0.38% ",
+      "name":" COAS5111 ",
+      "fiveYear":"0.65"
+    },
+    " 0076 New York Long-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0076 ",
+      "oneYear":" 6.94 ",
+      "fee":" 0.19% ",
+      "name":" NYLT0076 ",
+      "fiveYear":"0.97"
+    },
+    " 0043 Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0043 ",
+      "oneYear":" 8.08 ",
+      "fee":" 0.19% ",
+      "name":" LT0043 ",
+      "fiveYear":"1.00"
+    },
+    " 0075 California Long-Term Tax-Exempt ":{
+      "price":" 12.1 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0075 ",
+      "oneYear":" 8.92 ",
+      "fee":" 0.19% ",
+      "name":" CLT0075 ",
+      "fiveYear":"0.98"
+    },
+    " 0129 Global Equity ":{
+      "price":" 28.6 ",
+      "category":" International ",
+      "id":" 0129 ",
+      "oneYear":" 19.52 ",
+      "fee":" 0.51% ",
+      "name":" GE0129 ",
+      "fiveYear":"-2.60"
+    },
+    " 0049 Short-Term Federal ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Government ",
+      "id":" 0049 ",
+      "oneYear":" 1.44 ",
+      "fee":" 0.20% ",
+      "name":" SF0049 ",
+      "fiveYear":"0.79"
+    },
+    " 0065 Equity Income ":{
+      "price":" 34.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0065 ",
+      "oneYear":" 13.49 ",
+      "fee":" 0.26% ",
+      "name":" EI0065 ",
+      "fiveYear":"0.75"
+    },
+    " 0027 Wellesley Income ":{
+      "price":" 26.4 ",
+      "category":" Balanced ",
+      "id":" 0027 ",
+      "oneYear":" 10.06 ",
+      "fee":" 0.22% ",
+      "name":" WI0027 ",
+      "fiveYear":"1.09"
+    }
+  },
+  "9":{
+    " 0328 Capital Value ":{
+      "price":" 12.5 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0328 ",
+      "oneYear":" 5.16 ",
+      "fee":" 0.25% ",
+      "name":" CV0328 ",
+      "fiveYear":"1.47"
+    },
+    " 5102 Tax-Managed Capital Appreciation  Admiral Shares ":{
+      "price":" 125.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 5102 ",
+      "oneYear":" 12.52 ",
+      "fee":" 0.09% ",
+      "name":" TCAAS5102 ",
+      "fiveYear":"1.54"
+    },
+    " 5859 Mid-Cap Index  Admiral Shares ":{
+      "price":" 178.0 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 5859 ",
+      "oneYear":" 13.76 ",
+      "fee":" 0.06% ",
+      "name":" MIAS5859 ",
+      "fiveYear":"1.60"
+    },
+    " 0039 Short-Term Investment-Grade ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Investment Index ",
+      "id":" 0039 ",
+      "oneYear":" 1.76 ",
+      "fee":" 0.20% ",
+      "name":" SI0039 ",
+      "fiveYear":"0.72"
+    },
+    " 0042 Intermediate-Term Tax-Exempt ":{
+      "price":" 14.2 ",
+      "category":" Bond - Inter-term National Muni ",
+      "id":" 0042 ",
+      "oneYear":" 7.25 ",
+      "fee":" 0.19% ",
+      "name":" IT0042 ",
+      "fiveYear":"0.90"
+    },
+    " 0934 Selected Value ":{
+      "price":" 30.8 ",
+      "category":" Stock - Mid-Cap Value Index ",
+      "id":" 0934 ",
+      "oneYear":" 6.36 ",
+      "fee":" 0.35% ",
+      "name":" SV0934 ",
+      "fiveYear":"1.56"
+    },
+    " 0540 500 Index  Admiral Shares ":{
+      "price":" 225.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0540 ",
+      "oneYear":" 13.64 ",
+      "fee":" 0.04% ",
+      "name":" 5IAS0540 ",
+      "fiveYear":"1.54"
+    },
+    " 0559 PRIMECAP  Admiral Shares ":{
+      "price":" 124.0 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0559 ",
+      "oneYear":" 18.83 ",
+      "fee":" 0.33% ",
+      "name":" PAS0559 ",
+      "fiveYear":"1.57"
+    },
+    " 0051 Energy ":{
+      "price":" 48.8 ",
+      "category":" Stock - Sector  Energy ",
+      "id":" 0051 ",
+      "oneYear":" -14.26 ",
+      "fee":" 0.41% ",
+      "name":" E0051 ",
+      "fiveYear":"0.74"
+    },
+    " 0522 Long-Term Bond Index ":{
+      "price":" 14.1 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0522 ",
+      "oneYear":" 19.72 ",
+      "fee":" 0.15% ",
+      "name":" LBI0522 ",
+      "fiveYear":"1.26"
+    },
+    " 0213 FTSE Social Index ":{
+      "price":" 15.8 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0213 ",
+      "oneYear":" 15.75 ",
+      "fee":" 0.22% ",
+      "name":" FSI0213 ",
+      "fiveYear":"1.57"
+    },
+    " 5123 REIT Index  Admiral Shares ":{
+      "price":" 118.0 ",
+      "category":" Stock - Sector  REIT Index  Admiral Shares ",
+      "id":" 5123 ",
+      "oneYear":" 30.32 ",
+      "fee":" 0.12% ",
+      "name":" RIAS5123 ",
+      "fiveYear":"1.60"
+    },
+    " 0548 Small-Cap Index  Admiral Shares ":{
+      "price":" 64.9 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0548 ",
+      "oneYear":" 7.5 ",
+      "fee":" 0.06% ",
+      "name":" SIAS0548 ",
+      "fiveYear":"1.60"
+    },
+    " 0045 Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0045 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.15% ",
+      "name":" MMM0045 ",
+      "fiveYear":"-0.24"
+    },
+    " 0062 California Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0062 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" CMMM0062 ",
+      "fiveYear":"-0.27"
+    },
+    " 0063 Pennsylvania Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0063 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" PMMM0063 ",
+      "fiveYear":"-0.26"
+    },
+    " 0077 Pennsylvania Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0077 ",
+      "oneYear":" 10.78 ",
+      "fee":" 0.19% ",
+      "name":" PLT0077 ",
+      "fiveYear":"0.96"
+    },
+    " 0035 Intermediate-Term Treasury ":{
+      "price":" 11.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0035 ",
+      "oneYear":" 4.32 ",
+      "fee":" 0.20% ",
+      "name":" IT0035 ",
+      "fiveYear":"0.86"
+    },
+    " 0023 U.S. Growth ":{
+      "price":" 34.2 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0023 ",
+      "oneYear":" 13.06 ",
+      "fee":" 0.46% ",
+      "name":" UG0023 ",
+      "fiveYear":"1.52"
+    },
+    " 0585 Total Stock Market Index  Admiral Shares ":{
+      "price":" 61.0 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0585 ",
+      "oneYear":" 12.56 ",
+      "fee":" 0.04% ",
+      "name":" TSMIAS0585 ",
+      "fiveYear":"1.55"
+    },
+    " 0914 LifeStrategy Moderate Growth ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0914 ",
+      "oneYear":" 7.07 ",
+      "fee":" 0.14% ",
+      "name":" LMG0914 ",
+      "fiveYear":"1.24"
+    },
+    " 0071 Intermediate-Term Investment-Grade ":{
+      "price":" 9.84 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 0071 ",
+      "oneYear":" 5.81 ",
+      "fee":" 0.20% ",
+      "name":" II0071 ",
+      "fiveYear":"1.04"
+    },
+    " 0052 Health Care ":{
+      "price":" 209.0 ",
+      "category":" Stock - Sector  Health Care ",
+      "id":" 0052 ",
+      "oneYear":" 28.52 ",
+      "fee":" 0.37% ",
+      "name":" HC0052 ",
+      "fiveYear":"1.73"
+    },
+    " 0041 Short-Term Tax-Exempt ":{
+      "price":" 15.8 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0041 ",
+      "oneYear":" 0.65 ",
+      "fee":" 0.19% ",
+      "name":" ST0041 ",
+      "fiveYear":"0.37"
+    },
+    " 0021 Wellington ":{
+      "price":" 41.3 ",
+      "category":" Balanced ",
+      "id":" 0021 ",
+      "oneYear":" 9.82 ",
+      "fee":" 0.25% ",
+      "name":" W0021 ",
+      "fiveYear":"1.34"
+    },
+    " 0036 GNMA ":{
+      "price":" 10.6 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0036 ",
+      "oneYear":" 6.65 ",
+      "fee":" 0.21% ",
+      "name":" G0036 ",
+      "fiveYear":"0.87"
+    },
+    " 5132 Short-Term Bond Index  Admiral Shares ":{
+      "price":" 10.4 ",
+      "category":" Bond - Short-term Investment Index  ",
+      "id":" 5132 ",
+      "oneYear":" 1.26 ",
+      "fee":" 0.07% ",
+      "name":" SBIAS5132 ",
+      "fiveYear":"0.62"
+    },
+    " 0124 U.S. Value ":{
+      "price":" 18.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0124 ",
+      "oneYear":" 14.68 ",
+      "fee":" 0.23% ",
+      "name":" UV0124 ",
+      "fiveYear":"1.58"
+    },
+    " 0127 Developed Markets Index  Admiral Shares ":{
+      "price":" 13.5 ",
+      "category":" International ",
+      "id":" 0127 ",
+      "oneYear":" -5.66 ",
+      "fee":" 0.07% ",
+      "name":" DMIAS0127 ",
+      "fiveYear":"0.97"
+    },
+    " 0502 Balanced Index  Admiral Shares ":{
+      "price":" 33.0 ",
+      "category":" Balanced ",
+      "id":" 0502 ",
+      "oneYear":" 9.99 ",
+      "fee":" 0.07% ",
+      "name":" BIAS0502 ",
+      "fiveYear":"1.35"
+    },
+    " 0031 Limited-Term Tax-Exempt ":{
+      "price":" 11.0 ",
+      "category":" Bond - Short-term National Muni ",
+      "id":" 0031 ",
+      "oneYear":" 1.79 ",
+      "fee":" 0.19% ",
+      "name":" LT0031 ",
+      "fiveYear":"0.59"
+    },
+    " 0073 Windsor II ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0073 ",
+      "oneYear":" 11.16 ",
+      "fee":" 0.33% ",
+      "name":" WI0073 ",
+      "fiveYear":"1.47"
+    },
+    " 0168 Massachusetts Tax-Exempt ":{
+      "price":" 10.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0168 ",
+      "oneYear":" 10.29 ",
+      "fee":" 0.15% ",
+      "name":" MT0168 ",
+      "fiveYear":"0.93"
+    },
+    " 0509 Growth Index  Admiral Shares ":{
+      "price":" 66.7 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0509 ",
+      "oneYear":" 13.63 ",
+      "fee":" 0.06% ",
+      "name":" GIAS0509 ",
+      "fiveYear":"1.56"
+    },
+    " 0579 European Stock Index  Admiral Shares ":{
+      "price":" 71.1 ",
+      "category":" International ",
+      "id":" 0579 ",
+      "oneYear":" -6.55 ",
+      "fee":" 0.10% ",
+      "name":" ESIAS0579 ",
+      "fiveYear":"0.99"
+    },
+    " 0103 Tax-Managed Balanced  Admiral Shares ":{
+      "price":" 29.5 ",
+      "category":" Balanced ",
+      "id":" 0103 ",
+      "oneYear":" 9.81 ",
+      "fee":" 0.09% ",
+      "name":" TBAS0103 ",
+      "fiveYear":"1.27"
+    },
+    " 0584 Total Bond Market Index  Admiral Shares ":{
+      "price":" 10.8 ",
+      "category":" Bond - Inter-term Investment Index  ",
+      "id":" 0584 ",
+      "oneYear":" 5.89 ",
+      "fee":" 0.05% ",
+      "name":" TBMIAS0584 ",
+      "fiveYear":"0.89"
+    },
+    " 0057 Dividend Growth ":{
+      "price":" 25.6 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0057 ",
+      "oneYear":" 11.85 ",
+      "fee":" 0.30% ",
+      "name":" DG0057 ",
+      "fiveYear":"1.50"
+    },
+    " 0116 Tax-Managed Small-Cap  Admiral Shares ":{
+      "price":" 56.1 ",
+      "category":" Stock - Small-Cap Blend Index ",
+      "id":" 0116 ",
+      "oneYear":" 6.23 ",
+      "fee":" 0.09% ",
+      "name":" TSAS0116 ",
+      "fiveYear":"1.61"
+    },
+    " 0100 California Intermediate-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Inter-term State Muni ",
+      "id":" 0100 ",
+      "oneYear":" 8.0 ",
+      "fee":" 0.19% ",
+      "name":" CIT0100 ",
+      "fiveYear":"0.96"
+    },
+    " 0044 High-Yield Tax-Exempt ":{
+      "price":" 11.3 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0044 ",
+      "oneYear":" 11.62 ",
+      "fee":" 0.19% ",
+      "name":" HT0044 ",
+      "fiveYear":"1.03"
+    },
+    " 0126 International Explorer ":{
+      "price":" 20.1 ",
+      "category":" International ",
+      "id":" 0126 ",
+      "oneYear":" -2.88 ",
+      "fee":" 0.41% ",
+      "name":" IE0126 ",
+      "fiveYear":"1.16"
+    },
+    " 0082 Convertible Securities ":{
+      "price":" 13.3 ",
+      "category":" Balanced ",
+      "id":" 0082 ",
+      "oneYear":" 2.38 ",
+      "fee":" 0.34% ",
+      "name":" CS0082 ",
+      "fiveYear":"1.23"
+    },
+    " 0572 Pacific Stock Index  Admiral Shares ":{
+      "price":" 82.2 ",
+      "category":" International ",
+      "id":" 0572 ",
+      "oneYear":" -4.54 ",
+      "fee":" 0.10% ",
+      "name":" PSIAS0572 ",
+      "fiveYear":"0.97"
+    },
+    " 5314 Intermediate-Term Bond Index  Admiral Shares ":{
+      "price":" 11.5 ",
+      "category":" Bond - Inter-term Investment Index ",
+      "id":" 5314 ",
+      "oneYear":" 6.96 ",
+      "fee":" 0.07% ",
+      "name":" IBIAS5314 ",
+      "fiveYear":"1.02"
+    },
+    " 0724 LifeStrategy Conservative Growth ":{
+      "price":" 19.4 ",
+      "category":" Balanced ",
+      "id":" 0724 ",
+      "oneYear":" 6.95 ",
+      "fee":" 0.13% ",
+      "name":" LCG0724 ",
+      "fiveYear":"1.13"
+    },
+    " 0114 Strategic Equity ":{
+      "price":" 33.7 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0114 ",
+      "oneYear":" 13.68 ",
+      "fee":" 0.18% ",
+      "name":" SE0114 ",
+      "fiveYear":"1.67"
+    },
+    " 0506 Value Index  Admiral Shares ":{
+      "price":" 37.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0506 ",
+      "oneYear":" 13.18 ",
+      "fee":" 0.06% ",
+      "name":" VIAS0506 ",
+      "fiveYear":"1.52"
+    },
+    " 0046 International Value ":{
+      "price":" 36.8 ",
+      "category":" International ",
+      "id":" 0046 ",
+      "oneYear":" -6.69 ",
+      "fee":" 0.43% ",
+      "name":" IV0046 ",
+      "fiveYear":"0.91"
+    },
+    " 0022 Windsor ":{
+      "price":" 22.2 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0022 ",
+      "oneYear":" 11.82 ",
+      "fee":" 0.30% ",
+      "name":" W0022 ",
+      "fiveYear":"1.52"
+    },
+    " 0163 New York Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0163 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" NYMMM0163 ",
+      "fiveYear":"-0.28"
+    },
+    " 0033 Federal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0033 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.11% ",
+      "name":" FMM0033 ",
+      "fiveYear":"-0.41"
+    },
+    " 0029 High-Yield Corporate ":{
+      "price":" 5.97 ",
+      "category":" Bond - Inter-term Low Quality ",
+      "id":" 0029 ",
+      "oneYear":" 4.58 ",
+      "fee":" 0.23% ",
+      "name":" HC0029 ",
+      "fiveYear":"1.19"
+    },
+    " 0301 Mid-Cap Growth ":{
+      "price":" 25.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 0301 ",
+      "oneYear":" 10.86 ",
+      "fee":" 0.36% ",
+      "name":" MG0301 ",
+      "fiveYear":"1.58"
+    },
+    " 0083 Long-Term Treasury ":{
+      "price":" 12.3 ",
+      "category":" Bond - Long-term Government ",
+      "id":" 0083 ",
+      "oneYear":" 25.28 ",
+      "fee":" 0.20% ",
+      "name":" LT0083 ",
+      "fiveYear":"1.26"
+    },
+    " 0053 Precious Metals and Mining ":{
+      "price":" 10.2 ",
+      "category":" Stock - Sector  Precious Metals and Mining ",
+      "id":" 0053 ",
+      "oneYear":" -11.41 ",
+      "fee":" 0.43% ",
+      "name":" PMaM0053 ",
+      "fiveYear":"-3.15"
+    },
+    " 0026 Morgan Growth ":{
+      "price":" 28.4 ",
+      "category":" Stock - Large-Cap Growth ",
+      "id":" 0026 ",
+      "oneYear":" 10.95 ",
+      "fee":" 0.38% ",
+      "name":" MG0026 ",
+      "fiveYear":"1.51"
+    },
+    " 0028 Long-Term Investment-Grade ":{
+      "price":" 10.4 ",
+      "category":" Bond - Long-term Investment Index ",
+      "id":" 0028 ",
+      "oneYear":" 18.17 ",
+      "fee":" 0.22% ",
+      "name":" LI0028 ",
+      "fiveYear":"1.28"
+    },
+    " 0093 Growth and Income ":{
+      "price":" 44.9 ",
+      "category":" Stock - Large-Cap Blend Index",
+      "id":" 0093 ",
+      "oneYear":" 14.04 ",
+      "fee":" 0.34% ",
+      "name":" GaI0093 ",
+      "fiveYear":"1.55"
+    },
+    " 0024 Explorer ":{
+      "price":" 95.7 ",
+      "category":" Stock - Small-Cap Growth ",
+      "id":" 0024 ",
+      "oneYear":" 3.91 ",
+      "fee":" 0.46% ",
+      "name":" E0024 ",
+      "fiveYear":"1.59"
+    },
+    " 0097 Ohio Long-Term Tax-Exempt ":{
+      "price":" 12.6 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0097 ",
+      "oneYear":" 11.2 ",
+      "fee":" 0.15% ",
+      "name":" OLT0097 ",
+      "fiveYear":"0.96"
+    },
+    " 0081 International Growth ":{
+      "price":" 26.5 ",
+      "category":" International ",
+      "id":" 0081 ",
+      "oneYear":" -5.63 ",
+      "fee":" 0.46% ",
+      "name":" IG0081 ",
+      "fiveYear":"1.08"
+    },
+    " 0014 New Jersey Long-Term Tax-Exempt ":{
+      "price":" 12.0 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0014 ",
+      "oneYear":" 9.9 ",
+      "fee":" 0.19% ",
+      "name":" NJLT0014 ",
+      "fiveYear":"0.94"
+    },
+    " 0030 Prime Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0030 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" PMM0030 ",
+      "fiveYear":"-0.29"
+    },
+    " 0723 LifeStrategy Income ":{
+      "price":" 15.4 ",
+      "category":" Balanced ",
+      "id":" 0723 ",
+      "oneYear":" 6.76 ",
+      "fee":" 0.12% ",
+      "name":" LI0723 ",
+      "fiveYear":"1.02"
+    },
+    " 0598 Extended Market Index  Admiral Shares ":{
+      "price":" 77.6 ",
+      "category":" Stock - Mid-Cap Blend ",
+      "id":" 0598 ",
+      "oneYear":" 7.56 ",
+      "fee":" 0.08% ",
+      "name":" EMIAS0598 ",
+      "fiveYear":"1.59"
+    },
+    " 0095 New Jersey Municipal Money Market ":{
+      "price":" 1.0 ",
+      "category":" Money Market ",
+      "id":" 0095 ",
+      "oneYear":" 0.01 ",
+      "fee":" 0.16% ",
+      "name":" NJMMM0095 ",
+      "fiveYear":"-0.26"
+    },
+    " 0056 STAR ":{
+      "price":" 26.0 ",
+      "category":" Balanced ",
+      "id":" 0056 ",
+      "oneYear":" 7.35 ",
+      "fee":" 0.32% ",
+      "name":" S0056 ",
+      "fiveYear":"1.28"
+    },
+    " 0119 Inflation-Protected Securities ":{
+      "price":" 13.2 ",
+      "category":" Bond - Inter-term Government ",
+      "id":" 0119 ",
+      "oneYear":" 3.83 ",
+      "fee":" 0.20% ",
+      "name":" IS0119 ",
+      "fiveYear":"0.85"
+    },
+    " 5111 Capital Opportunity  Admiral Shares ":{
+      "price":" 143.0 ",
+      "category":" Stock - Mid-Cap Growth ",
+      "id":" 5111 ",
+      "oneYear":" 18.95 ",
+      "fee":" 0.38% ",
+      "name":" COAS5111 ",
+      "fiveYear":"1.56"
+    },
+    " 0076 New York Long-Term Tax-Exempt ":{
+      "price":" 11.8 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0076 ",
+      "oneYear":" 10.83 ",
+      "fee":" 0.19% ",
+      "name":" NYLT0076 ",
+      "fiveYear":"0.95"
+    },
+    " 0043 Long-Term Tax-Exempt ":{
+      "price":" 11.6 ",
+      "category":" Bond - Long-term National Muni Index ",
+      "id":" 0043 ",
+      "oneYear":" 11.07 ",
+      "fee":" 0.19% ",
+      "name":" LT0043 ",
+      "fiveYear":"0.99"
+    },
+    " 0075 California Long-Term Tax-Exempt ":{
+      "price":" 12.1 ",
+      "category":" Bond - Long-term State Muni ",
+      "id":" 0075 ",
+      "oneYear":" 11.8 ",
+      "fee":" 0.19% ",
+      "name":" CLT0075 ",
+      "fiveYear":"1.03"
+    },
+    " 0129 Global Equity ":{
+      "price":" 28.6 ",
+      "category":" International ",
+      "id":" 0129 ",
+      "oneYear":" 4.31 ",
+      "fee":" 0.51% ",
+      "name":" GE0129 ",
+      "fiveYear":"1.33"
+    },
+    " 0049 Short-Term Federal ":{
+      "price":" 10.7 ",
+      "category":" Bond - Short-term Government ",
+      "id":" 0049 ",
+      "oneYear":" 1.17 ",
+      "fee":" 0.20% ",
+      "name":" SF0049 ",
+      "fiveYear":"0.53"
+    },
+    " 0065 Equity Income ":{
+      "price":" 34.5 ",
+      "category":" Stock - Large-Cap Value ",
+      "id":" 0065 ",
+      "oneYear":" 11.29 ",
+      "fee":" 0.26% ",
+      "name":" EI0065 ",
+      "fiveYear":"1.55"
+    },
+    " 0027 Wellesley Income ":{
+      "price":" 26.4 ",
+      "category":" Balanced ",
+      "id":" 0027 ",
+      "oneYear":" 8.07 ",
+      "fee":" 0.22% ",
+      "name":" WI0027 ",
+      "fiveYear":"1.25"
+    }
+  }
+}

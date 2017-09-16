@@ -1,0 +1,263 @@
+<!--<img src="/assets/shapesvg/logo.png" alt="" />-->
+<!--<img src="http://placehold.it/450x200?text=1" alt="" />-->
+
+<div id="data" class="hidden">
+    {{result}}
+</div>
+<style>
+    .hidden{
+        display: none;
+    }
+    .button {
+
+        width: 20vmax;
+
+        background-color: whitesmoke; /* Green */
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .list-complete {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    p{
+        margin-left: 10%;
+        margin-right:10%;
+        font-family: 'Roboto', sans-serif;
+    }
+    #next{
+        /*margin-left: 10vmax;*/
+        /*margin-right: 10vmax;*/
+
+        float: right;
+
+    }
+    .list-complete-item {
+        transition: transform 0.1s;
+        flex: 1 1 7.5%;
+        height: 60px;
+        padding: 1vmax;
+        /*   display: inline-block;
+          margin-right: 10px; */
+    }
+    .list-complete-img {
+        object-fit: cover;
+        height: 100%;
+        width: auto;
+        background-size: 25px 35px;
+    }
+    .list-complete-enter, .list-complete-leave-to
+        /* .list-complete-leave-active for <2.1.8 */ {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    .list-complete-leave-active {
+        position: absolute;
+    }
+    #btns1{
+        float: right;
+        width: 300px;
+        height: auto;
+        padding: 10px;
+        align-content: center;
+    }
+    #list-complete-demo{
+        margin: 3vmax;
+    }
+
+</style>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+
+
+<div id="list-complete-demo" class="demo">
+    <p>
+        You have 5 minutes to record the choice by clicking either the HEXAGON button or NANOGONS button. You can switch between choices as many time as you want, and your choice at the end of the 5 minutes will be recorded. KEEP IN MIND: because of technical problems, the system sometime gets “stuck” such that you won’t be able to change your preferred choice – so always keep your most up-to-date preferred choice on.
+    </p>
+    <p style="display: block">
+    </p>
+
+
+    <div id="btns">
+    <p><button id="btn1" class="btns button" onclick="btn1click()"></button>
+        <button style="display: inline;float: right " v-on:click="shuffle" class="button" id="next">Next Round</button>
+    </p>
+    <p><button id="btn2" class="btns button" onclick="btn2click()"></button>
+        <button id="demo" style="cursor: inherit;display: inline;float: right " class="button btns" id="time"></button>
+    </p>
+
+
+    </div>
+
+    <!--<button v-on:click="filter('all')">All</button>-->
+    <!--<button v-on:click="filter('tag1')">Tag 1</button>-->
+    <!--<button v-on:click="filter('tag2')">Tag 2</button>-->
+    <transition-group name="list-complete"
+                      class="list-complete"      tag="section">
+        <div
+                v-for="item in filteredItems"
+                v-bind:key="item.id"
+                class="list-complete-item"
+        >
+            <!--<img class="list-complete-img" :src="'http://placehold.it/450x200?text='+item.id" alt="" />-->
+            <img class="list-complete-img" :src="'/assets/shapesvg/'+item.tags[0]+'.svg'" alt="" />
+            </span>
+    </transition-group>
+</div>
+<script>
+    let click_everysecond = [];
+    let user_data = {};
+    let user_id = guid();
+    let ip = "unknown", city = "unknown";
+    $.getJSON('//freegeoip.net/json/?callback=?', function (data) {
+        ip = data.ip;
+        city = data.country_name+ "\n" + data.region_name + "\n" + data.city;
+    });
+    let data = (document.querySelector('#data')).innerHTML;
+    let start = data.indexOf('data');
+    let data1 = JSON.parse((data.slice(start+7,-14)));
+    console.log((data1));
+    let choicelist = data1.choicelist;
+    let proportion = data1.proportion;
+    let userchoices = data1.userchoices;
+    console.log((proportion));
+    userchoices.forEach((x,i)=>{
+        document.querySelector('#btn'+(i+1)).innerHTML=x.slice(0,-2);
+            }
+    )
+    let choice_second = null;
+    function btn1click() {
+        choice_second = userchoices[0].slice(0,-2);
+    }
+    function btn2click() {
+        choice_second = userchoices[1].slice(0,-2);
+    }
+    function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    }
+    function guid() {
+        function s4() {
+            return Math.floor((1 + Math.random()) * 0x10000)
+                    .toString(16)
+                    .substring(1);
+        }
+
+        return s4() + s4() + s4();
+
+    }
+//
+//        let vuelist = [{ id: 1, tags: ['all', 'tag1'] },
+//        { id: 2, tags: ['all', 'tag2'] },
+//        { id: 3, tags: ['all', 'tag2'] },
+//        { id: 4, tags: ['all', 'tag1'] },
+//        { id: 5, tags: ['all', 'tag1'] },
+//        { id: 6, tags: ['all', 'tag2'] },
+//        { id: 7, tags: ['all', 'tag1'] },
+//        { id: 8, tags: ['all', 'tag2'] },
+//        { id: 9, tags: ['all', 'tag2'] }];
+
+    let vuelist = [];
+    let counter1 = 0;
+    for (var key in proportion){
+
+        let num = proportion[key];
+        console.log("key",key,num);
+        for (var p = 0;p<num;p++){
+            let ob = {id:counter1+p,tags:[key,'all', 'tag2']};
+            vuelist.push(ob);
+        }
+        counter1+=num;
+
+    }
+    //console.log(vuelist)
+
+
+    new Vue({
+        el: '#list-complete-demo',
+        data: {
+            items: shuffleArray(vuelist),
+            currentTag: 'all'
+        },
+        computed: {
+            filteredItems: function() {
+                var filter = this.currentTag;
+                return this.items.filter(function(item) {
+                    return item.tags.indexOf(filter) !== -1;
+                });
+            }
+        },
+        methods: {
+            shuffle: function () {
+                this.items = _.shuffle(this.items)
+            },
+            filter: function(tag) {
+                this.currentTag = tag;
+            }
+        }
+    })
+
+    window.setInterval(function(){
+        /// call your function here
+        click_everysecond.push(choice_second);
+        choice_second = null;
+    }, 1000);
+
+    user_data["usercode"] = user_id;
+    user_data["user_city"] = city;
+    user_data["user_ip"] = ip;
+    user_data["workid"] = "not available";
+    window.setTimeout(function(){
+        /// call your function here
+        user_data['click_everysecond'] = click_everysecond;
+
+        let req= new XMLHttpRequest();
+        req.open('POST', '/userdata', true);
+        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+        req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
+
+    }, 300000);
+
+
+    // Set the date we're counting down to
+    var countDownDate = 300;
+    var countadder = 0;
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+        countadder++;
+        // Get todays date and time
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - countadder;
+
+        // Time calculations for days, hours, minutes and seconds
+        //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance / (60)));
+        var seconds = Math.floor((distance % (60)));
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>

@@ -1,0 +1,156 @@
+<table>
+    <tr>
+        <th>Choose polygons</th>
+        <th>Proportion</th>
+        <th>User choices</th>
+
+
+    </tr>
+    <tr>
+        <td>pentagon</td>
+        <td>
+            <input type="checkbox" name="pentagon" id="pentagon" class="choice">
+            <input type="text" name="proportion_pentagon" id="proportion_pentagon" class="proportion">
+            <label for="cb1"><i class="toggle"></i></label>
+
+
+        </td>
+        <td>
+            <input type="checkbox" name="pentagon_c" id="pentagon_c" class="userchoice">
+
+        </td>
+    </tr>
+    <tr>
+        <td>hexagon</td>
+        <td>
+            <input type="checkbox" name="hexagon" id="hexagon" class="choice">
+            <input type="text" name="proportion_hexagon" id="proportion_hexagon" class="proportion">
+
+            <label for="cb2"><i class="toggle"></i></label>
+
+        </td>
+        <td>
+            <input type="checkbox" name="hexagon_c" id="hexagon_c" class="userchoice">
+
+        </td>
+    </tr>
+    <tr>
+        <td>heptagon</td>
+        <td>
+            <input type="checkbox" name="heptagon" id="heptagon" class="choice">
+            <input type="text" name="proportion_heptagon" id="proportion_heptagon" class="proportion">
+
+            <label for="cb3"><i class="toggle"></i></label>
+
+        </td>
+        <td>
+            <input type="checkbox" name="heptagon_c" id="heptagon_c" class="userchoice">
+
+        </td>
+    </tr>
+    <tr>
+        <td>octagon</td>
+        <td>
+            <input type="checkbox" name="octagon" id="octagon" class="choice">
+            <input type="text" name="proportion_" id="proportion_octagon" class="proportion">
+
+            <label for="cb3"><i class="toggle"></i></label>
+
+        </td>
+        <td>
+            <input type="checkbox" name="octagon_c" id="octagon_c" class="userchoice">
+
+        </td>
+    </tr>
+    <tr>
+        <td>nonagon</td>
+        <td>
+            <input type="checkbox" name="nonagon" id="nonagon" class="choice">
+            <input type="text" name="proportion_nonagon" id="proportion_nonagon" class="proportion">
+
+            <label for="cb3"><i class="toggle"></i></label>
+
+        </td>
+        <td>
+            <input type="checkbox" name="nonagon_c" id="nonagon_c" class="userchoice">
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>decagon</td>
+        <td>
+            <input type="checkbox" name="decagon" id="decagon" class="choice">
+            <input type="text" name="proportion_decagon" id="proportion_decagon" class="proportion">
+
+            <label for="cb3"><i class="toggle"></i></label>
+
+        </td>
+        <td>
+            <input type="checkbox" name="decagon_c" id="decagon_c" class="userchoice">
+
+        </td>
+    </tr>
+    <br>
+
+    <tr>
+        <th>Degree tilted</th>
+        <td>
+            <input type="text" name="degree" id="degree" placeholder="10">
+
+        </td>
+
+    </tr>
+</table>
+<button id="submit">Submit</button>
+
+<script>
+    function no_dup(uniqueArray) {
+        return uniqueArray.filter(function(item, pos) {
+            return uniqueArray.indexOf(item) == pos;
+        })
+    }
+    let degree = document.querySelector('#degree').value;
+    let choicelist = document.querySelectorAll('.choice');
+    let userchoicelist = document.querySelectorAll('.userchoice');
+    document.querySelector('#submit').addEventListener('click',function (t) {
+        let choicelist1 = [],shapes={}, proportion = {},proportion_sum = 0, userchoices = [];
+
+        t.preventDefault();
+        choicelist.forEach(x=>{
+            if(x.checked){
+                choicelist1.push(x.id);
+                proportion[x.id] = document.querySelector('#proportion_'+x.id).value;
+                proportion_sum+=parseInt(document.querySelector('#proportion_'+x.id).value);
+            }
+        })
+        userchoicelist.forEach(x=>{
+            if(x.checked){
+                userchoices.push(x.id);
+            }
+        })
+        choicelist1 = no_dup(choicelist1);
+        shapes['choicelist'] = choicelist1;
+        shapes['proportion'] = proportion;
+        shapes['userchoices'] = userchoices;
+        console.log(shapes)
+
+        if((proportion_sum==100)&(userchoices.length==2)){
+            let req= new XMLHttpRequest();
+            req.open('POST', '/admininfo', true);
+            req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+            req.send("shapes="+JSON.stringify(shapes));
+
+
+        }else {
+            alert("proportion sum should be 100, and with 2 user choices");
+        }
+
+
+
+
+
+
+    })
+
+</script>
