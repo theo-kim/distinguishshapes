@@ -110,12 +110,11 @@
             return uniqueArray.indexOf(item) == pos;
         })
     }
-    let degree = document.querySelector('#degree').value;
     let choicelist = document.querySelectorAll('.choice');
     let userchoicelist = document.querySelectorAll('.userchoice');
     document.querySelector('#submit').addEventListener('click',function (t) {
         let choicelist1 = [],shapes={}, proportion = {},proportion_sum = 0, userchoices = [];
-
+        let degree = document.querySelector('#degree').value;
         t.preventDefault();
         choicelist.forEach(x=>{
             if(x.checked){
@@ -132,10 +131,13 @@
         choicelist1 = no_dup(choicelist1);
         shapes['choicelist'] = choicelist1;
         shapes['proportion'] = proportion;
+        shapes['degree'] = degree;
         shapes['userchoices'] = userchoices;
         console.log(shapes)
 
         if((proportion_sum==100)&(userchoices.length==2)){
+            alert(degree)
+
             let req= new XMLHttpRequest();
             req.open('POST', '/admininfo', true);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");

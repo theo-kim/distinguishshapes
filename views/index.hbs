@@ -110,7 +110,7 @@
                 class="list-complete-item"
         >
             <!--<img class="list-complete-img" :src="'http://placehold.it/450x200?text='+item.id" alt="" />-->
-            <img class="list-complete-img" :src="'/assets/shapesvg/'+item.tags[0]+'.svg'" alt="" />
+            <img v-bind:style="{transform: 'rotate('+item.tags[3]+'deg)'}" class="list-complete-img" :src="'/assets/shapesvg/'+item.tags[0]+'.svg'" alt="" />
             </span>
     </transition-group>
 </div>
@@ -135,12 +135,24 @@
         document.querySelector('#btn'+(i+1)).innerHTML=x.slice(0,-2);
             }
     )
-    let choice_second = null;
+    let choice_second = 'null',answer = "";
+    if(proportion[userchoices[0]]>proportion[userchoices[1]]){
+        answer = userchoices[0];
+    }else {
+        answer = userchoices[1];
+    }
+
     function btn1click() {
-        choice_second = userchoices[0].slice(0,-2);
+        if(answer==userchoices[0]){
+            choice_second = "true";
+        }
+        //choice_second = userchoices[0].slice(0,-2);
     }
     function btn2click() {
-        choice_second = userchoices[1].slice(0,-2);
+        if(answer==userchoices[1]){
+            choice_second = "false";
+        }
+        //choice_second = userchoices[1].slice(0,-2);
     }
     function shuffleArray(array) {
         for (var i = array.length - 1; i > 0; i--) {
@@ -174,16 +186,15 @@
 
     let vuelist = [];
     let counter1 = 0;
+    console.log(data1)
     for (var key in proportion){
-
         let num = proportion[key];
         console.log("key",key,num);
         for (var p = 0;p<num;p++){
-            let ob = {id:counter1+p,tags:[key,'all', 'tag2']};
+            let ob = {id:counter1+p,tags:[key,'all', 'tag2',data1.degree]};
             vuelist.push(ob);
         }
         counter1+=num;
-
     }
     //console.log(vuelist)
 
@@ -215,7 +226,7 @@
     window.setInterval(function(){
         /// call your function here
         click_everysecond.push(choice_second);
-        choice_second = null;
+        choice_second = 'null';
     }, 1000);
 
     user_data["usercode"] = user_id;
