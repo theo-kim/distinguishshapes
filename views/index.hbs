@@ -136,7 +136,7 @@
             }
     )
     let choice_second = 'null',answer = "";
-    if(proportion[userchoices[0]]>proportion[userchoices[1]]){
+    if(proportion[userchoices[0].slice(0,-2)]>proportion[userchoices[1].slice(0,-2)]){
         answer = userchoices[0];
     }else {
         answer = userchoices[1];
@@ -145,11 +145,15 @@
     function btn1click() {
         if(answer==userchoices[0]){
             choice_second = "true";
+        }else {
+            choice_second = "false";
         }
         //choice_second = userchoices[0].slice(0,-2);
     }
     function btn2click() {
         if(answer==userchoices[1]){
+            choice_second = "true";
+        }else {
             choice_second = "false";
         }
         //choice_second = userchoices[1].slice(0,-2);

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin.hbs" afterPath="$PROJECT_DIR$/views/admin.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="188" column="21" lean-forward="false" selection-start-line="188" selection-start-column="21" selection-end-line="188" selection-end-column="21" />
+            <state relative-caret-position="339">
+              <caret line="244" column="44" lean-forward="true" selection-start-line="244" selection-start-column="44" selection-end-line="244" selection-end-column="44" />
               <folding>
                 <element signature="n#style#0;n#p#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#p#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -47,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/admin.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="116" column="61" lean-forward="false" selection-start-line="116" selection-start-column="61" selection-end-line="116" selection-end-column="61" />
+            <state relative-caret-position="280">
+              <caret line="119" column="26" lean-forward="true" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -147,7 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>demo</find>
       <find>Click</find>
       <find>database</find>
       <find>userd</find>
@@ -177,6 +175,7 @@
       <find>answer</find>
       <find>rotation</find>
       <find>degree</find>
+      <find>userchoices[0]</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -217,8 +216,8 @@
         <option value="$PROJECT_DIR$/views/result2.hbs" />
         <option value="$PROJECT_DIR$/db.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/views/admin.hbs" />
+        <option value="$PROJECT_DIR$/views/index.hbs" />
       </list>
     </option>
   </component>
@@ -528,12 +527,12 @@
       <workItem from="1502786418842" duration="6378000" />
       <workItem from="1504159532324" duration="30510000" />
       <workItem from="1504942872916" duration="3522000" />
-      <workItem from="1505309748954" duration="32010000" />
+      <workItem from="1505309748954" duration="32941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307145000" />
+    <option name="totallyTimeSpent" value="308076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -938,23 +937,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="119" column="26" lean-forward="true" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="188" column="21" lean-forward="false" selection-start-line="188" selection-start-column="21" selection-end-line="188" selection-end-column="21" />
+        <state relative-caret-position="339">
+          <caret line="244" column="44" lean-forward="true" selection-start-line="244" selection-start-column="44" selection-end-line="244" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#p#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#p#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#p#1;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="116" column="61" lean-forward="false" selection-start-line="116" selection-start-column="61" selection-end-line="116" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
