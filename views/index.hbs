@@ -11,7 +11,6 @@
     .button {
 
         width: 20vmax;
-
         background-color: whitesmoke; /* Green */
         border: none;
         color: black;
@@ -35,6 +34,7 @@
         font-family: 'Roboto', sans-serif;
     }
     #next{
+        display: none;
         /*margin-left: 10vmax;*/
         /*margin-right: 10vmax;*/
 
@@ -90,7 +90,7 @@
 
     <div id="btns">
     <p><button id="btn1" class="btns button" onclick="btn1click()"></button>
-        <button style="display: inline;float: right " v-on:click="shuffle" class="button" id="next">Next Round</button>
+        <button style="display: none;float: right " v-on:click="shuffle" class="button" id="next">Next Round</button>
     </p>
     <p><button id="btn2" class="btns button" onclick="btn2click()"></button>
         <button id="demo" style="cursor: inherit;display: inline;float: right " class="button btns" id="time"></button>
@@ -109,6 +109,8 @@
                 v-bind:key="item.id"
                 class="list-complete-item"
         >
+            <!--flex: 1 1 7.5%;-->
+
             <!--<img class="list-complete-img" :src="'http://placehold.it/450x200?text='+item.id" alt="" />-->
             <img v-bind:style="{transform: 'rotate('+item.tags[3]+'deg)'}" class="list-complete-img" :src="'/assets/shapesvg/'+item.tags[0]+'.svg'" alt="" />
             </span>
@@ -203,7 +205,7 @@
     //console.log(vuelist)
 
 
-    new Vue({
+    var vue = new Vue({
         el: '#list-complete-demo',
         data: {
             items: shuffleArray(vuelist),
@@ -231,9 +233,17 @@
         /// call your function here
         click_everysecond.push(choice_second);
         choice_second = 'null';
+        user_data['click_everysecond'] = click_everysecond;
+
+        let req= new XMLHttpRequest();
+        req.open('POST', '/userdata', true);
+        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+        req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
+
     }, 1000);
 
     user_data["usercode"] = user_id;
+    user_data["Roundtime"] = data1.roundtime;
     user_data["user_city"] = city;
     user_data["user_ip"] = ip;
     user_data["workid"] = "not available";
@@ -246,11 +256,11 @@
         req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
         req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
 
-    }, 300000);
-
+    }, data1.roundtime*10);
 
     // Set the date we're counting down to
-    var countDownDate = 300;
+    var countDownDate = data1.roundtime;
+    var roundcounter = 1;
     var countadder = 0;
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -270,9 +280,15 @@
         document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
 
         // If the count down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
+        if (distance == 0) {
+            roundcounter++;
+            countadder=0;
+            vue.shuffle();
+            if (roundcounter==10){
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+
         }
     }, 1000);
 </script>

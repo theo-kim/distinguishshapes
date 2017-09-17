@@ -101,6 +101,14 @@
         </td>
 
     </tr>
+    <tr>
+        <th>Roundtime(s)</th>
+        <td>
+            <input type="text" name="roundtime" id="roundtime" placeholder="7.5">
+
+        </td>
+
+    </tr>
 </table>
 <button id="submit">Submit</button>
 
@@ -115,6 +123,8 @@
     document.querySelector('#submit').addEventListener('click',function (t) {
         let choicelist1 = [],shapes={}, proportion = {},proportion_sum = 0, userchoices = [];
         let degree = document.querySelector('#degree').value;
+        let roundtime = document.querySelector('#roundtime').value;
+
         t.preventDefault();
         choicelist.forEach(x=>{
             if(x.checked){
@@ -132,18 +142,15 @@
         shapes['choicelist'] = choicelist1;
         shapes['proportion'] = proportion;
         shapes['degree'] = degree;
+        shapes['roundtime'] = roundtime;
         shapes['userchoices'] = userchoices;
-        console.log(shapes)
+        console.log(shapes);
 
         if((proportion_sum==100)&(userchoices.length==2)){
-            alert(degree)
-
             let req= new XMLHttpRequest();
             req.open('POST', '/admininfo', true);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
             req.send("shapes="+JSON.stringify(shapes));
-
-
         }else {
             alert("proportion sum should be 100, and with 2 user choices");
         }
