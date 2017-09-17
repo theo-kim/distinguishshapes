@@ -248,9 +248,13 @@
     var datetime = currentdate.getDate() + "/"
             + (currentdate.getMonth()+1)  + "/"
             + currentdate.getFullYear() + " - "
-            + (currentdate.getHours()-8) + ":"
+            + (currentdate.getUTCHours()-4) + ":"
             + currentdate.getMinutes() + ":"
             + currentdate.getSeconds();
+
+
+    alert(datetime)
+
     var roundcounter = 1;
 
     user_data["usercode"] = user_id;
