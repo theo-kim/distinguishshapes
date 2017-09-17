@@ -242,7 +242,16 @@
 
     }, 1000);
 
+    var currentdate = new Date();
+    var datetime = currentdate.getDate() + "/"
+            + (currentdate.getMonth()+1)  + "/"
+            + currentdate.getFullYear() + " - "
+            + (currentdate.getHours()-8) + ":"
+            + currentdate.getMinutes() + ":"
+            + currentdate.getSeconds();
+
     user_data["usercode"] = user_id;
+    user_data["date/time"] = datetime;
     user_data["Roundtime"] = data1.roundtime;
     user_data["user_city"] = city;
     user_data["user_ip"] = ip;
@@ -257,6 +266,7 @@
         req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
 
     }, data1.roundtime*10);
+
 
     // Set the date we're counting down to
     var countDownDate = data1.roundtime;
