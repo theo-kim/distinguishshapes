@@ -124,6 +124,8 @@
     $.getJSON('//freegeoip.net/json/?callback=?', function (data) {
         ip = data.ip;
         city = data.country_name+ "\n" + data.region_name + "\n" + data.city;
+        user_data["user_city"] = city;
+        user_data["user_ip"] = ip;
     });
     let data = (document.querySelector('#data')).innerHTML;
     let start = data.indexOf('data');
