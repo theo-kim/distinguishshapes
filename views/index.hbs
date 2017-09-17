@@ -275,12 +275,22 @@
     var roundcounter = 1;
     var countadder = 0;
     // Update the count down every 1 second
+
+    var distance = 0;
+    document.querySelector('#next').addEventListener('click',function () {
+        countadder = 0;
+        document.querySelector('#next').style.display='none';
+
+    })
+
     var x = setInterval(function() {
+
         countadder++;
+        distance = countDownDate - countadder;
+
         // Get todays date and time
 
         // Find the distance between now an the count down date
-        var distance = countDownDate - countadder;
 
         // Time calculations for days, hours, minutes and seconds
         //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -289,17 +299,24 @@
         var seconds = Math.floor((distance % (60)));
 
         // Display the result in the element with id="demo"
-        document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+            document.getElementById("demo").innerHTML = "Time remaining: "+minutes + "m " + seconds + "s ";
+
 
         // If the count down is finished, write some text
+
         if (distance == 0) {
             roundcounter++;
-            countadder=0;
-            vue.shuffle();
+            //vue.shuffle();
+            //clearInterval(x);
+            document.querySelector('#next').style.display='inline';
+
             if (roundcounter==10){
                 clearInterval(x);
                 document.getElementById("demo").innerHTML = "EXPIRED";
             }
+
+        }if(distance<0){
+            document.getElementById("demo").innerHTML = "EXPIRED";
 
         }
     }, 1000);

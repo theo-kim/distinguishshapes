@@ -96,7 +96,7 @@
     <tr>
         <th>Degree tilted</th>
         <td>
-            <input type="text" name="degree" id="degree" placeholder="10">
+            <input type="text" name="degree" id="degree" placeholder="">
 
         </td>
 
@@ -104,7 +104,7 @@
     <tr>
         <th>Roundtime(s)</th>
         <td>
-            <input type="text" name="roundtime" id="roundtime" placeholder="60">
+            <input type="text" name="roundtime" id="roundtime" placeholder="">
 
         </td>
 
@@ -146,13 +146,13 @@
         shapes['userchoices'] = userchoices;
         console.log(shapes);
 
-        if((proportion_sum==100)&(userchoices.length==2)){
+        if((roundtime!=undefined)&(degree!=undefined)&(proportion_sum==100)&(userchoices.length==2)){
             let req= new XMLHttpRequest();
             req.open('POST', '/admininfo', true);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
             req.send("shapes="+JSON.stringify(shapes));
         }else {
-            alert("proportion sum should be 100, and with 2 user choices");
+            alert("Fill all the fields; proportion sum should be 100, and with 2 user choices");
         }
 
 
