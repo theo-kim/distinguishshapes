@@ -251,11 +251,14 @@
             + (currentdate.getHours()-8) + ":"
             + currentdate.getMinutes() + ":"
             + currentdate.getSeconds();
+    var roundcounter = 1;
 
     user_data["usercode"] = user_id;
     user_data["date/time"] = datetime;
     user_data["Roundtime"] = data1.roundtime;
     user_data["user_city"] = city;
+    user_data["RoundCounter"] = roundcounter;
+
     user_data["user_ip"] = ip;
     user_data["workid"] = "not available";
     window.setTimeout(function(){
@@ -272,7 +275,6 @@
 
     // Set the date we're counting down to
     var countDownDate = data1.roundtime;
-    var roundcounter = 1;
     var countadder = 0;
     // Update the count down every 1 second
 
