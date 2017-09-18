@@ -248,7 +248,7 @@
     var datetime = currentdate.getDate() + "/"
             + (currentdate.getMonth()+1)  + "/"
             + currentdate.getFullYear() + " - "
-            + (currentdate.getUTCHours()-4) + ":"
+            + (currentdate.getUTCHours()) + ":"
             + currentdate.getMinutes() + ":"
             + currentdate.getSeconds();
 
@@ -260,7 +260,6 @@
     user_data["date/time"] = datetime;
     user_data["Roundtime"] = data1.roundtime;
     user_data["user_city"] = city;
-    user_data["RoundCounter"] = roundcounter;
 
     user_data["user_ip"] = ip;
     user_data["workid"] = "not available";
@@ -311,6 +310,8 @@
 
         if (distance == 0) {
             roundcounter++;
+            user_data["RoundCounter"] = roundcounter;
+
             //vue.shuffle();
             //clearInterval(x);
             document.querySelector('#next').style.display='inline';

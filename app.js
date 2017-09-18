@@ -57,7 +57,7 @@ app.get('/database',function (req,res) {
         console.log("Players Result",result1);
         //res.render('result', {result:result.reverse(),result1:result1});
         // res.render('database.html', { result:result });
-        res.render('result2', {result1:result1.reverse()});
+        res.render('result2', {result1:result1.sort().reverse()});
 
     });
 
