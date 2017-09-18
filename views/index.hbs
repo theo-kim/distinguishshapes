@@ -213,18 +213,10 @@
             }
         })
 
-        window.setInterval(function(){
-            /// call your function here
-            click_everysecond.push(choice_second);
-            //choice_second = 'null';
-            user_data['click_everysecond'] = click_everysecond;
-
-            let req= new XMLHttpRequest();
-            req.open('POST', '/userdata', true);
-            req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-            req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
-
-        }, 1000);
+//        window.setInterval(function(){
+//            /// call your function here
+//
+//        }, 1000);
 
         var currentdate = new Date();
         var datetime = currentdate.getDate() + "/"
@@ -292,7 +284,18 @@
 
 
             // If the count down is finished, write some text
+            if(distance>0){
+                click_everysecond.push(choice_second);
+                //choice_second = 'null';
+                user_data['click_everysecond'] = click_everysecond;
 
+                let req= new XMLHttpRequest();
+                req.open('POST', '/userdata', true);
+                req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+                req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
+
+
+            }
             if (distance == 0) {
                 roundcounter++;
                 user_data["RoundCounter"] = roundcounter;
