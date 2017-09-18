@@ -101,10 +101,10 @@
 
 
     <div id="btns">
-    <p><button id="btn1" class="btns button" onclick="btn1click()"></button>
+    <p><button id="btn1" class="b1 btns button" onclick="btn1click()"></button>
         <button style="display: none;float: right " v-on:click="shuffle" class="button" id="next">Next Round</button>
     </p>
-    <p><button id="btn2" class="btns button" onclick="btn2click()"></button>
+    <p><button id="btn2" class="b2 btns button" onclick="btn2click()"></button>
         <button id="demo" style="cursor: inherit;display: inline;float: right " class="button btns" id="time"></button>
     </p>
 
@@ -300,6 +300,9 @@
         }, 1000);
     }
     function btn1click() {
+        document.getElementById("btn1").style.background='lightgrey';
+        document.getElementById("btn2").style.background='buttonface';
+
         if(answer==userchoices[0]){
             choice_second = "true";
         }else {
@@ -308,6 +311,9 @@
         //choice_second = userchoices[0].slice(0,-2);
     }
     function btn2click() {
+        document.getElementById("btn2").style.background='lightgrey';
+        document.getElementById("btn1").style.background='buttonface';
+
         if(answer==userchoices[1]){
             choice_second = "true";
         }else {
