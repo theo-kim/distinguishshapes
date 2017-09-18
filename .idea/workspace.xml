@@ -35,8 +35,8 @@
       <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="131" column="33" lean-forward="false" selection-start-line="131" selection-start-column="33" selection-end-line="131" selection-end-column="33" />
+            <state relative-caret-position="142">
+              <caret line="219" column="63" lean-forward="false" selection-start-line="219" selection-start-column="63" selection-end-line="219" selection-end-column="63" />
               <folding>
                 <element signature="n#style#0;n#p#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#p#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -146,9 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rendered</find>
-      <find>editing</find>
-      <find>unknow</find>
       <find>7.</find>
       <find>database</find>
       <find>none</find>
@@ -176,6 +173,9 @@
       <find>btn1</find>
       <find>userc</find>
       <find>backgr</find>
+      <find>roundc</find>
+      <find>choice_second</find>
+      <find>click_everysecond</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -527,12 +527,12 @@
       <workItem from="1502786418842" duration="6378000" />
       <workItem from="1504159532324" duration="30510000" />
       <workItem from="1504942872916" duration="3522000" />
-      <workItem from="1505309748954" duration="46046000" />
+      <workItem from="1505309748954" duration="46507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321181000" />
+    <option name="totallyTimeSpent" value="321642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -947,8 +947,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="131" column="33" lean-forward="false" selection-start-line="131" selection-start-column="33" selection-end-line="131" selection-end-column="33" />
+        <state relative-caret-position="142">
+          <caret line="219" column="63" lean-forward="false" selection-start-line="219" selection-start-column="63" selection-end-line="219" selection-end-column="63" />
           <folding>
             <element signature="n#style#0;n#p#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#p#0;n#div#0;n#div#1;n#!!top" expanded="true" />
