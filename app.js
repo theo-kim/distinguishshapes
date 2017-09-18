@@ -164,7 +164,18 @@ app.get('/admin',function (req,res) {
 
 })
 
+app.post('/delete',function (req,res) {
+    console.log('deleting ready')
+
+    Click.remove({},function () {
+        console.log('delete all clicks')
+    })
+    res.send('good');
+})
+
 app.post('/admininfo',function (req,res) {
+    console.log('test')
+
     Admininfo.find({}, function(err, result){
         if (result.length==0){
             const Admininfo_1 = new Admininfo({
