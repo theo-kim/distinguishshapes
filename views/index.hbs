@@ -19,10 +19,7 @@
         display: none;
     }
     .button {
-
         width: 20vmax;
-        background-color: grey; /* Green */
-        border: none;
         color: black;
         padding: 15px 32px;
         text-align: center;
@@ -132,6 +129,7 @@
     </transition-group>
 </div>
 <script>
+    let explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided'}
     let click_everysecond = [];
     let user_data = {};
     let user_id = guid();
@@ -152,20 +150,20 @@
 
     survey(user_data);
 
-
+    let choice_second = 'null',answer = "";
+    if(proportion[userchoices[0].slice(0,-2)]>proportion[userchoices[1].slice(0,-2)]){
+        answer = userchoices[0];
+    }else {
+        answer = userchoices[1];
+    }
     function init() {
-        document.querySelector('#info').innerHTML="        You have 5 minutes to record the choice by clicking either the "+userchoices[0].slice(0,-2)+" button or "+userchoices[1].slice(0,-2)+" button. You can switch between choices as many time as you want, and your choice at the end of the 5 minutes will be recorded. KEEP IN MIND: because of technical problems, the system sometime gets “stuck” such that you won’t be able to change your preferred choice – so always keep your most up-to-date preferred choice on."
+        document.querySelector('#info').innerHTML="        You have 5 minutes to record the choice by clicking either the "+userchoices[0].slice(0,-2)+'(a '+explanation[userchoices[0].slice(0,-2)]+' shape)'+" button or "+userchoices[1].slice(0,-2)+'(a '+explanation[userchoices[1].slice(0,-2)]+' shape)'+" button. You can switch between choices as many time as you want, and your choice at the end of the 5 minutes will be recorded. KEEP IN MIND: because of technical problems, the system sometime gets “stuck” such that you won’t be able to change your preferred choice – so always keep your most up-to-date preferred choice on."
         console.log((proportion));
         userchoices.forEach((x,i)=>{
-                    document.querySelector('#btn'+(i+1)).innerHTML=x.slice(0,-2);
+                    document.querySelector('#btn'+(i+1)).innerHTML=x.slice(0,-2)+'('+explanation[x.slice(0,-2)]+')';
                 }
         )
-        let choice_second = 'null',answer = "";
-        if(proportion[userchoices[0].slice(0,-2)]>proportion[userchoices[1].slice(0,-2)]){
-            answer = userchoices[0];
-        }else {
-            answer = userchoices[1];
-        }
+
         let vuelist = [];
         let counter1 = 0;
         console.log(data1)

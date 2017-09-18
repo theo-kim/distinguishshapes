@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,8 +35,8 @@
       <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="355" column="23" lean-forward="false" selection-start-line="355" selection-start-column="23" selection-end-line="355" selection-end-column="23" />
+            <state relative-caret-position="-337">
+              <caret line="178" column="30" lean-forward="true" selection-start-line="178" selection-start-column="30" selection-end-line="178" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#p#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#p#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -147,9 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>proportion</find>
-      <find>answer</find>
-      <find>rotation</find>
       <find>userchoices[0]</find>
       <find>degree</find>
       <find>complete-item</find>
@@ -177,6 +173,9 @@
       <find>fiel</find>
       <find>bootbox</find>
       <find>survey</find>
+      <find>border</find>
+      <find>usercho</find>
+      <find>answer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -528,12 +527,12 @@
       <workItem from="1502786418842" duration="6378000" />
       <workItem from="1504159532324" duration="30510000" />
       <workItem from="1504942872916" duration="3522000" />
-      <workItem from="1505309748954" duration="42463000" />
+      <workItem from="1505309748954" duration="43408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317598000" />
+    <option name="totallyTimeSpent" value="318543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -948,8 +947,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="355" column="23" lean-forward="false" selection-start-line="355" selection-start-column="23" selection-end-line="355" selection-end-column="23" />
+        <state relative-caret-position="-337">
+          <caret line="178" column="30" lean-forward="true" selection-start-line="178" selection-start-column="30" selection-end-line="178" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#p#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#p#0;n#div#0;n#div#1;n#!!top" expanded="true" />
