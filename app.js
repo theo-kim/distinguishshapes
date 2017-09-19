@@ -160,7 +160,10 @@ app.get('/bonusjson',function (req,res) {
 app.get('/admin',function (req,res) {
     app.set('view engine', 'hbs');
     "use strict";
-    res.render('admin');
+    Admininfo.find({}, function(err, result){
+        res.render('admin',{'result':result});
+    });
+    //res.render('admin');
 
 })
 

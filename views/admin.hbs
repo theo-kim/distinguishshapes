@@ -1,3 +1,6 @@
+<div id="data" style="display: none">
+    {{result}}
+</div>
 <table>
     <tr>
         <th>Choose polygons</th>
@@ -116,7 +119,31 @@
 <br>
 <button id="delete">Clean Data</button>
 
+<div>
+    <p>Settings Now</p>
+    <p id="now_userchoices">user choices:</p>
+    <p id="now_proportion">proportions of shapes:</p>
+    <p id="now_degree">degree tilted:</p>
+    <p id="now_roundtime">roundtime:</p>
+
+</div>
+
 <script>
+    var data = (document.querySelector('#data')).innerHTML;
+    var start = data.indexOf('data');
+    var data1 = JSON.parse((data.slice(start+7,-14)));
+
+    data1.userchoices.forEach(x=>{
+        document.querySelector('#now_userchoices').innerHTML+=' '+x.slice(0,-2);
+    })
+
+   // data1.proportion.forEach(x=>{
+        document.querySelector('#now_proportion').innerHTML+=JSON.stringify(data1.proportion);
+    //})
+    document.querySelector('#now_degree').innerHTML+=data1.degree;
+    document.querySelector('#now_roundtime').innerHTML+=data1.roundtime;
+
+
     function no_dup(uniqueArray) {
         return uniqueArray.filter(function(item, pos) {
             return uniqueArray.indexOf(item) == pos;
