@@ -29,7 +29,7 @@
         cursor: pointer;
     }
 
-    .list-complete {
+    .list-compvare {
         display: flex;
         width: 100%;
         flex-direction: row;
@@ -48,7 +48,7 @@
         float: right;
 
     }
-    .list-complete-item {
+    .list-compvare-item {
         transition: transform 0.1s;
         flex: 1 1 7.5%;
         height: 60px;
@@ -56,18 +56,18 @@
         /*   display: inline-block;
           margin-right: 10px; */
     }
-    .list-complete-img {
+    .list-compvare-img {
         object-fit: cover;
         height: 100%;
         width: auto;
         background-size: 25px 35px;
     }
-    .list-complete-enter, .list-complete-leave-to
-        /* .list-complete-leave-active for <2.1.8 */ {
+    .list-compvare-enter, .list-compvare-leave-to
+        /* .list-compvare-leave-active for <2.1.8 */ {
         opacity: 0;
         transform: translateY(30px);
     }
-    .list-complete-leave-active {
+    .list-compvare-leave-active {
         position: absolute;
     }
     #btns1{
@@ -77,7 +77,7 @@
         padding: 10px;
         align-content: center;
     }
-    #list-complete-demo{
+    #list-compvare-demo{
         margin: 3vmax;
     }
 
@@ -92,7 +92,7 @@
 <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
 
 
-<div id="list-complete-demo" class="demo">
+<div id="list-compvare-demo" class="demo">
     <p id="info">
         You have 5 minutes to record the choice by clicking either the HEXAGON button or NANOGONS button. You can switch between choices as many time as you want, and your choice at the end of the 5 minutes will be recorded. KEEP IN MIND: because of technical problems, the system sometime gets “stuck” such that you won’t be able to change your preferred choice – so always keep your most up-to-date preferred choice on.
     </p>
@@ -114,44 +114,44 @@
     <!--<button v-on:click="filter('all')">All</button>-->
     <!--<button v-on:click="filter('tag1')">Tag 1</button>-->
     <!--<button v-on:click="filter('tag2')">Tag 2</button>-->
-    <transition-group name="list-complete"
-                      class="list-complete"      tag="section">
+    <transition-group name="list-compvare"
+                      class="list-compvare"      tag="section">
         <div
                 v-for="item in filteredItems"
                 v-bind:key="item.id"
-                class="list-complete-item"
+                class="list-compvare-item"
         >
             <!--flex: 1 1 7.5%;-->
 
-            <!--<img class="list-complete-img" :src="'http://placehold.it/450x200?text='+item.id" alt="" />-->
-            <img v-bind:style="{transform: 'rotate('+item.tags[3]+'deg)'}" class="list-complete-img" :src="'/assets/shapesvg/'+item.tags[0]+'.svg'" alt="" />
+            <!--<img class="list-compvare-img" :src="'http://placehold.it/450x200?text='+item.id" alt="" />-->
+            <img v-bind:style="{transform: 'rotate('+item.tags[3]+'deg)'}" class="list-compvare-img" :src="'/assets/shapesvg/'+item.tags[0]+'.svg'" alt="" />
             </span>
     </transition-group>
 </div>
 <script>
     document.querySelector('body').style.backgroundColor = 'white';
-    let explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided'}
-    let click_everysecond = ['null'];
-    let user_data = {};
-    let user_id = guid();
-    let ip = "unknown", city = "unknown";
+    var explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided'}
+    var click_everysecond = ['null'];
+    var user_data = {};
+    var user_id = guid();
+    var ip = "unknown", city = "unknown";
     $.getJSON('//freegeoip.net/json/?callback=?', function (data) {
         ip = data.ip;
         city = data.country_name+ "\n" + data.region_name + "\n" + data.city;
         user_data["user_city"] = city;
         user_data["user_ip"] = ip;
     });
-    let data = (document.querySelector('#data')).innerHTML;
-    let start = data.indexOf('data');
-    let data1 = JSON.parse((data.slice(start+7,-14)));
+    var data = (document.querySelector('#data')).innerHTML;
+    var start = data.indexOf('data');
+    var data1 = JSON.parse((data.slice(start+7,-14)));
     console.log((data1));
-    let choicelist = data1.choicelist;
-    let proportion = data1.proportion;
-    let userchoices = data1.userchoices;
+    var choicelist = data1.choicelist;
+    var proportion = data1.proportion;
+    var userchoices = data1.userchoices;
 
     survey(user_data);
 
-    let choice_second = 'null',answer = "";
+    var choice_second = 'null',answer = "";
     if(proportion[userchoices[0].slice(0,-2)]>proportion[userchoices[1].slice(0,-2)]){
         answer = userchoices[0];
     }else {
@@ -174,14 +174,14 @@
                 }
         )
 
-        let vuelist = [];
-        let counter1 = 0;
+        var vuelist = [];
+        var counter1 = 0;
         console.log(data1)
         for (var key in proportion){
-            let num = proportion[key];
+            var num = proportion[key];
             console.log("key",key,num);
             for (var p = 0;p<num;p++){
-                let ob = {id:counter1+p,tags:[key,'all', 'tag2',data1.degree]};
+                var ob = {id:counter1+p,tags:[key,'all', 'tag2',data1.degree]};
                 vuelist.push(ob);
             }
             counter1+=num;
@@ -190,7 +190,7 @@
 
 
         var vue = new Vue({
-            el: '#list-complete-demo',
+            el: '#list-compvare-demo',
             data: {
                 items: shuffleArray(vuelist),
                 currentTag: 'all'
@@ -241,7 +241,7 @@
             /// call your function here
             user_data['click_everysecond'] = click_everysecond;
 
-            let req= new XMLHttpRequest();
+            var req= new XMLHttpRequest();
             req.open('POST', '/userdata', true);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
             req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
@@ -289,7 +289,7 @@
                 //choice_second = 'null';
                 user_data['click_everysecond'] = click_everysecond;
 
-                let req= new XMLHttpRequest();
+                var req= new XMLHttpRequest();
                 req.open('POST', '/userdata', true);
                 req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
                 req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
@@ -365,10 +365,10 @@
             message: '<form id="survey" action="/action_page.php">Age:<br> <input type="text" id="age" name="age" value=""> <br><br>Sex:<br>  <input type="radio" name="gender" id="gender" value="male" > Male<br> <input type="radio" name="gender" value="female"> Female<br> <input type="radio" name="gender" value="other"> Other  <br> <br><input id="submitsurvey" class="btn btn-default" type="submit" value="Submit"> </form> ',
         });
         dialog.init(function(){
-            let a = document.querySelector("#submitsurvey")
+            var a = document.querySelector("#submitsurvey")
             a.addEventListener('click',function(evt){
                 evt.preventDefault();
-                let form_obj = ($('#survey').serializeArray())
+                var form_obj = ($('#survey').serializeArray())
                 form_obj.forEach(x=>{
                     user_data[x.name] = x.value;
                 })
@@ -377,8 +377,10 @@
             });
         });
     }
-//
-//        let vuelist = [{ id: 1, tags: ['all', 'tag1'] },
+    //init();
+
+    //
+//        var vuelist = [{ id: 1, tags: ['all', 'tag1'] },
 //        { id: 2, tags: ['all', 'tag2'] },
 //        { id: 3, tags: ['all', 'tag2'] },
 //        { id: 4, tags: ['all', 'tag1'] },
