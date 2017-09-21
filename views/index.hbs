@@ -255,7 +255,10 @@
         user_data["user_city"] = city;
         user_data["user_ip"] = ip;
         user_data["workid"] = "not available";
+        user_data["degree_tilted"] = data1.degree;
+
         user_data["delta"] = delta;
+
         var deltalist = delta_list.map(x=>{
             if(x==(-1)){
                 return userchoices[1].slice(0,-2);
