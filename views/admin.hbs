@@ -115,9 +115,10 @@
 <tr>
     <th>Degree tilted possible value</th>
     <td>
-        <input style="width: 5%" class="degree" type="text" name="degree" id="degree1" placeholder="">
-        <input style="width: 5%" class="degree" type="text" name="degree" id="degree2" placeholder="">
-        <input style="width: 5%" class="degree" type="text" name="degree" id="degree3" placeholder="">
+        <input style="width: 5%" class="degree" type="text" name="degree1" id="degree1" placeholder="">
+        <input style="width: 5%" class="degree" type="text" name="degree2" id="degree2" placeholder="">
+        <input style="width: 5%" class="degree" type="text" name="degree3" id="degree3" placeholder="">
+        <input style="width: 5%" class="degree" type="text" name="degree4" id="degree4" placeholder="">
 
     </td>
 
@@ -183,7 +184,7 @@
     document.querySelector('#submit').addEventListener('click',function (t) {
         let choicelist1 = [],shapes={}, proportion = {},proportion_sum = 0, userchoices = [];
         let degree_temp = document.querySelectorAll('.degree');
-        let degree = [degree_temp[0].value,degree_temp[1].value,degree_temp[2].value];
+        let degree = [degree_temp[0].value,degree_temp[1].value,degree_temp[2].value,degree_temp[3].value];
         if(degree.indexOf('')!=-1){
             alert('Please fill all three possible degree tilts');
         }
