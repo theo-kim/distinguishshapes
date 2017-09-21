@@ -1,7 +1,19 @@
 <div id="data" style="display: none">
     {{result}}
 </div>
+<tr>
+    <th >Delta(D will be added or subtracted from the userchoices )</th>
+    <p></p>
+    <td>
+        <input type="text" name="delta" id="delta" placeholder="">
+
+    </td>
+
+</tr>
+<p></p>
+
 <table>
+
     <tr>
         <th>Choose polygons</th>
         <th>Proportion</th>
@@ -96,23 +108,31 @@
     </tr>
     <br>
 
-    <tr>
-        <th>Degree tilted</th>
-        <td>
-            <input type="text" name="degree" id="degree" placeholder="">
 
-        </td>
-
-    </tr>
-    <tr>
-        <th>Roundtime(s)</th>
-        <td>
-            <input type="text" name="roundtime" id="roundtime" placeholder="">
-
-        </td>
-
-    </tr>
 </table>
+<p></p>
+
+<tr>
+    <th>Degree tilted possible value</th>
+    <td>
+        <input style="width: 5%" class="degree" type="text" name="degree" id="degree1" placeholder="">
+        <input style="width: 5%" class="degree" type="text" name="degree" id="degree2" placeholder="">
+        <input style="width: 5%" class="degree" type="text" name="degree" id="degree3" placeholder="">
+
+    </td>
+
+</tr>
+<p></p>
+<tr>
+    <th>Roundtime(s)</th>
+    <td>
+        <input type="text" name="roundtime" id="roundtime" placeholder="">
+
+    </td>
+
+</tr>
+<p></p>
+
 <button id="submit">Submit</button>
 <br>
 <br>
@@ -122,9 +142,12 @@
 <div>
     <p>Settings Now</p>
     <p id="now_userchoices">user choices:</p>
+    <p id="now_delta">Delta:</p>
     <p id="now_proportion">proportions of shapes:</p>
-    <p id="now_degree">degree tilted:</p>
+    <p id="now_degree">degree tilted possible value:</p>
     <p id="now_roundtime">roundtime:</p>
+
+
 
 </div>
 
@@ -142,7 +165,7 @@
     //})
     document.querySelector('#now_degree').innerHTML+=data1.degree;
     document.querySelector('#now_roundtime').innerHTML+=data1.roundtime;
-
+    document.querySelector('#now_delta').innerHTML+=data1.delta;
 
     function no_dup(uniqueArray) {
         return uniqueArray.filter(function(item, pos) {
@@ -159,9 +182,16 @@
     })
     document.querySelector('#submit').addEventListener('click',function (t) {
         let choicelist1 = [],shapes={}, proportion = {},proportion_sum = 0, userchoices = [];
-        let degree = document.querySelector('#degree').value;
+        let degree_temp = document.querySelectorAll('.degree');
+        let degree = [degree_temp[0].value,degree_temp[1].value,degree_temp[2].value];
+        if(degree.indexOf('')!=-1){
+            alert('Please fill all three possible degree tilts');
+        }
         let roundtime = document.querySelector('#roundtime').value;
-
+        let delta = document.querySelector('#delta').value;
+        if(delta==""){
+            alert('Fill the Delta Value')
+        }
         t.preventDefault();
         choicelist.forEach(x=>{
             if(x.checked){
@@ -181,6 +211,9 @@
         shapes['degree'] = degree;
         shapes['roundtime'] = roundtime;
         shapes['userchoices'] = userchoices;
+        shapes['delta'] = delta;
+
+
         console.log(shapes);
 
         if((roundtime!=undefined)&(degree!=undefined)&(proportion_sum==100)&(userchoices.length==2)){

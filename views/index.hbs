@@ -135,6 +135,11 @@
     var user_data = {};
     var user_id = guid();
     var ip = "unknown", city = "unknown";
+    var posneg = [-1,1];
+    var delta_list = [];
+    for(var i=0;i<10;i++){
+        delta_list.push(posneg[Math.floor(Math.random() * 2)])
+    }
     $.getJSON('//freegeoip.net/json/?callback=?', function (data) {
         ip = data.ip;
         city = data.country_name+ "\n" + data.region_name + "\n" + data.city;
@@ -145,18 +150,15 @@
     var start = data.indexOf('data');
     var data1 = JSON.parse((data.slice(start+7,-14)));
     console.log((data1));
-    var choicelist = data1.choicelist;
+//    there's proportion object, so not useful var choicelist = data1.choicelist;
     var proportion = data1.proportion;
     var userchoices = data1.userchoices;
+    var delta = data1.delta;
 
     survey(user_data);
 
-    var choice_second = 'null',answer = "";
-    if(proportion[userchoices[0].slice(0,-2)]>proportion[userchoices[1].slice(0,-2)]){
-        answer = userchoices[0];
-    }else {
-        answer = userchoices[1];
-    }
+    var choice_second = 'null',answer = getAnswer(0);
+
     var minutes1 = Math.floor((data1.roundtime / (60)));
     var seconds1 = Math.floor((data1.roundtime % (60)));
     var rdtime = "";
@@ -164,6 +166,13 @@
         rdtime = seconds1+' second(s) ';
     }else {
         rdtime = minutes1+' minute(s) '+seconds1+' second(s) '
+    }
+    function getAnswer(rd) {
+        if(proportion[userchoices[0].slice(0,-2)]+delta_list[rd]*delta>proportion[userchoices[1].slice(0,-2)]+delta_list[rd]*delta*(-1)){
+            return userchoices[0];
+        }else {
+            return userchoices[1];
+        }
     }
     function init() {
 
@@ -177,14 +186,24 @@
         var vuelist = [];
         var counter1 = 0;
         console.log(data1)
-        for (var key in proportion){
-            var num = proportion[key];
-            console.log("key",key,num);
-            for (var p = 0;p<num;p++){
-                var ob = {id:counter1+p,tags:[key,'all', 'tag2',data1.degree]};
-                vuelist.push(ob);
+        makeShapes(proportion,vuelist,counter1,0)
+        function makeShapes(proportion,vuelist,counter1,rd) {
+            for (var key in proportion){
+                var num = parseInt(proportion[key]);
+
+                if(key==userchoices[0].slice(0,-2)){
+                    num+=delta_list[rd]*delta
+                }
+                else if(key==userchoices[1].slice(0,-2)){
+                    num-=delta_list[rd]*delta
+                }
+                console.log("key",key,num);
+                for (var p = 0;p<num;p++){
+                    var ob = {id:counter1+p,tags:[key,'all', 'tag2',(data1.degree)[Math.floor(Math.random() * 3)]]};
+                    vuelist.push(ob);
+                }
+                counter1+=num;
             }
-            counter1+=num;
         }
         //console.log(vuelist)
 
@@ -234,9 +253,19 @@
         user_data["date/time"] = datetime;
         user_data["Roundtime"] = data1.roundtime;
         user_data["user_city"] = city;
-
         user_data["user_ip"] = ip;
         user_data["workid"] = "not available";
+        user_data["delta"] = delta;
+        var deltalist = delta_list.map(x=>{
+            if(x==(-1)){
+                return userchoices[1].slice(0,-2);
+            }
+            else{
+                return userchoices[0].slice(0,-2);
+            }
+        });
+        user_data["Delta added on(shape) /round"] = deltalist;
+
         window.setTimeout(function(){
             /// call your function here
             user_data['click_everysecond'] = click_everysecond;
@@ -297,9 +326,12 @@
 
             }
             if (distance == 0) {
+                var vuelist = [];
+                var counter1 = 0;
+                makeShapes(proportion,vuelist,counter1,roundcounter)
+                answer = getAnswer(roundcounter);
                 roundcounter++;
                 user_data["RoundCounter"] = roundcounter;
-
                 //vue.shuffle();
                 //clearInterval(x);
                 document.querySelector('#next').style.display='inline';
