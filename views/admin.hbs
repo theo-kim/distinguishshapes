@@ -2,12 +2,12 @@
     {{result}}
 </div>
 <tr>
-    <th >Delta(D will be added or subtracted from the userchoices )</th>
-    <p></p>
-    <td>
-        <input type="text" name="delta" id="delta" placeholder="">
+    <!--<th >Delta(D will be added or subtracted from the userchoices )</th>-->
+    <!--<p></p>-->
+    <!--<td>-->
+        <!--<input type="text" name="delta" id="delta" placeholder="">-->
 
-    </td>
+    <!--</td>-->
 
 </tr>
 <p></p>
@@ -18,6 +18,7 @@
         <th>Choose polygons</th>
         <th>Proportion</th>
         <th>User choices</th>
+        <th>  Delta (sum to 0, will be randomly distributed to shapes)</th>
 
 
     </tr>
@@ -34,6 +35,7 @@
             <input type="checkbox" name="pentagon_c" id="pentagon_c" class="userchoice">
 
         </td>
+        <td> <input type="text" name="delta1" id="delta1" class="delta"></td>
     </tr>
     <tr>
         <td>hexagon</td>
@@ -48,6 +50,8 @@
             <input type="checkbox" name="hexagon_c" id="hexagon_c" class="userchoice">
 
         </td>
+        <td> <input type="text" name="delta2" id="delta2" class="delta"></td>
+
     </tr>
     <tr>
         <td>heptagon</td>
@@ -62,6 +66,8 @@
             <input type="checkbox" name="heptagon_c" id="heptagon_c" class="userchoice">
 
         </td>
+        <td> <input type="text" name="delta3" id="delta3" class="delta"></td>
+
     </tr>
     <tr>
         <td>octagon</td>
@@ -76,6 +82,8 @@
             <input type="checkbox" name="octagon_c" id="octagon_c" class="userchoice">
 
         </td>
+        <td> <input type="text" name="delta4" id="delta4" class="delta"></td>
+
     </tr>
     <tr>
         <td>nonagon</td>
@@ -90,6 +98,8 @@
             <input type="checkbox" name="nonagon_c" id="nonagon_c" class="userchoice">
 
         </td>
+        <td> <input type="text" name="delta5" id="delta5" class="delta"></td>
+
     </tr>
 
     <tr>
@@ -105,13 +115,22 @@
             <input type="checkbox" name="decagon_c" id="decagon_c" class="userchoice">
 
         </td>
+        <td> <input type="text" name="delta6" id="delta6" class="delta"></td>
+
     </tr>
     <br>
 
 
 </table>
-<p></p>
+<p>
+<tr>
+    <th>Shape size</th>
+    <td>
+        <input type="text" name="size" id="size" placeholder="">%
+    </td>
 
+</tr>
+</p>
 <tr>
     <th>Degree tilted possible value</th>
     <td>
@@ -143,10 +162,11 @@
 <div>
     <p>Settings Now</p>
     <p id="now_userchoices">user choices:</p>
-    <p id="now_delta">Delta:</p>
+    <p id="now_deltalist">deltalist:</p>
     <p id="now_proportion">proportions of shapes:</p>
     <p id="now_degree">degree tilted possible value:</p>
     <p id="now_roundtime">roundtime:</p>
+    <p id="now_size">shape size:</p>
 
 
 
@@ -165,14 +185,17 @@
         document.querySelector('#now_proportion').innerHTML+=JSON.stringify(data1.proportion);
     //})
     document.querySelector('#now_degree').innerHTML+=data1.degree;
-    document.querySelector('#now_roundtime').innerHTML+=data1.roundtime;
-    document.querySelector('#now_delta').innerHTML+=data1.delta;
+    document.querySelector('#now_roundtime').innerHTML+=data1.roundtime+'s';
+    document.querySelector('#now_deltalist').innerHTML+=data1.deltalist;
+    document.querySelector('#now_size').innerHTML+=data1.size+'%';
 
     function no_dup(uniqueArray) {
         return uniqueArray.filter(function(item, pos) {
             return uniqueArray.indexOf(item) == pos;
         })
     }
+    let deltalist_temp = document.querySelectorAll('.delta');
+    //deltalist = (deltalist.filter(x=>{ x.innerHTML!=""})).map(x=>{return x.innerHTML});
     let choicelist = document.querySelectorAll('.choice');
     let userchoicelist = document.querySelectorAll('.userchoice');
     document.querySelector('#delete').addEventListener('click',function () {
@@ -182,6 +205,7 @@
         req.send("a=b");
     })
     document.querySelector('#submit').addEventListener('click',function (t) {
+
         let choicelist1 = [],shapes={}, proportion = {},proportion_sum = 0, userchoices = [];
         let degree_temp = document.querySelectorAll('.degree');
         let degree = [degree_temp[0].value,degree_temp[1].value,degree_temp[2].value,degree_temp[3].value];
@@ -189,10 +213,11 @@
             alert('Please fill all three possible degree tilts');
         }
         let roundtime = document.querySelector('#roundtime').value;
-        let delta = document.querySelector('#delta').value;
-        if(delta==""){
-            alert('Fill the Delta Value')
-        }
+        //let delta = document.querySelector('#delta').value;
+        let size = document.querySelector('#size').value;
+        //if(delta==""){
+        //    alert('Fill the Delta Value')
+        //}
         t.preventDefault();
         choicelist.forEach(x=>{
             if(x.checked){
@@ -201,6 +226,13 @@
                 proportion_sum+=parseInt(document.querySelector('#proportion_'+x.id).value);
             }
         })
+        let deltalist = [];
+        deltalist_temp.forEach(x=> {
+            if(x.value != "")deltalist.push(x.value);
+                }
+        )
+        //console.log(deltalist);
+
         userchoicelist.forEach(x=>{
             if(x.checked){
                 userchoices.push(x.id);
@@ -212,18 +244,21 @@
         shapes['degree'] = degree;
         shapes['roundtime'] = roundtime;
         shapes['userchoices'] = userchoices;
-        shapes['delta'] = delta;
+        //shapes['delta'] = delta;
+        shapes['size'] = size;
+        shapes['deltalist'] = deltalist;
+
 
 
         console.log(shapes);
 
-        if((roundtime!=undefined)&(degree!=undefined)&(proportion_sum==100)&(userchoices.length==2)){
+        if((roundtime!=undefined)&(degree!=undefined)&(proportion_sum==120)&(userchoices.length!=0)){
             let req= new XMLHttpRequest();
             req.open('POST', '/admininfo', true);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
             req.send("shapes="+JSON.stringify(shapes));
         }else {
-            alert("Fill all the fields; proportion sum should be 100, and with 2 user choices");
+            alert("Fill all the fields; proportion sum should be 120, and with 2 or more user choices");
         }
 
 

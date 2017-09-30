@@ -80,6 +80,9 @@
     #list-compvare-demo{
         margin: 3vmax;
     }
+    .hidden{
+        display: none;
+    }
 
 </style>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
@@ -101,10 +104,17 @@
 
 
     <div id="btns">
-    <p><button id="btn1" class="b1 btns button" onclick="btn1click()"></button>
+    <p>
         <button style="display: none;float: right " v-on:click="shuffle" class="button" id="next">Next Round</button>
     </p>
-    <p><button id="btn2" class="b2 btns button" onclick="btn2click()"></button>
+        <p>
+            <button id="btn1" class="b1 btns button hidden" onclick="btn1click()"></button></p>
+        <p> <button id="btn2" class="b2 btns button hidden" onclick="btn2click()"></button></p>
+        <p> <button id="btn3" class="b3 btns button hidden" onclick="btn3click()"></button></p>
+        <p> <button id="btn4" class="b4 btns button hidden" onclick="btn4click()"></button></p>
+        <p> <button id="btn5" class="b5 btns button hidden" onclick="btn5click()"></button>
+        </p>
+    <p>
         <button id="demo" style="cursor: inherit;display: inline;float: right " class="button btns" id="time"></button>
     </p>
 
@@ -124,7 +134,7 @@
             <!--flex: 1 1 7.5%;-->
 
             <!--<img class="list-compvare-img" :src="'http://placehold.it/450x200?text='+item.id" alt="" />-->
-            <img v-bind:style="{transform: 'rotate('+item.tags[3]+'deg)'}" class="list-compvare-img" :src="'/assets/shapesvg/'+item.tags[0]+'.svg'" alt="" />
+            <img v-bind:style="{height:item.tags[4]+'px',transform: 'rotate('+item.tags[3]+'deg)'}" class="list-compvare-img" :src="'/assets/shapesvg/'+item.tags[0]+'.svg'" alt="" />
             </span>
     </transition-group>
 </div>
@@ -136,10 +146,10 @@
     var user_id = guid();
     var ip = "unknown", city = "unknown";
     var posneg = [-1,1];
-    var delta_list = [];
-    for(var i=0;i<10;i++){
-        delta_list.push(posneg[Math.floor(Math.random() * 2)])
-    }
+    //var delta_list = [];
+//    for(var i=0;i<10;i++){
+//        delta_list.push(posneg[Math.floor(Math.random() * 2)])
+//    }
     $.getJSON('//freegeoip.net/json/?callback=?', function (data) {
         ip = data.ip;
         city = data.country_name+ "\n" + data.region_name + "\n" + data.city;
@@ -153,8 +163,16 @@
 //    there's proportion object, so not useful var choicelist = data1.choicelist;
     var proportion = data1.proportion;
     var userchoices = data1.userchoices;
-    var delta = data1.delta;
-
+    var deltalist = data1.deltalist;
+    var deltalist_10 = [];
+    for(var i=0;i<10;i++){
+        var obj = {};
+        var random = getRandomInt(1,userchoices.length+1);
+        for(var m=0;m<deltalist.length;m++){
+            obj[(userchoices[(random+m)%(userchoices.length)]).slice(0,-2)] = deltalist[m];
+        }
+        deltalist_10.push(obj);
+    }
     survey(user_data);
 
     var choice_second = 'null',answer = getAnswer(0);
@@ -162,17 +180,49 @@
     var minutes1 = Math.floor((data1.roundtime / (60)));
     var seconds1 = Math.floor((data1.roundtime % (60)));
     var rdtime = "";
+
     if (minutes1==0){
         rdtime = seconds1+' second(s) ';
     }else {
         rdtime = minutes1+' minute(s) '+seconds1+' second(s) '
     }
     function getAnswer(rd) {
-        if(proportion[userchoices[0].slice(0,-2)]+delta_list[rd]*delta>proportion[userchoices[1].slice(0,-2)]+delta_list[rd]*delta*(-1)){
-            return userchoices[0];
-        }else {
-            return userchoices[1];
+        console.log("deltalist_10",deltalist_10);
+
+        var numbig = 0;
+        var as = userchoices[0];
+
+        for (var key in proportion){
+            var num = parseInt(proportion[key]);
+            if((deltalist_10[rd])[key]!=undefined){
+                num+=parseInt((deltalist_10[rd])[key]);
+            }
+            if(num>numbig){
+                numbig = num;
+                as = key;
+            }
         }
+        console.log("answer is",answer);
+        return as;
+
+//        userchoices.forEach(x=> {
+//            //if(proportion[x.slice(0,-2)]+delta_list[rd]*delta>proportion[as.slice(0,-2)]+delta_list[rd]*delta*(-1)){
+//            if(proportion[x.slice(0,-2)]>proportion[as.slice(0,-2)]){
+//                as = x;
+//            }
+//                }
+//        )
+////        if(proportion[userchoices[0].slice(0,-2)]+delta_list[rd]*delta>proportion[userchoices[1].slice(0,-2)]+delta_list[rd]*delta*(-1)){
+////            return userchoices[0];
+////        }else {
+////            return userchoices[1];
+////        }
+//        return as;
+    }
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
     }
     function init() {
 
@@ -180,7 +230,8 @@
         console.log((proportion));
         userchoices.forEach((x,i)=>{
                     document.querySelector('#btn'+(i+1)).innerHTML=x.slice(0,-2)+' ('+explanation[x.slice(0,-2)]+')';
-                }
+                    document.querySelector('#btn'+(i+1)).classList.remove('hidden');
+        }
         )
 
         var vuelist = [];
@@ -190,16 +241,18 @@
         function makeShapes(proportion,vuelist,counter1,rd) {
             for (var key in proportion){
                 var num = parseInt(proportion[key]);
-
-                if(key==userchoices[0].slice(0,-2)){
-                    num+=delta_list[rd]*delta
+                if((deltalist_10[rd])[key]!=undefined){
+                    num+=parseInt((deltalist_10[rd])[key]);
                 }
-                else if(key==userchoices[1].slice(0,-2)){
-                    num-=delta_list[rd]*delta
-                }
+//                if(key==userchoices[0].slice(0,-2)){
+//                    //num+=delta_list[rd]*delta
+//                }
+//                else if(key==userchoices[1].slice(0,-2)){
+//                    //num-=delta_list[rd]*delta
+//                }
                 console.log("key",key,num);
                 for (var p = 0;p<num;p++){
-                    var ob = {id:counter1+p,tags:[key,'all', 'tag2',(data1.degree)[Math.floor(Math.random() * 4)]]};
+                    var ob = {id:counter1+p,tags:[key,'all', 'tag2',(data1.degree)[Math.floor(Math.random() * 4)],parseInt(data1.size)*0.6]};
                     vuelist.push(ob);
                 }
                 counter1+=num;
@@ -257,17 +310,26 @@
         user_data["workid"] = "not available";
         user_data["degree_tilted"] = data1.degree;
 
-        user_data["delta"] = delta;
+        user_data["deltalist"] = deltalist;
 
-        var deltalist = delta_list.map(x=>{
-            if(x==(-1)){
-                return userchoices[1].slice(0,-2);
+        console.log(deltalist_10);
+
+//        var deltalist = delta_list.map(x=>{
+//            if(x==(-1)){
+//                return userchoices[1].slice(0,-2);
+//            }
+//            else{
+//                return userchoices[0].slice(0,-2);
+//            }
+//        });
+        var list_deltas = [];
+        deltalist_10.forEach((x,i)=>{
+
+            for(var key in x){
+                list_deltas.push("round "+(i+1)+" "+key+":"+x[key]);
             }
-            else{
-                return userchoices[0].slice(0,-2);
-            }
-        });
-        user_data["Delta added on(shape) /round"] = deltalist;
+        })
+        user_data["Delta added on(shape) /round"] = list_deltas;
 
         window.setTimeout(function(){
             /// call your function here
@@ -293,7 +355,9 @@
             document.querySelector('#next').style.display='none';
             document.getElementById("btn2").style.background='buttonface';
             document.getElementById("btn1").style.background='buttonface';
-
+            document.getElementById("btn3").style.background='buttonface';
+            document.getElementById("btn4").style.background='buttonface';
+            document.getElementById("btn5").style.background='buttonface';
         })
 
         var x = setInterval(function() {
@@ -353,8 +417,11 @@
     function btn1click() {
         document.getElementById("btn1").style.background='lightgrey';
         document.getElementById("btn2").style.background='buttonface';
+        document.getElementById("btn3").style.background='buttonface';
+        document.getElementById("btn4").style.background='buttonface';
+        document.getElementById("btn5").style.background='buttonface';
 
-        if(answer==userchoices[0]){
+        if(answer==userchoices[0].slice(0,-2)){
             choice_second = "true";
         }else {
             choice_second = "false";
@@ -364,14 +431,59 @@
     function btn2click() {
         document.getElementById("btn2").style.background='lightgrey';
         document.getElementById("btn1").style.background='buttonface';
+        document.getElementById("btn3").style.background='buttonface';
+        document.getElementById("btn4").style.background='buttonface';
+        document.getElementById("btn5").style.background='buttonface';
 
-        if(answer==userchoices[1]){
+        if(answer==userchoices[1].slice(0,-2)){
             choice_second = "true";
         }else {
             choice_second = "false";
         }
         //choice_second = userchoices[1].slice(0,-2);
     }
+    function btn3click() {
+        document.getElementById("btn3").style.background='lightgrey';
+        document.getElementById("btn1").style.background='buttonface';
+        document.getElementById("btn2").style.background='buttonface';
+        document.getElementById("btn4").style.background='buttonface';
+        document.getElementById("btn5").style.background='buttonface';
+
+        if(answer==userchoices[2].slice(0,-2)){
+            choice_second = "true";
+        }else {
+            choice_second = "false";
+        }
+        //choice_second = userchoices[1].slice(0,-2);
+    }
+    function btn4click() {
+        document.getElementById("btn4").style.background='lightgrey';
+        document.getElementById("btn1").style.background='buttonface';
+        document.getElementById("btn3").style.background='buttonface';
+        document.getElementById("btn2").style.background='buttonface';
+        document.getElementById("btn5").style.background='buttonface';
+        if(answer==userchoices[3].slice(0,-2)){
+            choice_second = "true";
+        }else {
+            choice_second = "false";
+        }
+        //choice_second = userchoices[1].slice(0,-2);
+    }
+    function btn5click() {
+        document.getElementById("btn5").style.background='lightgrey';
+        document.getElementById("btn1").style.background='buttonface';
+        document.getElementById("btn3").style.background='buttonface';
+        document.getElementById("btn4").style.background='buttonface';
+        document.getElementById("btn2").style.background='buttonface';
+
+        if(answer==userchoices[4].slice(0,-2)){
+            choice_second = "true";
+        }else {
+            choice_second = "false";
+        }
+        //choice_second = userchoices[1].slice(0,-2);
+    }
+
     function shuffleArray(array) {
         for (var i = array.length - 1; i > 0; i--) {
             var j = Math.floor(Math.random() * (i + 1));
