@@ -16,7 +16,7 @@
 
     <tr>
         <th>Choose polygons</th>
-        <th>Proportion</th>
+        <th>Count</th>
         <th>User choices</th>
         <th>  Delta (sum to 0, will be randomly distributed to shapes)</th>
 
@@ -124,13 +124,18 @@
 </table>
 <p>
 <tr>
-    <p><th>Shape size </th>
+    <p><th>Shape size: </th>
     <td>
-        <input type="text" name="size" id="size" placeholder="">%
+        Small<input type="text" name="size_s" id="size_s" placeholder="">%
     </td>
-<button onclick="document.querySelector('#size').value = '80'">small</button>
-<button onclick="document.querySelector('#size').value = '100'">normal</button>
-<button onclick="document.querySelector('#size').value = '120'">big</button>
+<td>
+    Normal<input type="text" name="size_n" id="size_n" placeholder="">%
+</td> <td>
+    Big<input type="text" name="size_b" id="size_b" placeholder="">%
+</td>
+<!--<button onclick="document.querySelector('#size').value = '80'">small</button>-->
+<!--<button onclick="document.querySelector('#size').value = '100'">normal</button>-->
+<!--<button onclick="document.querySelector('#size').value = '120'">big</button>-->
 </p>
 </tr>
 </p>
@@ -190,7 +195,7 @@
     document.querySelector('#now_degree').innerHTML+=data1.degree;
     document.querySelector('#now_roundtime').innerHTML+=data1.roundtime+'s';
     document.querySelector('#now_deltalist').innerHTML+=data1.deltalist;
-    document.querySelector('#now_size').innerHTML+=data1.size+'%';
+    document.querySelector('#now_size').innerHTML+=data1.size;
 
     function no_dup(uniqueArray) {
         return uniqueArray.filter(function(item, pos) {
@@ -213,11 +218,11 @@
         let degree_temp = document.querySelectorAll('.degree');
         let degree = [degree_temp[0].value,degree_temp[1].value,degree_temp[2].value,degree_temp[3].value];
         if(degree.indexOf('')!=-1){
-            alert('Please fill all three possible degree tilts');
+            alert('Please populate all tilt values. Repetition is allowed');
         }
         let roundtime = document.querySelector('#roundtime').value;
         //let delta = document.querySelector('#delta').value;
-        let size = document.querySelector('#size').value;
+        let size = {"small":document.querySelector('#size_s').value,"normal":document.querySelector('#size_n').value,"big":document.querySelector('#size_b').value};
         //if(delta==""){
         //    alert('Fill the Delta Value')
         //}

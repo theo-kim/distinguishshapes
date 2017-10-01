@@ -246,6 +246,18 @@
         console.log(data1)
         makeShapes(proportion,vuelist,counter1,0)
         function makeShapes(proportion,vuelist,counter1,rd) {
+            var sz = data1.size;
+            var szlist= [];
+            for (var i = 0; i<parseInt(parseInt(sz.small)/10); i++){
+                szlist.push(80);
+            }
+            for (var i = 0; i<parseInt(parseInt(sz.normal)/10); i++){
+                szlist.push(100);
+            }
+            for (var i = 0; i<parseInt(parseInt(sz.big)/10); i++){
+                szlist.push(120);
+            }
+            //console.log('sz',szlist);
             for (var key in proportion){
                 var num = parseInt(proportion[key]);
                 if((deltalist_10[rd])[key]!=undefined){
@@ -259,7 +271,7 @@
 //                }
                 console.log("key",key,num);
                 for (var p = 0;p<num;p++){
-                    var ob = {id:counter1+p,tags:[key,'all', 'tag2',(data1.degree)[Math.floor(Math.random() * 4)],parseInt(data1.size)*0.6]};
+                    var ob = {id:counter1+p,tags:[key,'all', 'tag2',(data1.degree)[Math.floor(Math.random() * 4)],szlist[getRandomInt(0,10)]*0.6]};
                     vuelist.push(ob);
                 }
                 counter1+=num;
