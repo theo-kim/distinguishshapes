@@ -168,16 +168,36 @@
     var data1 = JSON.parse((data.slice(start+7,-14)));
     console.log((data1));
 //    there's proportion object, so not useful var choicelist = data1.choicelist;
+    var choicelist = data1.choicelist;
     var proportion = data1.proportion;
     var userchoices = data1.userchoices;
+    var decoys = choicelist.filter(x=>{return userchoices.indexOf(x+'_c')==-1});
     var deltalist = data1.deltalist;
     var deltalist_10 = [];
+    //console.log(decoys);
+//    for(var i=0;i<10;i++){
+//        var obj = {};
+//        var random = getRandomInt(1,userchoices.length+1);
+//        for(var m=0;m<deltalist.length;m++){
+//            obj[(userchoices[(random+m)%(userchoices.length)]).slice(0,-2)] = deltalist[m];
+//        }
+//        deltalist_10.push(obj);
+//    }
     for(var i=0;i<10;i++){
+        //datalist[max,mudding]
+        var mudding = getRandomInt(-parseInt(deltalist[1]),parseInt(deltalist[1]));
         var obj = {};
-        var random = getRandomInt(1,userchoices.length+1);
-        for(var m=0;m<deltalist.length;m++){
-            obj[(userchoices[(random+m)%(userchoices.length)]).slice(0,-2)] = deltalist[m];
+        var random = getRandomInt(0,userchoices.length);
+        for(var m=0;m<userchoices.length;m++){
+            obj[(userchoices[m]).slice(0,-2)] = parseInt(mudding);
         }
+        obj[(userchoices[random]).slice(0,-2)] += parseInt(deltalist[0]);
+        //decoys
+        for(var m=0;m<decoys.length;m++) {
+            obj[decoys[m]] = -parseInt((mudding*userchoices.length + parseInt(deltalist[0]))/decoys.length)-1;
+        }
+        obj[decoys[0]] +=1;
+
         deltalist_10.push(obj);
     }
     survey(user_data);

@@ -18,7 +18,7 @@
         <th>Choose polygons</th>
         <th>Count</th>
         <th>User choices</th>
-        <th>  Delta (sum to 0, will be randomly distributed to shapes)</th>
+        <!--<th>  Delta (sum to 0, will be randomly distributed to shapes)</th>-->
 
 
     </tr>
@@ -35,7 +35,7 @@
             <input type="checkbox" name="pentagon_c" id="pentagon_c" class="userchoice">
 
         </td>
-        <td> <input type="text" name="delta1" id="delta1" class="delta"></td>
+        <!--<td> <input type="text" name="delta1" id="delta1" class="delta"></td>-->
     </tr>
     <tr>
         <td>hexagon</td>
@@ -50,7 +50,7 @@
             <input type="checkbox" name="hexagon_c" id="hexagon_c" class="userchoice">
 
         </td>
-        <td> <input type="text" name="delta2" id="delta2" class="delta"></td>
+        <!--<td> <input type="text" name="delta2" id="delta2" class="delta"></td>-->
 
     </tr>
     <tr>
@@ -66,7 +66,7 @@
             <input type="checkbox" name="heptagon_c" id="heptagon_c" class="userchoice">
 
         </td>
-        <td> <input type="text" name="delta3" id="delta3" class="delta"></td>
+        <!--<td> <input type="text" name="delta3" id="delta3" class="delta"></td>-->
 
     </tr>
     <tr>
@@ -82,7 +82,7 @@
             <input type="checkbox" name="octagon_c" id="octagon_c" class="userchoice">
 
         </td>
-        <td> <input type="text" name="delta4" id="delta4" class="delta"></td>
+        <!--<td> <input type="text" name="delta4" id="delta4" class="delta"></td>-->
 
     </tr>
     <tr>
@@ -98,7 +98,7 @@
             <input type="checkbox" name="nonagon_c" id="nonagon_c" class="userchoice">
 
         </td>
-        <td> <input type="text" name="delta5" id="delta5" class="delta"></td>
+        <!--<td> <input type="text" name="delta5" id="delta5" class="delta"></td>-->
 
     </tr>
 
@@ -115,11 +115,25 @@
             <input type="checkbox" name="decagon_c" id="decagon_c" class="userchoice">
 
         </td>
-        <td> <input type="text" name="delta6" id="delta6" class="delta"></td>
+        <!--<td> <input type="text" name="delta6" id="delta6" class="delta"></td>-->
 
     </tr>
     <br>
+    <tr>
+        <td>max</td>
 
+        <td> <input type="text" name="delta6" id="max1" class="delta"></td>
+        <td id="max">less than:</td>
+    </tr>
+    <br>
+    <tr>
+        <td>mudding</td>
+
+        <td> <input type="text" name="delta6" id="mudding1" class="delta"></td>
+        <td id="mudding">less than:</td>
+
+    </tr>
+    <br>
 
 </table>
 <p>
@@ -170,7 +184,7 @@
 <div>
     <p>Settings Now</p>
     <p id="now_userchoices">user choices:</p>
-    <p id="now_deltalist">deltalist:</p>
+    <p id="now_deltalist">max, mudding:</p>
     <p id="now_proportion">proportions of shapes:</p>
     <p id="now_degree">degree tilted possible value:</p>
     <p id="now_roundtime">roundtime:</p>
@@ -212,6 +226,30 @@
         req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
         req.send("a=b");
     })
+    setInterval(function () {
+        var cl1=[],us1=[];
+        choicelist.forEach(x=>{
+            if(x.checked){
+                cl1.push(x.id);
+            }
+        })
+
+        userchoicelist.forEach(x=>{
+            if(x.checked){
+                us1.push(x.id);
+            }
+        })
+        //console.log(cl1.length,us1.length)
+        var max,mud;
+        var maxinput = document.querySelector('#max1').value;
+        max = parseInt(120*(cl1.length-us1.length)/cl1.length);
+        mud = parseInt(((120*(cl1.length-us1.length)/cl1.length)-parseInt(maxinput))/us1.length);
+        var mx = document.querySelector('#max');
+        var md = document.querySelector('#mudding');
+
+        mx.innerHTML = "less than:"+max;
+        md.innerHTML = 'less than:'+mud;
+    },100);
     document.querySelector('#submit').addEventListener('click',function (t) {
 
         let choicelist1 = [],shapes={}, proportion = {},proportion_sum = 0, userchoices = [];
@@ -234,6 +272,7 @@
                 proportion_sum+=parseInt(document.querySelector('#proportion_'+x.id).value);
             }
         })
+
         let deltalist = [];
         deltalist_temp.forEach(x=> {
             if(x.value != "")deltalist.push(x.value);
