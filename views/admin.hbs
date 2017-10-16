@@ -233,7 +233,14 @@
                 cl1.push(x.id);
             }
         })
+        cl1.forEach(x=>{
 
+            var shape = document.querySelector("#proportion_"+x);
+            if(shape){
+                shape.value = 120/cl1.length;
+            }
+            console.log("#proportion_"+x)
+        })
         userchoicelist.forEach(x=>{
             if(x.checked){
                 us1.push(x.id);
@@ -261,6 +268,7 @@
         let roundtime = document.querySelector('#roundtime').value;
         //let delta = document.querySelector('#delta').value;
         let size = {"small":document.querySelector('#size_s').value,"normal":document.querySelector('#size_n').value,"big":document.querySelector('#size_b').value};
+        let size_sum = parseInt(document.querySelector('#size_s').value) + parseInt(document.querySelector('#size_n').value) + parseInt(document.querySelector('#size_b').value);
         //if(delta==""){
         //    alert('Fill the Delta Value')
         //}
@@ -298,14 +306,13 @@
 
 
         console.log(shapes);
-
-        if((roundtime!=undefined)&(degree!=undefined)&(proportion_sum==120)&(userchoices.length!=0)){
+        if((roundtime!=undefined)&(size_sum==100)&(deltalist[0]!=null)&(deltalist[1]!=null)&(degree!=undefined)&(proportion_sum==120)&(userchoices.length!=0)){
             let req= new XMLHttpRequest();
             req.open('POST', '/admininfo', true);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
             req.send("shapes="+JSON.stringify(shapes));
         }else {
-            alert("Fill all the fields; proportion sum should be 120, and with 2 or more user choices");
+            alert("Fill all the fields; sizes added to 100, with 2 or more user choices");
         }
 
 
