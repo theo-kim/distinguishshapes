@@ -25,7 +25,7 @@
     <p id="now_proportion">Proportions of shapes:</p>
     <p id="now_userchoices">User Choices:</p>
     <p id="now_degree">Degree tilted possible value:</p>
-    <p id="now_roundtime">Roundtime:</p>
+    <!--<p id="now_roundtime">Roundtime:</p>-->
     <p id="now_size">Shape Counts[small,normal,big]: </p>
 
 </div>
@@ -184,15 +184,17 @@
 
 </tr>
 <p></p>
-<tr>
-    <th>Roundtime(s)</th>
-    <td>
-        <input type="text" name="roundtime" id="roundtime" placeholder="">
 
-    </td>
+<!--<tr>-->
+    <!--<th>Roundtime(s)</th>-->
+    <!--<td>-->
+        <!--<input type="text" name="roundtime" id="roundtime" placeholder="">-->
 
-</tr>
-<p></p>
+    <!--</td>-->
+
+<!--</tr>-->
+
+<!--<p></p>-->
 
 <button id="submit">Submit</button>
 <br>
@@ -215,7 +217,7 @@
         document.querySelector('#now_proportion').innerHTML+=JSON.stringify(data1.proportion);
     //})
     document.querySelector('#now_degree').innerHTML+=data1.degree;
-    document.querySelector('#now_roundtime').innerHTML+=data1.roundtime+'s';
+//    document.querySelector('#now_roundtime').innerHTML+=data1.roundtime+'s';
     document.querySelector('#now_deltalist').innerHTML+=data1.deltalist;
     document.querySelector('#now_size').innerHTML+=[data1.size['small'],data1.size['normal'],data1.size['big']];
     console.log(data1);
