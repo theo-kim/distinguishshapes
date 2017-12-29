@@ -47,11 +47,12 @@
       <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="440" column="14" lean-forward="false" selection-start-line="440" selection-start-column="14" selection-end-line="440" selection-end-column="14" />
+            <state relative-caret-position="306">
+              <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding>
-                <element signature="n#style#0;n#button#0;n#p#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#p#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#p#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#p#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,7 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>choice_</find>
       <find>deltalist</find>
       <find>round</find>
       <find>incentive</find>
@@ -153,7 +153,6 @@
       <find>mi</find>
       <find>choice_second</find>
       <find>choice_round</find>
-      <find>demo</find>
       <find>clock</find>
       <find>clock(</find>
       <find>clock(user_data</find>
@@ -161,6 +160,8 @@
       <find>clock(user_data)</find>
       <find>clock(user_data)</find>
       <find>shuffle</find>
+      <find>demo</find>
+      <find>dialog.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -485,12 +486,12 @@
       <workItem from="1508788760705" duration="124000" />
       <workItem from="1509209338382" duration="482000" />
       <workItem from="1509482683856" duration="201000" />
-      <workItem from="1513951609682" duration="17706000" />
+      <workItem from="1513951609682" duration="18094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="370271000" />
+    <option name="totallyTimeSpent" value="370659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
@@ -895,11 +896,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="440" column="14" lean-forward="false" selection-start-line="440" selection-start-column="14" selection-end-line="440" selection-end-column="14" />
+        <state relative-caret-position="306">
+          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
-            <element signature="n#style#0;n#button#0;n#p#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#p#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#p#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#p#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
