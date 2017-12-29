@@ -15,6 +15,19 @@
     {{result}}
 </div>
 <style>
+    #submitsurvey1{
+        margin-left: 43%;
+        margin-bottom:3%;
+
+    }
+    #timedate {
+        font: small-caps bold 43px/150% Arial, Helvetica, sans-serif;
+        text-align:left;
+        width: 50%;
+        margin: 20px auto;
+        color:#333;
+        padding: 20px;
+    }
     .hidden{
         display: none;
     }
@@ -41,11 +54,11 @@
         font-family: 'Roboto', sans-serif;
     }
     #next{
-
-        display: none;
+        display:block;
+        /*display: none;*/
         /*margin-left: 10vmax;*/
         /*margin-right: 10vmax;*/
-
+        margin-top: -1.5vmax;
         float: right;
 
     }
@@ -91,7 +104,9 @@
     .button_2{
         margin-top: 1.4vmax;
     }
-
+    #mi{
+        color:red;
+    }
 </style>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
@@ -113,11 +128,12 @@
 
     <div id="btns">
     <div style="float: right;margin-right:8vmax;">
-        <p><button id="demo" style="cursor: inherit;display: block;float: right " class="button button_1 btns" id="time"></button></p>
-        <p><button style="display: none;float: right " v-on:click="shuffle" class="button button_2" id="next">Next Round</button></p>
+        <p><button style="float: right " v-on:click="shuffle" class="button button_2" id="next">Next Round</button></p>
+
+        <p><button id="demo" style="cursor: inherit;display: none;float: right " class="button button_1 btns" id="time"></button></p>
 
     </div>
-        <p><button id="btn1" class="b1 btns button hidden" onclick="btn1click()"></button></p>
+        <p> <button id="btn1" class="b1 btns button hidden" onclick="btn1click()"></button></p>
         <p> <button id="btn2" class="b2 btns button hidden" onclick="btn2click()"></button></p>
         <p> <button id="btn3" class="b3 btns button hidden" onclick="btn3click()"></button></p>
         <p> <button id="btn4" class="b4 btns button hidden" onclick="btn4click()"></button></p>
@@ -148,11 +164,14 @@
 <script>
     document.querySelector('body').style.backgroundColor = 'white';
     var explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided'}
-    var click_everysecond = ['null'];
+    var choice_round = [];
+    var total_score = 0;
+    var time_round = [];
     var user_data = {};
     var user_id = guid();
     var ip = "unknown", city = "unknown";
     var posneg = [-1,1];
+    var clockcounter = true;
     //var delta_list = [];
 //    for(var i=0;i<10;i++){
 //        delta_list.push(posneg[Math.floor(Math.random() * 2)])
@@ -174,6 +193,8 @@
     var decoys = choicelist.filter(x=>{return userchoices.indexOf(x+'_c')==-1});
     var deltalist = data1.deltalist;
     var deltalist_10 = [];
+    var deltalist_shapecount = [];
+
     //console.log(decoys);
 //    for(var i=0;i<10;i++){
 //        var obj = {};
@@ -183,10 +204,16 @@
 //        }
 //        deltalist_10.push(obj);
 //    }
-    for(var i=0;i<10;i++){
+
+    var totalrounds = 5;
+    for(var i=0;i<totalrounds;i++){
+        var incentives = [1,3,6,10][getRandomInt(0,4)];
+
         //datalist[max,mudding]
         var mudding = getRandomInt(-parseInt(deltalist[1]),parseInt(deltalist[1]));
         var obj = {};
+        obj['incentive'] = incentives;
+
         var random = getRandomInt(0,userchoices.length);
         for(var m=0;m<userchoices.length;m++){
             obj[(userchoices[m]).slice(0,-2)] = parseInt(mudding);
@@ -196,7 +223,17 @@
         for(var m=0;m<decoys.length;m++) {
             obj[decoys[m]] = -parseInt((mudding*userchoices.length + parseInt(deltalist[0]))/decoys.length)-1;
         }
-        obj[decoys[0]] +=1;
+        var sum_choice = 0;
+        var sum_decoy = 0;
+        userchoices.forEach(x=>{
+            sum_choice+=obj[x.slice(0,-2)];
+        })
+        decoys.forEach(x=>{
+            sum_decoy+=obj[x];
+        })
+       // console.log("here!",sum_choice,sum_decoy);
+        obj[decoys[0]] -=sum_choice+sum_decoy;
+
 
         deltalist_10.push(obj);
     }
@@ -289,7 +326,11 @@
 //                else if(key==userchoices[1].slice(0,-2)){
 //                    //num-=delta_list[rd]*delta
 //                }
-                console.log("key",key,num);
+
+                //key show answer
+                //console.log("key",key,num);
+                deltalist_shapecount.push(key+":"+num);
+
                 for (var p = 0;p<num;p++){
                     var ob = {id:counter1+p,tags:[key,'all', 'tag2',(data1.degree)[Math.floor(Math.random() * 4)],szlist[getRandomInt(0,10)]*0.6]};
                     vuelist.push(ob);
@@ -343,13 +384,19 @@
 
         user_data["usercode"] = user_id;
         user_data["date/time"] = datetime;
-        user_data["Roundtime"] = data1.roundtime;
+//        user_data["Roundtime"] = data1.roundtime;
+       // user_data["Roundtime"] = 0;
         user_data["user_city"] = city;
         user_data["user_ip"] = ip;
         user_data["workid"] = "not available";
         user_data["degree_tilted"] = data1.degree;
 
-        user_data["deltalist"] = deltalist;
+        user_data["max"] = deltalist[0];
+        user_data["mudding"] = deltalist[1];
+        user_data["N"] = 60;
+        user_data["n"] = choicelist.length;
+        user_data["m"] = userchoices.length;
+
 
         console.log(deltalist_10);
 
@@ -365,44 +412,98 @@
         deltalist_10.forEach((x,i)=>{
 
             for(var key in x){
-                list_deltas.push("round "+(i+1)+" "+key+":"+x[key]);
+//                list_deltas.push("round "+(i+1)+" "+key+":"+x[key]);
+                list_deltas.push(key+":"+x[key]);
             }
         })
-        user_data["Delta added on(shape) /round"] = list_deltas;
 
-        window.setTimeout(function(){
-            /// call your function here
-            user_data['click_everysecond'] = click_everysecond;
+       // user_data["Round Info(delta,incentive)"] = list_deltas;
 
-            var req= new XMLHttpRequest();
-            req.open('POST', '/userdata', true);
-            req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-            req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
-
-        }, data1.roundtime*10);
+//        window.setTimeout(function(){
+//            /// call your function here
+//            user_data['click_everysecond'] = click_everysecond;
+//
+//            var req= new XMLHttpRequest();
+//            req.open('POST', '/userdata', true);
+//            req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+//            req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
+//
+//        }, data1.roundtime*10);
 
 
         // Set the date we're counting down to
-        var countDownDate = data1.roundtime;
+       // var countDownDate = data1.roundtime;
         var countadder = 0;
         // Update the count down every 1 second
 
-        var distance = 0;
+       // var distance = 0;
         document.querySelector('#next').addEventListener('click',function () {
-            choice_second = 'null';
-            countadder = 0;
-            document.querySelector('#next').style.display='none';
+            if(choice_second!="null"){
+//            document.querySelector('#next').style.display='none';
             document.getElementById("btn2").style.background='buttonface';
             document.getElementById("btn1").style.background='buttonface';
             document.getElementById("btn3").style.background='buttonface';
             document.getElementById("btn4").style.background='buttonface';
             document.getElementById("btn5").style.background='buttonface';
+
+            var roundname = "Round "+ (roundcounter-1) + "(mud)";
+            var roundname_shape = "Round "+ (roundcounter-1) + "(shape count)";
+
+            choice_round.push(answer+" "+ choice_second);
+            if(choice_second=="true"){
+                //alert('true');
+                total_score+=incentives;
+            }
+            //choice_second = 'null';
+            time_round.push(countadder);
+            var temp_mudlist = list_deltas.slice((roundcounter-1)*(choicelist.length+1),(roundcounter)*(choicelist.length+1));
+            user_data[roundname] = list_deltas.slice((roundcounter-1)*(choicelist.length+1),(roundcounter)*(choicelist.length+1));
+
+            user_data['choice_round'] = choice_round;
+            user_data['time_round'] = time_round;
+            user_data[roundname_shape] = deltalist_shapecount;
+            var req= new XMLHttpRequest();
+            req.open('POST', '/userdata', true);
+            req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+            req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
+
+            deltalist_shapecount = [];
+            choice_second = 'null';
+            countadder = 0;
+            if (countadder == 0) {
+                var vuelist = [];
+                var counter1 = 0;
+                makeShapes(proportion,vuelist,counter1,roundcounter)
+                answer = getAnswer(roundcounter);
+                roundcounter++;
+                user_data["RoundCounter(60 in total)"] = roundcounter;
+                user_data["total_score"] = total_score;
+
+                //vue.shuffle();
+                //clearInterval(x);
+//                document.querySelector('#next').style.display='block';
+
+                if (roundcounter==totalrounds){
+                    clearInterval(x);
+                    document.getElementById("list-compvare-demo").style.display = "none";
+                    //alert(total_score);
+                    if(total_score<100){
+                        alert("Score less than 100 but for testing I'll temporarily show the clock");
+                    }else{}
+                    clock(user_data);
+
+                }
+
+            }
+            }else {
+                alert("You haven't made your choice yet!");
+            }
         })
 
         var x = setInterval(function() {
 
             countadder++;
-            distance = countDownDate - countadder;
+          //  distance = countDownDate - countadder;
 
             // Get todays date and time
 
@@ -411,48 +512,41 @@
             // Time calculations for days, hours, minutes and seconds
             //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 //        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance / (60)));
-            var seconds = Math.floor((distance % (60)));
+            var minutes = Math.floor((countadder / (60)));
+            var seconds = Math.floor((countadder % (60)));
 
             // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = "Time remaining: "+minutes + "m " + seconds + "s ";
+
+            //document.getElementById("demo").innerHTML = "Time: "+minutes + "m " + seconds + "s ";
 
 
             // If the count down is finished, write some text
-            if(distance>0){
-                click_everysecond.push(choice_second);
-                //choice_second = 'null';
-                user_data['click_everysecond'] = click_everysecond;
 
-                var req= new XMLHttpRequest();
-                req.open('POST', '/userdata', true);
-                req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-                req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
+//
+//            if(distance>0){
+//                click_everysecond.push(choice_second);
+//                //choice_second = 'null';
+//                user_data['click_everysecond'] = click_everysecond;
+//
+//                var req= new XMLHttpRequest();
+//                req.open('POST', '/userdata', true);
+//                req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+//                req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
+//
+//
+//            }
 
 
-            }
-            if (distance == 0) {
-                var vuelist = [];
-                var counter1 = 0;
-                makeShapes(proportion,vuelist,counter1,roundcounter)
-                answer = getAnswer(roundcounter);
-                roundcounter++;
-                user_data["RoundCounter"] = roundcounter;
-                //vue.shuffle();
-                //clearInterval(x);
-                document.querySelector('#next').style.display='block';
 
-                if (roundcounter==10){
-                    clearInterval(x);
-                    document.getElementById("demo").innerHTML = "EXPIRED";
-                }
-
-            }if(distance<0){
-                document.getElementById("demo").innerHTML = "EXPIRED";
-
-            }
+//            if(distance<0){
+//                document.getElementById("demo").innerHTML = "EXPIRED";
+//
+//            }
         }, 1000);
     }
+
+
+
     function btn1click() {
         document.getElementById("btn1").style.background='lightgrey';
         document.getElementById("btn2").style.background='buttonface';
@@ -563,6 +657,53 @@
             });
         });
     }
+    function clock(user_data) {
+        //            message: '<form action="/action_page.php">First name:<br> <input type="text" name="firstname" value="Mickey"> <br>Last name:<br> <input type="text" name="lastname" value="Mouse"> <br><br> <input type="submit" value="Submit"> </form> ',
+
+        var dialog = bootbox.dialog({
+            closeButton: false,
+            title: 'Chance to win a final prize of $20!',
+            message: '<form id="survey1" action="/action_page.php"><p id="p_finalscore"></p><div id="clock_div">  <div id="timedate"> <a id="h">12</a> :<a id="m">00</a>:<a id="s">00</a>:<a id="mi">000</a> </div></div><input id="submitsurvey1" class="btn btn-default" type="submit" value="Stop"> </form> ',
+        });
+        document.getElementById("p_finalscore").innerHTML = "Your total score is "+total_score+", only if your click's hundredth second are smaller than "+total_score/100+" can you win the prize!(I'll change the number to x-100 later)";
+        initClock();
+        dialog.init(function(){
+            var submitcounter = 1;
+            var a = document.querySelector("#submitsurvey1");
+            a.addEventListener('click',function(evt){
+                evt.preventDefault();
+                submitcounter++;
+
+//                var form_obj = ($('#survey').serializeArray())
+//                form_obj.forEach(x=>{
+//                    user_data[x.name] = x.value;
+//                })
+//
+                clockcounter=false;
+                a.value = "Exit";
+                var timenum = parseInt(document.querySelector('#mi').innerHTML);
+                if(total_score<timenum){
+                    document.getElementById("p_finalscore").innerHTML="Sorry, your score "+total_score+"<"+timenum+", so you didn't win the bonus prize.";
+                    user_data["Bonus Result"] = "Didn't win";
+
+                }else {
+                    document.getElementById("p_finalscore").innerHTML="Congratulations! you have won the bonus prize!";
+                    user_data["Bonus Result"] = "Win";
+                }
+
+                if(submitcounter==3){
+                    dialog.modal('hide');
+                    //return user_data;
+                    var req= new XMLHttpRequest();
+                    req.open('POST', '/userdata', true);
+                    req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+                    req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
+
+                }
+
+            });
+        });
+    }
     //init();
 
     //
@@ -575,6 +716,36 @@
 //        { id: 7, tags: ['all', 'tag1'] },
 //        { id: 8, tags: ['all', 'tag2'] },
 //        { id: 9, tags: ['all', 'tag2'] }];
+    // START CLOCK SCRIPT
 
+    Number.prototype.pad = function(n) {
+        for (var r = this.toString(); r.length < n; r = 0 + r);
+        return r;
+    };
+
+    function updateClock() {
+        if(clockcounter){
+        var now = new Date();
+        var milli = (now.getMilliseconds()).toString().slice(0,2),
+                sec = now.getSeconds(),
+                min = now.getMinutes(),
+                hou = now.getHours();
+               // mo = now.getMonth(),
+               // dy = now.getDate(),
+               // yr = now.getFullYear();
+        //var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var tags = [ "h", "m", "s", "mi"],
+                corr = [hou.pad(2), min.pad(2), sec.pad(2), milli];
+        for (var i = 0; i < tags.length; i++)
+            document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
+    }
+    }
+
+    function initClock() {
+        updateClock();
+        window.setInterval("updateClock()", 1);
+    }
+
+    // END CLOCK SCRIPT
 
 </script>
