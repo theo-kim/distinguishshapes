@@ -163,7 +163,7 @@
             <!--flex: 1 1 7.5%;-->
 
             <!--<img class="list-compvare-img" :src="'http://placehold.it/450x200?text='+item.id" alt="" />-->
-            <img v-bind:style="{height:item.tags[4]+'px',transform: 'rotate('+item.tags[3]+'deg)'}" class="list-compvare-img" :src="'/assets/shapesvg/'+item.tags[0]+'.svg'" alt="" />
+            <img v-bind:style="{margin:item.tags[5]/2+'px',height:item.tags[4]+'px',transform: 'rotate('+item.tags[3]+'deg)'}" class="list-compvare-img" :src="'/assets/shapesvg/'+item.tags[0]+'.svg'" alt="" />
             </span>
     </transition-group>
 </div>
@@ -343,7 +343,8 @@
                 deltalist_shapecount.push(key+":"+num);
 
                 for (var p = 0;p<num;p++){
-                    var ob = {id:counter1+p,tags:[key,'all', 'tag2',(data1.degree)[Math.floor(Math.random() * 4)],szlist[getRandomInt(0,10)]*0.6]};
+                    var size = szlist[getRandomInt(0,10)]*0.6;
+                    var ob = {id:counter1+p,tags:[key,'all', 'tag2',(data1.degree)[Math.floor(Math.random() * 4)],size,120-parseInt(size)]};
                     vuelist.push(ob);
                 }
                 counter1+=num;
