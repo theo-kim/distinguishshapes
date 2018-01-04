@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin.hbs" afterPath="$PROJECT_DIR$/views/admin.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/shapesvg/octagon.svg" afterPath="$PROJECT_DIR$/public/assets/shapesvg/octagon.svg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/admin.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="351" column="114" lean-forward="false" selection-start-line="351" selection-start-column="114" selection-end-line="351" selection-end-column="114" />
+            <state relative-caret-position="221">
+              <caret line="351" column="111" lean-forward="false" selection-start-line="351" selection-start-column="110" selection-end-line="351" selection-end-column="111" />
               <folding>
                 <marker date="1515066796141" expanded="false" signature="6167:6176" ph="..." />
                 <marker date="1515066796141" expanded="false" signature="6278:6287" ph="..." />
@@ -52,6 +52,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="octagon.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/octagon.svg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -66,7 +76,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>clock</find>
       <find>clock(</find>
       <find>clock(user_data</find>
       <find>clock(user_data)</find>
@@ -96,6 +105,7 @@
       <find>let</find>
       <find>now_d</find>
       <find>degree</find>
+      <find>N</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,7 +146,6 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/layout.hbs" />
         <option value="$PROJECT_DIR$/public/random.js" />
-        <option value="$PROJECT_DIR$/public/assets/shapesvg/octagon.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/hexagon.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/nonagon.svg" />
@@ -147,6 +156,7 @@
         <option value="$PROJECT_DIR$/public/assets/shapesvg/hendecagon.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/square.svg" />
         <option value="$PROJECT_DIR$/views/admin.hbs" />
+        <option value="$PROJECT_DIR$/public/assets/shapesvg/octagon.svg" />
       </list>
     </option>
   </component>
@@ -450,12 +460,12 @@
       <workItem from="1509209338382" duration="482000" />
       <workItem from="1509482683856" duration="201000" />
       <workItem from="1513951609682" duration="20025000" />
-      <workItem from="1514969210021" duration="7209000" />
+      <workItem from="1514969210021" duration="7349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="379799000" />
+    <option name="totallyTimeSpent" value="379939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -780,14 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/octagon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="94" lean-forward="false" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/hexagon.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -862,14 +864,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="351" column="114" lean-forward="false" selection-start-line="351" selection-start-column="114" selection-end-line="351" selection-end-column="114" />
+        <state relative-caret-position="221">
+          <caret line="351" column="111" lean-forward="false" selection-start-line="351" selection-start-column="110" selection-end-line="351" selection-end-column="111" />
           <folding>
             <marker date="1515066796141" expanded="false" signature="6167:6176" ph="..." />
             <marker date="1515066796141" expanded="false" signature="6278:6287" ph="..." />
             <marker date="1515066796141" expanded="false" signature="6389:6398" ph="..." />
             <marker date="1515066796141" expanded="false" signature="6500:6509" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/octagon.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
