@@ -203,17 +203,17 @@
 </p>
 </tr>
 </p>
-<tr>
-    <th>Degree tilted possible value</th>
-    <td>
-        <input style="width: 5%" class="degree" type="text" name="degree1" id="degree1" placeholder="">
-        <input style="width: 5%" class="degree" type="text" name="degree2" id="degree2" placeholder="">
-        <input style="width: 5%" class="degree" type="text" name="degree3" id="degree3" placeholder="">
-        <input style="width: 5%" class="degree" type="text" name="degree4" id="degree4" placeholder="">
+<!--<tr>-->
+    <!--<th>Degree tilted possible value</th>-->
+    <!--<td>-->
+        <!--<input style="width: 5%" class="degree" type="text" name="degree1" id="degree1" placeholder="">-->
+        <!--<input style="width: 5%" class="degree" type="text" name="degree2" id="degree2" placeholder="">-->
+        <!--<input style="width: 5%" class="degree" type="text" name="degree3" id="degree3" placeholder="">-->
+        <!--<input style="width: 5%" class="degree" type="text" name="degree4" id="degree4" placeholder="">-->
 
-    </td>
+    <!--</td>-->
 
-</tr>
+<!--</tr>-->
 <p></p>
 
 <!--<tr>-->
@@ -231,7 +231,7 @@
 <br>
 <br>
 <br>
-<button id="delete">Clean Data</button>
+<button id="devare">Clean Data</button>
 
 
 <script>
@@ -257,13 +257,13 @@
             return uniqueArray.indexOf(item) == pos;
         })
     }
-    let deltalist_temp = document.querySelectorAll('.delta');
+    var deltalist_temp = document.querySelectorAll('.delta');
     //deltalist = (deltalist.filter(x=>{ x.innerHTML!=""})).map(x=>{return x.innerHTML});
-    let choicelist = document.querySelectorAll('.choice');
-    let userchoicelist = document.querySelectorAll('.userchoice');
-    document.querySelector('#delete').addEventListener('click',function () {
-        let req= new XMLHttpRequest();
-        req.open('POST', '/delete', true);
+    var choicelist = document.querySelectorAll('.choice');
+    var userchoicelist = document.querySelectorAll('.userchoice');
+    document.querySelector('#devare').addEventListener('click',function () {
+        var req= new XMLHttpRequest();
+        req.open('POST', '/devare', true);
         req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
         req.send("a=b");
     })
@@ -301,16 +301,17 @@
     },100);
     document.querySelector('#submit').addEventListener('click',function (t) {
 
-        let choicelist1 = [],shapes={}, proportion = {},proportion_sum = 0, userchoices = [];
-        let degree_temp = document.querySelectorAll('.degree');
-        let degree = [degree_temp[0].value,degree_temp[1].value,degree_temp[2].value,degree_temp[3].value];
+        var choicelist1 = [],shapes={}, proportion = {},proportion_sum = 0, userchoices = [];
+        var degree_temp = document.querySelectorAll('.degree');
+        //var degree = [degree_temp[0].value,degree_temp[1].value,degree_temp[2].value,degree_temp[3].value];
+        var degree = [Math.floor(Math.random() * 360),Math.floor(Math.random() * 360),Math.floor(Math.random() * 360),Math.floor(Math.random() * 360)];
         if(degree.indexOf('')!=-1){
             alert('Please populate all tilt values. Repetition is allowed');
         }
-        //let roundtime = document.querySelector('#roundtime').value;
-        //let delta = document.querySelector('#delta').value;
-        let size = {"small":document.querySelector('#size_s').value,"normal":document.querySelector('#size_n').value,"big":document.querySelector('#size_b').value};
-        let size_sum = parseInt(document.querySelector('#size_s').value) + parseInt(document.querySelector('#size_n').value) + parseInt(document.querySelector('#size_b').value);
+        //var roundtime = document.querySelector('#roundtime').value;
+        //var delta = document.querySelector('#delta').value;
+        var size = {"small":document.querySelector('#size_s').value,"normal":document.querySelector('#size_n').value,"big":document.querySelector('#size_b').value};
+        var size_sum = parseInt(document.querySelector('#size_s').value) + parseInt(document.querySelector('#size_n').value) + parseInt(document.querySelector('#size_b').value);
         //if(delta==""){
         //    alert('Fill the Delta Value')
         //}
@@ -323,7 +324,7 @@
             }
         })
 
-        let deltalist = [];
+        var deltalist = [];
         deltalist_temp.forEach(x=> {
             if(x.value != "")deltalist.push(x.value);
                 }
@@ -348,8 +349,8 @@
 
 
         console.log(shapes);
-        if((size_sum==100)&(deltalist[0]!=null)&(deltalist[1]!=null)&(degree!=undefined)&(proportion_sum==N)&(userchoices.length!=0)){
-            let req= new XMLHttpRequest();
+        if((size_sum==100)&&(deltalist[0]!=null)&&(deltalist[1]!=null)&&(degree!=undefined)&&(proportion_sum==N)&&(userchoices.length!=0)){
+            var req= new XMLHttpRequest();
             req.open('POST', '/admininfo', true);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
             req.send("shapes="+JSON.stringify(shapes));
