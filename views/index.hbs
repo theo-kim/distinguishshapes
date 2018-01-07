@@ -171,6 +171,8 @@
     document.querySelector('body').style.backgroundColor = 'white';
     var explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided','hendecagon':'11-sided','square':'4-sided'};
     var choice_round = [];
+    var TF_round = [];
+    var response = 'null';
     var total_score = 0;
     var time_round = [];
     var user_data = {};
@@ -404,7 +406,8 @@
         user_data["user_ip"] = ip;
         user_data["workid"] = "not available";
         user_data["degree_tilted"] = data1.degree;
-
+        user_data["userchoice"] = userchoices.map(x=>{return x.slice(0,-2)+' ('+explanation[x.slice(0,-2)]+')'});
+        user_data['decoy'] = decoys;
         user_data["max"] = deltalist[0];
         user_data["mudding"] = deltalist[1];
         user_data["N"] = 60;
@@ -463,7 +466,10 @@
             var roundname = "Round "+ (roundcounter-1) + "(mud)";
             var roundname_shape = "Round "+ (roundcounter-1) + "(shape count)";
 
-            choice_round.push(answer+" "+ choice_second);
+            TF_round.push(choice_second);
+            choice_round.push(response);
+
+
             if(choice_second=="true"){
                 //alert('true');
                 total_score+=incentives;
@@ -472,8 +478,9 @@
             time_round.push(countadder);
             var temp_mudlist = list_deltas.slice((roundcounter-1)*(choicelist.length+1),(roundcounter)*(choicelist.length+1));
             user_data[roundname] = list_deltas.slice((roundcounter-1)*(choicelist.length+1),(roundcounter)*(choicelist.length+1));
-
+            user_data['TF_round'] = TF_round;
             user_data['choice_round'] = choice_round;
+
             user_data['time_round'] = time_round;
             user_data[roundname_shape] = deltalist_shapecount;
             var req= new XMLHttpRequest();
@@ -485,19 +492,8 @@
             choice_second = 'null';
             countadder = 0;
             if (countadder == 0) {
-                var vuelist = [];
-                var counter1 = 0;
-                makeShapes(proportion,vuelist,counter1,roundcounter)
-                answer = getAnswer(roundcounter);
-                roundcounter++;
-                user_data["RoundCounter(60 in total)"] = roundcounter;
-                user_data["total_score"] = total_score;
 
-                //vue.shuffle();
-                //clearInterval(x);
-//                document.querySelector('#next').style.display='block';
-
-                if (roundcounter==totalrounds){
+                if (parseInt(roundcounter)==parseInt(totalrounds)){
                     clearInterval(x);
                     document.getElementById("list-compvare-demo").style.display = "none";
                     //alert(total_score);
@@ -506,12 +502,26 @@
                     }else{}
                     clock(user_data);
 
+                }else{
+                var vuelist = [];
+                var counter1 = 0;
+                makeShapes(proportion, vuelist, counter1, roundcounter);
+                answer = getAnswer(roundcounter);
+                roundcounter++;
+                user_data["RoundCounter(60 in total)"] = roundcounter;
+                user_data["total_score"] = total_score;
+
+                //vue.shuffle();
+                //clearInterval(x);
+//                document.querySelector('#next').style.display='block';
+                console.log('weird',roundcounter,totalrounds)
                 }
 
             }
             }else {
                 alert("You haven't made your choice yet!");
             }
+
         })
 
         var x = setInterval(function() {
@@ -567,7 +577,7 @@
         document.getElementById("btn3").style.background='buttonface';
         document.getElementById("btn4").style.background='buttonface';
         document.getElementById("btn5").style.background='buttonface';
-
+        response = userchoices[0].slice(0,-2)
         if(answer==userchoices[0].slice(0,-2)){
             choice_second = "true";
         }else {
@@ -581,7 +591,7 @@
         document.getElementById("btn3").style.background='buttonface';
         document.getElementById("btn4").style.background='buttonface';
         document.getElementById("btn5").style.background='buttonface';
-
+        response = userchoices[1].slice(0,-2)
         if(answer==userchoices[1].slice(0,-2)){
             choice_second = "true";
         }else {
@@ -595,7 +605,7 @@
         document.getElementById("btn2").style.background='buttonface';
         document.getElementById("btn4").style.background='buttonface';
         document.getElementById("btn5").style.background='buttonface';
-
+        response = userchoices[2].slice(0,-2)
         if(answer==userchoices[2].slice(0,-2)){
             choice_second = "true";
         }else {
@@ -609,6 +619,7 @@
         document.getElementById("btn3").style.background='buttonface';
         document.getElementById("btn2").style.background='buttonface';
         document.getElementById("btn5").style.background='buttonface';
+        response = userchoices[3].slice(0,-2)
         if(answer==userchoices[3].slice(0,-2)){
             choice_second = "true";
         }else {
@@ -622,7 +633,7 @@
         document.getElementById("btn3").style.background='buttonface';
         document.getElementById("btn4").style.background='buttonface';
         document.getElementById("btn2").style.background='buttonface';
-
+        response = userchoices[4].slice(0,-2);
         if(answer==userchoices[4].slice(0,-2)){
             choice_second = "true";
         }else {
