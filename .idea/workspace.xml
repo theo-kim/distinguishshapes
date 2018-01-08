@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin.hbs" afterPath="$PROJECT_DIR$/views/admin.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/result2.hbs" afterPath="$PROJECT_DIR$/views/result2.hbs" />
     </list>
@@ -37,8 +36,8 @@
       <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="495" column="41" lean-forward="false" selection-start-line="495" selection-start-column="41" selection-end-line="495" selection-end-column="41" />
+            <state relative-caret-position="308">
+              <caret line="480" column="123" lean-forward="true" selection-start-line="480" selection-start-column="123" selection-end-line="480" selection-end-column="123" />
               <folding />
             </state>
           </provider>
@@ -57,8 +56,8 @@
       <file leaf-file-name="result2.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/result2.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="55" column="427" lean-forward="false" selection-start-line="55" selection-start-column="427" selection-end-line="55" selection-end-column="427" />
+            <state relative-caret-position="345">
+              <caret line="55" column="315" lean-forward="false" selection-start-line="55" selection-start-column="315" selection-end-line="55" selection-end-column="315" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -100,12 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>next</find>
-      <find>decagon_c</find>
-      <find>decagon</find>
-      <find>explanation</find>
-      <find>-width</find>
-      <find>tags</find>
       <find>let</find>
       <find>now_d</find>
       <find>N</find>
@@ -118,7 +111,6 @@
       <find>new_json</find>
       <find>degree</find>
       <find>delete</find>
-      <find>deltalist_10</find>
       <find>alert</find>
       <find>decoys</find>
       <find>userchoice</find>
@@ -130,6 +122,13 @@
       <find>TF</find>
       <find>TF_round</find>
       <find>makeS</find>
+      <find>incentive</find>
+      <find>roundname_shape</find>
+      <find>deltalist_shapecount</find>
+      <find>deltalist_s</find>
+      <find>deltalist_10</find>
+      <find>incen</find>
+      <find>deltalist_in</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -476,12 +475,12 @@
       <workItem from="1509209338382" duration="482000" />
       <workItem from="1509482683856" duration="201000" />
       <workItem from="1513951609682" duration="20025000" />
-      <workItem from="1514969210021" duration="14255000" />
+      <workItem from="1514969210021" duration="15624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="386845000" />
+    <option name="totallyTimeSpent" value="388214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -872,16 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/result2.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="55" column="427" lean-forward="false" selection-start-line="55" selection-start-column="427" selection-end-line="55" selection-end-column="427" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/admin.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -895,10 +884,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/result2.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="55" column="315" lean-forward="false" selection-start-line="55" selection-start-column="315" selection-end-line="55" selection-end-column="315" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="495" column="41" lean-forward="false" selection-start-line="495" selection-start-column="41" selection-end-line="495" selection-end-column="41" />
+        <state relative-caret-position="308">
+          <caret line="480" column="123" lean-forward="true" selection-start-line="480" selection-start-column="123" selection-end-line="480" selection-end-column="123" />
           <folding />
         </state>
       </provider>

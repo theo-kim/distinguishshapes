@@ -201,6 +201,7 @@
     var decoys = choicelist.filter(x=>{return userchoices.indexOf(x+'_c')==-1});
     var deltalist = data1.deltalist;
     var deltalist_10 = [];
+    var deltalist_incentive = [];
     var deltalist_shapecount = [];
 
     //console.log(decoys);
@@ -220,7 +221,7 @@
         //datalist[max,mudding]
         var mudding = getRandomInt(-parseInt(deltalist[1]),parseInt(deltalist[1]));
         var obj = {};
-        obj['incentive'] = incentives;
+        deltalist_incentive.push(incentives);
 
         var random = getRandomInt(0,userchoices.length);
         for(var m=0;m<userchoices.length;m++){
@@ -476,13 +477,15 @@
             }
             //choice_second = 'null';
             time_round.push(countadder);
-            var temp_mudlist = list_deltas.slice((roundcounter-1)*(choicelist.length+1),(roundcounter)*(choicelist.length+1));
-            user_data[roundname] = list_deltas.slice((roundcounter-1)*(choicelist.length+1),(roundcounter)*(choicelist.length+1));
+            var temp_mudlist = list_deltas.slice((roundcounter-1)*(choicelist.length),(roundcounter)*(choicelist.length));
+            user_data[roundname] = list_deltas.slice((roundcounter-1)*(choicelist.length),(roundcounter)*(choicelist.length));
+            console.log('user_data[roundname]',user_data[roundname])
             user_data['TF_round'] = TF_round;
             user_data['choice_round'] = choice_round;
 
             user_data['time_round'] = time_round;
             user_data[roundname_shape] = deltalist_shapecount;
+            user_data['incentives'] = deltalist_incentive;
             var req= new XMLHttpRequest();
             req.open('POST', '/userdata', true);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
