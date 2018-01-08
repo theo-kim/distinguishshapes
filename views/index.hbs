@@ -172,6 +172,7 @@
     var explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided','hendecagon':'11-sided','square':'4-sided'};
     var choice_round = [];
     var TF_round = [];
+    var Score = [];
     var response = 'null';
     var total_score = 0;
     var time_round = [];
@@ -229,8 +230,9 @@
         }
         obj[(userchoices[random]).slice(0,-2)] += parseInt(deltalist[0]);
         //decoys
+        var decoys_delta = (mudding*userchoices.length + parseInt(deltalist[0]))/decoys.length;
         for(var m=0;m<decoys.length;m++) {
-            obj[decoys[m]] = -parseInt((mudding*userchoices.length + parseInt(deltalist[0]))/decoys.length)-1;
+            obj[decoys[m]] = -parseInt(decoys_delta);
         }
         var sum_choice = 0;
         var sum_decoy = 0;
@@ -473,8 +475,10 @@
 
             if(choice_second=="true"){
                 //alert('true');
-                total_score+=incentives;
+                total_score+=deltalist_incentive[roundcounter-1];
             }
+            Score.push(total_score);
+
             //choice_second = 'null';
             time_round.push(countadder);
             var temp_mudlist = list_deltas.slice((roundcounter-1)*(choicelist.length),(roundcounter)*(choicelist.length));
@@ -512,7 +516,7 @@
                 answer = getAnswer(roundcounter);
                 roundcounter++;
                 user_data["RoundCounter(60 in total)"] = roundcounter;
-                user_data["total_score"] = total_score;
+                user_data["Score"] = Score;
 
                 //vue.shuffle();
                 //clearInterval(x);
@@ -710,6 +714,7 @@
                 clockcounter=false;
                 a.value = "Exit";
                 var timenum = parseInt(document.querySelector('#mi').innerHTML);
+                user_data['timenum'] = timenum;
                 if(total_score<timenum){
                     document.getElementById("p_finalscore").innerHTML="Sorry, your score "+total_score+"<"+timenum+", so you didn't win the bonus prize.";
                     user_data["Bonus Result"] = "Didn't win";
