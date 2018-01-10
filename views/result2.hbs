@@ -41,10 +41,10 @@
 <script>
 //    let code_temp = document.querySelectorAll('.code');
 //    let code = code_temp[code_temp.length-1].innerHTML;
-    let data = document.querySelectorAll('.userdata');
+    var data = document.querySelectorAll('.userdata');
 //    let J_data = JSON.parse(data[data.length-1].innerHTML);
 
-    let new_json = [];
+    var new_json = [];
     data.forEach(x=>{
         new_json.push(JSON.parse(x.innerHTML))
     })
