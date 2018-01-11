@@ -4,5 +4,7 @@
 var obj={};
 var now = new Date();
 
-console.log((now.getMilliseconds()).toString().slice(0,3))
-console.log((now.getMilliseconds()).toString().slice(0,2))
+console.log(((now.getMilliseconds()).toString().slice(0,3)).slice(1))
+ console.log((now.getMilliseconds()).toString().slice(0,3))
+
+ console.log(parseInt(1))

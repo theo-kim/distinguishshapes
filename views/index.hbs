@@ -31,6 +31,7 @@
         color:#333;
         padding: 20px;
     }
+
     .hidden{
         display: none;
     }
@@ -104,14 +105,14 @@
     }
     .button_1{
         margin-top: -1.5vmax;
-
     }
     .button_2{
         margin-top: 1.4vmax;
     }
-    #mi{
+    #mi:first-letter{
         color:red;
     }
+
 </style>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
@@ -713,7 +714,14 @@
 //
                 clockcounter=false;
                 a.value = "Exit";
-                var timenum = parseInt(document.querySelector('#mi').innerHTML);
+                var time_temp = parseInt(document.querySelector('#mi').innerHTML);
+                if(time_temp.length==1){
+                    time_temp = time_temp*100;
+                }
+                if(time_temp.length==2){
+                    time_temp = time_temp*10;
+                }
+                var timenum = parseInt(time_temp.toString().slice(1));
                 user_data['timenum'] = timenum;
                 if(total_score<timenum){
                     document.getElementById("p_finalscore").innerHTML="Sorry, your score "+total_score+"<"+timenum+", so you didn't win the bonus prize.";
@@ -760,7 +768,7 @@
     function updateClock() {
         if(clockcounter){
         var now = new Date();
-        var milli = (now.getMilliseconds()).toString().slice(0,2),
+        var milli = (now.getMilliseconds()).toString().slice(0,3),
                 sec = now.getSeconds(),
                 min = now.getMinutes(),
                 hou = now.getHours();
@@ -770,15 +778,33 @@
         //var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         var tags = [ "h", "m", "s", "mi"],
                 corr = [hou.pad(2), min.pad(2), sec.pad(2), milli];
-        for (var i = 0; i < tags.length; i++)
+        for (var i = 0; i < tags.length; i++) {
             document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
-    }
+        }
+
+        }
+//        var numberTargets = document.getElementById('mi');
+//        for(i=0; i<numberTargets.length; i++) {
+//            var html = numberTargets[i].innerHTML;
+//            numberTargets[i].innerHTML = html.substr(0, html.length-2)
+//                    + "<span class='red'>"
+//                    + numberTargets[i].innerHTML.substr(-2)
+//                    + "</span>";
+//        }
+//        document.getElementById('mi').innerHTML = numberTargets;
     }
 
     function initClock() {
         updateClock();
         window.setInterval("updateClock()", 1);
     }
+
+
+
+
+
+
+
 
     // END CLOCK SCRIPT
 
