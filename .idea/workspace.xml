@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/4shapes.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/welcome.hbs" afterPath="$PROJECT_DIR$/views/welcome.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -78,13 +75,13 @@
       <file leaf-file-name="welcome.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="402" column="29" lean-forward="false" selection-start-line="402" selection-start-column="29" selection-end-line="402" selection-end-column="29" />
+            <state relative-caret-position="286">
+              <caret line="319" column="35" lean-forward="false" selection-start-line="319" selection-start-column="35" selection-end-line="319" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1516612334973" expanded="false" signature="6675:6690" ph="..." />
+                <marker date="1516612766503" expanded="false" signature="6675:6690" ph="..." />
               </folding>
             </state>
           </provider>
@@ -140,10 +137,10 @@
       <find>imgs</find>
       <find>imgs_eg</find>
       <find>vue</find>
-      <find>btn1</find>
       <find>demo_p</find>
       <find>form</find>
       <find>result</find>
+      <find>btn1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -514,12 +511,12 @@
       <workItem from="1509482683856" duration="201000" />
       <workItem from="1513951609682" duration="20025000" />
       <workItem from="1514969210021" duration="23199000" />
-      <workItem from="1516538396773" duration="10562000" />
+      <workItem from="1516538396773" duration="10715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="406351000" />
+    <option name="totallyTimeSpent" value="406504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -931,13 +928,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="402" column="29" lean-forward="false" selection-start-line="402" selection-start-column="29" selection-end-line="402" selection-end-column="29" />
+        <state relative-caret-position="286">
+          <caret line="319" column="35" lean-forward="false" selection-start-line="319" selection-start-column="35" selection-end-line="319" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#span#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1516612334973" expanded="false" signature="6675:6690" ph="..." />
+            <marker date="1516612766503" expanded="false" signature="6675:6690" ph="..." />
           </folding>
         </state>
       </provider>
