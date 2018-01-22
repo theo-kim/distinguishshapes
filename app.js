@@ -30,8 +30,11 @@ const Bonus = mongoose.model('Bonus');
 const Admininfo = mongoose.model('Admininfo');
 
 app.get('/welcome',function (req,res) {
-    app.set('view engine', 'hbs');
-    res.render('welcome');
+    Admininfo.find({}, function(err, result){
+        // res.render('index',{'result':result});
+        res.render('welcome',{'result':result});
+    });
+
 
 });
 

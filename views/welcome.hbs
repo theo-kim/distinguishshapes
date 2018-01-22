@@ -26,7 +26,9 @@
     svg {
         width:100%;
     }
-
+    .imgsdiv{
+        margin: 10%;
+    }
     h1 {
         font-family:Roboto,'Helvetica Neue',sans;
         letter-spacing:.025em;
@@ -95,6 +97,17 @@
         font-stretch: semi-expanded;
         font-size:x-large;
     }
+    input{
+        padding: 3px;
+
+        box-shadow: 0 0 3px #333;
+
+        left:50%;
+    }
+    input:hover{
+        box-shadow: 0 0 5px #111;
+
+    }
     button{
         padding: 3px;
 
@@ -106,7 +119,25 @@
         box-shadow: 0 0 5px #111;
 
     }
-    button {
+    img{
+        margin: 2%;
+        width: 6%;
+    }
+    #clock_div{
+        text-align: center;
+    }
+    #imgs_eg{
+        text-align: center;
+    }
+    #imgs_eg img{
+        width: 5%;
+        margin: 5%;
+    }
+    #imgs img{
+        width: 5%;
+        margin: 5%;
+    }
+    input, button {
 
         left: 50%;
         border: 2px solid rgba(0,0,0,0.8); /* Green */
@@ -119,26 +150,313 @@
         display: inline-block;
         font-size: 18px;
     }
+    .hidden{
+        display: none;
+    }
+    .center{
+        text-align: center;
+
+    }
 </style>
 <body>
-<p dir="ltr"><span style="font-size: xx-large;"><strong>Welcome!</strong><br /></span></p>
-<p class="ins">Instructions: Please read carefully</p>
-<p dir="ltr"><span>Thank you for participating in this investment study. This study simulates </span><span>10 rounds in which to invest in a portfolio of funds</span><span>. You will be shown 10 screens where you will be presented with investment choices. For each round you have several choices of funds you can purchase.</span></p>
-<p dir="ltr"><span>At the end of this study you may earn a Mechanical Turk bonus of up to $4.00. Your bonus is calculated as your total return over the 10 rounds, in cents. For example, if your return is 182%, your&nbsp;</span><span>bonus</span><span>&nbsp;should be $1.82. Your choices of investment will therefore determine how large your bonus is. Keep in mind: if your overall return is below zero, you will not receive a bonus.</span></p>
-<!--<p dir="ltr"><span>You have many funds to choose from and a lot of information about them, grouped into 5 columns. In each round, you can sort any of the columns to get information about the funds.</span></p>-->
-<p dir="ltr"><span>You have many funds to choose from and a lot of information about them, grouped into 5 columns. In each round, you can sort any of the columns to get information about the funds, but note that each activation of sorting, will &ldquo;cost&rdquo; you 1% of that round&rsquo;s return. For example, if you choose to sort the &ldquo;Annual fee&rdquo; column in round 1, and your return for that round was 10%, we will deduct 1% of it, making the new return for this round 9%.</span></p>
-<p dir="ltr"><span>In total, if the cost of activating the sorting function is 1% and you activate the sorting function 10 times during the entire exercise, your bonus will be 10 cents lower than it would have been without sorting. However, you will have had access to the information provided by being able to sort the funds.</span></p>
-<p dir="ltr"><span>Each sorting activation is for that column only, but for that round, you can sort it as many times as you want </span><span><strong>during that round</strong>.</span></p>
-<p dir="ltr"><span>The funds you can invest in consist of different asset types: stocks, bonds and cash. Your choice of funds include stock funds, bond funds and funds that consist of a mix of stock and bonds. A stock fund will have "stock" in its name. A bond fund will have "bond" in its name. You can choose to allocate your investments in any way you see fit.</span></p>
-<p dir="ltr"><span>Making investment decisions requires understanding tradeoffs. Assets such as stocks have higher returns and earn more money in the long run, however, stocks also have high volatility, meaning they fluctuate more and you can lose money. Stocks are generally a good long term investment. Bonds have lower returns than stocks, but they also don't fluctuate as much. Finally, cash does not generate returns, but it is impossible to lose money. Cash (money market funds) is a poor long term investment. Remember that your returns depend also on the fees, which are deducted from your return, and which are different in each fund.</span></p>
-<p dir="ltr"><span>You can learn more about stocks, bonds and cash on&nbsp;</span><a href="http://www.schwabmoneywise.com/public/moneywise/money_basics/investing/stocks_bonds_cash.html"><span>Charles Schwab's MoneyWise page</span></a><span>.</span></p>
-<p dir="ltr"><span>Every round is independent: the fund&rsquo;s performance in every round is completely unrelated to their performance in the previous years.</span></p>
-<p dir="ltr"><span style="color: #ff0000;">WARNING: Do not press the back button in your web browser or attempt to restart the study after pressing the Continue button below. Pressing the back button or restarting the study will invalidate all of your answers and you will not be eligible for your Amazon Mechanical Turk reward. Be sure you read the instructions above before beginning the study.</span></p>
-<p><span>&nbsp;</span></p>
-<div style="text-align:center">
-
-    <button onclick="location.href = '/'">Start</button>
+<div id="data" class="hidden">
+    {{result}}
 </div>
+
+<p dir="ltr"><span style="font-size: xx-large;"><strong id="title">Instructions</strong><br /></span></p>
+<!--<p class="ins">Instructions: Please read carefully</p>-->
+<!--<p dir="ltr"><span>Thank you for participating in this investment study. This study simulates </span><span>10 rounds in which to invest in a portfolio of funds</span><span>. You will be shown 10 screens where you will be presented with investment choices. For each round you have several choices of funds you can purchase.</span></p>-->
+<!--<p dir="ltr"><span>At the end of this study you may earn a Mechanical Turk bonus of up to $4.00. Your bonus is calculated as your total return over the 10 rounds, in cents. For example, if your return is 182%, your&nbsp;</span><span>bonus</span><span>&nbsp;should be $1.82. Your choices of investment will therefore determine how large your bonus is. Keep in mind: if your overall return is below zero, you will not receive a bonus.</span></p>-->
+<!--&lt;!&ndash;<p dir="ltr"><span>You have many funds to choose from and a lot of information about them, grouped into 5 columns. In each round, you can sort any of the columns to get information about the funds.</span></p>&ndash;&gt;-->
+<!--<p dir="ltr"><span>You have many funds to choose from and a lot of information about them, grouped into 5 columns. In each round, you can sort any of the columns to get information about the funds, but note that each activation of sorting, will &ldquo;cost&rdquo; you 1% of that round&rsquo;s return. For example, if you choose to sort the &ldquo;Annual fee&rdquo; column in round 1, and your return for that round was 10%, we will deduct 1% of it, making the new return for this round 9%.</span></p>-->
+<!--<p dir="ltr"><span>In total, if the cost of activating the sorting function is 1% and you activate the sorting function 10 times during the entire exercise, your bonus will be 10 cents lower than it would have been without sorting. However, you will have had access to the information provided by being able to sort the funds.</span></p>-->
+<!--<p dir="ltr"><span>Each sorting activation is for that column only, but for that round, you can sort it as many times as you want </span><span><strong>during that round</strong>.</span></p>-->
+<!--<p dir="ltr"><span>The funds you can invest in consist of different asset types: stocks, bonds and cash. Your choice of funds include stock funds, bond funds and funds that consist of a mix of stock and bonds. A stock fund will have "stock" in its name. A bond fund will have "bond" in its name. You can choose to allocate your investments in any way you see fit.</span></p>-->
+<!--<p dir="ltr"><span>Making investment decisions requires understanding tradeoffs. Assets such as stocks have higher returns and earn more money in the long run, however, stocks also have high volatility, meaning they fluctuate more and you can lose money. Stocks are generally a good long term investment. Bonds have lower returns than stocks, but they also don't fluctuate as much. Finally, cash does not generate returns, but it is impossible to lose money. Cash (money market funds) is a poor long term investment. Remember that your returns depend also on the fees, which are deducted from your return, and which are different in each fund.</span></p>-->
+<!--<p dir="ltr"><span>You can learn more about stocks, bonds and cash on&nbsp;</span><a href="http://www.schwabmoneywise.com/public/moneywise/money_basics/investing/stocks_bonds_cash.html"><span>Charles Schwab's MoneyWise page</span></a><span>.</span></p>-->
+<!--<p dir="ltr"><span>Every round is independent: the fund&rsquo;s performance in every round is completely unrelated to their performance in the previous years.</span></p>-->
+<!--<p dir="ltr"><span style="color: #ff0000;">WARNING: Do not press the back button in your web browser or attempt to restart the study after pressing the Continue button below. Pressing the back button or restarting the study will invalidate all of your answers and you will not be eligible for your Amazon Mechanical Turk reward. Be sure you read the instructions above before beginning the study.</span></p>-->
+<!--<p><span>&nbsp;</span></p>-->
+
+<div class="divs " id="div_0">
+<p>You are about to complete an experiment and potentially earn money based on your performance. By
+    completing the experiment you will receive a participation fee of 50 cents; on top of the participation
+    fee you can win a $20 bonus based on your performance. Below is a description of the task you will
+    be facing.</p>
+</div>
+<div class="divs hidden" id="div_1">
+<p id="shapes_p"></p>
+    <p style="text-align:center;">
+        <div id="imgs_eg"></div>
+    <!--<img style="width: 50%;" src="assets/4shapes.png">-->
+    </p>
+    <p>
+        The quantity of each type of shape will vary on each screen. You will be asked to decide which of
+        two specified shapes out of these four is present in larger quantity. Hence, the other two of the four
+        shapes are distractors.
+    </p>
+</div>
+
+<div class="divs hidden center" id="div_2">
+    <h3>Example of the Task</h3>
+    <div id="imgs"></div>
+    <p id="please"></p>
+    <button class="btn1" onclick="next()"></button>
+    <button class="btn2" onclick="next()"></button>
+
+</div>
+<div class="divs hidden center" id="div_3">
+    <p>
+    You will face 40 of these tasks in a sequence. In each round shapes are randomly generated by a
+    computer. As a result, no round carries information about any other round. You can spend as much
+    or as little time on each round as you wish, but you have to complete all 40 rounds in order to receive
+    the participation fee and potentially earn a bonus.
+    </p>
+</div>
+<div class="divs hidden center" id="div_4">
+    <h3>Reward</h3>
+    <p>
+        By completing the experiment you will receive a participation fee of [50 cents]. In each round a correct
+        answer earns you points towards winning a final bonus. The number of points that you can earn for
+        a correct answer in each round will differ and can be either 1, 3, 6 or 10 points. Out of the 40 rounds
+        there are exactly 10 with each of 1, 3, 6 or 10 points. The order of the points is random. A wrong
+        answer gives you 0 point in each round. Therefore, the maximum points you can achieve in total is
+        200.
+    </p>
+    <p>
+        The total number of points you achieve determines your probability of winning a final bonus of [$20].
+        If you achieve less than 100 points you will not be eligible to win the bonus. If you achieve more than
+        100 points, your probability of getting the bonus is given by the following formula: (total achieved
+        points - 100)%—so if you achieve 167 points, your final score will be 67, and your probability of
+        winning the bonus will be 67%.
+    </p>
+</div>
+<div class="divs hidden center" id="div_5">
+    <h3>Winning the Bonus</h3>
+    <p>
+        To determine if you won the bonus, we will let you stop the clock below. If the last two digits of the
+        stopped clock are less than your final score you win the $20 bonus, and if they are more, then you
+        win nothing. It is impossible to control these digits of the time it takes the human brain to respond.
+        The purpose of this is to match your probability of winning to your achieved score.
+    </p>
+    <p>
+        Please stop the following clock showing the current time to millisecond precision.
+    </p>
+
+</div>
+
+<div class="divs hidden center" id="div_6">
+    Now, let’s practice: you will face 4 arbitrary rounds and the final clock device to get used to the task.
+</div>
+<div class="divs hidden center" id="div_7">
+    <div class="imgsdiv" id="imgs_1"></div>
+    <p class="demo_p"></p>
+    <p>If you answer correctly you get 6 points. A wrong answer does not give you any points.</p>
+    <button class="btn1" onclick="next()"></button>
+    <button class="btn2" onclick="next()"></button>
+
+</div>
+<div class="divs hidden center" id="div_8">
+    <div  class="imgsdiv" id="imgs_2"></div>
+    <p class="demo_p"></p>
+    <p>If you answer correctly you get 3 points. A wrong answer does not give you any points.</p>
+    <button class="btn1" onclick="next()"></button>
+    <button class="btn2" onclick="next()"></button>
+</div>
+<div class="divs hidden center" id="div_9">
+    <div  class="imgsdiv" id="imgs_3"></div>
+    <p class="demo_p"></p>
+    <p>If you answer correctly you get 10 points. A wrong answer does not give you any points.</p>
+    <button class="btn1" onclick="next()"></button>
+    <button class="btn2" onclick="next()"></button>
+</div>
+<div class="divs hidden center" id="div_10">
+    <div  class="imgsdiv" id="imgs_4"></div>
+    <p class="demo_p"></p>
+    <p>If you answer correctly you get 1 points. A wrong answer does not give you any points.</p>
+    <button class="btn1" onclick="next()"></button>
+    <button class="btn2" onclick="next()"></button>
+</div>
+<div class="divs hidden center" id="div_11">
+    <p>
+        Suppose you achieved 167 points in total over the course of 40 rounds. Your final score and probability
+        of winning is therefore 167-100=67.
+    </p>
+    <p>
+        Please stop the clock below. If the last two digits of the millisecond counter is below your final score
+        you win a $20 bonus.
+    </p>
+</div>
+<div class="hidden center" id="clockdiv">
+    <form id="survey1" action="/action_page.php"><p id="p_finalscore"></p><div id="clock_div">  <div id="timedate"> <a id="h">12</a> :<a id="m">00</a>:<a id="s">00</a>:<a id="mi">000</a> </div></div><input id="submitsurvey1" class="btn btn-default" type="submit" value="Stop"> </form>
+    <p id="result"></p>
+</div>
+<div id="next_div" style="position:absolute;left:45%;bottom:5%;text-align:center">
+
+    <button onclick="next()">Continue</button>
+</div>
+<script>
+    Number.prototype.pad = function(n) {
+        for (var r = this.toString(); r.length < n; r = 0 + r);
+        return r;
+    };
+    var data = (document.querySelector('#data')).innerHTML;
+    var start = data.indexOf('data');
+    var data1 = JSON.parse((data.slice(start+7,-14)));
+    console.log((data1));
+    //    there's proportion object, so not useful var choicelist = data1.choicelist;
+    var choicelist = data1.choicelist;
+    var proportion = data1.proportion;
+    var userchoices = data1.userchoices;
+    var decoys = choicelist.filter(x=>{return userchoices.indexOf(x+'_c')==-1});
+    var deltalist = data1.deltalist;
+    console.log(choicelist,userchoices);
+    var btn1 = document.querySelectorAll('.btn1');
+    btn1.forEach(x=>{
+        x.innerHTML = userchoices[0].slice(0,-2);
+    })
+    var btn2 = document.querySelectorAll('.btn2');
+    btn2.forEach(x=>{
+        x.innerHTML = userchoices[0].slice(0,-2);
+    })
+    var path1 = 'assets/shapesvg/'+userchoices[0].slice(0,-2)+'.svg';
+    document.querySelector('#imgs').innerHTML+="<img src='"+path1+"'>";
+    var shapes_str = '';
+    choicelist.forEach(x=>{
+        shapes_str+=" "+x;
+    })
+    document.querySelector('#please').innerHTML = 'Please decide whether there are more of '+userchoices[0].slice(0,-2)+' or '+userchoices[1].slice(0,-2)+' on the screen.'
+    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 60 geometric shapes. There will be '+choicelist.length+' different types of shapes, and they are'+shapes_str+'. Below are the '+choicelist.length+' geometric shapes you will encounter.';
+
+    choicelist.forEach(x=>{
+        var path = 'assets/shapesvg/'+x+'.svg';
+        document.querySelector('#imgs_eg').innerHTML+="<img src='"+path+"'>";
+    })
+    var demo_ps = document.querySelectorAll('.demo_p');
+    demo_ps.forEach(x=>{
+        x.innerHTML = document.querySelector('#please').innerHTML;
+    });
+    choicelist.forEach(x=>{
+        var path = 'assets/shapesvg/'+x+'.svg';
+        document.querySelector('#imgs').innerHTML+="<img src='"+path+"'>";
+    })
+
+    var clockcounter = true;
+    clock();
+    var counter = 0;
+    function next() {
+        if((counter == 4)||(counter == 10)){
+            clockcounter = true;
+            document.querySelector('#clockdiv').classList.remove('hidden');
+        }else {
+            document.querySelector('#clockdiv').classList.add('hidden');
+            document.querySelector('#result').innerHTML="";
+        }
+        if((counter == 1)||(counter == 6)||(counter == 7)||(counter == 8)||(counter == 9)){
+            document.querySelector('#next_div').classList.add('hidden');
+        }else {
+            document.querySelector('#next_div').classList.remove('hidden');
+        }
+        if(counter == 11){
+            end();
+        }else{
+            counter++;
+            var divs = document.querySelectorAll('.divs');
+            divs.forEach(x=>{
+                x.classList.add('hidden');
+            })
+            document.querySelector('#div_'+counter).classList.remove('hidden');
+        }
+    }
+    function end() {
+        location.href = '/'
+    }
+    function clock() {
+        initClock();
+
+
+    }
+    //init();
+
+    //
+    //        var vuelist = [{ id: 1, tags: ['all', 'tag1'] },
+    //        { id: 2, tags: ['all', 'tag2'] },
+    //        { id: 3, tags: ['all', 'tag2'] },
+    //        { id: 4, tags: ['all', 'tag1'] },
+    //        { id: 5, tags: ['all', 'tag1'] },
+    //        { id: 6, tags: ['all', 'tag2'] },
+    //        { id: 7, tags: ['all', 'tag1'] },
+    //        { id: 8, tags: ['all', 'tag2'] },
+    //        { id: 9, tags: ['all', 'tag2'] }];
+    // START CLOCK SCRIPT
+
+    Number.prototype.pad = function(n) {
+        for (var r = this.toString(); r.length < n; r = 0 + r);
+        return r;
+    };
+    var stop = document.querySelector('#submitsurvey1');
+    stop.addEventListener('click',function (evt) {
+        evt.preventDefault();
+        clockcounter = false;
+        var rst = document.querySelector('#mi').innerHTML.slice(-2);
+        if(counter==11){
+            if(parseInt(rst)<67){
+                document.querySelector('#result').innerHTML="The last two digits of the clock is "+rst+". You win the prize since your final score is above "+rst+"."
+            }else {
+                document.querySelector('#result').innerHTML="The last two digits of the clock is "+rst+". You didn't win the prize since your final score is not above "+rst+"."
+
+            }
+        }else{
+            document.querySelector('#result').innerHTML="The last two digits of the clock is "+rst+". You win the prize if your final score is above "+rst+"."
+        }
+
+    })
+    function updateClock() {
+        if(clockcounter){
+            var now = new Date();
+            var milli = (now.getMilliseconds()).toString(),
+                    sec = now.getSeconds(),
+                    min = now.getMinutes(),
+                    hou = now.getHours();
+            // mo = now.getMonth(),
+            // dy = now.getDate(),
+            // yr = now.getFullYear();
+            //var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            if(milli.length==1){
+                milli = "00"+milli;
+            }else if(milli.length==2){
+                milli = "0"+milli;
+            }
+            var tags = [ "h", "m", "s", "mi"],
+                    corr = [hou.pad(2), min.pad(2), sec.pad(2), milli];
+            for (var i = 0; i < tags.length; i++) {
+                document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
+            }
+
+        }
+    }
+
+    function initClock() {
+        updateClock();
+        window.setInterval("updateClock()", 1);
+    }
+    function makeshapes(img_) {
+
+        for(var i = 0;i<60;i++) {
+            var rand = Math.floor(Math.random() *(choicelist.length));
+            var x = choicelist[rand];
+            var path = 'assets/shapesvg/' + x + '.svg';
+            document.querySelector('#' + img_).innerHTML += "<img src='" + path + "'>";
+        }
+        }
+    makeshapes('imgs_1');
+    makeshapes('imgs_2');
+    makeshapes('imgs_3');
+    makeshapes('imgs_4');
+
+
+
+</script>
 </body>
 </html>
 
