@@ -293,7 +293,7 @@
 </div>
 <div id="next_div" style="text-align:center">
 
-    <button style="position:absolute;left:50%;bottom:5%;margin-left: -72px; /* Negative half of width. */" onclick="next()">Continue</button>
+    <button onclick="next()">Continue</button>
 </div>
 <script>
     Number.prototype.pad = function(n) {
@@ -363,7 +363,7 @@
             counter++;
             var divs = document.querySelectorAll('.divs');
             divs.forEach(x=>{
-                x.classList.add('hidden');
+                //x.classList.add('hidden');
             })
             document.querySelector('#div_'+counter).classList.remove('hidden');
         }
