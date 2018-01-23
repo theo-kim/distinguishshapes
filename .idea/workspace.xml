@@ -76,9 +76,9 @@
         <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="218" column="77" lean-forward="false" selection-start-line="218" selection-start-column="77" selection-end-line="218" selection-end-column="77" />
+              <caret line="226" column="106" lean-forward="false" selection-start-line="226" selection-start-column="106" selection-end-line="226" selection-end-column="106" />
               <folding>
-                <marker date="1516721097610" expanded="false" signature="6675:6690" ph="..." />
+                <marker date="1516721184958" expanded="false" signature="6675:6690" ph="..." />
               </folding>
             </state>
           </provider>
@@ -510,12 +510,12 @@
       <workItem from="1514969210021" duration="23199000" />
       <workItem from="1516538396773" duration="11504000" />
       <workItem from="1516616213362" duration="435000" />
-      <workItem from="1516677879574" duration="864000" />
+      <workItem from="1516677879574" duration="930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="408592000" />
+    <option name="totallyTimeSpent" value="408658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -921,9 +921,9 @@
     <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="218" column="77" lean-forward="false" selection-start-line="218" selection-start-column="77" selection-end-line="218" selection-end-column="77" />
+          <caret line="226" column="106" lean-forward="false" selection-start-line="226" selection-start-column="106" selection-end-line="226" selection-end-column="106" />
           <folding>
-            <marker date="1516721097610" expanded="false" signature="6675:6690" ph="..." />
+            <marker date="1516721184958" expanded="false" signature="6675:6690" ph="..." />
           </folding>
         </state>
       </provider>
