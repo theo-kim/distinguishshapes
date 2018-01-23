@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/welcome.hbs" afterPath="$PROJECT_DIR$/views/welcome.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -77,9 +76,9 @@
         <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="295" column="12" lean-forward="false" selection-start-line="295" selection-start-column="12" selection-end-line="295" selection-end-column="12" />
+              <caret line="218" column="77" lean-forward="false" selection-start-line="218" selection-start-column="77" selection-end-line="218" selection-end-column="77" />
               <folding>
-                <marker date="1516720756028" expanded="false" signature="6675:6690" ph="..." />
+                <marker date="1516721097610" expanded="false" signature="6675:6690" ph="..." />
               </folding>
             </state>
           </provider>
@@ -511,12 +510,12 @@
       <workItem from="1514969210021" duration="23199000" />
       <workItem from="1516538396773" duration="11504000" />
       <workItem from="1516616213362" duration="435000" />
-      <workItem from="1516677879574" duration="769000" />
+      <workItem from="1516677879574" duration="864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="408497000" />
+    <option name="totallyTimeSpent" value="408592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -922,9 +921,9 @@
     <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="295" column="12" lean-forward="false" selection-start-line="295" selection-start-column="12" selection-end-line="295" selection-end-column="12" />
+          <caret line="218" column="77" lean-forward="false" selection-start-line="218" selection-start-column="77" selection-end-line="218" selection-end-column="77" />
           <folding>
-            <marker date="1516720756028" expanded="false" signature="6675:6690" ph="..." />
+            <marker date="1516721097610" expanded="false" signature="6675:6690" ph="..." />
           </folding>
         </state>
       </provider>
