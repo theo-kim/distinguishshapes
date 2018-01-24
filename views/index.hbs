@@ -205,7 +205,7 @@
     var deltalist_10 = [];
     var deltalist_incentive = [];
     var deltalist_shapecount = [];
-
+    var scorelist = [];
     //console.log(decoys);
 //    for(var i=0;i<10;i++){
 //        var obj = {};
@@ -475,10 +475,13 @@
 
 
             if(choice_second=="true"){
+                scorelist.push(deltalist_incentive[roundcounter-1]);
                 //alert('true');
                 total_score+=deltalist_incentive[roundcounter-1];
+            }else {
+                scorelist.push(0);
             }
-            Score.push(total_score);
+            Score.push(total_score);//Score is accumulated, scorelist is the score for each round
 
             //choice_second = 'null';
             time_round.push(countadder);
@@ -698,7 +701,7 @@
             title: 'Chance to win a final prize of $20!',
             message: '<form id="survey1" action="/action_page.php"><p id="p_finalscore"></p><div id="clock_div">  <div id="timedate"> <a id="h">12</a> :<a id="m">00</a>:<a id="s">00</a>:<a id="mi">000</a> </div></div><input id="submitsurvey1" class="btn btn-default" type="submit" value="Stop"> </form> ',
         });
-        document.getElementById("p_finalscore").innerHTML = "Your total score is "+total_score+", only if your click's hundredth and thousandth second are smaller than "+total_score+" can you win the prize!(I'll change the number to x-100 later)";
+        document.getElementById("p_finalscore").innerHTML = "Your total score is "+total_score+JSON.stringify(scorelist)+", only if your click's hundredth and thousandth second are smaller than "+total_score+" can you win the prize!(I'll change the number to x-100 later)";
         initClock();
         dialog.init(function(){
             var submitcounter = 1;
