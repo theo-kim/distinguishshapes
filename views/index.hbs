@@ -722,7 +722,7 @@
                 var timenum = parseInt(time_temp.slice(1));
                 user_data['timenum'] = timenum;
                 if(total_score<timenum){
-                    document.getElementById("p_finalscore").innerHTML="Sorry, your score "+total_score+"<"+timenum+", so you didn't win the bonus prize.";
+                    document.getElementById("p_finalscore").innerHTML="Sorry, your score "+total_score+JSON.stringify(scorelist)+"<"+timenum+", so you didn't win the bonus prize.";
                     user_data["Bonus Result"] = "Didn't win";
 
                 }else {
