@@ -158,12 +158,12 @@
 
     }
 </style>
-<body>
+<body class="scrollingContainer">
 <div id="data" class="hidden">
     {{result}}
 </div>
 
-<p dir="ltr"><span style="font-size: xx-large;"><strong id="title">Instructions</strong><br /></span></p>
+<p class="scrollingContainer" dir="ltr"><span style="font-size: xx-large;"><strong id="title">Instructions</strong><br /></span></p>
 <!--<p class="ins">Instructions: Please read carefully</p>-->
 <!--<p dir="ltr"><span>Thank you for participating in this investment study. This study simulates </span><span>10 rounds in which to invest in a portfolio of funds</span><span>. You will be shown 10 screens where you will be presented with investment choices. For each round you have several choices of funds you can purchase.</span></p>-->
 <!--<p dir="ltr"><span>At the end of this study you may earn a Mechanical Turk bonus of up to $4.00. Your bonus is calculated as your total return over the 10 rounds, in cents. For example, if your return is 182%, your&nbsp;</span><span>bonus</span><span>&nbsp;should be $1.82. Your choices of investment will therefore determine how large your bonus is. Keep in mind: if your overall return is below zero, you will not receive a bonus.</span></p>-->
@@ -178,7 +178,7 @@
 <!--<p dir="ltr"><span style="color: #ff0000;">WARNING: Do not press the back button in your web browser or attempt to restart the study after pressing the Continue button below. Pressing the back button or restarting the study will invalidate all of your answers and you will not be eligible for your Amazon Mechanical Turk reward. Be sure you read the instructions above before beginning the study.</span></p>-->
 <!--<p><span>&nbsp;</span></p>-->
 
-<div class="divs " id="div_0">
+<div class="divs scrollingContainer" id="div_0">
 <p>You are about to complete an experiment and potentially earn money based on your performance. By
     completing the experiment you will receive a participation fee of 50 cents; on top of the participation
     fee you can win a $20 bonus based on your performance. Below is a description of the task you will
@@ -198,7 +198,7 @@
 </div>
 
 <div class="divs hidden center" id="div_2">
-    <h3>Example of the Task</h3>
+    <h3>Example of the Task(shorter version)</h3>
     <div id="imgs"></div>
     <p id="please"></p>
     <button class="btn1" onclick="next()"></button>
@@ -236,7 +236,7 @@
     <p>
         To determine if you won the bonus, we will let you stop the clock below. If the last two digits of the
         stopped clock are less than your final score you win the $20 bonus, and if they are more, then you
-        win nothing. It is impossible to control these digits of the time it takes the human brain to respond.
+        win nothing. It is impossible to control these digits of the time because it takes the human brain to respond.
         The purpose of this is to match your probability of winning to your achieved score.
     </p>
     <p>
@@ -326,7 +326,7 @@
         shapes_str+=" "+x;
     })
     document.querySelector('#please').innerHTML = 'Please decide whether there are more of '+userchoices[0].slice(0,-2)+' or '+userchoices[1].slice(0,-2)+' on the screen.'
-    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 60 geometric shapes. There will be '+choicelist.length+' different types of shapes, and they are'+shapes_str+'. Below are the '+choicelist.length+' geometric shapes you will encounter.';
+    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 60 geometric shapes. There will be '+choicelist.length+' different types of shapes, and they are:'+shapes_str+'. Below are the '+choicelist.length+' geometric shapes you will encounter.';
 
     choicelist.forEach(x=>{
         var path = 'assets/shapesvg/'+x+'.svg';
@@ -338,13 +338,15 @@
     });
     choicelist.forEach(x=>{
         var path = 'assets/shapesvg/'+x+'.svg';
-        document.querySelector('#imgs').innerHTML+="<img src='"+path+"'>";
+        var rotation = parseInt(Math.random()*360);
+        document.querySelector('#imgs').innerHTML+= "<img style='transform: rotate("+rotation+"deg)' src='" + path + "'>";
     })
 
     var clockcounter = true;
     clock();
     var counter = 0;
     function next() {
+
         if((counter == 4)||(counter == 10)){
             clockcounter = true;
             document.querySelector('#clockdiv').classList.remove('hidden');
@@ -367,6 +369,8 @@
             })
             document.querySelector('#div_'+counter).classList.remove('hidden');
         }
+        document.body.scrollIntoView({block: 'end', behavior: 'smooth'});
+
     }
     function end() {
         location.href = '/'
@@ -450,7 +454,8 @@
             var rand = Math.floor(Math.random() *(choicelist.length));
             var x = choicelist[rand];
             var path = 'assets/shapesvg/' + x + '.svg';
-            document.querySelector('#' + img_).innerHTML += "<img src='" + path + "'>";
+            var rotation = parseInt(Math.random()*360);
+            document.querySelector('#' + img_).innerHTML += "<img style='transform: rotate("+rotation+"deg)' src='" + path + "'>";
         }
         }
     makeshapes('imgs_1');
