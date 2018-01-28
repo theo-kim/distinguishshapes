@@ -28,6 +28,8 @@
     }
     .imgsdiv{
         margin: 10%;
+        margin-bottom: 0%;
+        margin-top: 0%;
     }
     h1 {
         font-family:Roboto,'Helvetica Neue',sans;
@@ -198,7 +200,7 @@
 </div>
 
 <div class="divs hidden center" id="div_2">
-    <h3>Example of the Task(shorter version)</h3>
+    <h3>Example of the Task. This example has only 5 shapes; in the real task you will face a similar task with 60 shapes.</h3>
     <div id="imgs"></div>
     <p id="please"></p>
     <button class="btn1" onclick="next()"></button>
@@ -296,6 +298,7 @@
     <button onclick="next()">Continue</button>
 </div>
 <script>
+    var explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided','hendecagon':'11-sided','square':'4-sided'};
     Number.prototype.pad = function(n) {
         for (var r = this.toString(); r.length < n; r = 0 + r);
         return r;
@@ -323,10 +326,10 @@
     document.querySelector('#imgs').innerHTML+="<img src='"+path1+"'>";
     var shapes_str = '';
     choicelist.forEach(x=>{
-        shapes_str+=" "+x;
+        shapes_str+=" "+x+'('+explanation[x]+')';
     })
     document.querySelector('#please').innerHTML = 'Please decide whether there are more of '+userchoices[0].slice(0,-2)+' or '+userchoices[1].slice(0,-2)+' on the screen.'
-    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 60 geometric shapes. There will be '+choicelist.length+' different types of shapes, and they are:'+shapes_str+'. Below are the '+choicelist.length+' geometric shapes you will encounter.';
+    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 60 geometric shapes. There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+'. Below are the '+choicelist.length+' geometric shapes you will encounter.';
 
     choicelist.forEach(x=>{
         var path = 'assets/shapesvg/'+x+'.svg';
@@ -369,8 +372,12 @@
             })
             document.querySelector('#div_'+counter).classList.remove('hidden');
         }
-        document.body.scrollIntoView({block: 'end', behavior: 'smooth'});
+        if((counter != 6)&&(counter != 7)&&(counter != 8)&&(counter != 9)&&(counter != 10)) {
+            document.querySelector('#div_' + counter).scrollIntoView({block: 'end', behavior: 'smooth'});
+        }else {
+            document.body.scrollIntoView({block: 'end', behavior: 'smooth'});
 
+        }
     }
     function end() {
         location.href = '/'
