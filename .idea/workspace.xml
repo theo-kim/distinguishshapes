@@ -30,13 +30,13 @@
       <file leaf-file-name="welcome.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="377" column="25" lean-forward="false" selection-start-line="377" selection-start-column="25" selection-end-line="377" selection-end-column="25" />
+            <state relative-caret-position="218">
+              <caret line="380" column="0" lean-forward="true" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
               <folding>
-                <marker date="1517138979501" expanded="false" signature="6780:6795" ph="..." />
-                <marker date="1517138979501" expanded="true" signature="15270:15304" ph="..." />
-                <marker date="1517138979501" expanded="true" signature="20389:20423" ph="..." />
-                <marker date="1517138979501" expanded="true" signature="20424:20429" ph="..." />
+                <marker date="1517325005491" expanded="false" signature="6827:6842" ph="..." />
+                <marker date="1517325005491" expanded="true" signature="15317:15351" ph="..." />
+                <marker date="1517325005491" expanded="true" signature="20517:20551" ph="..." />
+                <marker date="1517325005491" expanded="true" signature="20552:20557" ph="..." />
               </folding>
             </state>
           </provider>
@@ -66,7 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>There will be four</find>
       <find>shapes_p</find>
       <find>imgs_eg</find>
       <find>vue</find>
@@ -95,6 +94,7 @@
       <find>querySelector</find>
       <find>five-</find>
       <find>10%</find>
+      <find>divs</find>
       <find>scroll</find>
     </findStrings>
   </component>
@@ -468,12 +468,12 @@
       <workItem from="1514969210021" duration="23199000" />
       <workItem from="1516538396773" duration="11504000" />
       <workItem from="1516616213362" duration="435000" />
-      <workItem from="1516677879574" duration="9773000" />
+      <workItem from="1516677879574" duration="10372000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="417501000" />
+    <option name="totallyTimeSpent" value="418100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -878,13 +878,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="377" column="25" lean-forward="false" selection-start-line="377" selection-start-column="25" selection-end-line="377" selection-end-column="25" />
+        <state relative-caret-position="218">
+          <caret line="380" column="0" lean-forward="true" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
           <folding>
-            <marker date="1517138979501" expanded="false" signature="6780:6795" ph="..." />
-            <marker date="1517138979501" expanded="true" signature="15270:15304" ph="..." />
-            <marker date="1517138979501" expanded="true" signature="20389:20423" ph="..." />
-            <marker date="1517138979501" expanded="true" signature="20424:20429" ph="..." />
+            <marker date="1517325005491" expanded="false" signature="6827:6842" ph="..." />
+            <marker date="1517325005491" expanded="true" signature="15317:15351" ph="..." />
+            <marker date="1517325005491" expanded="true" signature="20517:20551" ph="..." />
+            <marker date="1517325005491" expanded="true" signature="20552:20557" ph="..." />
           </folding>
         </state>
       </provider>
