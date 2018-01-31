@@ -5,8 +5,15 @@
     <title>Title</title>
 </head>
 <style>
+    #next_div{
+        margin-bottom: 10vmax;
+    }
     .divs{
-        margin-bottom:20vmax;
+        margin-bottom:10vmax;
+    }
+    #timedate{
+        margin-bottom:5vmax;
+
     }
     p{
         margin-left: 10%;
@@ -296,9 +303,12 @@
     <form id="survey1" action="/action_page.php"><p id="p_finalscore"></p><div id="clock_div">  <div id="timedate"> <a id="h">12</a> :<a id="m">00</a>:<a id="s">00</a>:<a id="mi">000</a> </div></div><input id="submitsurvey1" class="btn btn-default" type="submit" value="Stop"> </form>
     <p id="result"></p>
 </div>
+<div>
 <div id="next_div" style="text-align:center">
 
     <button onclick="next()">Continue</button>
+</div>
+    <div id="nbsp">&nbsp</div>
 </div>
 <script>
     var explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided','hendecagon':'11-sided','square':'4-sided'};
@@ -376,13 +386,14 @@
             document.querySelector('#div_'+counter).classList.remove('hidden');
         }
         if((counter != 6)&&(counter != 7)&&(counter != 8)&&(counter != 9)&&(counter != 10)) {
-//            document.querySelector('#div_' + counter).scrollIntoView({block: 'end', behavior: 'smooth'});
-            document.body.scrollIntoView({block: 'end', behavior: 'smooth'});
+            document.querySelector('#nbsp').scrollIntoView({block: 'end', behavior: 'smooth'});
+//            document.body.scrollIntoView({block: 'end', behavior: 'smooth'});
 
         }else {
-            document.body.scrollIntoView({block: 'end', behavior: 'smooth'});
+            document.querySelector('#nbsp').scrollIntoView({block: 'end', behavior: 'smooth'});
 
         }
+
     }
     function end() {
         location.href = '/'
