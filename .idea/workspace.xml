@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin.hbs" afterPath="$PROJECT_DIR$/views/admin.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/welcome.hbs" afterPath="$PROJECT_DIR$/views/welcome.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +23,8 @@
       <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2924">
-              <caret line="172" column="16" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+            <state relative-caret-position="184">
+              <caret line="128" column="54" lean-forward="false" selection-start-line="128" selection-start-column="52" selection-end-line="128" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -31,14 +33,14 @@
       <file leaf-file-name="welcome.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="393" column="0" lean-forward="true" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+            <state relative-caret-position="211">
+              <caret line="420" column="24" lean-forward="true" selection-start-line="420" selection-start-column="24" selection-end-line="420" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1517384857009" expanded="false" signature="6930:6945" ph="..." />
-                <marker date="1517384857009" expanded="true" signature="15464:15498" ph="..." />
-                <marker date="1517384857009" expanded="true" signature="20673:20707" ph="..." />
-                <marker date="1517384857009" expanded="true" signature="20708:20713" ph="..." />
+                <marker date="1518062444111" expanded="false" signature="6930:6945" ph="..." />
+                <marker date="1518062444111" expanded="true" signature="15951:15985" ph="..." />
+                <marker date="1518062444111" expanded="true" signature="21160:21194" ph="..." />
+                <marker date="1518062444111" expanded="true" signature="21195:21200" ph="..." />
               </folding>
             </state>
           </provider>
@@ -49,6 +51,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="242" column="26" lean-forward="false" selection-start-line="242" selection-start-column="26" selection-end-line="242" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -68,17 +80,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>demo_p</find>
-      <find>form</find>
-      <find>result</find>
-      <find>btn1</find>
-      <find>Continue</find>
-      <find>hidden</find>
-      <find>The last tw</find>
-      <find>total_score</find>
-      <find>Score</find>
-      <find>Your</find>
-      <find>165</find>
       <find>JSON</find>
       <find>Sorry</find>
       <find>rotat</find>
@@ -95,9 +96,20 @@
       <find>10%</find>
       <find>divs</find>
       <find>20vmax</find>
-      <find>scroll</find>
       <find>scrollby</find>
       <find>next_div</find>
+      <find>scroll</find>
+      <find>mud</find>
+      <find>N</find>
+      <find>Total</find>
+      <find>list-compvare-item</find>
+      <find>vue</find>
+      <find>60</find>
+      <find>gon</find>
+      <find>explanation</find>
+      <find>By comp</find>
+      <find>Stop</find>
+      <find>by</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,12 +154,12 @@
         <option value="$PROJECT_DIR$/public/assets/shapesvg/hendecagon.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/square.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/octagon.svg" />
-        <option value="$PROJECT_DIR$/views/admin.hbs" />
         <option value="$PROJECT_DIR$/views/result2.hbs" />
         <option value="$PROJECT_DIR$/public/random.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg" />
+        <option value="$PROJECT_DIR$/views/admin.hbs" />
+        <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/views/welcome.hbs" />
       </list>
     </option>
@@ -472,12 +484,12 @@
       <workItem from="1516616213362" duration="435000" />
       <workItem from="1516677879574" duration="10589000" />
       <workItem from="1517378404069" duration="200000" />
-      <workItem from="1517381258314" duration="1830000" />
+      <workItem from="1517381258314" duration="4610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="420347000" />
+    <option name="totallyTimeSpent" value="423127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -785,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="265" column="32" lean-forward="false" selection-start-line="265" selection-start-column="29" selection-end-line="265" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/octagon.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -856,14 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2924">
-          <caret line="172" column="16" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -872,16 +869,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="242" column="26" lean-forward="false" selection-start-line="242" selection-start-column="26" selection-end-line="242" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="128" column="54" lean-forward="false" selection-start-line="128" selection-start-column="52" selection-end-line="128" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="393" column="0" lean-forward="true" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+        <state relative-caret-position="211">
+          <caret line="420" column="24" lean-forward="true" selection-start-line="420" selection-start-column="24" selection-end-line="420" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1517384857009" expanded="false" signature="6930:6945" ph="..." />
-            <marker date="1517384857009" expanded="true" signature="15464:15498" ph="..." />
-            <marker date="1517384857009" expanded="true" signature="20673:20707" ph="..." />
-            <marker date="1517384857009" expanded="true" signature="20708:20713" ph="..." />
+            <marker date="1518062444111" expanded="false" signature="6930:6945" ph="..." />
+            <marker date="1518062444111" expanded="true" signature="15951:15985" ph="..." />
+            <marker date="1518062444111" expanded="true" signature="21160:21194" ph="..." />
+            <marker date="1518062444111" expanded="true" signature="21195:21200" ph="..." />
           </folding>
         </state>
       </provider>
