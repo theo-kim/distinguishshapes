@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin.hbs" afterPath="$PROJECT_DIR$/views/admin.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/welcome.hbs" afterPath="$PROJECT_DIR$/views/welcome.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,14 +30,14 @@
       <file leaf-file-name="welcome.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="420" column="24" lean-forward="true" selection-start-line="420" selection-start-column="24" selection-end-line="420" selection-end-column="24" />
+            <state relative-caret-position="269">
+              <caret line="251" column="4" lean-forward="false" selection-start-line="251" selection-start-column="4" selection-end-line="251" selection-end-column="4" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1518062444111" expanded="false" signature="6930:6945" ph="..." />
-                <marker date="1518062444111" expanded="true" signature="15951:15985" ph="..." />
-                <marker date="1518062444111" expanded="true" signature="21160:21194" ph="..." />
-                <marker date="1518062444111" expanded="true" signature="21195:21200" ph="..." />
+                <marker date="1518100578191" expanded="false" signature="6930:6945" ph="..." />
+                <marker date="1518100578191" expanded="true" signature="16326:16360" ph="..." />
+                <marker date="1518100578191" expanded="true" signature="21718:21752" ph="..." />
+                <marker date="1518100578191" expanded="true" signature="21753:21758" ph="..." />
               </folding>
             </state>
           </provider>
@@ -80,8 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>JSON</find>
-      <find>Sorry</find>
       <find>rotat</find>
       <find>imgsdiv</find>
       <find>imgs</find>
@@ -110,6 +105,8 @@
       <find>By comp</find>
       <find>Stop</find>
       <find>by</find>
+      <find>next(</find>
+      <find>Please stop the following clo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -484,12 +481,12 @@
       <workItem from="1516616213362" duration="435000" />
       <workItem from="1516677879574" duration="10589000" />
       <workItem from="1517378404069" duration="200000" />
-      <workItem from="1517381258314" duration="4610000" />
+      <workItem from="1517381258314" duration="5180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="423127000" />
+    <option name="totallyTimeSpent" value="423697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -887,14 +884,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="420" column="24" lean-forward="true" selection-start-line="420" selection-start-column="24" selection-end-line="420" selection-end-column="24" />
+        <state relative-caret-position="269">
+          <caret line="251" column="4" lean-forward="false" selection-start-line="251" selection-start-column="4" selection-end-line="251" selection-end-column="4" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1518062444111" expanded="false" signature="6930:6945" ph="..." />
-            <marker date="1518062444111" expanded="true" signature="15951:15985" ph="..." />
-            <marker date="1518062444111" expanded="true" signature="21160:21194" ph="..." />
-            <marker date="1518062444111" expanded="true" signature="21195:21200" ph="..." />
+            <marker date="1518100578191" expanded="false" signature="6930:6945" ph="..." />
+            <marker date="1518100578191" expanded="true" signature="16326:16360" ph="..." />
+            <marker date="1518100578191" expanded="true" signature="21718:21752" ph="..." />
+            <marker date="1518100578191" expanded="true" signature="21753:21758" ph="..." />
           </folding>
         </state>
       </provider>

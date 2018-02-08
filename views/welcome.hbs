@@ -238,13 +238,17 @@
 <div class="divs hidden center" id="div_5">
     <h3>Winning the Bonus</h3>
     <p>
-        To determine if you won the bonus, we will let you stop the clock below. If the last two digits of the
-        stopped clock are less than your final score you win the $20 bonus, and if they are more, then you
-        win nothing. It is impossible to control these digits of the time because it takes the human brain to respond.
-        The purpose of this is to match your probability of winning to your achieved score.
+        To determine if you won the bonus, we will let you stop the clock below. This your computer clock, presenting the time down to the millisecond (1/1000th of a second).
+
     </p>
     <p>
-        Please stop the following clock showing the current time to millisecond precision.
+        If the last two digits of the stopped clock are less than your final score you win the $20 bonus, and if they are more, then you win nothing.
+
+    </p>
+    <p>
+        Now, try stop the clock showing the current time to millisecond precision. You can start and stop the clock as many times as you want, to check if you can stop it at a number of your choice.
+    </p>
+    <p>You should know, however, that it is impossible to control these digits of the time because of the time it takes the human brain and hand to respond. The purpose of this is to generate a random number, and match your probability of winning to your achieved score: the higher your score is, the more likely you are to win the $20 bonus.
     </p>
 
 </div>
@@ -434,7 +438,14 @@
         }
 
     })
-    function updateClock() {
+    var start = document.querySelector('#submitsurvey2');
+
+    start.addEventListener('click',function (evt) {
+        evt.preventDefault();
+        clockcounter = true;
+
+    });
+        function updateClock() {
         if(clockcounter){
             var now = new Date();
             var milli = (now.getMilliseconds()).toString(),
