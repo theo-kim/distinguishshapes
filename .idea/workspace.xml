@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin.hbs" afterPath="$PROJECT_DIR$/views/admin.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/welcome.hbs" afterPath="$PROJECT_DIR$/views/welcome.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,27 +19,35 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="128" column="54" lean-forward="false" selection-start-line="128" selection-start-column="52" selection-end-line="128" selection-end-column="54" />
-              <folding />
+            <state relative-caret-position="217">
+              <caret line="229" column="24" lean-forward="false" selection-start-line="229" selection-start-column="24" selection-end-line="229" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#p#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#p#1;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="welcome.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="251" column="4" lean-forward="false" selection-start-line="251" selection-start-column="4" selection-end-line="251" selection-end-column="4" />
+            <state relative-caret-position="217">
+              <caret line="186" column="139" lean-forward="false" selection-start-line="186" selection-start-column="139" selection-end-line="186" selection-end-column="139" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1518100578191" expanded="false" signature="6930:6945" ph="..." />
-                <marker date="1518100578191" expanded="true" signature="16326:16360" ph="..." />
-                <marker date="1518100578191" expanded="true" signature="21718:21752" ph="..." />
-                <marker date="1518100578191" expanded="true" signature="21753:21758" ph="..." />
+                <marker date="1518191154202" expanded="false" signature="7049:7064" ph="..." />
+                <marker date="1518191154202" expanded="true" signature="16445:16479" ph="..." />
+                <marker date="1518191154202" expanded="true" signature="21922:21929" ph="..." />
+                <marker date="1518191154202" expanded="true" signature="21922:21971" ph="..." />
+                <marker date="1518191154202" expanded="true" signature="21936:21971" ph="..." />
+                <marker date="1518191154202" expanded="true" signature="21937:21971" ph="..." />
+                <marker date="1518191154202" expanded="true" signature="21972:21977" ph="..." />
+                <marker date="1518191154202" expanded="true" signature="22276:22294" ph="..." />
               </folding>
             </state>
           </provider>
@@ -46,8 +56,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            <state relative-caret-position="183">
+              <caret line="365" column="36" lean-forward="false" selection-start-line="365" selection-start-column="35" selection-end-line="365" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -56,8 +66,8 @@
       <file leaf-file-name="admin.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/admin.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="242" column="26" lean-forward="false" selection-start-line="242" selection-start-column="26" selection-end-line="242" selection-end-column="26" />
+            <state relative-caret-position="184">
+              <caret line="352" column="28" lean-forward="false" selection-start-line="352" selection-start-column="28" selection-end-line="352" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -77,29 +87,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rotat</find>
-      <find>imgsdiv</find>
-      <find>imgs</find>
-      <find>It is impossible to control these digits</find>
-      <find>they are</find>
-      <find>tags</find>
-      <find>next</find>
-      <find>.body</find>
-      <find>getEle</find>
-      <find>querySelector</find>
-      <find>five-</find>
-      <find>10%</find>
-      <find>divs</find>
-      <find>20vmax</find>
-      <find>scrollby</find>
-      <find>next_div</find>
-      <find>scroll</find>
-      <find>mud</find>
-      <find>N</find>
-      <find>Total</find>
-      <find>list-compvare-item</find>
       <find>vue</find>
-      <find>60</find>
       <find>gon</find>
       <find>explanation</find>
       <find>By comp</find>
@@ -107,6 +95,28 @@
       <find>by</find>
       <find>next(</find>
       <find>Please stop the following clo</find>
+      <find>score</find>
+      <find>survey</find>
+      <find>pointsr</find>
+      <find>roundcou</find>
+      <find>makeSha</find>
+      <find>60 s</find>
+      <find>proportion</find>
+      <find>40</find>
+      <find>60</find>
+      <find>.imgsdiv</find>
+      <find>border</find>
+      <find>10%</find>
+      <find>12</find>
+      <find>next</find>
+      <find>shape</find>
+      <find>backgr</find>
+      <find>countadder</find>
+      <find>round</find>
+      <find>roundco</find>
+      <find>4</find>
+      <find>5</find>
+      <find>JSON.stringify(scorelist)</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,8 +166,8 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg" />
         <option value="$PROJECT_DIR$/views/admin.hbs" />
-        <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/views/welcome.hbs" />
+        <option value="$PROJECT_DIR$/views/index.hbs" />
       </list>
     </option>
   </component>
@@ -481,12 +491,12 @@
       <workItem from="1516616213362" duration="435000" />
       <workItem from="1516677879574" duration="10589000" />
       <workItem from="1517378404069" duration="200000" />
-      <workItem from="1517381258314" duration="5180000" />
+      <workItem from="1517381258314" duration="11161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="423697000" />
+    <option name="totallyTimeSpent" value="429678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -496,7 +506,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13835616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13835616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -860,38 +870,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        <state relative-caret-position="183">
+          <caret line="365" column="36" lean-forward="false" selection-start-line="365" selection-start-column="35" selection-end-line="365" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="242" column="26" lean-forward="false" selection-start-line="242" selection-start-column="26" selection-end-line="242" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="128" column="54" lean-forward="false" selection-start-line="128" selection-start-column="52" selection-end-line="128" selection-end-column="54" />
+          <caret line="352" column="28" lean-forward="false" selection-start-line="352" selection-start-column="28" selection-end-line="352" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="251" column="4" lean-forward="false" selection-start-line="251" selection-start-column="4" selection-end-line="251" selection-end-column="4" />
+        <state relative-caret-position="217">
+          <caret line="186" column="139" lean-forward="false" selection-start-line="186" selection-start-column="139" selection-end-line="186" selection-end-column="139" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1518100578191" expanded="false" signature="6930:6945" ph="..." />
-            <marker date="1518100578191" expanded="true" signature="16326:16360" ph="..." />
-            <marker date="1518100578191" expanded="true" signature="21718:21752" ph="..." />
-            <marker date="1518100578191" expanded="true" signature="21753:21758" ph="..." />
+            <marker date="1518191154202" expanded="false" signature="7049:7064" ph="..." />
+            <marker date="1518191154202" expanded="true" signature="16445:16479" ph="..." />
+            <marker date="1518191154202" expanded="true" signature="21922:21929" ph="..." />
+            <marker date="1518191154202" expanded="true" signature="21922:21971" ph="..." />
+            <marker date="1518191154202" expanded="true" signature="21936:21971" ph="..." />
+            <marker date="1518191154202" expanded="true" signature="21937:21971" ph="..." />
+            <marker date="1518191154202" expanded="true" signature="21972:21977" ph="..." />
+            <marker date="1518191154202" expanded="true" signature="22276:22294" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="229" column="24" lean-forward="false" selection-start-line="229" selection-start-column="24" selection-end-line="229" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#p#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#p#1;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

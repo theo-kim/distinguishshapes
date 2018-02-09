@@ -15,6 +15,10 @@
         margin-bottom:5vmax;
 
     }
+    .images{
+        width: 8%;
+        display: inline;
+    }
     p{
         margin-left: 10%;
         margin-right:10%;
@@ -37,6 +41,8 @@
         width:100%;
     }
     .imgsdiv{
+        border-style: solid;
+        border-width: 1px;
         margin: 10%;
         margin-bottom: 0%;
         margin-top: 0%;
@@ -133,7 +139,7 @@
     }
     img{
         margin: 2%;
-        width: 6%;
+        width: 8%;
     }
     #clock_div{
         text-align: center;
@@ -210,7 +216,7 @@
 </div>
 
 <div class="divs hidden center" id="div_2">
-    <h3>Example of the Task. This example has only 5 shapes; in the real task you will face a similar task with 60 shapes.</h3>
+    <h3>Example of the Task. This example has only 5 shapes; in the real task you will face a similar task with 32 shapes.</h3>
     <div id="imgs"></div>
     <p id="please"></p>
     <button class="btn1" onclick="next()"></button>
@@ -338,7 +344,7 @@
         shapes_str+=" "+x+'('+explanation[x]+')';
     })
     document.querySelector('#please').innerHTML = 'Please decide whether there are more of '+userchoices[0].slice(0,-2)+' or '+userchoices[1].slice(0,-2)+' on the screen.'
-    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 60 geometric shapes. There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+'. Below are the '+choicelist.length+' geometric shapes you will encounter.';
+    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 32 geometric shapes. There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+'. Below are the '+choicelist.length+' geometric shapes you will encounter.';
 
     choicelist.forEach(x=>{
         var path = 'assets/shapesvg/'+x+'.svg';
@@ -476,18 +482,29 @@
     }
     function makeshapes(img_) {
 
-        for(var i = 0;i<60;i++) {
+        for(var i = 0;i<32;i++) {
             var rand = Math.floor(Math.random() *(choicelist.length));
             var x = choicelist[rand];
             var path = 'assets/shapesvg/' + x + '.svg';
             var rotation = parseInt(Math.random()*360);
-            document.querySelector('#' + img_).innerHTML += "<img style='transform: rotate("+rotation+"deg)' src='" + path + "'>";
+            var sz = 9-parseInt(Math.random()*2);
+
+            document.querySelector('#' + img_).innerHTML += "<div class = 'images shape"+i+"' ><img style='width: "+8+"%; transform: rotate("+rotation+"deg)' src='" + path + "'></div>";
         }
         }
     makeshapes('imgs_1');
     makeshapes('imgs_2');
     makeshapes('imgs_3');
     makeshapes('imgs_4');
+
+    function row(i) {
+        var shapes = document.querySelectorAll('.shape'+i);
+        shapes.forEach(x=>{
+            x.innerHTML = "<span style='position: absolute'>Row "+i+"</span>"+x.innerHTML;
+        })
+    }
+
+
 
 
 
