@@ -331,19 +331,19 @@
     console.log(choicelist,userchoices);
     var btn1 = document.querySelectorAll('.btn1');
     btn1.forEach(x=>{
-        x.innerHTML = userchoices[0].slice(0,-2);
+        x.innerHTML = explanation[userchoices[0].slice(0,-2)];
     })
     var btn2 = document.querySelectorAll('.btn2');
     btn2.forEach(x=>{
-        x.innerHTML = userchoices[1].slice(0,-2);
+        x.innerHTML = explanation[userchoices[1].slice(0,-2)];
     })
     var path1 = 'assets/shapesvg/'+userchoices[0].slice(0,-2)+'.svg';
     document.querySelector('#imgs').innerHTML+="<img src='"+path1+"'>";
     var shapes_str = '';
     choicelist.forEach(x=>{
-        shapes_str+=" "+x+'('+explanation[x]+')';
+        shapes_str+=" "+explanation[x];
     })
-    document.querySelector('#please').innerHTML = 'Please decide whether there are more of '+userchoices[0].slice(0,-2)+' or '+userchoices[1].slice(0,-2)+' on the screen.'
+    document.querySelector('#please').innerHTML = 'Please decide whether there are more of '+explanation[userchoices[0].slice(0,-2)]+' or '+explanation[userchoices[1].slice(0,-2)]+' on the screen.'
     document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 32 geometric shapes. There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+'. Below are the '+choicelist.length+' geometric shapes you will encounter.';
 
     choicelist.forEach(x=>{

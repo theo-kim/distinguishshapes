@@ -73,7 +73,7 @@
         transition: transform 0.1s;
         /*flex: 1 1 4.5%;*/
         /*height: 1%;*/
-        width: 12.5%;
+        width: 12%;
         /*padding: 1vmax;*/
         /*   display: inline-block;
           margin-right: 10px; */
@@ -331,6 +331,7 @@
         var counter1 = 0;
         console.log(data1)
         makeShapes(proportion,vuelist,counter1,0)
+
         function makeShapes(proportion,vuelist,counter1,rd) {
             var sz = data1.size;
             var szlist= [];
@@ -413,6 +414,15 @@
 
 
         var roundcounter = 1;
+        var parentElement = document.getElementsByClassName("list-compvare-item")[0];
+        parentElement.innerHTML= "<span style='position: absolute;'>Row 1</span>"+parentElement.innerHTML;
+        var parentElement1 = document.getElementsByClassName("list-compvare-item")[8];
+        parentElement1.innerHTML= "<span style='position: absolute;'>Row 2</span>"+parentElement1.innerHTML;
+        var parentElement2 = document.getElementsByClassName("list-compvare-item")[16];
+        parentElement2.innerHTML= "<span style='position: absolute;'>Row 3</span>"+parentElement2.innerHTML;
+        var parentElement3 = document.getElementsByClassName("list-compvare-item")[24];
+        parentElement3.innerHTML= "<span style='position: absolute;'>Row 4</span>"+parentElement3.innerHTML;
+
         document.querySelector('#pointsrmd').innerHTML = "This task will award you "+deltalist_incentive[roundcounter-1]+" points if you get it right";
 
         user_data["usercode"] = user_id;
@@ -545,6 +555,22 @@
             }else {
                 alert("You haven't made your choice yet!");
             }
+            parentElement.innerHTML =  (parentElement.innerHTML).slice(46);
+            parentElement = document.getElementsByClassName("list-compvare-item")[0];
+            parentElement.innerHTML= "<span style='position: absolute;'>Row 1</span>"+parentElement.innerHTML;
+
+            parentElement1.innerHTML =  (parentElement1.innerHTML).slice(46);
+            parentElement1 = document.getElementsByClassName("list-compvare-item")[8];
+            parentElement1.innerHTML= "<span style='position: absolute;'>Row 2</span>"+parentElement1.innerHTML;
+
+            parentElement2.innerHTML =  (parentElement2.innerHTML).slice(46);
+            parentElement2 = document.getElementsByClassName("list-compvare-item")[16];
+            parentElement2.innerHTML= "<span style='position: absolute;'>Row 3</span>"+parentElement2.innerHTML;
+
+            parentElement3.innerHTML =  (parentElement3.innerHTML).slice(46);
+            parentElement3 = document.getElementsByClassName("list-compvare-item")[24];
+            parentElement3.innerHTML= "<span style='position: absolute;'>Row 4</span>"+parentElement3.innerHTML;
+
 
         })
 
@@ -591,6 +617,8 @@
 //
 //            }
         }, 1000);
+
+
     }
 
 
@@ -817,7 +845,6 @@
         updateClock();
         window.setInterval("updateClock()", 1);
     }
-
 
 
 
