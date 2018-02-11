@@ -227,7 +227,7 @@
 //        deltalist_10.push(obj);
 //    }
 
-    var totalrounds = 4;
+    var totalrounds = 40;
     for(var i=0;i<totalrounds;i++){
         var incentives = [1,3,6,10][getRandomInt(0,4)];
 
@@ -532,6 +532,13 @@
                     //alert(total_score);
                     if(total_score<100){
                         alert("Score less than 100, sorry you can't get bonus.");
+                        document.querySelector('#thanks').style.display="block";
+                        //return user_data;
+                        var req= new XMLHttpRequest();
+                        req.open('POST', '/userdata', true);
+                        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+                        req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
+
                     }else{
                     clock(user_data);
                     }
