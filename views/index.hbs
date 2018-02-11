@@ -227,7 +227,7 @@
 //        deltalist_10.push(obj);
 //    }
 
-    var totalrounds = 40;
+    var totalrounds = 4;
     for(var i=0;i<totalrounds;i++){
         var incentives = [1,3,6,10][getRandomInt(0,4)];
 
@@ -531,9 +531,10 @@
                     document.getElementById("list-compvare-demo").style.display = "none";
                     //alert(total_score);
                     if(total_score<100){
-                        alert("Score less than 100 but for testing I'll temporarily show the clock");
-                    }else{}
+                        alert("Score less than 100, sorry you can't get bonus.");
+                    }else{
                     clock(user_data);
+                    }
 
                 }else{
                 var vuelist = [];
@@ -541,6 +542,7 @@
                 makeShapes(proportion, vuelist, counter1, roundcounter);
                 answer = getAnswer(roundcounter);
                 roundcounter++;
+
                 user_data["RoundCounter(40 in total)"] = roundcounter;
                 user_data["Score"] = Score;
                 document.querySelector('#pointsrmd').innerHTML = "This task will award you "+deltalist_incentive[roundcounter-1]+" points if you get it right";

@@ -335,6 +335,8 @@ but: only check when on the production domain.
 
 
     function init() {
+        console.log('content1');
+
         let req= new XMLHttpRequest();
         req.open('POST', '/givebonus', true);
         req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
@@ -480,6 +482,7 @@ but: only check when on the production domain.
     }
 
     function doCSV(json) {
+
         // 1) find the primary array to iterate over
         // 2) for each item in that array, recursively flatten it into a tabular object
         // 3) turn that tabular object into a CSV row using jquery-csv
@@ -581,6 +584,7 @@ but: only check when on the production domain.
     // If no `id` is given, and content is too long, the URL will
     // encode only a title, and no body.
     function setErrorReporting(id, content) {
+        console.log('content');
         var base = "https://github.com/konklone/json/issues/new";
 
         var title = "Error parsing some specific JSON";

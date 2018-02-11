@@ -50,7 +50,7 @@
     })
     var temp_json = [];
     new_json.forEach(x=>{
-        var roundcount = x['RoundCounter(60 in total)'];
+        var roundcount = x['RoundCounter(40 in total)'];
         for(var i=0;i<roundcount;i++){
            // var obj = {'user_city':x['user_city'],'user_ip':x['user_ip'],'usercode':x['usercode'],'workid':x['workid'],'age':x['age'],'date/time':x['date/time'],'time_round':x['time_round'][i],'Round':i,'TotalRound':roundcount,'N':x['N'],'mud':x['Round '+i+'(mud)'],'shape':x['Round '+i+'(mud)'],'choice':x['time_round'][i],'degree_tilted':x['degree_tilted'],'m':x['m'],'max':x['max'],'mudding':x['mudding'],'n':x['n'],'total_score':x['total_score']};
             var obj = {'user_city':x['user_city'],'user_ip':x['user_ip'],'usercode':x['usercode'],'workid':x['workid'],'age':x['age'],'date/time':x['date/time'],'time_round':x['time_round'][i],'Round':i,'TotalRound':roundcount,'N':x['N'],'Decoys':x['decoy'],'non-decoys':x['userchoice'],'Round Mudding':x['Round '+i+'(mud)'],'Incentives':x['incentives'][i],'Number of Shape':x['Round '+i+'(shape count)'],'Response':x['choice_round'][i],'True or False':x['TF_round'][i],'m':x['m'],'max':x['max'],'mudding':x['mudding'],'n':x['n'],'Clock Stop Digits':x['timenum'],'Score':x['Score'][i],'Bonus Result':x['Bonus Result']};
@@ -61,6 +61,7 @@
     });
 
     console.log(new_json)
+    console.log(temp_json)
 
 
 
@@ -104,10 +105,10 @@
         //var json = jsonFrom(JSON.stringify(new_json));
         var json = jsonFrom(JSON.stringify(temp_json));
 
-
         // if succeeded, prettify and highlight it
         // highlight shows when textarea loses focus
-        if (json) {
+        if (json!=undefined) {
+            console.log('json',json)
             // Reset any error message from previous failed parses.
             $("div.error").hide();
             $("div.warning").show();
@@ -128,7 +129,9 @@
         }
 
         // Either way, update the error-reporting link to include the latest.
-        setErrorReporting(null, input);
+        console.log('input1',json)
+
+        setErrorReporting(null, json);
 
         return true;
     }
@@ -251,6 +254,7 @@
                 'https://api.github.com/gists',
                 JSON.stringify(gist)
         ).done(function(data, status, xhr) {
+            console.log('input',input)
 
             // take new Gist id, make permalink
             setPermalink(data.id);
@@ -302,6 +306,7 @@
     // If no `id` is given, and content is too long, the URL will
     // encode only a title, and no body.
     function setErrorReporting(id, content) {
+        console.log('content',content)
         var base = "https://github.com/konklone/json/issues/new";
 
         var title = "Error parsing some specific JSON";

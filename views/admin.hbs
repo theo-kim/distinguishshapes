@@ -238,17 +238,15 @@
     var N = 32;//total shapes
     var data = (document.querySelector('#data')).innerHTML;
     var start = data.indexOf('data');
+    console.log((data.slice(start+7,-14)));
     var data1 = JSON.parse((data.slice(start+7,-14)));
 
     data1.userchoices.forEach(x=>{
         document.querySelector('#now_userchoices').innerHTML+=' '+x.slice(0,-2)+":"+data1.proportion[x.slice(0,-2)];
     })
 
-   // data1.proportion.forEach(x=>{
-        document.querySelector('#now_proportion').innerHTML+=JSON.stringify(data1.proportion);
-    //})
+    document.querySelector('#now_proportion').innerHTML+=JSON.stringify(data1.proportion);
     document.querySelector('#now_degree').innerHTML+=data1.degree;
-//    document.querySelector('#now_roundtime').innerHTML+=data1.roundtime+'s';
     document.querySelector('#now_deltalist').innerHTML+=data1.deltalist;
     document.querySelector('#now_size').innerHTML+=[data1.size['small'],data1.size['normal'],data1.size['big']];
     console.log(data1);
