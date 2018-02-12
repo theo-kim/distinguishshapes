@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/welcome.hbs" afterPath="$PROJECT_DIR$/views/welcome.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/shapesvg/square.svg" afterPath="$PROJECT_DIR$/public/assets/shapesvg/square.svg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +18,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
@@ -38,6 +37,16 @@
                 <marker date="1518447162737" expanded="true" signature="23362:23381" ph="..." />
                 <marker date="1518447162737" expanded="true" signature="23642:23661" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="square.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/square.svg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="145" lean-forward="false" selection-start-line="5" selection-start-column="145" selection-end-line="5" selection-end-column="145" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,7 +205,6 @@
         <option value="$PROJECT_DIR$/public/assets/shapesvg/decagon.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/11.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/hendecagon.svg" />
-        <option value="$PROJECT_DIR$/public/assets/shapesvg/square.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/octagon.svg" />
         <option value="$PROJECT_DIR$/public/random.js" />
         <option value="$PROJECT_DIR$/app.js" />
@@ -206,6 +214,7 @@
         <option value="$PROJECT_DIR$/views/result2.hbs" />
         <option value="$PROJECT_DIR$/views/welcome.hbs" />
         <option value="$PROJECT_DIR$/views/index.hbs" />
+        <option value="$PROJECT_DIR$/public/assets/shapesvg/square.svg" />
       </list>
     </option>
   </component>
@@ -531,12 +540,12 @@
       <workItem from="1517378404069" duration="200000" />
       <workItem from="1517381258314" duration="11819000" />
       <workItem from="1518329460739" duration="2188000" />
-      <workItem from="1518348273809" duration="3616000" />
+      <workItem from="1518348273809" duration="3801000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="436140000" />
+    <option name="totallyTimeSpent" value="436325000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -545,7 +554,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14138205" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13835616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13835616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -827,13 +836,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/square.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="97" lean-forward="false" selection-start-line="5" selection-start-column="97" selection-end-line="5" selection-end-column="97" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -841,6 +844,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -848,6 +852,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="351" lean-forward="false" selection-start-line="0" selection-start-column="351" selection-end-line="0" selection-end-column="351" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -855,6 +860,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="221" lean-forward="false" selection-start-line="1" selection-start-column="221" selection-end-line="1" selection-end-column="221" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -862,6 +868,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="25" column="96" lean-forward="false" selection-start-line="25" selection-start-column="96" selection-end-line="25" selection-end-column="96" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -869,6 +876,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -876,6 +884,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="351" lean-forward="false" selection-start-line="0" selection-start-column="351" selection-end-line="0" selection-end-column="351" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -954,6 +963,14 @@
             <marker date="1518447162737" expanded="true" signature="23362:23381" ph="..." />
             <marker date="1518447162737" expanded="true" signature="23642:23661" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/square.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="145" lean-forward="false" selection-start-line="5" selection-start-column="145" selection-end-line="5" selection-end-column="145" />
+          <folding />
         </state>
       </provider>
     </entry>
