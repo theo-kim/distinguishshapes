@@ -244,7 +244,7 @@
 <div class="divs hidden center" id="div_5">
     <h3>Winning the Bonus</h3>
     <p>
-        To determine if you won the bonus, we will let you stop the clock below. This your computer clock, presenting the time down to the millisecond (1/1000th of a second).
+        To determine if you won the bonus, we will let you stop the clock below. This is your computer clock, presenting the time down to the millisecond (1/1000th of a second).
 
     </p>
     <p>
@@ -341,10 +341,10 @@
     document.querySelector('#imgs').innerHTML+="<img src='"+path1+"'>";
     var shapes_str = '';
     choicelist.forEach(x=>{
-        shapes_str+=" "+explanation[x];
+        shapes_str+=" "+explanation[x]+",";
     })
     document.querySelector('#please').innerHTML = 'Please decide whether there are more of '+explanation[userchoices[0].slice(0,-2)]+' or '+explanation[userchoices[1].slice(0,-2)]+' on the screen.'
-    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 32 geometric shapes. There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+'. Below are the '+choicelist.length+' geometric shapes you will encounter.';
+    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 32 geometric shapes. There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+' below are the '+choicelist.length+' geometric shapes you will encounter.';
 
     choicelist.forEach(x=>{
         var path = 'assets/shapesvg/'+x+'.svg';
