@@ -227,7 +227,7 @@
 //        deltalist_10.push(obj);
 //    }
 
-    var totalrounds = 40;
+    var totalrounds = 4;
     for(var i=0;i<totalrounds;i++){
         var incentives = [1,3,6,10][getRandomInt(0,4)];
 
@@ -423,7 +423,11 @@
         var parentElement3 = document.getElementsByClassName("list-compvare-item")[24];
         parentElement3.innerHTML= "<span style='position: absolute;'>Row 4</span>"+parentElement3.innerHTML;
 
-        document.querySelector('#pointsrmd').innerHTML = "This task will award you "+deltalist_incentive[roundcounter-1]+" points if you get it right";
+        if(deltalist_incentive[roundcounter-1]==1){
+            document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/40</span> This task will award you "+deltalist_incentive[roundcounter-1]+" point if you get it right";
+        }else {
+            document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/40</span> This task will award you "+deltalist_incentive[roundcounter-1]+" points if you get it right";
+        }
 
         user_data["usercode"] = user_id;
         user_data["date/time"] = datetime;
@@ -531,8 +535,9 @@
                     document.getElementById("list-compvare-demo").style.display = "none";
                     //alert(total_score);
                     if(total_score<100){
-                        alert("Score less than 100, sorry you can't get bonus.");
+                       // alert();
                         document.querySelector('#thanks').style.display="block";
+                        document.querySelector('#thanks').innerHTML+="<p>Score less than 100, sorry you can't get bonus. Your total score is "+total_score+(JSON.stringify(scorelist)).replace(/,/g, '+')+"</p>"
                         //return user_data;
                         var req= new XMLHttpRequest();
                         req.open('POST', '/userdata', true);
@@ -552,7 +557,11 @@
 
                 user_data["RoundCounter(40 in total)"] = roundcounter;
                 user_data["Score"] = Score;
-                document.querySelector('#pointsrmd').innerHTML = "This task will award you "+deltalist_incentive[roundcounter-1]+" points if you get it right";
+                if(deltalist_incentive[roundcounter-1]==1){
+                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/40</span> This task will award you "+deltalist_incentive[roundcounter-1]+" point if you get it right";
+                }else {
+                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/40</span> This task will award you "+deltalist_incentive[roundcounter-1]+" points if you get it right";
+                }
 
                 //vue.shuffle();
                 //clearInterval(x);
