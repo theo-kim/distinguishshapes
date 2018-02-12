@@ -317,7 +317,7 @@
 
 //        document.querySelector('#info').innerHTML="        You have "+rdtime+"to record the choice by clicking either the "+explanation[userchoices[0].slice(0,-2)]+' shape'+" button or "+explanation[userchoices[1].slice(0,-2)]+' shape'+" button. You can switch between choices as many time as you want, and your choice at the end of the "+rdtime+" will be recorded. KEEP IN MIND: because of technical problems, the system sometime gets “stuck” such that you won’t be able to change your preferred choice – so always keep your most up-to-date preferred choice on."
 
-        document.querySelector('#info').innerHTML="Please decide whether there are more of "+explanation[userchoices[0].slice(0,-2)]+" or "+explanation[userchoices[0].slice(0,-2)]+" shapes on the screen.";
+//        document.querySelector('#info').innerHTML="Please decide whether there are more of "+explanation[userchoices[0].slice(0,-2)]+" or "+explanation[userchoices[0].slice(0,-2)]+" shapes on the screen."+"<p>If you answer correctly you get "+deltalist_incentive[roundcounter-1]+" points. A wrong answer does not give you any points.</p>";
 
         console.log((proportion));
         userchoices.forEach((x,i)=>{
@@ -413,6 +413,12 @@
 
 
         var roundcounter = 1;
+        if(deltalist_incentive[roundcounter-1]==1){
+            document.querySelector('#info').innerHTML="<p>Please decide whether there are more of "+explanation[userchoices[0].slice(0,-2)]+" or "+explanation[userchoices[0].slice(0,-2)]+" shape on the screen.</p>"+"<p>If you answer correctly you get "+deltalist_incentive[roundcounter-1]+" point. A wrong answer does not give you any points.</p>";
+        }else{
+            document.querySelector('#info').innerHTML="<p>Please decide whether there are more of "+explanation[userchoices[0].slice(0,-2)]+" or "+explanation[userchoices[0].slice(0,-2)]+" shape on the screen.</p>"+"<p>If you answer correctly you get "+deltalist_incentive[roundcounter-1]+" points. A wrong answer does not give you any points.</p>";
+        }
+
         var parentElement = document.getElementsByClassName("list-compvare-item")[0];
         parentElement.innerHTML= "<span style='position: absolute;'>Row 1</span>"+parentElement.innerHTML;
         var parentElement1 = document.getElementsByClassName("list-compvare-item")[8];
@@ -427,6 +433,7 @@
         }else {
             document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/40</span> This task will award you "+deltalist_incentive[roundcounter-1]+" points if you get it right";
         }
+
 
         user_data["usercode"] = user_id;
         user_data["date/time"] = datetime;
@@ -561,6 +568,12 @@
                 }else {
                     document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/40</span> This task will award you "+deltalist_incentive[roundcounter-1]+" points if you get it right";
                 }
+
+                    if(deltalist_incentive[roundcounter-1]==1){
+                        document.querySelector('#info').innerHTML="<p>Please decide whether there are more of "+explanation[userchoices[0].slice(0,-2)]+" or "+explanation[userchoices[0].slice(0,-2)]+" shape on the screen.</p>"+"<p>If you answer correctly you get "+deltalist_incentive[roundcounter-1]+" point. A wrong answer does not give you any points.</p>";
+                    }else{
+                        document.querySelector('#info').innerHTML="<p>Please decide whether there are more of "+explanation[userchoices[0].slice(0,-2)]+" or "+explanation[userchoices[0].slice(0,-2)]+" shape on the screen.</p>"+"<p>If you answer correctly you get "+deltalist_incentive[roundcounter-1]+" points. A wrong answer does not give you any points.</p>";
+                    }
 
                 //vue.shuffle();
                 //clearInterval(x);
