@@ -47,11 +47,13 @@
     }
 
     .list-compvare {
+        /*float: left;*/
         display: flex;
-        width: 90%;
+        width: 84%;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 5%;
+        margin-left: 0%;
         border-style: solid;
         border-width: 1px;
     }
@@ -121,6 +123,19 @@
         width: 5%;
         background-color: gainsboro;
     }
+    #rows{
+        margin-left: 5%;
+        float: left;
+        width: 5%;
+        /*background-color: yellow;*/
+        height: 100%;
+        display: inline;
+    }
+    #rows p{
+        margin-bottom: 60px;
+        margin-top: 90px;
+        font-size: medium;
+    }
 
 </style>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
@@ -159,7 +174,13 @@
 
 
     </div>
+    <div id="rows">
+        <p>Row 1</p>
+        <p>Row 2</p>
+        <p>Row 3</p>
+        <p>Row 4</p>
 
+    </div>
     <!--<button v-on:click="filter('all')">All</button>-->
     <!--<button v-on:click="filter('tag1')">Tag 1</button>-->
     <!--<button v-on:click="filter('tag2')">Tag 2</button>-->
@@ -419,14 +440,14 @@
             document.querySelector('#info').innerHTML="<p>Please decide whether there are more of "+explanation[userchoices[0].slice(0,-2)]+" or "+explanation[userchoices[0].slice(0,-2)]+" shape on the screen.</p>"+"<p>If you answer correctly you get "+deltalist_incentive[roundcounter-1]+" points. A wrong answer does not give you any points.</p>";
         }
 
-        var parentElement = document.getElementsByClassName("list-compvare-item")[0];
-        parentElement.innerHTML= "<span style='position: absolute;'>Row 1</span>"+parentElement.innerHTML;
-        var parentElement1 = document.getElementsByClassName("list-compvare-item")[8];
-        parentElement1.innerHTML= "<span style='position: absolute;'>Row 2</span>"+parentElement1.innerHTML;
-        var parentElement2 = document.getElementsByClassName("list-compvare-item")[16];
-        parentElement2.innerHTML= "<span style='position: absolute;'>Row 3</span>"+parentElement2.innerHTML;
-        var parentElement3 = document.getElementsByClassName("list-compvare-item")[24];
-        parentElement3.innerHTML= "<span style='position: absolute;'>Row 4</span>"+parentElement3.innerHTML;
+//        var parentElement = document.getElementsByClassName("list-compvare-item")[0];
+//        parentElement.innerHTML= "<span style='position: absolute;'>Row 1</span>"+parentElement.innerHTML;
+//        var parentElement1 = document.getElementsByClassName("list-compvare-item")[8];
+//        parentElement1.innerHTML= "<span style='position: absolute;'>Row 2</span>"+parentElement1.innerHTML;
+//        var parentElement2 = document.getElementsByClassName("list-compvare-item")[16];
+//        parentElement2.innerHTML= "<span style='position: absolute;'>Row 3</span>"+parentElement2.innerHTML;
+//        var parentElement3 = document.getElementsByClassName("list-compvare-item")[24];
+//        parentElement3.innerHTML= "<span style='position: absolute;'>Row 4</span>"+parentElement3.innerHTML;
 
         if(deltalist_incentive[roundcounter-1]==1){
             document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/40</span> This task will award you "+deltalist_incentive[roundcounter-1]+" point if you get it right";
@@ -585,21 +606,21 @@
             }else {
                 alert("You haven't made your choice yet!");
             }
-            parentElement.innerHTML =  (parentElement.innerHTML).slice(46);
-            parentElement = document.getElementsByClassName("list-compvare-item")[0];
-            parentElement.innerHTML= "<span style='position: absolute;'>Row 1</span>"+parentElement.innerHTML;
-
-            parentElement1.innerHTML =  (parentElement1.innerHTML).slice(46);
-            parentElement1 = document.getElementsByClassName("list-compvare-item")[8];
-            parentElement1.innerHTML= "<span style='position: absolute;'>Row 2</span>"+parentElement1.innerHTML;
-
-            parentElement2.innerHTML =  (parentElement2.innerHTML).slice(46);
-            parentElement2 = document.getElementsByClassName("list-compvare-item")[16];
-            parentElement2.innerHTML= "<span style='position: absolute;'>Row 3</span>"+parentElement2.innerHTML;
-
-            parentElement3.innerHTML =  (parentElement3.innerHTML).slice(46);
-            parentElement3 = document.getElementsByClassName("list-compvare-item")[24];
-            parentElement3.innerHTML= "<span style='position: absolute;'>Row 4</span>"+parentElement3.innerHTML;
+//            parentElement.innerHTML =  (parentElement.innerHTML).slice(46);
+//            parentElement = document.getElementsByClassName("list-compvare-item")[0];
+//            parentElement.innerHTML= "<span style='position: absolute;'>Row 1</span>"+parentElement.innerHTML;
+//
+//            parentElement1.innerHTML =  (parentElement1.innerHTML).slice(46);
+//            parentElement1 = document.getElementsByClassName("list-compvare-item")[8];
+//            parentElement1.innerHTML= "<span style='position: absolute;'>Row 2</span>"+parentElement1.innerHTML;
+//
+//            parentElement2.innerHTML =  (parentElement2.innerHTML).slice(46);
+//            parentElement2 = document.getElementsByClassName("list-compvare-item")[16];
+//            parentElement2.innerHTML= "<span style='position: absolute;'>Row 3</span>"+parentElement2.innerHTML;
+//
+//            parentElement3.innerHTML =  (parentElement3.innerHTML).slice(46);
+//            parentElement3 = document.getElementsByClassName("list-compvare-item")[24];
+//            parentElement3.innerHTML= "<span style='position: absolute;'>Row 4</span>"+parentElement3.innerHTML;
 
 
         })
