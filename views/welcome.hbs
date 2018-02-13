@@ -238,7 +238,10 @@
     <h3>HOW TO SCORE POINTS</h3>
     <p>
         There are four types of round that differ in the points that you get for answering correctly: 10 points, 6 points, 3 points, and 1 point. In all cases, a wrong answer gives you 0 points, so that 10 point rounds involve the highest stakes, while 1 point rounds the lowest stakes. Out of the 40 rounds there are exactly ten with each level of points at stake. The order of point levels is random.*
+    </p>
+    <p>
         *Note that the point scoring system and the experimental design explain why the maximum number of points that you can earn is 200 and why guessing would be expected to get you 100.
+
     </p>
 </div>
 <div class="divs hidden center" id="div_5">
@@ -287,7 +290,7 @@
 <div class="divs hidden center" id="div_10">
     <div  class="imgsdiv" id="imgs_4"></div>
     <p class="demo_p"></p>
-    <p>If you answer correctly you get 1 points. A wrong answer does not give you any points.</p>
+    <p>If you answer correctly you get 1 point. A wrong answer does not give you any points.</p>
     <button class="btn1" onclick="next()"></button>
     <button class="btn2" onclick="next()"></button>
 </div>
@@ -313,7 +316,7 @@
     <div id="nbsp">&nbsp</div>
 </div>
 <script>
-    var explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided','hendecagon':'11-sided','square':'4-sided'};
+    var explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided','hendecagon':'eleven-sided','square':'four-sided'};
     Number.prototype.pad = function(n) {
         for (var r = this.toString(); r.length < n; r = 0 + r);
         return r;
@@ -340,11 +343,16 @@
     var path1 = 'assets/shapesvg/'+userchoices[0].slice(0,-2)+'.svg';
     document.querySelector('#imgs').innerHTML+="<img src='"+path1+"'>";
     var shapes_str = '';
-    choicelist.forEach(x=>{
-        shapes_str+=" "+explanation[x]+",";
+    choicelist.forEach((x,i)=>{
+        if(i!=choicelist.length-1){
+            shapes_str+=" "+explanation[x]+",";
+        }else{
+            shapes_str=shapes_str.slice(0,shapes_str.length-1);
+            shapes_str+=" and "+explanation[x]+". ";
+        }
     })
-    document.querySelector('#please').innerHTML = 'Please decide whether there are more of '+explanation[userchoices[0].slice(0,-2)]+' or '+explanation[userchoices[1].slice(0,-2)]+' on the screen.'
-    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 32 geometric shapes. There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+' below are the '+choicelist.length+' geometric shapes you will encounter.';
+    document.querySelector('#please').innerHTML = 'Please decide whether there are more of '+explanation[userchoices[0].slice(0,-2)]+' or '+explanation[userchoices[1].slice(0,-2)]+' shapes on the screen.'
+    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 32 geometric shapes. There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+'Below are the '+choicelist.length+' geometric shapes you will encounter.';
 
     choicelist.forEach(x=>{
         var path = 'assets/shapesvg/'+x+'.svg';
