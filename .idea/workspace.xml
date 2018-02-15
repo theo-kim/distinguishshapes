@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg" afterPath="$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/welcome.hbs" afterPath="$PROJECT_DIR$/views/welcome.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg" afterPath="$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,21 +40,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pentagon.svg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pentagon.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="221" lean-forward="false" selection-start-line="0" selection-start-column="187" selection-end-line="0" selection-end-column="221" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heptagon.svg" pinned="false" current-in-tab="false">
+      <file leaf-file-name="heptagon.svg" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="221" lean-forward="false" selection-start-line="1" selection-start-column="221" selection-end-line="1" selection-end-column="221" />
+            <state relative-caret-position="0">
+              <caret line="0" column="279" lean-forward="false" selection-start-line="0" selection-start-column="279" selection-end-line="0" selection-end-column="279" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hendecagon.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/hendecagon.svg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="25" column="96" lean-forward="false" selection-start-line="25" selection-start-column="96" selection-end-line="25" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nonagon.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/nonagon.svg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -116,26 +134,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="149">
               <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result2.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/result2.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="63" column="4" lean-forward="false" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/result.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="338" column="0" lean-forward="true" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -221,7 +219,6 @@
         <option value="$PROJECT_DIR$/public/index_old.html" />
         <option value="$PROJECT_DIR$/views/layout.hbs" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/hexagon.svg" />
-        <option value="$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/nonagon.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/decagon.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/11.svg" />
@@ -236,6 +233,7 @@
         <option value="$PROJECT_DIR$/views/welcome.hbs" />
         <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg" />
+        <option value="$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg" />
       </list>
     </option>
   </component>
@@ -561,12 +559,12 @@
       <workItem from="1517378404069" duration="200000" />
       <workItem from="1517381258314" duration="11819000" />
       <workItem from="1518329460739" duration="2188000" />
-      <workItem from="1518348273809" duration="11308000" />
+      <workItem from="1518348273809" duration="11572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443832000" />
+    <option name="totallyTimeSpent" value="444096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -853,22 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/nonagon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/hendecagon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="25" column="96" lean-forward="false" selection-start-line="25" selection-start-column="96" selection-end-line="25" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/decagon.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -971,14 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="221" lean-forward="false" selection-start-line="1" selection-start-column="221" selection-end-line="1" selection-end-column="221" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/hexagon.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -987,10 +961,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/hendecagon.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="25" column="96" lean-forward="false" selection-start-line="25" selection-start-column="96" selection-end-line="25" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/nonagon.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="221" lean-forward="false" selection-start-line="0" selection-start-column="187" selection-end-line="0" selection-end-column="221" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="279" lean-forward="false" selection-start-line="0" selection-start-column="279" selection-end-line="0" selection-end-column="279" />
           <folding />
         </state>
       </provider>
