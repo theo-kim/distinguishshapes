@@ -564,7 +564,7 @@
                     if(total_score<100){
                        // alert();
                         document.querySelector('#thanks').style.display="block";
-                        document.querySelector('#thanks').innerHTML+="<p>Score less than 100, sorry you can't get bonus. Your total score is "+total_score+(JSON.stringify(scorelist)).replace(/,/g, '+')+"</p>"
+                        document.querySelector('#thanks').innerHTML+="<p>Score less than 100, sorry you can't get bonus. Your total score is "+total_score+(JSON.stringify(scorelist)).replace(/,/g, '+')+"</p><p>Your survey code is:"+user_id+"</p>";
                         //return user_data;
                         var req= new XMLHttpRequest();
                         req.open('POST', '/userdata', true);
@@ -827,7 +827,10 @@
 
                 if(submitcounter==3){
                     dialog.modal('hide');
+
                     document.querySelector('#thanks').style.display="block";
+                    document.querySelector('#thanks').innerHTML+="<p>Your survey code is:"+user_id+"</p>";
+
                     //return user_data;
                     var req= new XMLHttpRequest();
                     req.open('POST', '/userdata', true);
