@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg" afterPath="$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/welcome.hbs" afterPath="$PROJECT_DIR$/views/welcome.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,34 +19,54 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="595" column="184" lean-forward="false" selection-start-line="595" selection-start-column="184" selection-end-line="595" selection-end-column="184" />
+            <state relative-caret-position="227">
+              <caret line="454" column="219" lean-forward="false" selection-start-line="454" selection-start-column="219" selection-end-line="454" selection-end-column="219" />
               <folding>
-                <marker date="1518539976656" expanded="true" signature="16258:16277" ph="..." />
-                <marker date="1518539976656" expanded="true" signature="16457:16476" ph="..." />
-                <marker date="1518539976656" expanded="true" signature="16658:16677" ph="..." />
-                <marker date="1518539976656" expanded="true" signature="16859:16878" ph="..." />
-                <marker date="1518539976656" expanded="true" signature="17048:17065" ph="..." />
-                <marker date="1518539976656" expanded="true" signature="17284:17301" ph="..." />
-                <marker date="1518539976656" expanded="true" signature="23199:23216" ph="..." />
-                <marker date="1518539976656" expanded="true" signature="23451:23468" ph="..." />
-                <marker date="1518539976656" expanded="true" signature="25005:25024" ph="..." />
-                <marker date="1518539976656" expanded="true" signature="25291:25310" ph="..." />
-                <marker date="1518539976656" expanded="true" signature="25579:25598" ph="..." />
-                <marker date="1518539976656" expanded="true" signature="25867:25886" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="16258:16277" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="16457:16476" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="16658:16677" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="16859:16878" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="17048:17065" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="17285:17302" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="23201:23218" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="23453:23470" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="25007:25026" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="25293:25312" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="25581:25600" ph="..." />
+                <marker date="1518660153560" expanded="true" signature="25869:25888" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pentagon.svg" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pentagon.svg" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="heptagon.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="221" lean-forward="false" selection-start-line="1" selection-start-column="221" selection-end-line="1" selection-end-column="221" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hexagon.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/hexagon.svg">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="198" lean-forward="false" selection-start-line="0" selection-start-column="198" selection-end-line="0" selection-end-column="198" />
+              <caret line="0" column="167" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,17 +95,17 @@
       <file leaf-file-name="welcome.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="336" column="22" lean-forward="false" selection-start-line="336" selection-start-column="22" selection-end-line="336" selection-end-column="22" />
+            <state relative-caret-position="-142">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
-                <marker date="1518539835518" expanded="false" signature="7049:7064" ph="..." />
-                <marker date="1518539835518" expanded="true" signature="16710:16744" ph="..." />
-                <marker date="1518539835518" expanded="true" signature="22187:22194" ph="..." />
-                <marker date="1518539835518" expanded="true" signature="22187:22236" ph="..." />
-                <marker date="1518539835518" expanded="true" signature="22201:22236" ph="..." />
-                <marker date="1518539835518" expanded="true" signature="22202:22236" ph="..." />
-                <marker date="1518539835518" expanded="true" signature="22237:22242" ph="..." />
-                <marker date="1518539835518" expanded="true" signature="22541:22559" ph="..." />
+                <marker date="1518660058560" expanded="false" signature="7049:7064" ph="..." />
+                <marker date="1518660058560" expanded="true" signature="16710:16744" ph="..." />
+                <marker date="1518660058560" expanded="true" signature="22187:22194" ph="..." />
+                <marker date="1518660058560" expanded="true" signature="22187:22236" ph="..." />
+                <marker date="1518660058560" expanded="true" signature="22201:22236" ph="..." />
+                <marker date="1518660058560" expanded="true" signature="22202:22236" ph="..." />
+                <marker date="1518660058560" expanded="true" signature="22237:22242" ph="..." />
+                <marker date="1518660058560" expanded="true" signature="22541:22559" ph="..." />
               </folding>
             </state>
           </provider>
@@ -109,31 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/database.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="result.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/result.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="233">
               <caret line="338" column="0" lean-forward="true" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="240" column="0" lean-forward="false" selection-start-line="240" selection-start-column="0" selection-end-line="251" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -153,8 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>shapes_str</find>
-      <find>Your task</find>
       <find>You have &quot;+rdtime+&quot;to</find>
       <find>You have</find>
       <find>win</find>
@@ -183,6 +183,8 @@
       <find>expla</find>
       <find>explanation</find>
       <find>lease decide whether the</find>
+      <find>20</find>
+      <find>will award you</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -231,9 +233,9 @@
         <option value="$PROJECT_DIR$/views/admin.hbs" />
         <option value="$PROJECT_DIR$/views/result2.hbs" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/square.svg" />
-        <option value="$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg" />
         <option value="$PROJECT_DIR$/views/welcome.hbs" />
         <option value="$PROJECT_DIR$/views/index.hbs" />
+        <option value="$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg" />
       </list>
     </option>
   </component>
@@ -559,12 +561,12 @@
       <workItem from="1517378404069" duration="200000" />
       <workItem from="1517381258314" duration="11819000" />
       <workItem from="1518329460739" duration="2188000" />
-      <workItem from="1518348273809" duration="10610000" />
+      <workItem from="1518348273809" duration="11308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443134000" />
+    <option name="totallyTimeSpent" value="443832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -859,22 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/hexagon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="351" lean-forward="false" selection-start-line="0" selection-start-column="351" selection-end-line="0" selection-end-column="351" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="221" lean-forward="false" selection-start-line="1" selection-start-column="221" selection-end-line="1" selection-end-column="221" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/hendecagon.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -947,49 +933,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="198" lean-forward="false" selection-start-line="0" selection-start-column="198" selection-end-line="0" selection-end-column="198" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="336" column="22" lean-forward="false" selection-start-line="336" selection-start-column="22" selection-end-line="336" selection-end-column="22" />
+        <state relative-caret-position="-142">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
-            <marker date="1518539835518" expanded="false" signature="7049:7064" ph="..." />
-            <marker date="1518539835518" expanded="true" signature="16710:16744" ph="..." />
-            <marker date="1518539835518" expanded="true" signature="22187:22194" ph="..." />
-            <marker date="1518539835518" expanded="true" signature="22187:22236" ph="..." />
-            <marker date="1518539835518" expanded="true" signature="22201:22236" ph="..." />
-            <marker date="1518539835518" expanded="true" signature="22202:22236" ph="..." />
-            <marker date="1518539835518" expanded="true" signature="22237:22242" ph="..." />
-            <marker date="1518539835518" expanded="true" signature="22541:22559" ph="..." />
+            <marker date="1518660058560" expanded="false" signature="7049:7064" ph="..." />
+            <marker date="1518660058560" expanded="true" signature="16710:16744" ph="..." />
+            <marker date="1518660058560" expanded="true" signature="22187:22194" ph="..." />
+            <marker date="1518660058560" expanded="true" signature="22187:22236" ph="..." />
+            <marker date="1518660058560" expanded="true" signature="22201:22236" ph="..." />
+            <marker date="1518660058560" expanded="true" signature="22202:22236" ph="..." />
+            <marker date="1518660058560" expanded="true" signature="22237:22242" ph="..." />
+            <marker date="1518660058560" expanded="true" signature="22541:22559" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="595" column="184" lean-forward="false" selection-start-line="595" selection-start-column="184" selection-end-line="595" selection-end-column="184" />
+        <state relative-caret-position="227">
+          <caret line="454" column="219" lean-forward="false" selection-start-line="454" selection-start-column="219" selection-end-line="454" selection-end-column="219" />
           <folding>
-            <marker date="1518539976656" expanded="true" signature="16258:16277" ph="..." />
-            <marker date="1518539976656" expanded="true" signature="16457:16476" ph="..." />
-            <marker date="1518539976656" expanded="true" signature="16658:16677" ph="..." />
-            <marker date="1518539976656" expanded="true" signature="16859:16878" ph="..." />
-            <marker date="1518539976656" expanded="true" signature="17048:17065" ph="..." />
-            <marker date="1518539976656" expanded="true" signature="17284:17301" ph="..." />
-            <marker date="1518539976656" expanded="true" signature="23199:23216" ph="..." />
-            <marker date="1518539976656" expanded="true" signature="23451:23468" ph="..." />
-            <marker date="1518539976656" expanded="true" signature="25005:25024" ph="..." />
-            <marker date="1518539976656" expanded="true" signature="25291:25310" ph="..." />
-            <marker date="1518539976656" expanded="true" signature="25579:25598" ph="..." />
-            <marker date="1518539976656" expanded="true" signature="25867:25886" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="16258:16277" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="16457:16476" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="16658:16677" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="16859:16878" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="17048:17065" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="17285:17302" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="23201:23218" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="23453:23470" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="25007:25026" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="25293:25312" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="25581:25600" ph="..." />
+            <marker date="1518660153560" expanded="true" signature="25869:25888" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="221" lean-forward="false" selection-start-line="1" selection-start-column="221" selection-end-line="1" selection-end-column="221" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/hexagon.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="167" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/shapesvg/pentagon.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
