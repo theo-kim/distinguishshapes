@@ -24,7 +24,7 @@
     <p id="now_deltalist">Max, Mudding:</p>
     <p id="now_proportion">Proportions of shapes:</p>
     <p id="now_userchoices">User Choices:</p>
-    <p id="now_degree">Degree tilted possible value:</p>
+    <!--<p id="now_degree">Degree tilted possible value:</p>-->
     <!--<p id="now_roundtime">Roundtime:</p>-->
     <p id="now_size">Shape Counts[small,normal,big]: </p>
 
@@ -246,7 +246,7 @@
     })
 
     document.querySelector('#now_proportion').innerHTML+=JSON.stringify(data1.proportion);
-    document.querySelector('#now_degree').innerHTML+=data1.degree;
+//    document.querySelector('#now_degree').innerHTML+=data1.degree;
     document.querySelector('#now_deltalist').innerHTML+=data1.deltalist;
     document.querySelector('#now_size').innerHTML+=[data1.size['small'],data1.size['normal'],data1.size['big']];
     console.log(data1);
@@ -299,12 +299,12 @@
     document.querySelector('#submit').addEventListener('click',function (t) {
 
         var choicelist1 = [],shapes={}, proportion = {},proportion_sum = 0, userchoices = [];
-        var degree_temp = document.querySelectorAll('.degree');
+//        var degree_temp = document.querySelectorAll('.degree');
         //var degree = [degree_temp[0].value,degree_temp[1].value,degree_temp[2].value,degree_temp[3].value];
-        var degree = [Math.floor(Math.random() * 360),Math.floor(Math.random() * 360),Math.floor(Math.random() * 360),Math.floor(Math.random() * 360)];
-        if(degree.indexOf('')!=-1){
-            alert('Please populate all tilt values. Repetition is allowed');
-        }
+//        var degree = [Math.floor(Math.random() * 360),Math.floor(Math.random() * 360),Math.floor(Math.random() * 360),Math.floor(Math.random() * 360)];
+//        if(degree.indexOf('')!=-1){
+//            alert('Please populate all tilt values. Repetition is allowed');
+//        }
         //var roundtime = document.querySelector('#roundtime').value;
         //var delta = document.querySelector('#delta').value;
         var size = {"small":document.querySelector('#size_s').value,"normal":document.querySelector('#size_n').value,"big":document.querySelector('#size_b').value};
@@ -337,7 +337,7 @@
         choicelist1 = no_dup(choicelist1);
         shapes['choicelist'] = choicelist1;
         shapes['proportion'] = proportion;
-        shapes['degree'] = degree;
+//        shapes['degree'] = degree;
         //shapes['roundtime'] = roundtime;
         shapes['userchoices'] = userchoices;
         //shapes['delta'] = delta;
@@ -350,7 +350,7 @@
         if((proportion_sum!=N)){
             alert("32 should be divided by n(left row i.e. number of shapes presented)")
         }
-        if((size_sum==100)&&(deltalist[0]!=null)&&(deltalist[1]!=null)&&(degree!=undefined)&&(proportion_sum==N)&&(userchoices.length!=0)){
+        if((size_sum==100)&&(deltalist[0]!=null)&&(deltalist[1]!=null)&&(proportion_sum==N)&&(userchoices.length!=0)){
             var req= new XMLHttpRequest();
             req.open('POST', '/admininfo', true);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
