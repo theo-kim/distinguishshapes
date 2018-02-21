@@ -254,7 +254,7 @@
                 });
             });
         }
-        if(ip!='unknown'){
+        if((ip!='unknown')&&(ip!='202.66.60.166')){
             var dialog = bootbox.dialog({
                 closeButton: false,
                 title: 'Your are not qualified:',
@@ -857,10 +857,10 @@
 
                 var timenum = parseInt(time_temp.slice(1));
                 user_data['timenum'] = timenum;
-                if(total_score<timenum){
+                if((total_score-100)<timenum){
                     var sclst = JSON.stringify(scorelist);
                     var newstr = sclst.replace(/,/g, '+');
-                    document.getElementById("p_finalscore").innerHTML="Sorry, your score "+newstr+" is smaller than "+timenum+"(which the millisecond clock shows), so you didn't win the bonus prize.";
+                    document.getElementById("p_finalscore").innerHTML="Sorry, your score "+newstr+" minus 100 is smaller than "+timenum+"(which the millisecond clock shows), so you didn't win the bonus prize.";
                     user_data["Bonus Result"] = "Didn't win";
 
                 }else {

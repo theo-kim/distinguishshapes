@@ -291,13 +291,11 @@ app.post('/result/feedback',function (req,res) {
                 if(err) {
                     console.log(err);
                     res.send('an error has occurred, please check the server output');
-
                 }
             });
         }
     })
     res.end();
-
 });
 app.post('/result/post', function(req, res) {
     console.log("app post",req.body.user);
@@ -608,6 +606,9 @@ function init(new_json, which) {
             })
             console.log("user[0].data",usercode,user[0])
             if(user.length!=0){
+                if(JSON.parse((user[0].data).toString()).totalReturn_beforePayment)
+
+
             bonus = parseFloat(JSON.parse((user[0].data).toString()).totalReturn_beforePayment )* (100 - parseFloat(JSON.parse((user[0].data).toString()).totolSortTimes)*parseFloat(JSON.parse((user[0].data).toString()).percent)) / 10000
 
             return {"Amount": bonus.toFixed(2), "CurrencyCode": "USD"};
