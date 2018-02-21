@@ -44,11 +44,12 @@ app.get('/welcome',function (req,res) {
 //     res.sendFile('index_old.html');
 // });
 app.get('/',function (req,res) {
-    Admininfo.find({}, function(err, result){
-        res.render('index',{'result':result});
+    Click.find({}, function(err, result1) {
+
+        Admininfo.find({}, function (err, result) {
+            res.render('index', {'result': result,'result1':result1});
+        });
     });
-
-
 });
 app.get('/database',function (req,res) {
 
@@ -61,7 +62,6 @@ app.get('/database',function (req,res) {
         //res.render('result', {result:result.reverse(),result1:result1});
         // res.render('database.html', { result:result });
         res.render('result2', {result1:result1.sort().reverse()});
-
     });
 
 
@@ -81,7 +81,6 @@ app.post('/userdata',function(req,res){
                 if(err) {
                     console.log(err);
                     res.send('an error has occurred, please check the server output');
-
                 }
                 else{
                     res.redirect('/');

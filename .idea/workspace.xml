@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17132a6-54a7-483f-aa58-a18dafb9b6f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin.hbs" afterPath="$PROJECT_DIR$/views/admin.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/result2.hbs" afterPath="$PROJECT_DIR$/views/result2.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,21 +21,21 @@
       <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="465" column="27" lean-forward="false" selection-start-line="465" selection-start-column="21" selection-end-line="465" selection-end-column="27" />
+            <state relative-caret-position="318">
+              <caret line="266" column="61" lean-forward="false" selection-start-line="266" selection-start-column="61" selection-end-line="266" selection-end-column="61" />
               <folding>
-                <marker date="1518752945238" expanded="true" signature="16245:16264" ph="..." />
-                <marker date="1518752945238" expanded="true" signature="16444:16463" ph="..." />
-                <marker date="1518752945238" expanded="true" signature="16645:16664" ph="..." />
-                <marker date="1518752945238" expanded="true" signature="16846:16865" ph="..." />
-                <marker date="1518752945238" expanded="true" signature="17035:17052" ph="..." />
-                <marker date="1518752945238" expanded="true" signature="17272:17289" ph="..." />
-                <marker date="1518752945238" expanded="true" signature="23229:23246" ph="..." />
-                <marker date="1518752945238" expanded="true" signature="23481:23498" ph="..." />
-                <marker date="1518752945238" expanded="true" signature="25035:25054" ph="..." />
-                <marker date="1518752945238" expanded="true" signature="25321:25340" ph="..." />
-                <marker date="1518752945238" expanded="true" signature="25609:25628" ph="..." />
-                <marker date="1518752945238" expanded="true" signature="25897:25916" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="17891:17910" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="18090:18109" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="18291:18310" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="18492:18511" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="18681:18698" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="18918:18935" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="24878:24895" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="25130:25147" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="26684:26703" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="26970:26989" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="27258:27277" ph="..." />
+                <marker date="1519202987618" expanded="true" signature="27546:27565" ph="..." />
               </folding>
             </state>
           </provider>
@@ -45,8 +44,8 @@
       <file leaf-file-name="welcome.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-142">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="408" column="13" lean-forward="true" selection-start-line="408" selection-start-column="0" selection-end-line="409" selection-end-column="0" />
               <folding>
                 <marker date="1518660058560" expanded="false" signature="7049:7064" ph="..." />
                 <marker date="1518660058560" expanded="true" signature="16710:16744" ph="..." />
@@ -64,8 +63,8 @@
       <file leaf-file-name="result2.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/result2.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="54" column="333" lean-forward="false" selection-start-line="54" selection-start-column="327" selection-end-line="54" selection-end-column="333" />
+            <state relative-caret-position="249">
+              <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -84,8 +83,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="364" column="33" lean-forward="false" selection-start-line="364" selection-start-column="33" selection-end-line="364" selection-end-column="33" />
+            <state relative-caret-position="273">
+              <caret line="49" column="67" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -105,14 +104,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>==1</find>
-      <find>roundcounter-1]</find>
-      <find>roundcounter-1]==1</find>
-      <find>Row</find>
-      <find>make</find>
-      <find>document.getElementsByClassName(&quot;list-compvare-item&quot;)</find>
-      <find>parentElement</find>
-      <find>list-compvare</find>
       <find>float</find>
       <find>Row 1</find>
       <find>90px</find>
@@ -133,8 +124,16 @@
       <find>init</find>
       <find>35U0MRQMUJ7CR9UIZQDW5FW</find>
       <find>360</find>
+      <find>index</find>
+      <find>result</find>
       <find>20</find>
+      <find>data</find>
       <find>degree</find>
+      <find>ip</find>
+      <find>surv</find>
+      <find>dialog</find>
+      <find>unknown</find>
+      <find>href</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,7 +176,6 @@
         <option value="$PROJECT_DIR$/public/assets/shapesvg/hendecagon.svg" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/octagon.svg" />
         <option value="$PROJECT_DIR$/public/random.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/result.hbs" />
         <option value="$PROJECT_DIR$/public/assets/shapesvg/square.svg" />
         <option value="$PROJECT_DIR$/views/welcome.hbs" />
@@ -185,6 +183,7 @@
         <option value="$PROJECT_DIR$/public/assets/shapesvg/heptagon.svg" />
         <option value="$PROJECT_DIR$/views/result2.hbs" />
         <option value="$PROJECT_DIR$/views/admin.hbs" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/index.hbs" />
       </list>
     </option>
@@ -511,12 +510,12 @@
       <workItem from="1517378404069" duration="200000" />
       <workItem from="1517381258314" duration="11819000" />
       <workItem from="1518329460739" duration="2188000" />
-      <workItem from="1518348273809" duration="13681000" />
+      <workItem from="1518348273809" duration="16883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446205000" />
+    <option name="totallyTimeSpent" value="449407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -883,18 +882,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/views/admin.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="364" column="33" lean-forward="false" selection-start-line="364" selection-start-column="33" selection-end-line="364" selection-end-column="33" />
+          <caret line="304" column="19" lean-forward="false" selection-start-line="304" selection-start-column="13" selection-end-line="304" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="49" column="67" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/result2.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/welcome.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-142">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="408" column="13" lean-forward="true" selection-start-line="408" selection-start-column="0" selection-end-line="409" selection-end-column="0" />
           <folding>
             <marker date="1518660058560" expanded="false" signature="7049:7064" ph="..." />
             <marker date="1518660058560" expanded="true" signature="16710:16744" ph="..." />
@@ -908,39 +923,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/result2.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="54" column="333" lean-forward="false" selection-start-line="54" selection-start-column="327" selection-end-line="54" selection-end-column="333" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="304" column="19" lean-forward="false" selection-start-line="304" selection-start-column="13" selection-end-line="304" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="465" column="27" lean-forward="false" selection-start-line="465" selection-start-column="21" selection-end-line="465" selection-end-column="27" />
+        <state relative-caret-position="318">
+          <caret line="266" column="61" lean-forward="false" selection-start-line="266" selection-start-column="61" selection-end-line="266" selection-end-column="61" />
           <folding>
-            <marker date="1518752945238" expanded="true" signature="16245:16264" ph="..." />
-            <marker date="1518752945238" expanded="true" signature="16444:16463" ph="..." />
-            <marker date="1518752945238" expanded="true" signature="16645:16664" ph="..." />
-            <marker date="1518752945238" expanded="true" signature="16846:16865" ph="..." />
-            <marker date="1518752945238" expanded="true" signature="17035:17052" ph="..." />
-            <marker date="1518752945238" expanded="true" signature="17272:17289" ph="..." />
-            <marker date="1518752945238" expanded="true" signature="23229:23246" ph="..." />
-            <marker date="1518752945238" expanded="true" signature="23481:23498" ph="..." />
-            <marker date="1518752945238" expanded="true" signature="25035:25054" ph="..." />
-            <marker date="1518752945238" expanded="true" signature="25321:25340" ph="..." />
-            <marker date="1518752945238" expanded="true" signature="25609:25628" ph="..." />
-            <marker date="1518752945238" expanded="true" signature="25897:25916" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="17891:17910" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="18090:18109" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="18291:18310" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="18492:18511" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="18681:18698" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="18918:18935" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="24878:24895" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="25130:25147" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="26684:26703" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="26970:26989" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="27258:27277" ph="..." />
+            <marker date="1519202987618" expanded="true" signature="27546:27565" ph="..." />
           </folding>
         </state>
       </provider>

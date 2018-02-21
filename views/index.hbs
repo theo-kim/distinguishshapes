@@ -14,6 +14,15 @@
 <div id="data" class="hidden">
     {{result}}
 </div>
+<div class="hidden">
+    {{#each result1}}
+        <!--<div class = code>{{this.user}}</div>-->
+        <div class = "ip">
+            {{this.data}}
+        </div>
+    {{/each}}
+</div>
+
 <style>
     #thanks{
         text-align:center;
@@ -200,6 +209,7 @@
 </div>
 
 <script>
+
     document.querySelector('body').style.backgroundColor = 'white';
     var explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided','hendecagon':'11-sided','square':'4-sided'};
     var choice_round = [];
@@ -217,15 +227,55 @@
 //    for(var i=0;i<10;i++){
 //        delta_list.push(posneg[Math.floor(Math.random() * 2)])
 //    }
+    var data_ip = document.querySelectorAll('.ip');
+    var new_json = [];
+    data_ip.forEach(x=>{
+        new_json.push((JSON.parse(x.innerHTML)).user_ip)
+    });
+
     $.getJSON('//freegeoip.net/json/?callback=?', function (data) {
         ip = data.ip;
         city = data.country_name+ "\n" + data.region_name + "\n" + data.city;
         user_data["user_city"] = city;
         user_data["user_ip"] = ip;
+        console.log("ip",ip);
+        if(ip == 'unknown'){
+            var dialog = bootbox.dialog({
+                closeButton: false,
+                title: 'Your information is unknown:',
+                message: '<form id="survey" action="/action_page.php"><br> You may not get bonused since your information is unknown to the system.<br><br>  <input id="continue1" class="btn btn-default" type="submit" value="Continue"> </form> ',
+            });
+            dialog.init(function(){
+                var a = document.querySelector("#continue1")
+                a.addEventListener('click',function(evt){
+                    evt.preventDefault();
+
+                    dialog.modal('hide');
+                });
+            });
+        }
+        if(ip!='unknown'){
+            var dialog = bootbox.dialog({
+                closeButton: false,
+                title: 'Your are not qualified:',
+                message: '<form id="survey" action="/action_page.php"><br> You may not get bonused since your past result has already been recorded to the system.<br><br>  <input id="continue1" class="btn btn-default" type="submit" value="Continue"> </form> ',
+            });
+            dialog.init(function(){
+                var a = document.querySelector("#continue1")
+                a.addEventListener('click',function(evt){
+                    evt.preventDefault();
+                    location.href = 'https://www.mturk.com/';
+                    dialog.modal('hide');
+                });
+            });
+        }
+
     });
     var data = (document.querySelector('#data')).innerHTML;
+//    var data_ip = (document.querySelector('#data1')).innerHTML;
     var start = data.indexOf('data');
     var data1 = JSON.parse((data.slice(start+7,-14)));
+//    var ipinfo = JSON.parse(data_ip);
     console.log((data1));
 //    there's proportion object, so not useful var choicelist = data1.choicelist;
     var choicelist = data1.choicelist;
@@ -237,15 +287,9 @@
     var deltalist_incentive = [];
     var deltalist_shapecount = [];
     var scorelist = [];
-    //console.log(decoys);
-//    for(var i=0;i<10;i++){
-//        var obj = {};
-//        var random = getRandomInt(1,userchoices.length+1);
-//        for(var m=0;m<deltalist.length;m++){
-//            obj[(userchoices[(random+m)%(userchoices.length)]).slice(0,-2)] = deltalist[m];
-//        }
-//        deltalist_10.push(obj);
-//    }
+
+
+
 
     var totalrounds = 40;
     for(var i=0;i<totalrounds;i++){
@@ -572,9 +616,8 @@
                         req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
 
                     }else{
-                    clock(user_data);
+                        clock(user_data);
                     }
-
                 }else{
                 var vuelist = [];
                 var counter1 = 0;
