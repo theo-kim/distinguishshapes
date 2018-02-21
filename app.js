@@ -55,16 +55,17 @@ app.get('/database',function (req,res) {
 
     app.set('view engine', 'hbs');
     "use strict";
+    Bonus.find({}, function(err, bonusinfo) {
 
-    Click.find({}, function(err, result1){
-        //init(result,'workid');
-        console.log("Players Result",result1);
-        //res.render('result', {result:result.reverse(),result1:result1});
-        // res.render('database.html', { result:result });
-        res.render('result2', {result1:result1.sort().reverse()});
+        Click.find({}, function (err, result1) {
+            //init(result,'workid');
+            console.log("Players Result", result1);
+            //res.render('result', {result:result.reverse(),result1:result1});
+            // res.render('database.html', { result:result });
+            res.render('result2', {result1: result1.sort().reverse(),bonusinfo:bonusinfo});
+        });
+
     });
-
-
 
 });
 app.post('/userdata',function(req,res){
@@ -606,10 +607,11 @@ function init(new_json, which) {
             })
             console.log("user[0].data",usercode,user[0])
             if(user.length!=0){
-                if(JSON.parse((user[0].data).toString()).totalReturn_beforePayment)
+                if(JSON.parse((user[0].data).toString())['Bonus Result']=='Win'){
+                    bonus = '30';
+                }
 
-
-            bonus = parseFloat(JSON.parse((user[0].data).toString()).totalReturn_beforePayment )* (100 - parseFloat(JSON.parse((user[0].data).toString()).totolSortTimes)*parseFloat(JSON.parse((user[0].data).toString()).percent)) / 10000
+            //bonus = parseFloat(JSON.parse((user[0].data).toString()).totalReturn_beforePayment )* (100 - parseFloat(JSON.parse((user[0].data).toString()).totolSortTimes)*parseFloat(JSON.parse((user[0].data).toString()).percent)) / 10000
 
             return {"Amount": bonus.toFixed(2), "CurrencyCode": "USD"};
             }
