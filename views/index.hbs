@@ -213,6 +213,7 @@
     document.querySelector('body').style.backgroundColor = 'white';
     var explanation = {'pentagon':'five-sided','hexagon':'six-sided','heptagon':'seven-sided','octagon':'eight-sided','nonagon':'nine-sided','decagon':'ten-sided','hendecagon':'11-sided','square':'4-sided'};
     var choice_round = [];
+    var vuelist = [];
     var TF_round = [];
     var Score = [];
     var response = 'null';
@@ -254,21 +255,21 @@
                 });
             });
         }
-        if((ip!='unknown')&&(ip!='202.66.60.166')){
-            var dialog = bootbox.dialog({
-                closeButton: false,
-                title: 'Your are not qualified:',
-                message: '<form id="survey" action="/action_page.php"><br> You may not get bonused since your past result has already been recorded to the system.<br><br>  <input id="continue1" class="btn btn-default" type="submit" value="Continue"> </form> ',
-            });
-            dialog.init(function(){
-                var a = document.querySelector("#continue1")
-                a.addEventListener('click',function(evt){
-                    evt.preventDefault();
-                    location.href = 'https://www.mturk.com/';
-                    dialog.modal('hide');
-                });
-            });
-        }
+//        if((ip!='unknown')&&(ip!='202.66.60.166')){
+//            var dialog = bootbox.dialog({
+//                closeButton: false,
+//                title: 'Your are not qualified:',
+//                message: '<form id="survey" action="/action_page.php"><br> You may not get bonused since your past result has already been recorded to the system.<br><br>  <input id="continue1" class="btn btn-default" type="submit" value="Continue"> </form> ',
+//            });
+//            dialog.init(function(){
+//                var a = document.querySelector("#continue1")
+//                a.addEventListener('click',function(evt){
+//                    evt.preventDefault();
+//                    location.href = 'https://www.mturk.com/';
+//                    dialog.modal('hide');
+//                });
+//            });
+//        }
 
     });
     var data = (document.querySelector('#data')).innerHTML;
@@ -326,7 +327,7 @@
     }
     survey(user_data);
 
-    var choice_second = 'null',answer = getAnswer(0);
+    var choice_second = 'null',answer = getAnswer(1);
 
     var minutes1 = Math.floor((data1.roundtime / (60)));
     var seconds1 = Math.floor((data1.roundtime % (60)));
@@ -391,12 +392,15 @@
         }
         )
 
-        var vuelist = [];
+        vuelist = [];
         var counter1 = 0;
         console.log(data1)
-        makeShapes(proportion,vuelist,counter1,0)
+        makeShapes(proportion,vuelist,counter1,0);
+        user_data['Round 0(shape count)'] = deltalist_shapecount;
+        user_data['Round -1(shape count)'] = deltalist_shapecount;
 
         function makeShapes(proportion,vuelist,counter1,rd) {
+            rd+=1;
             var sz = data1.size;
             var szlist= [];
             for (var i = 0; i<parseInt(parseInt(sz.small)/10); i++){
@@ -453,7 +457,7 @@
             methods: {
                 shuffle: function () {
                     if(choice_second!="null"){
-                        this.items = _.shuffle(this.items)
+                        this.items = _.shuffle(shuffleArray(vuelist))
                     }
                 },
                 filter: function(tag) {
@@ -555,6 +559,8 @@
         var countadder = 0;
         // Update the count down every 1 second
        // var distance = 0;
+        user_data['Round 0(mud)'] = list_deltas.slice(0,(choicelist.length));
+
         document.querySelector('#next').addEventListener('click',function () {
             if(choice_second!="null"){
 //            document.querySelector('#next').style.display='none';
@@ -564,9 +570,9 @@
             document.getElementById("btn4").style.background='buttonface';
             document.getElementById("btn5").style.background='buttonface';
 
-            var roundname = "Round "+ (roundcounter-1) + "(mud)";
-            var roundname_shape = "Round "+ (roundcounter-1) + "(shape count)";
-
+            var roundname = "Round "+ (roundcounter) + "(mud)";
+            var roundname_shape = "Round "+ (roundcounter) + "(shape count)";
+            console.log('roundname_shape',roundname_shape)
             TF_round.push(choice_second);
             choice_round.push(response);
 
@@ -583,20 +589,21 @@
             //choice_second = 'null';
             time_round.push(countadder);
             var temp_mudlist = list_deltas.slice((roundcounter-1)*(choicelist.length),(roundcounter)*(choicelist.length));
-            user_data[roundname] = list_deltas.slice((roundcounter-1)*(choicelist.length),(roundcounter)*(choicelist.length));
-            console.log('user_data[roundname]',user_data[roundname])
+            user_data[roundname] = list_deltas.slice((roundcounter)*(choicelist.length),(roundcounter+1)*(choicelist.length));
+                user_data['Round 0(mud)'] = user_data['Round 1(mud)'];
+
+                console.log('user_data[roundname]',user_data[roundname]);
             user_data['TF_round'] = TF_round;
             user_data['choice_round'] = choice_round;
 
             user_data['time_round'] = time_round;
-            user_data[roundname_shape] = deltalist_shapecount;
             user_data['incentives'] = deltalist_incentive;
             var req= new XMLHttpRequest();
             req.open('POST', '/userdata', true);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
             req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
 
-            deltalist_shapecount = [];
+                deltalist_shapecount = [];
             choice_second = 'null';
             countadder = 0;
             if (countadder == 0) {
@@ -619,11 +626,13 @@
                         clock(user_data);
                     }
                 }else{
-                var vuelist = [];
+                vuelist = [];
                 var counter1 = 0;
                 makeShapes(proportion, vuelist, counter1, roundcounter);
-                answer = getAnswer(roundcounter);
+                user_data[roundname_shape] = deltalist_shapecount;
                 roundcounter++;
+                deltalist_shapecount = [];
+                answer = getAnswer(roundcounter-1);
 
                 user_data["RoundCounter(40 in total)"] = roundcounter;
                 user_data["Score"] = Score;
