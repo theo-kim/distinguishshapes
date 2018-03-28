@@ -294,8 +294,16 @@
 
 
     var totalrounds = 40;
+    var bonuslist = [];
+    for(var tempi = 0;tempi<10;tempi++){
+        for(var tempo = 0;tempo<4;tempo++) {
+            bonuslist.push([1,3,6,10][tempo])
+        }
+    }
+    console.log(bonuslist);
     for(var i=0;i<totalrounds;i++){
-        var incentives = [1,3,6,10][getRandomInt(0,4)];
+        //var incentives = [1,3,6,10][getRandomInt(0,4)];
+        var incentives = parseInt(bonuslist.splice(Math.floor(Math.random()*bonuslist.length), 1));
 
         //datalist[max,mudding]
         var mudding = getRandomInt(-parseInt(deltalist[1]),parseInt(deltalist[1]));
@@ -326,6 +334,7 @@
 
         deltalist_10.push(obj);
     }
+    deltalist_10.push(deltalist_10[39]);
     survey(user_data);
 
     var choice_second = 'null',answer = getAnswer(1);
@@ -629,7 +638,12 @@
                 }else{
                 vuelist = [];
                 var counter1 = 0;
-                makeShapes(proportion, vuelist, counter1, roundcounter);
+                if(roundcounter==40){
+                    makeShapes(proportion, vuelist, counter1, roundcounter-1);
+
+                }else{
+                    makeShapes(proportion, vuelist, counter1, roundcounter);
+                }
                 user_data[roundname_shape] = deltalist_shapecount;
                 roundcounter++;
                 deltalist_shapecount = [];
@@ -864,7 +878,7 @@
                 clockcounter=false;
                 a.value = "Exit";
                 var time_temp = (document.querySelector('#mi').innerHTML);
-
+                user_data["Bonus Result"] = "Didn't win";
                 var timenum = parseInt(time_temp.slice(1));
                 user_data['timenum'] = timenum;
                 if((total_score-100)<timenum){
@@ -872,7 +886,10 @@
                     var newstr = sclst.replace(/,/g, '+');
                     document.getElementById("p_finalscore").innerHTML="Sorry, your score "+newstr+" minus 100 is smaller than "+timenum+"(which the millisecond clock shows), so you didn't win the bonus prize.";
                     user_data["Bonus Result"] = "Didn't win";
-
+                    var req= new XMLHttpRequest();
+                    req.open('POST', '/userdata', true);
+                    req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+                    req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
                 }else {
                     document.getElementById("p_finalscore").innerHTML="Congratulations! you have won the bonus prize!";
                     user_data["Bonus Result"] = "Win";
