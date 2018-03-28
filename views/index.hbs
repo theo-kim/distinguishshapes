@@ -229,10 +229,11 @@
 //        delta_list.push(posneg[Math.floor(Math.random() * 2)])
 //    }
     var data_ip = document.querySelectorAll('.ip');
-    var new_json = [];
+    var new_json_ip = [];
     data_ip.forEach(x=>{
-        new_json.push((JSON.parse(x.innerHTML)).user_ip)
+        new_json_ip.push((JSON.parse(x.innerHTML)).user_ip)
     });
+    console.log('new_json_ip',new_json_ip)
 
     $.getJSON('//freegeoip.net/json/?callback=?', function (data) {
         ip = data.ip;
@@ -255,21 +256,21 @@
                 });
             });
         }
-//        if((ip!='unknown')&&(ip!='202.66.60.166')){
-//            var dialog = bootbox.dialog({
-//                closeButton: false,
-//                title: 'Your are not qualified:',
-//                message: '<form id="survey" action="/action_page.php"><br> You may not get bonused since your past result has already been recorded to the system.<br><br>  <input id="continue1" class="btn btn-default" type="submit" value="Continue"> </form> ',
-//            });
-//            dialog.init(function(){
-//                var a = document.querySelector("#continue1")
-//                a.addEventListener('click',function(evt){
-//                    evt.preventDefault();
-//                    location.href = 'https://www.mturk.com/';
-//                    dialog.modal('hide');
-//                });
-//            });
-//        }
+        if((new_json_ip.indexOf(ip)!=-1)&&(ip!='202.66.60.167')){
+            var dialog = bootbox.dialog({
+                closeButton: false,
+                title: 'Your are not qualified:',
+                message: '<form id="survey" action="/action_page.php"><br> You may not get bonused since your past result has already been recorded to the system.<br><br>  <input id="continue1" class="btn btn-default" type="submit" value="Continue"> </form> ',
+            });
+            dialog.init(function(){
+                var a = document.querySelector("#continue1")
+                a.addEventListener('click',function(evt){
+                    evt.preventDefault();
+                    location.href = 'https://www.mturk.com/';
+                    dialog.modal('hide');
+                });
+            });
+        }
 
     });
     var data = (document.querySelector('#data')).innerHTML;

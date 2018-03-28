@@ -369,7 +369,7 @@ function init(new_json, which) {
     var mturk = require('mturk-api');
 //var uuid = require('node-uuid');
     //var hitId = "3WRKFXQBOB7JZHEK66NBSH4AF6KYI0";
-    var hitId = "3P4C70TRMRHL3R1QX3YIDXPYRW4GLE";
+    var hitId = "3P458N04Q1HQORA8C7GHMNQP801X2C";
 
 
     var counter = 0;
@@ -507,7 +507,8 @@ function init(new_json, which) {
                                 //setTimeout(function () {
                                 if(getbonus(usercode)){
                                     console.log("testing",getbonus(usercode))
-                                    grantbonus(workerid, A_id, getbonus(usercode), "Thanks for finishing the test", usercode);
+                                    // grantbonus(workerid, A_id, getbonus(usercode), "Thanks for finishing the test", usercode);
+                                    // 3.27 oded manually bonus
                                 }
                                 //},1000);
                             }
