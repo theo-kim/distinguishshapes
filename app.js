@@ -369,7 +369,7 @@ function init(new_json, which) {
     var mturk = require('mturk-api');
 //var uuid = require('node-uuid');
     //var hitId = "3WRKFXQBOB7JZHEK66NBSH4AF6KYI0";
-    var hitId = "3P458N04Q1HQORA8C7GHMNQP801X2C";
+    var hitId = "3VADEH0UHCXEKHPFKVL6JSHQ4CJPS9";
 
 
     var counter = 0;
