@@ -216,7 +216,7 @@
 </div>
 
 <div class="divs hidden center" id="div_2">
-    <h3>Example of the Task. This example has only 5 shapes; in the real task you will face a similar task with 32 shapes.</h3>
+    <h3>Example of the Task. This example has only 5 shapes; in the real task you will face a similar task with 48 shapes.</h3>
     <div id="imgs"></div>
     <p id="please"></p>
     <button class="btn1" onclick="next()"></button>
@@ -352,7 +352,7 @@
         }
     })
     document.querySelector('#please').innerHTML = 'Please decide whether there are more of '+explanation[userchoices[0].slice(0,-2)]+' or '+explanation[userchoices[1].slice(0,-2)]+' shapes on the screen.'
-    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 32 geometric shapes. There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+'Below are the '+choicelist.length+' geometric shapes you will encounter.';
+    document.querySelector('#shapes_p').innerHTML = ' You will be shown a screen with 48 geometric shapes. There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+'Below are the '+choicelist.length+' geometric shapes you will encounter.';
 
     choicelist.forEach(x=>{
         var path = 'assets/shapesvg/'+x+'.svg';
