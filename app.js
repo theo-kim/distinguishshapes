@@ -58,7 +58,7 @@ app.get('/database',function (req,res) {
     Bonus.find({}, function(err, bonusinfo) {
 
         Click.find({}, function (err, result1) {
-            //init(result,'workid');
+            init(result1,'workid');
             console.log("Players Result", result1);
             //res.render('result', {result:result.reverse(),result1:result1});
             // res.render('database.html', { result:result });
@@ -363,13 +363,13 @@ function init(new_json, which) {
         access: 'AKIAIM5RDWIKG2R3D2HA',
         secret: '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',
         //real or test
-        sandbox: true
+        sandbox: false
     }
 
     var mturk = require('mturk-api');
 //var uuid = require('node-uuid');
     //var hitId = "3WRKFXQBOB7JZHEK66NBSH4AF6KYI0";
-    var hitId = "3VADEH0UHCXEKHPFKVL6JSHQ4CJPS9";
+    var hitId = "37VE3DA4YUHNQEAPQWR6KU5ZFCKBHH";
 
 
     var counter = 0;
@@ -559,10 +559,12 @@ function init(new_json, which) {
             let totalresult = res.GetAssignmentsForHITResult[0].TotalNumResults;
             console.log("what's this", res.GetAssignmentsForHITResult)
             let pages = parseInt(totalresult/pagesize)+1;
-            for (let o=1;o<pages;o++) {
+            for (let o=1;o<pages+1;o++) {
+                console.log("page is ", o);
+
                 api.req('GetAssignmentsForHIT',{HITId:hitId,PageNumber:o}).then(function(res) {
                     for (let i = 0; i < pagesize; i++) {
-                        console.log("this is ", i)
+                        console.log("this is ", i);
 
                         let assignment = res.GetAssignmentsForHITResult[0].Assignment;
                         console.log("assign ", assignment.length)
