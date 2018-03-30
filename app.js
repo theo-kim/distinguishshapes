@@ -58,7 +58,7 @@ app.get('/database',function (req,res) {
     Bonus.find({}, function(err, bonusinfo) {
 
         Click.find({}, function (err, result1) {
-            init(result1,'workid');
+            //init(result1,'workid');
             console.log("Players Result", result1);
             //res.render('result', {result:result.reverse(),result1:result1});
             // res.render('database.html', { result:result });
