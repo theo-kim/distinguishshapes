@@ -27,6 +27,8 @@ app.set('views', path.join(__dirname, 'views'));
 const mongoose = require('mongoose');
 const Click = mongoose.model('Click');
 const Bonus = mongoose.model('Bonus');
+const Past = mongoose.model('Past');
+
 const Admininfo = mongoose.model('Admininfo');
 
 app.get('/welcome',function (req,res) {
@@ -44,20 +46,43 @@ app.get('/welcome',function (req,res) {
 //     res.sendFile('index_old.html');
 // });
 app.get('/',function (req,res) {
-    Click.find({}, function(err, result1) {
+    Past.find({}, function(err, pastinfo) {
+        Click.find({}, function(err, result1) {
 
         Admininfo.find({}, function (err, result) {
-            res.render('index', {'result': result,'result1':result1});
+            res.render('index', {'result': result,'pastinfo1':pastinfo});
         });
+    });
     });
 });
 app.get('/database',function (req,res) {
 
     app.set('view engine', 'hbs');
     "use strict";
-    Bonus.find({}, function(err, bonusinfo) {
+    Past.find({}, function(err, bonusinfo) {
 
-        Click.find({}, function (err, result1) {
+        Click.find({}, function (err, result1)
+        {
+            result1.forEach(x=>{
+                Past.find({user:x.user},function (err,rst) {
+                    if(rst.length==0){
+                        const pst = new Past({
+                            user: x.user,
+                            data: (JSON.parse(x.data)).user_ip
+                        });
+                        pst.save((err) => {
+                            if(err) {
+                                console.log(err);
+                                //res.send('an error has occurred, please check the server output');
+
+                            }
+                            else{
+                                //res.redirect('/');
+                            }
+                        });
+                    }
+                })
+            })
             //init(result1,'workid');
             console.log("Players Result", result1);
             //res.render('result', {result:result.reverse(),result1:result1});
@@ -369,7 +394,7 @@ function init(new_json, which) {
     var mturk = require('mturk-api');
 //var uuid = require('node-uuid');
     //var hitId = "3WRKFXQBOB7JZHEK66NBSH4AF6KYI0";
-    var hitId = "37VE3DA4YUHNQEAPQWR6KU5ZFCKBHH";
+    var hitId = "3XJOUITW8UR0ZT39985LT23MCPFQTJ";
 
 
     var counter = 0;
@@ -502,14 +527,14 @@ function init(new_json, which) {
                             //setTimeout(function () {
 
                             if(result.length==0){
-                                console.log("getbonus",usercode,getbonus(usercode));
+                                //console.log("getbonus",usercode,getbonus(usercode));
 
                                 //setTimeout(function () {
-                                if(getbonus(usercode)){
-                                    console.log("testing",getbonus(usercode))
+                                //if(getbonus(usercode)){
+                                    //console.log("testing",getbonus(usercode))
                                     // grantbonus(workerid, A_id, getbonus(usercode), "Thanks for finishing the test", usercode);
                                     // 3.27 oded manually bonus
-                                }
+                                //}
                                 //},1000);
                             }
                             //},1000);

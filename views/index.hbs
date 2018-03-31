@@ -14,15 +14,15 @@
 <div id="data" class="hidden">
     {{result}}
 </div>
+
 <div class="hidden">
-    {{#each result1}}
+    {{#each pastinfo1}}
         <!--<div class = code>{{this.user}}</div>-->
         <div class = "ip">
             {{this.data}}
         </div>
     {{/each}}
 </div>
-
 <style>
     #thanks{
         text-align:center;
@@ -233,7 +233,7 @@
     var data_ip = document.querySelectorAll('.ip');
     var new_json_ip = [];
     data_ip.forEach(x=>{
-        new_json_ip.push((JSON.parse(x.innerHTML)).user_ip)
+        new_json_ip.push((x.innerHTML).replace(/\s/g, ""));
     });
     console.log('new_json_ip',new_json_ip)
 

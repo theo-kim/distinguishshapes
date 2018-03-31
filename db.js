@@ -16,14 +16,18 @@ const Admininfo = new mongoose.Schema({
 });
 const Bonus = new mongoose.Schema({
     user: String,
-    data: String,
+    data: String
 });
-
+const Past = new mongoose.Schema({
+    user: String,
+    data: String
+});
 //URLSlugs('<user>');
 // Link.plugin(URLSlugs('title'));
 mongoose.model('Click', Click);
 mongoose.model('Bonus', Bonus);
 mongoose.model('Admininfo', Admininfo);
+mongoose.model('Past', Past);
 
 // mongoose.model('Link', Link);
 mongoose.Promise = global.Promise;
