@@ -235,7 +235,7 @@
     data_ip.forEach(x=>{
         new_json_ip.push((x.innerHTML).replace(/\s/g, ""));
     });
-    console.log('new_json_ip',new_json_ip)
+//    console.log('new_json_ip',new_json_ip)
 
     $.getJSON('//freegeoip.net/json/?callback=?', function (data) {
         ip = data.ip;
@@ -280,7 +280,7 @@
     var start = data.indexOf('data');
     var data1 = JSON.parse((data.slice(start+7,-14)));
 //    var ipinfo = JSON.parse(data_ip);
-    console.log((data1));
+//    console.log((data1));
 //    there's proportion object, so not useful var choicelist = data1.choicelist;
     var choicelist = data1.choicelist;
     var proportion = data1.proportion;
@@ -351,7 +351,7 @@
         rdtime = minutes1+' minute(s) '+seconds1+' second(s) '
     }
     function getAnswer(rd) {
-        console.log("deltalist_10",deltalist_10);
+//        console.log("deltalist_10",deltalist_10);
 
         var numbig = 0;
         var as = userchoices[0];
@@ -368,7 +368,7 @@
             }
             }
         }
-        console.log("last answer is",answer);
+//        console.log("last answer is",answer);
         return as;
 
 //        userchoices.forEach(x=> {
@@ -397,7 +397,7 @@
 
 //        document.querySelector('#info').innerHTML="Please decide whether there are more of "+explanation[userchoices[0].slice(0,-2)]+" or "+explanation[userchoices[0].slice(0,-2)]+" shapes on the screen."+"<p>If you answer correctly you get "+deltalist_incentive[roundcounter-1]+" points. A wrong answer does not give you any points.</p>";
 
-        console.log((proportion));
+//        console.log((proportion));
         userchoices.forEach((x,i)=>{
                     document.querySelector('#btn'+(i+1)).innerHTML=explanation[x.slice(0,-2)];
                     document.querySelector('#btn'+(i+1)).classList.remove('hidden');
@@ -406,7 +406,7 @@
 
         vuelist = [];
         var counter1 = 0;
-        console.log(data1)
+//        console.log(data1)
         makeShapes(proportion,vuelist,counter1,0);
         user_data['Round 0(shape count)'] = deltalist_shapecount;
         user_data['Round -1(shape count)'] = deltalist_shapecount;
@@ -533,7 +533,7 @@
         user_data["m"] = userchoices.length;
 
 
-        console.log(deltalist_10);
+//        console.log(deltalist_10);
 
 //        var deltalist = delta_list.map(x=>{
 //            if(x==(-1)){
@@ -584,7 +584,7 @@
 
             var roundname = "Round "+ (roundcounter) + "(mud)";
             var roundname_shape = "Round "+ (roundcounter) + "(shape count)";
-            console.log('roundname_shape',roundname_shape)
+//            console.log('roundname_shape',roundname_shape)
             TF_round.push(choice_second);
             choice_round.push(response);
 
@@ -668,7 +668,7 @@
                 //vue.shuffle();
                 //clearInterval(x);
 //                document.querySelector('#next').style.display='block';
-                console.log('weird',roundcounter,totalrounds)
+//                console.log('weird',roundcounter,totalrounds)
                 }
 
             }
