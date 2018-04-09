@@ -442,9 +442,16 @@
                 deltalist_shapecount.push(key+":"+num);
 
                 for (var p = 0;p<num;p++){
+                    var dic = {'decagon':'shi','hendacagon':'shiyi','hexagon':'liu','heptagon':'qi','pentagon':'wu','octagon':'ba','square':'si','nonagon':'jiu'};
+                    var temp = key;
+                    if(p%2){
+                        temp = dic[key];
+                    }
                     var size = szlist[getRandomInt(0,10)]*0.6;
-                    var ob = {id:counter1+p,tags:[key,'all', 'tag2',[Math.floor(Math.random() * 90)],size,120-parseInt(size)]};
+                    var ob = {id:counter1+p,tags:[temp,'all', 'tag2',[Math.floor(Math.random() * 90)],size,120-parseInt(size)]};
                     vuelist.push(ob);
+
+
                 }
                 counter1+=num;
             }

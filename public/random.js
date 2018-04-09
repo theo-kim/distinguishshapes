@@ -16,4 +16,4 @@ var obj={
 obj.set('A1');
 obj.print();
 
-console.log(obj.A1);
+console.log(100%2);
