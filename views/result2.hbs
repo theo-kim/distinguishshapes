@@ -50,10 +50,10 @@
     })
     var temp_json = [];
     new_json.forEach(x=>{
-        var roundcount = x['RoundCounter(40 in total)'];
+        var roundcount = x['RoundCounter(28 in total)'];
         for(var i=0;i<roundcount;i++){
            // var obj = {'user_city':x['user_city'],'user_ip':x['user_ip'],'usercode':x['usercode'],'workid':x['workid'],'age':x['age'],'date/time':x['date/time'],'time_round':x['time_round'][i],'Round':i,'TotalRound':roundcount,'N':x['N'],'mud':x['Round '+i+'(mud)'],'shape':x['Round '+i+'(mud)'],'choice':x['time_round'][i],'degree_tilted':x['degree_tilted'],'m':x['m'],'max':x['max'],'mudding':x['mudding'],'n':x['n'],'total_score':x['total_score']};
-            var obj = {'user_city':x['user_city'],'user_ip':x['user_ip'],'usercode':x['usercode'],'workid':x['workid'],'age':x['age'],'date/time':x['date/time'],'sex':x['gender'],'time_round':x['time_round'][i],'Round':i,'TotalRound':roundcount,'N':x['N'],'Decoys':x['decoy'],'non-decoys':x['userchoice'],'Round Mudding':x['Round '+i+'(mud)'],'Incentives':x['incentives'][i],'Number of Shape':x['Round '+(i-1)+'(shape count)'],'Response':x['choice_round'][i],'True or False':x['TF_round'][i],'m':x['m'],'max':x['max'],'mudding':x['mudding'],'n':x['n'],'Clock Stop Digits':x['timenum'],'Score':x['Score'][i],'Bonus Result':x['Bonus Result']};
+            var obj = {'user_city':x['user_city'],'user_ip':x['user_ip'],'usercode':x['usercode'],'workid':x['workid'],'age':x['age'],'date/time':x['date/time'],'sex':x['gender'],'time_round':x['time_round'][i],'Round':i,'TotalRound':roundcount,'N':x['N'],'Decoys':x['decoy'],'non-decoys':x['userchoice'],'Round Mudding':x['Round '+i+'(mud)'],'Incentives':x['incentives'][i],'Number of Shape':x['Round '+(i-1)+'(shape count)'],'Response':x['choice_round'][i],'True or False':x['TF_round'][i],'m':x['m'],'max':x['max'],'mudding':x['mudding'],'n':x['n'],'Clock Stop Digits':x['timenum'],'Score':x['Score'][i],'BonusResult':x['BonusResult']};
 
             temp_json.push(obj);
         }

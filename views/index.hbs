@@ -126,11 +126,11 @@
         color:red;
     }
     #pointsrmd{
-        position:fixed;
-        left: 0;
-        margin-left: 1%;
-        width: 5%;
-        background-color: gainsboro;
+        position:absolute;
+        left: 45%;
+        /*margin-left: 1%;*/
+        /*width: 10%;*/
+        /*background-color: gainsboro;*/
     }
     #rows{
         margin-left: 5%;
@@ -144,6 +144,9 @@
         margin-bottom: 60px;
         margin-top: 90px;
         font-size: medium;
+    }
+    #info{
+        display: none;
     }
 
 </style>
@@ -188,7 +191,7 @@
         <p>Row 2</p>
         <p>Row 3</p>
         <p>Row 4</p>
-        <p>Row 5</p>
+        <!--<p>Row 5</p>-->
         <!--<p>Row 6</p>-->
 
     </div>
@@ -295,13 +298,14 @@
 
 
 
-    var totalrounds = 40;
+    var totalrounds = 28;
     var bonuslist = [];
-    for(var tempi = 0;tempi<10;tempi++){
-        for(var tempo = 0;tempo<4;tempo++) {
-            bonuslist.push([1,3,6,10][tempo])
-        }
-    }
+//    for(var tempi = 0;tempi<10;tempi++){
+//        for(var tempo = 0;tempo<4;tempo++) {
+//            bonuslist.push([1,3,6,10][tempo])
+//        }
+//    }
+    bonuslist = [5,20,1,10,5,5,0,10,5,1,10,5,0,20,10,5,20,1,10,20,0,1,1,20,0,10,0,5];
     console.log(bonuslist);
     for(var i=0;i<totalrounds;i++){
         //var incentives = [1,3,6,10][getRandomInt(0,4)];
@@ -336,7 +340,7 @@
 
         deltalist_10.push(obj);
     }
-    deltalist_10.push(deltalist_10[39]);
+    deltalist_10.push(deltalist_10[27]);
     survey(user_data);
 
     var choice_second = 'null',answer = getAnswer(1);
@@ -517,9 +521,9 @@
 //        parentElement3.innerHTML= "<span style='position: absolute;'>Row 4</span>"+parentElement3.innerHTML;
 
         if(deltalist_incentive[roundcounter-1]==1){
-            document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/40</span> This task will award you <b>"+deltalist_incentive[roundcounter-1]+"</b> point if you get it right.";
+            document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span>  <b>"+deltalist_incentive[roundcounter-1]+"</b> point ";
         }else {
-            document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/40</span> This task will award you <b>"+deltalist_incentive[roundcounter-1]+"</b> points if you get it right.";
+            document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span>  <b>"+deltalist_incentive[roundcounter-1]+"</b> points ";
         }
 
 
@@ -535,7 +539,7 @@
         user_data['decoy'] = decoys;
         user_data["max"] = deltalist[0];
         user_data["mudding"] = deltalist[1];
-        user_data["N"] = 40;
+        user_data["N"] = 32;
         user_data["n"] = choicelist.length;
         user_data["m"] = userchoices.length;
 
@@ -647,7 +651,7 @@
                 }else{
                 vuelist = [];
                 var counter1 = 0;
-                if(roundcounter==40){
+                if(roundcounter==28){
                     makeShapes(proportion, vuelist, counter1, roundcounter-1);
 
                 }else{
@@ -658,12 +662,12 @@
                 deltalist_shapecount = [];
                 answer = getAnswer(roundcounter-1);
 
-                user_data["RoundCounter(40 in total)"] = roundcounter;
+                user_data["RoundCounter(28 in total)"] = roundcounter;
                 user_data["Score"] = Score;
                 if(deltalist_incentive[roundcounter-1]==1){
-                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/40</span> This task will award you "+deltalist_incentive[roundcounter-1]+" point if you get it right";
+                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> This task will award you "+deltalist_incentive[roundcounter-1]+" point if you get it right";
                 }else {
-                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/40</span> This task will award you "+deltalist_incentive[roundcounter-1]+" points if you get it right";
+                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> This task will award you "+deltalist_incentive[roundcounter-1]+" points if you get it right";
                 }
 
                     if(deltalist_incentive[roundcounter-1]==1){
@@ -887,21 +891,21 @@
                 clockcounter=false;
                 a.value = "Exit";
                 var time_temp = (document.querySelector('#mi').innerHTML);
-                user_data["Bonus Result"] = "Didn't win";
+                user_data["BonusResult"] = "Didn't win";
                 var timenum = parseInt(time_temp.slice(1));
                 user_data['timenum'] = timenum;
                 if((total_score-100)<timenum){
                     var sclst = JSON.stringify(scorelist);
                     var newstr = sclst.replace(/,/g, '+');
                     document.getElementById("p_finalscore").innerHTML="Sorry, your score "+newstr+" minus 100 is smaller than "+timenum+"(which the millisecond clock shows), so you didn't win the bonus prize.";
-                    user_data["Bonus Result"] = "Didn't win";
+                    user_data["BonusResult"] = "Didn't win";
                     var req= new XMLHttpRequest();
                     req.open('POST', '/userdata', true);
                     req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
                     req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
                 }else {
                     document.getElementById("p_finalscore").innerHTML="Congratulations! you have won the bonus prize!";
-                    user_data["Bonus Result"] = "Win";
+                    user_data["BonusResult"] = "Win";
                 }
 
                 if(submitcounter==3){

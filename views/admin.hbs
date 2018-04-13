@@ -20,7 +20,7 @@
 <p style="font-weight: bold">Settings Now</p>
 
 <div>
-    <p>Total: 40 polygons</p>
+    <p>Total: 32 polygons</p>
     <p id="now_deltalist">Max, Mudding:</p>
     <p id="now_proportion">Proportions of shapes:</p>
     <p id="now_userchoices">User Choices:</p>
@@ -235,7 +235,7 @@
 
 
 <script>
-    var N = 40;//total shapes
+    var N = 32;//total shapes
     var data = (document.querySelector('#data')).innerHTML;
     var start = data.indexOf('data');
     console.log((data.slice(start+7,-14)));
@@ -348,7 +348,7 @@
 
         console.log(shapes);
         if((proportion_sum!=N)){
-            alert("40 should be divided by n(left row i.e. number of shapes presented)")
+            alert("32 should be divided by n(left row i.e. number of shapes presented)")
         }
         if((size_sum==100)&&(deltalist[0]!=null)&&(deltalist[1]!=null)&&(proportion_sum==N)&&(userchoices.length!=0)){
             var req= new XMLHttpRequest();
