@@ -447,9 +447,12 @@
 
                 for (var p = 0;p<num;p++){
                     var dic = {'decagon':'shi','hendacagon':'shiyi','hexagon':'liu','heptagon':'qi','pentagon':'wu','octagon':'ba','square':'si','nonagon':'jiu'};
+                    var dic1 = {'decagon':'ashara','hendacagon':'asharawahid','hexagon':'seta','heptagon':'saba','pentagon':'hamza','octagon':'thamania','square':'arba','nonagon':'tisa'};
                     var temp = key;
                     if(p%2){
                         temp = dic[key];
+                    }else{
+                        temp = dic1[key]
                     }
                     var size = szlist[getRandomInt(0,10)]*0.6;
                     var ob = {id:counter1+p,tags:[temp,'all', 'tag2',[Math.floor(Math.random() * 90)],size,120-parseInt(size)]};
