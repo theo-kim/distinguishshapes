@@ -71,14 +71,18 @@
         margin-right:10%;
         font-family: 'Roboto', sans-serif;
     }
-    #next{
+    /*here is replaced next with btn2*/
+    #btn2{
         display:block;
         /*display: none;*/
         /*margin-left: 10vmax;*/
         /*margin-right: 10vmax;*/
-        margin-top: -1.5vmax;
+        margin-top: -5.5vmax;
         float: right;
 
+    }
+    #next{
+        display: none;
     }
     .list-compvare-item {
         transition: transform 0.1s;
@@ -176,11 +180,12 @@
         <p><button id="demo" style="cursor: inherit;display: none;float: right " class="button button_1 btns" id="time"></button></p>
 
     </div>
-        <p> <button id="btn1" class="b1 btns button hidden" onclick="btn1click()"></button></p>
-        <p> <button id="btn2" class="b2 btns button hidden" onclick="btn2click()"></button></p>
-        <p> <button id="btn3" class="b3 btns button hidden" onclick="btn3click()"></button></p>
-        <p> <button id="btn4" class="b4 btns button hidden" onclick="btn4click()"></button></p>
-        <p> <button id="btn5" class="b5 btns button hidden" onclick="btn5click()"></button>
+        <!--shuffle was added to trigger next round -->
+        <p> <button id="btn1" v-on:click="shuffle" class="b1 nexts btns button hidden" onclick="btn1click()"></button></p>
+        <p> <button id="btn2" v-on:click="shuffle" class="b2 nexts btns button hidden" onclick="btn2click()"></button></p>
+        <p> <button id="btn3" v-on:click="shuffle" class="b3 nexts btns button hidden" onclick="btn3click()"></button></p>
+        <p> <button id="btn4" v-on:click="shuffle" class="b4 nexts btns button hidden" onclick="btn4click()"></button></p>
+        <p> <button id="btn5" v-on:click="shuffle" class="b5 nexts btns button hidden" onclick="btn5click()"></button>
         </p>
 
 
@@ -587,6 +592,117 @@
        // var distance = 0;
         user_data['Round 0(mud)'] = list_deltas.slice(0,(choicelist.length));
 
+
+        //to replace next button, added on 4.17 below
+
+        var nextlist = document.querySelectorAll('.nexts');
+        nextlist.forEach(x=>{
+            x.addEventListener('click',function () {
+                if(choice_second!="null"){
+//            document.querySelector('#next').style.display='none';
+                    document.getElementById("btn2").style.background='buttonface';
+                    document.getElementById("btn1").style.background='buttonface';
+                    document.getElementById("btn3").style.background='buttonface';
+                    document.getElementById("btn4").style.background='buttonface';
+                    document.getElementById("btn5").style.background='buttonface';
+
+                    var roundname = "Round "+ (roundcounter) + "(mud)";
+                    var roundname_shape = "Round "+ (roundcounter) + "(shape count)";
+//            console.log('roundname_shape',roundname_shape)
+                    TF_round.push(choice_second);
+                    choice_round.push(response);
+
+
+                    if(choice_second=="true"){
+                        scorelist.push(deltalist_incentive[roundcounter-1]);
+                        //alert('true');
+                        total_score+=deltalist_incentive[roundcounter-1];
+                    }else {
+                        scorelist.push(0);
+                    }
+                    Score.push(total_score);//Score is accumulated, scorelist is the score for each round
+
+                    //choice_second = 'null';
+                    time_round.push(countadder);
+                    var temp_mudlist = list_deltas.slice((roundcounter-1)*(choicelist.length),(roundcounter)*(choicelist.length));
+                    user_data[roundname] = list_deltas.slice((roundcounter)*(choicelist.length),(roundcounter+1)*(choicelist.length));
+                    user_data['Round 0(mud)'] = user_data['Round 1(mud)'];
+
+                    console.log('user_data[roundname]',user_data[roundname]);
+                    user_data['TF_round'] = TF_round;
+                    user_data['choice_round'] = choice_round;
+
+                    user_data['time_round'] = time_round;
+                    user_data['incentives'] = deltalist_incentive;
+                    var req= new XMLHttpRequest();
+                    req.open('POST', '/userdata', true);
+                    req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+                    req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
+
+                    deltalist_shapecount = [];
+                    choice_second = 'null';
+                    countadder = 0;
+                    if (countadder == 0) {
+
+                        if (parseInt(roundcounter)==parseInt(totalrounds)){
+                            clearInterval(x);
+                            document.getElementById("list-compvare-demo").style.display = "none";
+                            //alert(total_score);
+                            if(total_score<100){
+                                // alert();
+                                document.querySelector('#thanks').style.display="block";
+                                document.querySelector('#thanks').innerHTML+="<p>Score less than 100, sorry you can't get bonus. Your total score is "+total_score+(JSON.stringify(scorelist)).replace(/,/g, '+')+"</p><p>Your survey code is:"+user_id+"</p>";
+                                //return user_data;
+                                var req= new XMLHttpRequest();
+                                req.open('POST', '/userdata', true);
+                                req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+                                req.send("user=" + user_id + "&data="+JSON.stringify(user_data));
+
+                            }else{
+                                clock(user_data);
+                            }
+                        }else{
+                            vuelist = [];
+                            var counter1 = 0;
+                            if(roundcounter==28){
+                                makeShapes(proportion, vuelist, counter1, roundcounter-1);
+
+                            }else{
+                                makeShapes(proportion, vuelist, counter1, roundcounter);
+                            }
+                            user_data[roundname_shape] = deltalist_shapecount;
+                            roundcounter++;
+                            deltalist_shapecount = [];
+                            answer = getAnswer(roundcounter-1);
+
+                            user_data["RoundCounter(28 in total)"] = roundcounter;
+                            user_data["Score"] = Score;
+                            if(deltalist_incentive[roundcounter-1]==1){
+                                document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> "+deltalist_incentive[roundcounter-1]+" point";
+                            }else {
+                                document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> "+deltalist_incentive[roundcounter-1]+" points";
+                            }
+
+                            if(deltalist_incentive[roundcounter-1]==1){
+                                document.querySelector('#info').innerHTML="<p>Please decide whether there are more of "+explanation[userchoices[0].slice(0,-2)]+" or "+explanation[userchoices[1].slice(0,-2)]+" shapes on the screen.</p>"+"<p>If you answer correctly you get <b>"+deltalist_incentive[roundcounter-1]+"</b> point. A wrong answer does not give you any points.</p>";
+                            }else{
+                                document.querySelector('#info').innerHTML="<p>Please decide whether there are more of "+explanation[userchoices[0].slice(0,-2)]+" or "+explanation[userchoices[1].slice(0,-2)]+" shapes on the screen.</p>"+"<p>If you answer correctly you get <b>"+deltalist_incentive[roundcounter-1]+"</b> points. A wrong answer does not give you any points.</p>";
+                            }
+
+                        }
+
+                    }
+                }else {
+                    alert("You haven't made your choice yet!");
+                }
+
+
+            })
+
+        })
+
+        //till here, added on 4.17 to replace next button
+
         document.querySelector('#next').addEventListener('click',function () {
             if(choice_second!="null"){
 //            document.querySelector('#next').style.display='none';
@@ -668,9 +784,9 @@
                 user_data["RoundCounter(28 in total)"] = roundcounter;
                 user_data["Score"] = Score;
                 if(deltalist_incentive[roundcounter-1]==1){
-                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> This task will award you "+deltalist_incentive[roundcounter-1]+" point if you get it right";
+                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> "+deltalist_incentive[roundcounter-1]+" point";
                 }else {
-                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> This task will award you "+deltalist_incentive[roundcounter-1]+" points if you get it right";
+                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> "+deltalist_incentive[roundcounter-1]+" points";
                 }
 
                     if(deltalist_incentive[roundcounter-1]==1){
