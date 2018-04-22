@@ -140,7 +140,7 @@
         /*background-color: gainsboro;*/
     }
     #pointsrmd span{
-        margin-right: 10vmax;
+        margin-left: 10vmax;
     }
     #rows{
         margin-left: 5%;
@@ -535,9 +535,9 @@
 //        parentElement3.innerHTML= "<span style='position: absolute;'>Row 4</span>"+parentElement3.innerHTML;
 
         if(deltalist_incentive[roundcounter-1]==1){
-            document.querySelector('#pointsrmd').innerHTML = "<span  style='font-weight: bold'>Task "+ roundcounter+"/28</span>  <b>"+deltalist_incentive[roundcounter-1]+"</b> point ";
+            document.querySelector('#pointsrmd').innerHTML = " <b>"+deltalist_incentive[roundcounter-1]+"</b> point <span  style='font-weight: bold'>Task "+ roundcounter+"/28</span> ";
         }else {
-            document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span>  <b>"+deltalist_incentive[roundcounter-1]+"</b> points ";
+            document.querySelector('#pointsrmd').innerHTML = " <b>"+deltalist_incentive[roundcounter-1]+"</b> points <span style='font-weight: bold'>Task "+ roundcounter+"/28</span> ";
         }
 
 

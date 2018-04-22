@@ -5,8 +5,20 @@
     <title>Title</title>
 </head>
 <style>
+    .btn1{
+        margin-right: 25vmax;
+        margin-bottom: 5vmax;
+    }
+    .btn2{
+        margin-left: 25vmax;
+        margin-bottom: 5vmax;
+    }
     #next_div{
         margin-bottom: 10vmax;
+    }
+    .taskspan{
+        margin-left: 10vmax;
+        font-weight: bold;
     }
     .divs{
         margin-bottom:10vmax;
@@ -270,33 +282,36 @@
     </p>
 </div>
 <div class="divs hidden center" id="div_7">
-    <div class="imgsdiv" id="imgs_1"></div>
     <p class="demo_p"></p>
-    <p>If you answer correctly you get 6 points. A wrong answer does not give you any points.</p>
+    <p><b>6</b> points<span class="taskspan">Task 1</span></p>
     <button class="btn1" onclick="next()"></button>
     <button class="btn2" onclick="next()"></button>
+    <div class="imgsdiv" id="imgs_1"></div>
 
 </div>
 <div class="divs hidden center" id="div_8">
-    <div  class="imgsdiv" id="imgs_2"></div>
     <p class="demo_p"></p>
-    <p>If you answer correctly you get 3 points. A wrong answer does not give you any points.</p>
+    <p><b>3</b> points<span class="taskspan">Task 2</span></p>
     <button class="btn1" onclick="next()"></button>
     <button class="btn2" onclick="next()"></button>
+    <div  class="imgsdiv" id="imgs_2"></div>
+
 </div>
 <div class="divs hidden center" id="div_9">
-    <div  class="imgsdiv" id="imgs_3"></div>
     <p class="demo_p"></p>
-    <p>If you answer correctly you get 10 points. A wrong answer does not give you any points.</p>
+    <p><b>0</b> points<span class="taskspan">Task 3</span></p>
     <button class="btn1" onclick="next()"></button>
     <button class="btn2" onclick="next()"></button>
+    <div  class="imgsdiv" id="imgs_3"></div>
+
 </div>
 <div class="divs hidden center" id="div_10">
-    <div  class="imgsdiv" id="imgs_4"></div>
     <p class="demo_p"></p>
-    <p>If you answer correctly you get 1 point. A wrong answer does not give you any points.</p>
+    <p><b>10</b> points<span class="taskspan">Task 4</span></p>
     <button class="btn1" onclick="next()"></button>
     <button class="btn2" onclick="next()"></button>
+    <div  class="imgsdiv" id="imgs_4"></div>
+
 </div>
 <div class="divs hidden center" id="div_11">
     <p>
@@ -361,10 +376,10 @@
         var path = 'assets/shapesvg/'+x+'.svg';
         document.querySelector('#imgs_eg').innerHTML+="<img src='"+path+"'>";
     })
-    var demo_ps = document.querySelectorAll('.demo_p');
-    demo_ps.forEach(x=>{
-        x.innerHTML = document.querySelector('#please').innerHTML;
-    });
+//    var demo_ps = document.querySelectorAll('.demo_p');
+//    demo_ps.forEach(x=>{
+//        x.innerHTML = document.querySelector('#please').innerHTML;
+//    });
     choicelist.forEach(x=>{
         var path = 'assets/shapesvg/'+x+'.svg';
         var rotation = parseInt(Math.random()*360);
