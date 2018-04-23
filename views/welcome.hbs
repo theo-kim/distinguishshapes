@@ -5,6 +5,20 @@
     <title>Title</title>
 </head>
 <style>
+    .rows{
+        margin-top:-45%;
+        margin-left: 5%;
+        float: left;
+        width: 5%;
+        /*background-color: yellow;*/
+        height: 100%;
+        display: inline;
+    }
+    .rows p{
+        margin-bottom: 60px;
+        margin-top: 190%;
+        font-size: medium;
+    }
     .btn1{
         margin-right: 25vmax;
         margin-bottom: 5vmax;
@@ -18,7 +32,7 @@
     }
     .taskspan{
         margin-left: 10vmax;
-        font-weight: bold;
+        /*font-weight: bold;*/
     }
     .divs{
         margin-bottom:10vmax;
@@ -283,35 +297,67 @@
 </div>
 <div class="divs hidden center" id="div_7">
     <p class="demo_p"></p>
-    <p><b>6</b> points<span class="taskspan">Task 1</span></p>
+    <p><b style='font-size: larger'>6 points</b><span class="taskspan">Task 1</span></p>
     <button class="btn1" onclick="next()"></button>
     <button class="btn2" onclick="next()"></button>
     <div class="imgsdiv" id="imgs_1"></div>
+    <div class="rows">
+        <p>Row 1</p>
+        <p>Row 2</p>
+        <p>Row 3</p>
+        <p>Row 4</p>
+        <!--<p>Row 5</p>-->
+        <!--<p>Row 6</p>-->
 
+    </div>
 </div>
 <div class="divs hidden center" id="div_8">
     <p class="demo_p"></p>
-    <p><b>3</b> points<span class="taskspan">Task 2</span></p>
+    <p><b style='font-size: larger'>3 points</b><span class="taskspan">Task 2</span></p>
     <button class="btn1" onclick="next()"></button>
     <button class="btn2" onclick="next()"></button>
     <div  class="imgsdiv" id="imgs_2"></div>
+    <div class="rows">
+        <p>Row 1</p>
+        <p>Row 2</p>
+        <p>Row 3</p>
+        <p>Row 4</p>
+        <!--<p>Row 5</p>-->
+        <!--<p>Row 6</p>-->
 
+    </div>
 </div>
 <div class="divs hidden center" id="div_9">
     <p class="demo_p"></p>
-    <p><b>0</b> points<span class="taskspan">Task 3</span></p>
+    <p><b style='font-size: larger'>0 points</b><span class="taskspan">Task 3</span></p>
     <button class="btn1" onclick="next()"></button>
     <button class="btn2" onclick="next()"></button>
     <div  class="imgsdiv" id="imgs_3"></div>
+    <div class="rows">
+        <p>Row 1</p>
+        <p>Row 2</p>
+        <p>Row 3</p>
+        <p>Row 4</p>
+        <!--<p>Row 5</p>-->
+        <!--<p>Row 6</p>-->
 
+    </div>
 </div>
 <div class="divs hidden center" id="div_10">
     <p class="demo_p"></p>
-    <p><b>10</b> points<span class="taskspan">Task 4</span></p>
+    <p><b style='font-size: larger'>10 points</b><span class="taskspan">Task 4</span></p>
     <button class="btn1" onclick="next()"></button>
     <button class="btn2" onclick="next()"></button>
     <div  class="imgsdiv" id="imgs_4"></div>
+    <div class="rows">
+        <p>Row 1</p>
+        <p>Row 2</p>
+        <p>Row 3</p>
+        <p>Row 4</p>
+        <!--<p>Row 5</p>-->
+        <!--<p>Row 6</p>-->
 
+    </div>
 </div>
 <div class="divs hidden center" id="div_11">
     <p>
@@ -359,7 +405,7 @@
         x.innerHTML = explanation[userchoices[1].slice(0,-2)];
     })
     var path1 = 'assets/shapesvg/'+userchoices[0].slice(0,-2)+'.svg';
-    document.querySelector('#imgs').innerHTML+="<img style='height: 48px' src='"+path1+"'>";
+    document.querySelector('#imgs').innerHTML+="<img style='' src='"+path1+"'>";
     var shapes_str = '';
     choicelist.forEach((x,i)=>{
         if(i!=choicelist.length-1){
