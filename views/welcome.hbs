@@ -238,6 +238,9 @@
         two specified shapes out of these four is present in larger quantity. Hence, the other two of the four
         shapes are distractors.
     </p>
+    <p>
+        You will only receive feedback on whether you were correct or not at the very end of the experiment.
+    </p>
 </div>
 
 <div class="divs hidden center" id="div_2">
@@ -255,7 +258,7 @@
 <div class="divs hidden center" id="div_4">
     <h3>REWARD</h3>
     <p>
-        By completing the experiment you will receive a participation fee of 1$. You may also win a bonus of $10 depending on the number of points you score. If you answer all Tasks correctly you will get 200 points, and you will have a 100% chance of winning the bonus of $10. More generally, if you achieve more than 100 points, your probability of getting the bonus is given by the following formula: (total achieved points - 100)%—so if you achieve 167 points, your final score will be 67, and your probability of winning the bonus will be 67%. If you answer only one out of every two correctly, as you could by guessing, you will get 100 points. As a result, if you score 100 points or below, there is no chance (0%) that you will earn the bonus.
+        By completing the experiment you will receive a participation fee of 1$. You may also win a bonus of $10 depending on the number of points you score. If you answer all Tasks correctly you will get 200 points, and you will have a 100% chance of winning the bonus of $10. More generally, if you achieve more than 100 points, your probability of getting the bonus is given by the following formula: (total achieved points - 100)%—so if you achieve 167 points, your final score will be 67, and your probability of winning the bonus will be 67%. If you answer only one out of every two correctly, as you could by guessing, you will get 100 points. If you score 100 points or below, there is no chance (0%) that you will earn the bonus.
     </p>
     <h3>HOW TO SCORE POINTS</h3>
     <p>
@@ -503,16 +506,16 @@
         if(counter==11){
             if(parseInt(rst)<67){
                 //document.querySelector('#result').innerHTML="Your final score is the sum of all your points minus 100. The last two digits of the clock is "+rst+". You win the prize since your final score is above "+rst+"."
-                document.querySelector('#result').innerHTML="Your final score is the sum of all your points minus 100. The last two digits of the clock is "+rst+". You win the prize if your final score is above "+rst+"."
+                document.querySelector('#result').innerHTML="Your final score is the sum of all your points minus 100. The last two digits of the clock are "+rst+". You win the prize if your final score is above "+rst+"."
 
             }else {
                 //document.querySelector('#result').innerHTML="Your final score is the sum of all your points minus 100. The last two digits of the clock is "+rst+". You didn't win the prize since your final score is not above "+rst+"."
-                document.querySelector('#result').innerHTML="Your final score is the sum of all your points minus 100. The last two digits of the clock is "+rst+". You win the prize if your final score is above "+rst+"."
+                document.querySelector('#result').innerHTML="Your final score is the sum of all your points minus 100. The last two digits of the clock are "+rst+". You win the prize if your final score is above "+rst+"."
 
             }
         }else{
             //167[6,3,10,1...you wil see all 40 rounds' scores here in the real test]
-            document.querySelector('#result').innerHTML="Your final score is the sum of all your points minus 100. The last two digits of the clock is "+rst+". You win the prize if your final score is above "+rst+"."
+            document.querySelector('#result').innerHTML="Your final score is the sum of all your points minus 100. The last two digits of the clock are "+rst+". You win the prize if your final score is above "+rst+"."
         }
 
     })
