@@ -289,7 +289,10 @@
         }
 
     });
+
     var data = (document.querySelector('#data')).innerHTML;
+    (document.querySelector('#data')).innerHTML = "";
+
 //    var data_ip = (document.querySelector('#data1')).innerHTML;
     var start = data.indexOf('data');
     var data1 = JSON.parse((data.slice(start+7,-14)));
