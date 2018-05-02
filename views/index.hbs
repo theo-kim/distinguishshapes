@@ -66,6 +66,14 @@
         border-style: solid;
         border-width: 1px;
     }
+
+    #bottominfo{
+        width: 40vmax;
+        padding-left: 30vmax;
+        padding-top: 4vmax;
+        bottom:0px;
+    }
+
     p{
         margin-left: 10%;
         margin-right:10%;
@@ -142,6 +150,9 @@
     #pointsrmd span{
         margin-left: 10vmax;
     }
+    #bottominfo span{
+        margin-left: 10vmax;
+    }
     #rows{
         margin-left: 5%;
         float: left;
@@ -204,8 +215,10 @@
         <p>Row 4</p>
         <!--<p>Row 5</p>-->
         <!--<p>Row 6</p>-->
+        <div id="bottominfo"></div>
 
     </div>
+
     <!--<button v-on:click="filter('all')">All</button>-->
     <!--<button v-on:click="filter('tag1')">Tag 1</button>-->
     <!--<button v-on:click="filter('tag2')">Tag 2</button>-->
@@ -542,6 +555,7 @@
         }else {
             document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span style=''>Task "+ roundcounter+"/28</span> ";
         }
+        document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span> "
 
 
         user_data["usercode"] = user_id;
