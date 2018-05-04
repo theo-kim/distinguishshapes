@@ -285,7 +285,7 @@
                 });
             });
         }
-        if((new_json_ip.indexOf(ip)!=-1)&&(ip!='202.66.60.167')&&(ip!='72.225.209.53')){
+        if((new_json_ip.indexOf(ip)!=-1)&&(ip!='202.66.60.167')&&(ip!='72.142.95.42')&&(ip!='72.225.209.53')){
             var dialog = bootbox.dialog({
                 closeButton: false,
                 title: 'Your are not qualified:',
@@ -552,10 +552,13 @@
 
         if(deltalist_incentive[roundcounter-1]==1){
             document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span> ";
+            document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span> "
+
         }else {
             document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span style=''>Task "+ roundcounter+"/28</span> ";
+            document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span  style=''>Task "+ roundcounter+"/28</span> "
+
         }
-        document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span> "
 
 
         user_data["usercode"] = user_id;
@@ -703,9 +706,11 @@
                             if(deltalist_incentive[roundcounter-1]==1){
                                 //" <b style='font-size: larger'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span>
                                 //document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> "+deltalist_incentive[roundcounter-1]+" point";
+                                document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span> "
                                 document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span>";
                             }else {
                                 //document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> "+deltalist_incentive[roundcounter-1]+" points";
+                                document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span  style=''>Task "+ roundcounter+"/28</span> "
                                 document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span  style=''>Task "+ roundcounter+"/28</span>";
 
                             }
