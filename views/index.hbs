@@ -325,14 +325,14 @@
 
 
 
-    var totalrounds = 28;
+    var totalrounds = 27;
     var bonuslist = [];
 //    for(var tempi = 0;tempi<10;tempi++){
 //        for(var tempo = 0;tempo<4;tempo++) {
 //            bonuslist.push([1,3,6,10][tempo])
 //        }
 //    }
-    bonuslist = [5,20,1,10,5,5,0,10,5,1,10,5,0,20,10,5,20,1,10,20,0,1,1,20,0,10,0,5];
+    bonuslist = [0,0,0,0,0,0,1,1,1,1,3,3,3,3,5,5,5,7,7,7,10,10,14,14,20,30,50];
     console.log(bonuslist);
     for(var i=0;i<totalrounds;i++){
         //var incentives = [1,3,6,10][getRandomInt(0,4)];
@@ -367,7 +367,7 @@
 
         deltalist_10.push(obj);
     }
-    deltalist_10.push(deltalist_10[27]);
+    deltalist_10.push(deltalist_10[26]);
     survey(user_data);
 
     var choice_second = 'null',answer = getAnswer(1);
@@ -551,12 +551,12 @@
 //        parentElement3.innerHTML= "<span style='position: absolute;'>Row 4</span>"+parentElement3.innerHTML;
 
         if(deltalist_incentive[roundcounter-1]==1){
-            document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span> ";
-            document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span> "
+            document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/27</span> ";
+            document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/27</span> "
 
         }else {
-            document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span style=''>Task "+ roundcounter+"/28</span> ";
-            document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span  style=''>Task "+ roundcounter+"/28</span> "
+            document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span style=''>Task "+ roundcounter+"/27</span> ";
+            document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span  style=''>Task "+ roundcounter+"/27</span> "
 
         }
 
@@ -690,7 +690,7 @@
                         }else{
                             vuelist = [];
                             var counter1 = 0;
-                            if(roundcounter==28){
+                            if(roundcounter==27){
                                 makeShapes(proportion, vuelist, counter1, roundcounter-1);
 
                             }else{
@@ -701,17 +701,17 @@
                             deltalist_shapecount = [];
                             answer = getAnswer(roundcounter-1);
 
-                            user_data["RoundCounter(28 in total)"] = roundcounter;
+                            user_data["RoundCounter(27 in total)"] = roundcounter;
                             user_data["Score"] = Score;
                             if(deltalist_incentive[roundcounter-1]==1){
                                 //" <b style='font-size: larger'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span>
                                 //document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> "+deltalist_incentive[roundcounter-1]+" point";
-                                document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span> "
-                                document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/28</span>";
+                                document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/27</span> "
+                                document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" point</b> <span  style=''>Task "+ roundcounter+"/27</span>";
                             }else {
                                 //document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> "+deltalist_incentive[roundcounter-1]+" points";
-                                document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span  style=''>Task "+ roundcounter+"/28</span> "
-                                document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span  style=''>Task "+ roundcounter+"/28</span>";
+                                document.querySelector('#bottominfo').innerHTML = "<b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span  style=''>Task "+ roundcounter+"/27</span> "
+                                document.querySelector('#pointsrmd').innerHTML = " <b style='font-size: xx-large'>"+deltalist_incentive[roundcounter-1]+" points</b> <span  style=''>Task "+ roundcounter+"/27</span>";
 
                             }
 
@@ -802,7 +802,7 @@
                 }else{
                 vuelist = [];
                 var counter1 = 0;
-                if(roundcounter==28){
+                if(roundcounter==27){
                     makeShapes(proportion, vuelist, counter1, roundcounter-1);
 
                 }else{
@@ -813,12 +813,12 @@
                 deltalist_shapecount = [];
                 answer = getAnswer(roundcounter-1);
 
-                user_data["RoundCounter(28 in total)"] = roundcounter;
+                user_data["RoundCounter(27 in total)"] = roundcounter;
                 user_data["Score"] = Score;
                 if(deltalist_incentive[roundcounter-1]==1){
-                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> "+deltalist_incentive[roundcounter-1]+" point";
+                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/27</span> "+deltalist_incentive[roundcounter-1]+" point";
                 }else {
-                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/28</span> "+deltalist_incentive[roundcounter-1]+" points";
+                    document.querySelector('#pointsrmd').innerHTML = "<span style='font-weight: bold'>Task "+ roundcounter+"/27</span> "+deltalist_incentive[roundcounter-1]+" points";
                 }
 
                     if(deltalist_incentive[roundcounter-1]==1){
