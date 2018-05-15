@@ -1022,7 +1022,7 @@
 
         var dialog = bootbox.dialog({
             closeButton: false,
-            title: 'Chance to win a final prize of $30!',
+            title: 'Chance to win a final prize of $10!',
             message: '<form id="survey1" action="/action_page.php"><p id="p_finalscore"></p><div id="clock_div">  <div id="timedate"> <a id="h">12</a> :<a id="m">00</a>:<a id="s">00</a>:<a id="mi">000</a> </div></div><input id="submitsurvey1" class="btn btn-default" type="submit" value="Stop the clock"> </form> ',
         });
         document.getElementById("p_finalscore").innerHTML = "Your total score is "+total_score+(JSON.stringify(scorelist)).replace(/,/g, '+')+", only if your click's hundredth and thousandth second are smaller than "+total_score+" can you win the prize!(I'll change the number to x-100 later)";
