@@ -85,6 +85,15 @@ app.get('/database',function (req,res) {
             })
             //init(result1,'workid');
             console.log("Players Result", result1);
+            var winners = [];
+            result1.forEach(x=>{
+
+                if( JSON.parse(x['data'])['BonusResult']=='Win'){
+                    winners.push(x.user)
+                }
+            })
+            console.log("Players Who won", winners);
+
             //res.render('result', {result:result.reverse(),result1:result1});
             // res.render('database.html', { result:result });
             res.render('result2', {result1: result1.sort().reverse(),bonusinfo:bonusinfo});
@@ -93,6 +102,7 @@ app.get('/database',function (req,res) {
     });
 
 });
+
 app.post('/userdata',function(req,res){
     console.log("app post",req.body.user);
     //myName = req.body.myName;
@@ -394,7 +404,7 @@ function init(new_json, which) {
     var mturk = require('mturk-api');
 //var uuid = require('node-uuid');
     //var hitId = "3WRKFXQBOB7JZHEK66NBSH4AF6KYI0";
-    var hitId = "3HUR21WDDUPGPC3F5SNCVRRV1DKYXU";
+    var hitId = "338431Z1FLFKY2D1Q68M4I75070RO0";
 
 
     var counter = 0;
@@ -496,7 +506,10 @@ function init(new_json, which) {
         function Addworkid(usercode,workerid,A_id){
             Click.find({user:usercode}, function(err, result){
                 if(result.length!=0){
+
                     console.log("json data",result[0].data)
+
+
                     let obj = JSON.parse((result[0].data).toString())
 
                     if(obj['workid']!=workerid){
