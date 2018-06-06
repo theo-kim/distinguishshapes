@@ -420,11 +420,7 @@
         }
     })
     document.querySelector('#please').innerHTML = 'Please decide whether there are more  '+explanation[userchoices[0].slice(0,-2)]+' or '+explanation[userchoices[1].slice(0,-2)]+' shapes on the screen.'
-    document.querySelector('#shapes_p').innerHTML = ' <span>You will be shown a screen with 24 geometric shapes. 
-There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+'Below are the 
-'+choicelist.length+' geometric shapes you will encounter.</span><p> <div id="imgs_eg"></div> </p><span>The 
-Task: Even though there are '+choicelist.length+' different types of shapes your Task relates to only two of 
-them, '+explanation[userchoices[0].slice(0,-2)]+' and '+explanation[userchoices[1].slice(0,-2)]+' shapes. There will always be three more than the other and your Task is to decide whether seven- or nine-sided shapes are present in larger numbers. In each of the Tasks you face, these two shapes are equally likely to be present in larger numbers. </span><p></p><span> Note that the eight-sided and ten-sided shapes on each screen are irrelevant to your Task. While all Tasks are designed to be roughly equally difficult, the total number of these irrelevant shapes will vary in a narrow range.</span>';
+    document.querySelector('#shapes_p').innerHTML = ' <span>You will be shown a screen with 24 geometric shapes. There will be '+choicelist.length+' different types of shapes, and these are:'+shapes_str+'Below are the  '+choicelist.length+' geometric shapes you will encounter.</span><p> <div id="imgs_eg"></div> </p><span>The Task: Even though there are '+choicelist.length+' different types of shapes your Task relates to only two of them, '+explanation[userchoices[0].slice(0,-2)]+' and '+explanation[userchoices[1].slice(0,-2)]+' shapes. There will always be three more than the other and your Task is to decide whether seven- or nine-sided shapes are present in larger numbers. In each of the Tasks you face, these two shapes are equally likely to be present in larger numbers. </span><p></p><span> Note that the eight-sided and ten-sided shapes on each screen are irrelevant to your Task. While all Tasks are designed to be roughly equally difficult, the total number of these irrelevant shapes will vary in a narrow range.</span>';
 
     choicelist.forEach(x=>{
         var path = 'assets/shapesvg/'+x+'.svg';
