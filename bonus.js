@@ -12,6 +12,7 @@ __          __     _____  _   _ _____ _   _  _____
 
 // REQUIRES, DO NOT TOUCH THIS
 var mturk = require('mturk-api');
+var moment = require('moment');
 // END REQUIRES
 
 // STEP 1: Specify the reason why you are bonusing users, this is visible to the workers
@@ -33,7 +34,18 @@ var payout = "10.00";
 //					- end each char with a newline character (\n, ascii char 0x0A)
 //					- capitalization does not matter
 
-var workerList = ``;
+var workerList = 
+`31QTRG6Q2TDD3NZH93IWPY0AFUHYPN	A2HM35CWB7IIFM
+32SVAV9L3F950GWRVZ7999F277G3A0	A3CXK1KSRGU27V
+345LHZDEDXSPFPAP14O09ARWEA6U31	AWX99CTT8IKKD
+388U7OUMF711I5JBENBC21654ZIR0Z	APGX2WZ59OWDN
+3CN4LGXD5XOREUDYBJQ8M0PFOYG4YX	A2DBWV8AG1BKF0
+3EJJQNKU9R5CT5P7CVIX8T5MQGKRH1	A2MKXI4KCRRI7Y
+3J2UYBXQQLC8WMLRMZ8ER6F98C560H	A2EKR2ZFO10VMV
+3K5TEWLKGVB4I7H8RX5S92V4BZCVIR	A20NITCOBY4775
+3NGI5ARFTT5GDHOEXEBNBBP0894P1C	AI1C80MVFZXAK
+3XUHV3NRVKYNOIR9FO5U5S0QYYYH5G	A39DT3X739APZJ
+3YOH7BII097VO27WR0Q4MIAH34ZKVR	A3OY6J4ZJLCGOT`;
 
 // END STEP 3
 
@@ -91,11 +103,14 @@ var moneyRE = /^\$?(([1-9]\d{0,2}(,\d{3})*)|0)?\.\d{1,2}$/;
 var workers = [];
 var workerParse = [];
 var globalPayout = false;
+var start, end;
+var hits = [];
+var totalBonus = 0;
 
 
 // INITIALIZE FUNCTION
 function init () {
-	if (okayToBonus) {
+	if (okayToBonus && process.argv[2] === "ready") {
 		print.success("You are okay to bonus");
 		if (process.argv[2] === "ready") {
 			print.success("You are ready to bonus");
@@ -135,6 +150,32 @@ function init () {
 		else {
 			print.error("You aren't ready.  Please run the command with the ready argument.");
 		}
+	}
+	else if (process.argv[2] === "report") {
+		print.success("You have chosen to report bonusing summary");
+		print.message("Please enter a start date for your inquiry? (yyyy-mm-dd)")
+			var stdin = process.openStdin();
+			stdin.addListener("data", function(d) {
+			    if (moment(d.toString('utf8'), 'YYYY-MM-DD').isValid()) {
+			    	if (start == null) {
+			    		print.success("Start date added")
+						print.message("Please enter an end date for your inquiry? (yyyy-mm-dd)")
+			    		start = moment(d.toString('utf8'), 'YYYY-MM-DD');
+			    	}
+			    	else if (end == null) {
+			    		print.success("End date added")
+		    			end = moment(d.toString('utf8'), 'YYYY-MM-DD');
+				    	console.log(end);
+				    	process.stdin.destroy();
+			    		getHits();
+			    	}
+			    }
+			    else {
+			    	process.stdin.destroy();
+			    	print.error("You didn't enter a valid date (i.e. 2017-01-09).")
+			    }
+		 	});
+
 	}
 	else {
 		print.error("You haven't enabled bonusing.  Please set 'okayToBonus' to TRUE");
@@ -195,6 +236,39 @@ function bonus(api, w, i) {
 		.catch((err) => {
 			print.error(err);
 		})
+}
+
+function getHits() {
+	print.message("Fetching all HITs within that time frame")
+	establishConnection().then((api) => {
+		api.req('SearchHITs', { PageNumber: 1, PageSize: 100})
+			.then((res) => {
+				var hitRaw = res.SearchHITsResult[0].HIT;
+				for (var i = 0; i < hitRaw.length; ++i) {
+					if (start.isBefore(moment(hitRaw[i].CreationTime)) && end.isAfter(moment(hitRaw[i].CreationTime))) {
+						hits.push(hitRaw[i].HITId);
+					}
+				}
+				//console.log(hits)
+				print.success("Found " + hits.length + " HITs within that timeframe");
+				print.message("Processing number of bonuses for each HIT...");
+				countBonuses(api, hits, 0)
+			})
+	});
+}
+
+function countBonuses(api, h, i) {
+	api.req("GetBonusPayments", { HITId: h[i], PageSize: 100 }).then((res) => {
+		totalBonus += parseInt(res.GetBonusPaymentsResult[0].TotalNumResults);
+		console.log(parseInt(res.GetBonusPaymentsResult[0].TotalNumResults))
+		++i;
+		if (i < h.length) {
+			countBonuses(api, h, i);
+		}
+		else {
+			print.success("You have made " + totalBonus + " bonuses for these HITs");
+		}
+	})
 }
 
 // CODE EXECUTION

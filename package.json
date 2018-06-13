@@ -12,6 +12,7 @@
     "express-session": "^1.15.2",
     "hbs": "^4.0.1",
     "hbs-json": "^0.1.1",
+    "moment": "^2.22.2",
     "mongoose": "^4.9.1",
     "mongoose-url-slugs": "^0.2.1",
     "mturk-api": "^3.0.2",
